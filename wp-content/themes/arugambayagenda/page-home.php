@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: Join Our Team
+	Template Name: Home
 */
 get_header();
 
