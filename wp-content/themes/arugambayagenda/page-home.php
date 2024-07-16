@@ -4,6 +4,8 @@
 */
 get_header();
 
+
+
 ?>
         <!-- banner -->
         <div class="mil-banner">
@@ -140,7 +142,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 85%; top: -20%; left: -30%; transform: rotate(35deg)" alt="shape">
             <div class="container">
                 <div class="mil-text-center">
-                    <div class="mil-suptitle mil-mb-20 mil-fade-up">Features</div>
+                    <div class="mil-suptitle mil-mb-20 mil-fade-up">Choose us</div>
                     <h2 class="mil-mb-100 mil-fade-up">Features that will make <br>your vacation unforgettable</h2>
                 </div>
                 <div class="row">
@@ -227,7 +229,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 110%; bottom: 15%; left: -30%; opacity: .2" alt="shape">
             <div class="container">
                 <div class="mil-text-center">
-                    <div class="mil-suptitle mil-mb-20 mil-fade-up">Rooms</div>
+                    <div class="mil-suptitle mil-mb-20 mil-fade-up">Features</div>
                     <h2 class="mil-mb-100 mil-fade-up">Our best rooms</h2>
                 </div>
                 <div class="row mil-mb-40">
