@@ -47,21 +47,49 @@ get_header();
                         <div class="col-xl-6">
                             <div class="mil-field-frame mil-mb-20">
                                 <label>Name</label>
-                                <input type="text" placeholder="Enter your name">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>
+                                <input type="text" placeholder="Enter Full Name">
                             </div>
                         </div>
                         <div class="col-xl-6">
                             <div class="mil-field-frame mil-mb-20">
                                 <label>Email</label>
-                                <input type="email" placeholder="Enter your email">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg>
+                                <input type="email" placeholder="Enter Email Address">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mil-field-frame mil-mb-20">
+                                <label>WhatsApp Number</label>
+                                <input type="text" placeholder="Enter WhatsApp Number">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mil-field-frame mil-mb-20">
+                                <label>Number of Adults</label>
+                                <input type="email" placeholder="Enter Number of Adults">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mil-field-frame mil-mb-20">
+                                <label>Number of Kids</label>
+                                <input type="email" placeholder="Enter Number of Kids">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mil-field-frame mil-mb-20">
+                                <label>Select Date</label>
+                                <input id="check-in" type="text" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mil-field-frame mil-mb-20">
+                                <label>Departure Location</label>
+                                <input type="email" placeholder="Enter Departure Location">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mil-field-frame mil-mb-20">
+                                <label>Destination</label>
+                                <input type="email" placeholder="Enter Destination">
                             </div>
                         </div>
                         <div class="col-xl-12">
