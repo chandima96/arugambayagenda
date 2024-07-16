@@ -289,7 +289,6 @@ $our_blog_description = get_field('our_blog_description');
 
                 <div class="swiper-container mil-reco-slider mil-mb-40">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
                                 <?php 
                                     $the_query = new WP_Query(array(
                                         'post_type' => array('wildlifetours', 'experientialtours', 'surfing-tour'),
@@ -304,6 +303,7 @@ $our_blog_description = get_field('our_blog_description');
                                         $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
                                         $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                                 ?> 
+                        <div class="swiper-slide">
                             <div class="mil-card mil-mb-40-adapt mil-fade-up">
                                 <div class="swiper-container mil-card-slider">
                                     <div class="swiper-wrapper">
@@ -389,10 +389,9 @@ $our_blog_description = get_field('our_blog_description');
                                     </div>
                                 </div>
                             </div>
-                                <?php endwhile; endif; ?>
-                                <?php wp_reset_postdata(); ?>
                         </div>
-
+                            <?php endwhile; endif; ?>
+                            <?php wp_reset_postdata(); ?>
                     </div>
                 </div>
 
