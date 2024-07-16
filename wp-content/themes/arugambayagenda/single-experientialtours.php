@@ -2,6 +2,50 @@
 
 get_header();
 
+
+$price_per_night = get_field('price_per_night');
+$capacity = get_field('capacity');
+$size = get_field('size');
+$image_one = get_field('image_one');
+$image_two = get_field('image_two');
+$image_three = get_field('image_three');
+$image_four = get_field('image_four');
+$image_five = get_field('image_five');
+$feature_one_title = get_field('feature_one_title');
+$feature_two_title = get_field('feature_two_title');
+
+$feature_three_title = get_field('feature_three_title');
+$feature_four_title = get_field('feature_four_title');
+$feature_five_title = get_field('feature_five_title');
+$feature_six_title = get_field('feature_six_title');
+$description = get_field('description');
+$faq_section_question_one = get_field('faq_section_question_one');
+$faq_section_answer_one = get_field('faq_section_answer_one');
+$faq__section_question_two = get_field('faq__section_question_two');
+$faq_section_answer_two = get_field('faq_section_answer_two');
+$faq_section_question_three = get_field('faq_section_question_three');
+
+$faq_section_answer_three = get_field('faq_section_answer_three');
+$faq_section_question_four = get_field('faq_section_question_four');
+$faq_section_answer_four = get_field('faq_section_answer_four');
+$faq_section_question_five = get_field('faq_section_question_five');
+$faq_section_question_six = get_field('faq_section_answer_five');
+$faq_section_question_six = get_field('faq_section_question_six');
+$faq_section_answer_six = get_field('faq_section_answer_six');
+$amenity_section_sub_heading_one = get_field('amenity_section_sub_heading_one');
+$amenity_section_sub_heading_one_description = get_field('amenity_section_sub_heading_one_description');
+$amenity_section_sub_heading_two = get_field('amenity_section_sub_heading_two');
+
+$amenity_section_sub_heading_two_description = get_field('amenity_section_sub_heading_two_description');
+$amenity_section_sub_heading_three = get_field('amenity_section_sub_heading_three');
+$amenity_section_sub_heading_three_description = get_field('amenity_section_sub_heading_three_description');
+$amenity_section_sub_heading_four = get_field('amenity_section_sub_heading_four');
+$amenity_section_sub_heading_four_description = get_field('amenity_section_sub_heading_four_description');
+$sixth_section_title = get_field('sixth_section_title');
+$seventh_section_top_line = get_field('seventh_section_top_line');
+$seventh_section_title = get_field('seventh_section_title');
+
+
 ?>
 
         <!-- banner -->
@@ -45,27 +89,27 @@ get_header();
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="mil-image-frame">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/rooms/1.1.jpg" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
+                                            <img src="<?php echo $image_one; ?>" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="mil-image-frame">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/rooms/1.2.jpg" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
+                                            <img src="<?php echo $image_two; ?>" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="mil-image-frame">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/rooms/1.3.jpg" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
+                                            <img src="<?php echo $image_three; ?>" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="mil-image-frame">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/rooms/2.1.jpg" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
+                                            <img src="<?php echo $image_four; ?>" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="mil-image-frame">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/rooms/2.2.jpg" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
+                                            <img src="<?php echo $image_five; ?>" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
                                         </div>
                                     </div>
                                 </div>
@@ -102,7 +146,7 @@ get_header();
                                             <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                         </svg>
                                     </div>
-                                    <h5>Air-conditioned</h5>
+                                    <h5><?php echo $feature_one_title; ?></h5>
                                 </div>
 
                             </div>
@@ -115,7 +159,7 @@ get_header();
                                             <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                         </svg>
                                     </div>
-                                    <h5>Free wi-fi</h5>
+                                    <h5><?php echo $feature_two_title; ?></h5>
                                 </div>
 
                             </div>
@@ -128,7 +172,7 @@ get_header();
                                             <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                         </svg>
                                     </div>
-                                    <h5>Smart TV</h5>
+                                    <h5><?php echo $feature_three_title; ?></h5>
                                 </div>
 
                             </div>
@@ -141,7 +185,7 @@ get_header();
                                             <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                         </svg>
                                     </div>
-                                    <h5>Pet friendly</h5>
+                                    <h5><?php echo $feature_four_title; ?></h5>
                                 </div>
 
                             </div>
@@ -154,7 +198,7 @@ get_header();
                                             <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                         </svg>
                                     </div>
-                                    <h5>Free lunches</h5>
+                                    <h5><?php echo $feature_five_title; ?></h5>
                                 </div>
 
                             </div>
@@ -167,7 +211,7 @@ get_header();
                                             <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                         </svg>
                                     </div>
-                                    <h5>Game room</h5>
+                                    <h5><?php echo $feature_six_title; ?></h5>
                                 </div>
 
                             </div>
@@ -178,13 +222,8 @@ get_header();
                         <div class="row">
                             <div class="col-xl-11">
                                 <div class="mil-dercription mil-mb-100">
-                                    <h3 class="mil-fade-up mil-mb-40">Description of the room</h3>
-                                    <p class="mil-fade-up mil-fade-up mil-mb-20">Vestibulum lectus mauris ultrices eros. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Sit amet nisl purus in mollis nunc sed. Aenean euismod elementum nisi quis eleifend.</p>
-
-                                    <p class="mil-fade-up mil-mb-20">Pulvinar neque laoreet suspendisse interdum consectetur libero. Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Varius morbi enim nunc faucibus. Ornare suspendisse sed nisi lacus sed viverra tellus in. Massa tincidunt dui ut ornare lectus sit amet. Suspendisse sed nisi lacus sed viverra tellus in. Dapibus ultrices in iaculis.</p>
-
-                                    <p class="mil-fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis donec et odio pellentesque. Nisi est sit amet facilisis magna. Semper feugiat nibh sed pulvinar. Id leo in vitae turpis massa sed elementum tempus. Eget est lorem ipsum dolor. Bibendum enim facilisis gravida neque. Nibh ipsum consequat nisl vel. Fermentum dui faucibus in ornare quam viverra.</p>
-                                </div>
+                                    <h3 class="mil-fade-up mil-mb-40">Description</h3>
+                                    <?php echo $description; ?>                                </div>
                             </div>
                         </div>
                         <!-- description end -->
@@ -194,60 +233,60 @@ get_header();
                             <div class="mil-faq-item mil-fade-up active">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3>How to make a room reservation?</h3>
+                                    <h3><?php echo $faq_section_question_one; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <p>To make a room reservation at our hotel, you can use our online service on the website or contact our reservation department by phone.</p>
+                                    <p><?php echo $faq_section_answer_one; ?> </p>
                                 </div>
                             </div>
 
                             <div class="mil-faq-item mil-fade-up">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3>Are pets allowed in the hotel?</h3>
+                                    <h3><?php echo $faq__section_question_two; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <p>Yes, we are a pet-friendly hotel. We welcome guests to bring their well-behaved pets with them. Please check our pet policy for more details.</p>
+                                    <p><?php echo $faq_section_answer_two; ?> </p>
                                 </div>
                             </div>
 
                             <div class="mil-faq-item mil-fade-up">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3>What amenities are included in the room rates?</h3>
+                                    <h3><?php echo $faq_section_question_three; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <p>Our room rates include complimentary Wi-Fi, access to the fitness center, and daily breakfast. Additional amenities may vary depending on the room type. Please refer to the "Amenities" section for more details.</p>
+                                    <p><?php echo $faq_section_answer_three; ?> </p>
                                 </div>
                             </div>
 
                             <div class="mil-faq-item mil-fade-up">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3>Is parking available at the hotel?</h3>
+                                    <h3><?php echo $faq_section_question_four; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <p>Yes, we provide on-site parking for our guests. There is a designated parking area, and parking is available at an additional cost. Please check with our front desk for parking options and rates.</p>
+                                    <p><?php echo $faq_section_answer_four; ?> </p>
                                 </div>
                             </div>
 
                             <div class="mil-faq-item mil-fade-up">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3>Can I cancel or modify my reservation?</h3>
+                                    <h3><?php echo $faq_section_question_five; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <p>Yes, you can cancel or modify your reservation up to 24 hours before your scheduled arrival without incurring any charges. Please review our cancellation policy for more information.</p>
+                                    <p><?php echo $faq_section_answer_five; ?> .</p>
                                 </div>
                             </div>
 
                             <div class="mil-faq-item mil-fade-up">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3>How can I provide feedback about my stay?</h3>
+                                    <h3><?php echo $faq_section_question_six; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <p>We value your feedback! You can share your experience by completing our online feedback form, which will be sent to our customer service team. We appreciate your input to help us enhance our services.</p>
+                                    <p><?php echo $faq_section_answer_six; ?> </p>
                                 </div>
                             </div>
                         </div>
@@ -266,8 +305,8 @@ get_header();
                                             <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                         </svg>
                                     </div>
-                                    <h3 class="mil-mb-20">Air-conditioned</h3>
-                                    <p>Our hotel is situated right on the beach, offering stunning ocean views.</p>
+                                    <h3 class="mil-mb-20"><?php echo $amenity_section_sub_heading_one; ?></h3>
+                                    <p><?php echo $amenity_section_sub_heading_one_description; ?></p>
                                 </div>
 
                             </div>
@@ -280,8 +319,8 @@ get_header();
                                             <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                         </svg>
                                     </div>
-                                    <h3 class="mil-mb-20">Free wi-fi</h3>
-                                    <p>Our hotel is situated right on the beach, offering stunning ocean views.</p>
+                                    <h3 class="mil-mb-20"><?php echo $amenity_section_sub_heading_two; ?></h3>
+                                    <p><?php echo $amenity_section_sub_heading_two_description; ?></p>
                                 </div>
 
                             </div>
@@ -294,8 +333,8 @@ get_header();
                                             <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                         </svg>
                                     </div>
-                                    <h3 class="mil-mb-20">Smart TV</h3>
-                                    <p>Our hotel is situated right on the beach, offering stunning ocean views.</p>
+                                    <h3 class="mil-mb-20"><?php echo $amenity_section_sub_heading_three; ?></h3>
+                                    <p><?php echo $amenity_section_sub_heading_three_description; ?></p>
                                 </div>
 
                             </div>
@@ -308,8 +347,8 @@ get_header();
                                             <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                         </svg>
                                     </div>
-                                    <h3 class="mil-mb-20">Free transfer</h3>
-                                    <p>Our hotel is situated right on the beach, offering stunning ocean views.</p>
+                                    <h3 class="mil-mb-20"><?php echo $amenity_section_sub_heading_four; ?></h3>
+                                    <p><?php echo $amenity_section_sub_heading_four_description; ?></p>
                                 </div>
 
                             </div>
@@ -319,7 +358,7 @@ get_header();
 
                         <!-- map -->
                         <div>
-                            <h3 class="mil-fade-up mil-mb-40">Location</h3>
+                            <h3 class="mil-fade-up mil-mb-40"><?php echo $sixth_section_title; ?></h3>
 
                             <div class="mil-map-frame mil-fade-up mil-mb-100">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6393.16599479736!2d-2.430872248702666!3d36.81379446199894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7a9db1a1de493f%3A0xc6d411d11ab69d33!2sParque%20de%20Bici!5e0!3m2!1suk!2suk!4v1701096541420!5m2!1suk!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -334,7 +373,7 @@ get_header();
                         <div class="mil-sticky mil-stycky-right mil-p-0-100" data-margin-top="140">
 
                             <div class="mil-price-frame mil-mb-20">
-                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number">49</span>/per night</div>
+                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo $price_per_night; ?></span>/per night</div>
                             </div>
 
                             <ul class="mil-parameters mil-mb-20">
@@ -354,7 +393,7 @@ get_header();
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div>Adults: 4</div>
+                                    <div><?php echo $capacity; ?></div>
                                 </li>
                                 <li>
                                     <div class="mil-icon">
@@ -365,7 +404,7 @@ get_header();
                                             <path d="M2.45679 6.10644V4.35534C2.45679 3.89092 2.64128 3.44553 2.96967 3.11713C3.29806 2.78874 3.74346 2.60425 4.20788 2.60425H5.95898" stroke="black" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                     </div>
-                                    <div>Size: 95ft²</div>
+                                    <div><?php echo $size; ?></div>
                                 </li>
                             </ul>
 
@@ -446,8 +485,8 @@ get_header();
         <div class="mil-content-pad mil-p-100-100 mil-fade-up">
             <div class="container">
                 <div class="mil-text-center">
-                    <div class="mil-suptitle mil-mb-20 mil-fade-up">Call to action</div>
-                    <h2 class="mil-h2-lg mil-mb-40 mil-fade-up">Do you have any questions?<br>We are available 24/7</h2>
+                    <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $seventh_section_top_line; ?></div>
+                    <h2 class="mil-h2-lg mil-mb-40 mil-fade-up"><?php echo $seventh_section_title; ?></h2>
                     <span class="mil-buttons-frame mil-center mil-fade-up">
                         <a href="contact.html" class="mil-button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
