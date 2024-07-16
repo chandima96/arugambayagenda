@@ -26,8 +26,8 @@ get_header();
                                 <h1 class="mil-mb-40">Exploring the World Through Our Blog</h1>
                                 <div class="mil-suptitle mil-breadcrumbs">
                                     <ul>
-                                        <li><a href="home-1.html">Home</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
+                                    <li><a href="<?php bloginfo('url'); ?>/blog"><?php the_title(); ?></a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -62,9 +62,9 @@ $seventh_section_title = get_field('seventh_section_title');
                             <div class="mil-desctop-right mil-right-no-m mil-fade-up mil-mb-40">
                                 <div class="mil-suptitle mil-breadcrumbs mil-light">
                                     <ul>
-                                        <li><a href="home-1.html">Home</a></li>
-                                        <li><a href="search.html">Search</a></li>
-                                        <li><a href="room-1.html">Deluxe apartment</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a></li>
+                                        <li><a href="#"><?php the_title(); ?></a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -25,8 +25,8 @@ get_header();
                                 <h1 class="mil-mb-40">Get in Touch!</h1>
                                 <div class="mil-suptitle mil-breadcrumbs">
                                     <ul>
-                                        <li><a href="home-1.html">Home</a></li>
-                                        <li><a href="search.html">Contact</a></li>
+                                    <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
+                                    <li><a href="<?php bloginfo('url'); ?>/contact"><?php the_title(); ?></a></li>
                                     </ul>
                                 </div>
                             </div>
