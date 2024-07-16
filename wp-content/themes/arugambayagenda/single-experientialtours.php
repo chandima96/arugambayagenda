@@ -421,8 +421,8 @@ get_header();
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label for="assistance-textarea">Need further assistance? Write to us</label>
-                                        <textarea id="assistance-textarea" placeholder="Write your message here" rows="4" cols="50"></textarea>
+                                        <label for="assistance-textarea">Need further assistance? </label>
+                                        <textarea id="assistance-textarea" placeholder="Write to us" rows="4" cols="50"></textarea>
                                     </div>
 
                                     <button type="submit" class="mil-button mil-accent-1">
