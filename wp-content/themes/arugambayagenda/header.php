@@ -6,7 +6,9 @@
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- bootstrap grid css -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/plugins/bootstrap-grid.css">
     <!-- swiper css -->
@@ -15,6 +17,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/plugins/datepicker.css">
     <!-- aquarelle css -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom-styles.css">
     <!-- page name -->
     <?php wp_head(); ?>
 </head>
@@ -80,10 +84,6 @@
                                 <li><a href="<?php bloginfo('url'); ?>/contact-us">Contact</a></li>
                                 <li>
                                     <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
-                                    <ul>
-                                        <li><a href="<?php bloginfo('url'); ?>/blog">Blog</a></li>
-                                        <li><a href="publication.html">Publication</a></li>
-                                    </ul>
                                 </li>
                             </ul>
                         </nav>
