@@ -409,17 +409,17 @@ $seventh_section_title = get_field('seventh_section_title');
                                 <form>
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
-                                        <input type="text" placeholder="Enter quantity" value="1">
+                                        <input type="text" placeholder="Enter Full Name" >
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>E-Mail Address</label>
-                                        <input type="text" placeholder="Enter quantity" value="1">
+                                        <input type="text" placeholder="Enter E-Mail Address" value="1">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>WhatsApp Number</label>
-                                        <input type="text" placeholder="Enter quantity" value="1">
+                                        <input type="text" placeholder="Enter WhatsApp Number" value="1">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
