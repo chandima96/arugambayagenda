@@ -116,7 +116,7 @@ get_header();
                                     <polyline points="22,6 12,13 2,6"></polyline>
                                 </svg>
                             </div>
-                            <h3 class="mil-mb-20">+27 (843) 38X 83 04</h3>
+                            <h3 class="mil-mb-20">aquarel.hotel@mail.com</h3>
                             <p>Write to us. We respond quickly</p>
                         </div>
                     </div>
