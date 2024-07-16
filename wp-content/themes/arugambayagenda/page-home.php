@@ -258,32 +258,23 @@ $our_blog_description = get_field('our_blog_description');
         <!-- features end -->
 
         <!-- rooms -->
-        <div class="mil-rooms mil-p-0-100">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 85%; top: -20%; right: -30%; transform: rotate(-30deg) scaleX(-1);" alt="shape">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 110%; bottom: 15%; left: -30%; opacity: .2" alt="shape">
-            <div class="container">
-                <div class="mil-text-center">
-                    <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $features_top_line; ?></div>
-                    <h2 class="mil-mb-100 mil-fade-up"><?php echo $features_title; ?></h2>
-                </div>
-
                 <div class="swiper-container mil-reco-slider mil-mb-40">
-                        <?php 
-                            $the_query = new WP_Query(array(
-                                'post_type' => array('wildlifetours', 'experientialtours', 'surfing-tour'),
-                                'posts_per_page' => 100,
-                                'post__not_in' => array($id),
-                            ));
-                            ?>
-                            <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-
-                                <?php
-                                $thumbnail_id = get_post_thumbnail_id();
-                                $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
-                                $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-                        ?> 
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
+                                <?php 
+                                    $the_query = new WP_Query(array(
+                                        'post_type' => array('wildlifetours', 'experientialtours', 'surfing-tour'),
+                                        'posts_per_page' => 100,
+                                        'post__not_in' => array($id),
+                                    ));
+                                    ?>
+                                    <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
+                                        <?php
+                                        $thumbnail_id = get_post_thumbnail_id();
+                                        $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
+                                        $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                                ?> 
                             <div class="mil-card mil-mb-40-adapt mil-fade-up">
                                 <div class="swiper-container mil-card-slider">
                                     <div class="swiper-wrapper">
@@ -369,14 +360,11 @@ $our_blog_description = get_field('our_blog_description');
                                     </div>
                                 </div>
                             </div>
-
+                                <?php endwhile; endif; ?>
+                                <?php wp_reset_postdata(); ?>
                         </div>
                     </div>
-                        <?php endwhile; endif; ?>
-                        <?php wp_reset_postdata(); ?>
                 </div>
-            </div>
-        </div>
         <!-- rooms end -->
 
         <!-- call to action -->
