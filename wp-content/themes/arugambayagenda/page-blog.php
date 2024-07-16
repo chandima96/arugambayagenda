@@ -235,7 +235,7 @@ get_header();
         <!-- blog end -->
 
         <!-- call to action -->
-        <div class="mil-content-pad mil-p-100-100 mil-fade-up">
+        <!-- <div class="mil-content-pad mil-p-100-100 mil-fade-up">
             <div class="container">
                 <div class="mil-text-center">
                     <div class="mil-suptitle mil-mb-20 mil-fade-up">Call to action</div>
@@ -251,7 +251,7 @@ get_header();
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- call to action end -->
 
         <!-- recommendation -->

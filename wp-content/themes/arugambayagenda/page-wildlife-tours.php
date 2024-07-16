@@ -97,7 +97,7 @@ get_header();
                 <div class="row allign-items-center mil-mb-100">
                     <div class="col-xl-4">
 
-                        <h2 class="mil-row-title mil-fade-up">Search result <span class="mil-badge">24</span></h2>
+                        <h2 class="mil-row-title mil-fade-up" style="display:none;">Search result <span class="mil-badge">24</span></h2>
 
                     </div>
                     <div class="col-xl-8">
