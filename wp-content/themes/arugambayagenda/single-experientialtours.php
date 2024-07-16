@@ -388,11 +388,10 @@ get_header();
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label for="option-select">Select an option</label>
-                                        <select id="option-select">
-                                            <option value="1">WaveRise: Beginner Surf Experience</option>
+                                        <select id="option-select" class="datepicker-here">
+                                            <option value="1" class="datepicker-here">WaveRise: Beginner Surf Experience</option>
                                         </select>
                                     </div>
-
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Check-in</label>
