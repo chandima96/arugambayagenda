@@ -372,17 +372,58 @@ get_header();
                             <div class="mil-book-window">
                                 <form>
                                     <div class="mil-field-frame mil-mb-20">
+                                        <label>Full Name</label>
+                                        <input type="text" placeholder="Enter quantity" value="1">
+                                    </div>
+
+                                    <div class="mil-field-frame mil-mb-20">
+                                        <label>E-Mail Address</label>
+                                        <input type="text" placeholder="Enter quantity" value="1">
+                                    </div>
+
+                                    <div class="mil-field-frame mil-mb-20">
+                                        <label>WhatsApp Number</label>
+                                        <input type="text" placeholder="Enter quantity" value="1">
+                                    </div>
+
+                                    <div class="mil-field-frame mil-mb-20">
+                                        <label for="option-select">Select an option</label>
+                                        <select id="option-select">
+                                            <option value="1">WaveRise: Beginner Surf Experience</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="mil-field-frame mil-mb-20">
                                         <label>Check-in</label>
                                         <input id="check-in" type="text" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly">
                                     </div>
+
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Check-out</label>
                                         <input id="check-out" type="text" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly">
                                     </div>
+
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label>Adults</label>
+                                        <label>Number of Adults</label>
                                         <input type="text" placeholder="Enter quantity" value="1">
                                     </div>
+                                    
+                                    <div class="mil-field-frame mil-mb-20">
+                                        <label>Number of Kids</label>
+                                        <input type="text" placeholder="Enter quantity" value="1">
+                                    </div>
+
+                                    <div class="mil-field-frame mil-mb-20">
+                                        <label>Departure location</label>
+                                        <input type="text" placeholder="Enter quantity" value="1">
+                                    </div>
+
+                                    <div class="mil-field-frame mil-mb-20">
+                                        <label for="assistance-textarea">Need further assistance? Write to us</label>
+                                        <textarea id="assistance-textarea" placeholder="Write your message here" rows="4" cols="50"></textarea>
+                                    </div>
+
                                     <button type="submit" class="mil-button mil-accent-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
                                             <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
