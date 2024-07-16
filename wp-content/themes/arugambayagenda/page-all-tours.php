@@ -25,8 +25,8 @@ get_header();
                                 <h1 class="mil-mb-40">Choose the room <br>of your dreams</h1>
                                 <div class="mil-suptitle mil-breadcrumbs">
                                     <ul>
-                                        <li><a href="home-1.html">Home</a></li>
-                                        <li><a href="search.html">Search room</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/all-tours"><?php the_title(); ?></a></li>
                                     </ul>
                                 </div>
                             </div>
