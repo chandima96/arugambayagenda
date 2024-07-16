@@ -123,35 +123,35 @@ $our_blog_description = get_field('our_blog_description');
                 </div>
                 <div class="row mil-mb-40">
                     <div class="col-md-6 col-xl-3">
-                        <a href="service.html" class="mil-service-card mil-mb-40-adapt mil-fade-up">
+                        <a href="<?php bloginfo('url'); ?>/wild-life-tours" class="mil-service-card mil-mb-40-adapt mil-fade-up">
                             <div class="mil-img-frame">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/services/1.jpg" alt="img">
+                            </div>
+                            <div class="mil-description">Wild Life Tours</div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <a href="<?php bloginfo('url'); ?>/experiential-tours" class="mil-service-card mil-offset mil-mb-40-adapt mil-fade-up">
+                            <div class="mil-img-frame">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/services/2.jpg" alt="img">
+                            </div>
+                            <div class="mil-description">Experiential Tours</div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <a href="<?php bloginfo('url'); ?>/surfing" class="mil-service-card mil-mb-40-adapt mil-fade-up">
+                            <div class="mil-img-frame">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/services/3.jpg" alt="img">
                             </div>
                             <div class="mil-description">Surfing</div>
                         </a>
                     </div>
                     <div class="col-md-6 col-xl-3">
-                        <a href="service.html" class="mil-service-card mil-offset mil-mb-40-adapt mil-fade-up">
-                            <div class="mil-img-frame">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/services/2.jpg" alt="img">
-                            </div>
-                            <div class="mil-description">Beach vacation</div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-xl-3">
-                        <a href="service.html" class="mil-service-card mil-mb-40-adapt mil-fade-up">
-                            <div class="mil-img-frame">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/services/3.jpg" alt="img">
-                            </div>
-                            <div class="mil-description">Beach restaurant</div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-xl-3">
-                        <a href="service.html" class="mil-service-card mil-offset mil-mb-40-adapt mil-fade-up">
+                        <a href="<?php bloginfo('url'); ?>/ride-with-us" class="mil-service-card mil-offset mil-mb-40-adapt mil-fade-up">
                             <div class="mil-img-frame">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/services/4.jpg" alt="img">
                             </div>
-                            <div class="mil-description">Swimming pools</div>
+                            <div class="mil-description">Ride With Us</div>
                         </a>
                     </div>
                 </div>
@@ -161,7 +161,7 @@ $our_blog_description = get_field('our_blog_description');
                     </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
-                            <a href="services.html" class="mil-button">
+                            <a href="<?php bloginfo('url'); ?>/all-tours" class="mil-button">
                                 <span>Read more</span>
                             </a>
                         </div>
