@@ -143,19 +143,19 @@
                         <div class="col-xl-6">
                             <div class="mil-field-frame mil-mb-20">
                                 <label>Name</label>
-                                <input type="text" placeholder="Enter Full Name" value="1">
+                                <input type="text" placeholder="Enter Full Name" >
                             </div>
                         </div> 
                         <div class="col-xl-6">       
                         <div class="mil-field-frame mil-mb-20">
                                 <label>Email</label>
-                                <input type="text" placeholder="Enter Email Address" value="1">
+                                <input type="text" placeholder="Enter Email Address" >
                             </div>
                         </div>
                         <div class="col-xl-6">      
                             <div class="mil-field-frame mil-mb-20">
                                 <label>WhatsApp Number</label>
-                                <input type="text" placeholder="Enter Number of Adults" value="1">
+                                <input type="text" placeholder="Enter Number of Adults" >
                             </div>
                         </div>  
                         <div class="col-xl-6">      
@@ -167,7 +167,7 @@
                         <div class="col-xl-6">      
                             <div class="mil-field-frame mil-mb-20">
                                 <label>Website</label>
-                                <input type="text" placeholder="Enter Website" value="1">
+                                <input type="text" placeholder="Enter Website" >
                             </div>
                         </div>
                         <div class="col-xl-12">
@@ -177,10 +177,7 @@
                             </div>
                         </div>        
                         <div class="row align-items-center">
-                            <div class="col-lg-7">
-                                <p class="mil-fade-up"><span class="mil-accent-2">*</span>We promise not to disclose your personal information to third parties.</p>
-                            </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-6">
                                 <div class="mil-desctop-right mil-fade-up">
                                     <button type="submit" class="mil-button">
                                         <span>Send</span>
