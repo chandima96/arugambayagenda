@@ -69,7 +69,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#.">Rooms</a>
+                                    <a href="#.">All Tours</a>
                                     <ul>
                                         <li><a href="search.html">Search room</a></li>
                                         <li><a href="room-1.html">Room type 1</a></li>

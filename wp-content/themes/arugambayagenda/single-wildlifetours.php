@@ -14,7 +14,7 @@ get_header();
                 <div class="mil-banner-head">
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-xl-6">
-                            <h1 class="mil-h2-lg mil-mb-40">Deluxe apartment</h1>
+                            <h1 class="mil-h2-lg mil-mb-40"><?php the_title(); ?></h1>
                         </div>
                         <div class="col-lg-6 col-xl-6">
                             <div class="mil-desctop-right mil-right-no-m mil-fade-up mil-mb-40">
