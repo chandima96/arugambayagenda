@@ -216,7 +216,7 @@ get_header();
                 </div>
 
 
-                <div class="row justify-content-between">
+                <!-- <div class="row justify-content-between">
                     <div class="col-lg-7">
                         <p class="mil-fade-up">Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
                     </div>
@@ -244,7 +244,7 @@ get_header();
 
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- rooms end -->
