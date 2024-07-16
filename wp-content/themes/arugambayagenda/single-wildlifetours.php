@@ -189,6 +189,69 @@ get_header();
                         </div>
                         <!-- description end -->
 
+                        <h3 class="mil-fade-up mil-mb-40">FAQ</h3>
+                        <div class="mil-faq-section mil-mb-100">
+                            <div class="mil-faq-item mil-fade-up active">
+                                <div class="mil-faq-question">
+                                    <span class="mil-icon">+</span>
+                                    <h3>How to make a room reservation?</h3>
+                                </div>
+                                <div class="mil-faq-answer">
+                                    <p>To make a room reservation at our hotel, you can use our online service on the website or contact our reservation department by phone.</p>
+                                </div>
+                            </div>
+
+                            <div class="mil-faq-item mil-fade-up">
+                                <div class="mil-faq-question">
+                                    <span class="mil-icon">+</span>
+                                    <h3>Are pets allowed in the hotel?</h3>
+                                </div>
+                                <div class="mil-faq-answer">
+                                    <p>Yes, we are a pet-friendly hotel. We welcome guests to bring their well-behaved pets with them. Please check our pet policy for more details.</p>
+                                </div>
+                            </div>
+
+                            <div class="mil-faq-item mil-fade-up">
+                                <div class="mil-faq-question">
+                                    <span class="mil-icon">+</span>
+                                    <h3>What amenities are included in the room rates?</h3>
+                                </div>
+                                <div class="mil-faq-answer">
+                                    <p>Our room rates include complimentary Wi-Fi, access to the fitness center, and daily breakfast. Additional amenities may vary depending on the room type. Please refer to the "Amenities" section for more details.</p>
+                                </div>
+                            </div>
+
+                            <div class="mil-faq-item mil-fade-up">
+                                <div class="mil-faq-question">
+                                    <span class="mil-icon">+</span>
+                                    <h3>Is parking available at the hotel?</h3>
+                                </div>
+                                <div class="mil-faq-answer">
+                                    <p>Yes, we provide on-site parking for our guests. There is a designated parking area, and parking is available at an additional cost. Please check with our front desk for parking options and rates.</p>
+                                </div>
+                            </div>
+
+                            <div class="mil-faq-item mil-fade-up">
+                                <div class="mil-faq-question">
+                                    <span class="mil-icon">+</span>
+                                    <h3>Can I cancel or modify my reservation?</h3>
+                                </div>
+                                <div class="mil-faq-answer">
+                                    <p>Yes, you can cancel or modify your reservation up to 24 hours before your scheduled arrival without incurring any charges. Please review our cancellation policy for more information.</p>
+                                </div>
+                            </div>
+
+                            <div class="mil-faq-item mil-fade-up">
+                                <div class="mil-faq-question">
+                                    <span class="mil-icon">+</span>
+                                    <h3>How can I provide feedback about my stay?</h3>
+                                </div>
+                                <div class="mil-faq-answer">
+                                    <p>We value your feedback! You can share your experience by completing our online feedback form, which will be sent to our customer service team. We appreciate your input to help us enhance our services.</p>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- amenity -->
                         <div class="row mil-mb-60-adapt">
                             <div class="col-12">

@@ -217,7 +217,7 @@ get_header();
                                     $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                             ?>
                     <div class="col-xl-4">
-                        <a href="publication.html" class="mil-card mil-mb-40-adapt mil-fade-up">
+                        <a href="<?php the_permalink(); ?>" class="mil-card mil-mb-40-adapt mil-fade-up">
                             <div class="swiper-container mil-card-slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
