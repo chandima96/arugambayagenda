@@ -40,7 +40,7 @@ get_header();
         <!-- banner end -->
 
         <!-- search panel -->
-        <div class="mil-content-pad mil-search-window">
+        <!-- <div class="mil-content-pad mil-search-window">
             <div class="container">
                 <div class="mil-search-panel mil-panel-2">
                     <form>
@@ -86,7 +86,7 @@ get_header();
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- search panel end -->
 
         <!-- rooms -->
