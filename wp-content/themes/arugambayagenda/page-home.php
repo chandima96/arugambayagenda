@@ -24,7 +24,7 @@ get_header();
                             <div class="mil-banner-content">
                                 <div class="mil-suptitle mil-mb-40">Welcome friend</div>
                                 <h1 class="mil-mb-40">Life while traveling <br>is a pure dream.</h1>
-                                <div class="mil-search-panel mil-mb-20">
+                                <!-- <div class="mil-search-panel mil-mb-20">
                                     <form>
                                         <div class="mil-form-grid">
                                             <div class="mil-col-5 mil-field-frame">
@@ -66,7 +66,7 @@ get_header();
                                             <span>Search</span>
                                         </button>
                                     </form>
-                                </div>
+                                </div> -->
                                 <p><span class="mil-accent-2">*</span>Accusantium doloremque laudantium, totam rem aperiam eaque ipsa.</p>
                             </div>
                         </div>
