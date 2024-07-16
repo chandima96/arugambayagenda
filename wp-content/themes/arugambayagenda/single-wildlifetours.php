@@ -524,7 +524,7 @@ $seventh_section_title = get_field('seventh_section_title');
         <!-- call to action end -->
 
         <!-- recommendation -->
-        <div class="mil-rooms mil-p-100-100">
+        <!-- <div class="mil-rooms mil-p-100-100">
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 110%; bottom: 15%; left: -30%; opacity: .2" alt="shape">
             <div class="container">
                 <div class="row justify-content-between align-items-end mil-mb-100">
@@ -925,7 +925,7 @@ $seventh_section_title = get_field('seventh_section_title');
                 </div>
 
             </div>
-        </div>
+        </div> -->
         <!-- recommendation end -->
 
 <?php get_footer(); ?>
