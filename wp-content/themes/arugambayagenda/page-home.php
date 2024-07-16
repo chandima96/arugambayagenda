@@ -4,6 +4,40 @@
 */
 get_header();
 
+$home_banner_top_line = get_field('home_banner_top_line');
+$home_banner_title = get_field('home_banner_title');
+$home_banner_description = get_field('home_banner_description');
+$services_top_line = get_field('services_top_line');
+$services_title = get_field('services_title');
+$services_description = get_field('services_description');
+$chose_us_top_line = get_field('chose_us_top_line');
+$chose_us_title = get_field('chose_us_title');
+$chose_us_card_one_title = get_field('chose_us_card_one_title');
+$chose_us_card_one_description = get_field('chose_us_card_one_description');
+
+$chose_us_card_two_title = get_field('chose_us_card_two_title');
+$chose_us_card_two_description = get_field('chose_us_card_two_description');
+$chose_us_card_three_title = get_field('chose_us_card_three_title');
+$chose_us_card_three_description = get_field('chose_us_card_three_description');
+$chose_us_card_four_title = get_field('chose_us_card_four_title');
+$chose_us_card_four_description = get_field('chose_us_card_four_description');
+$chose_us_card_five_title = get_field('chose_us_card_five_title');
+$chose_us_card_five_description = get_field('chose_us_card_five_description');
+$chose_us_card_six_title = get_field('chose_us_card_six_title');
+$chose_us_card_six_description = get_field('chose_us_card_six_description');
+
+$features_top_line = get_field('features_top_line');
+$features_title = get_field('features_title');
+$features_description = get_field('features_description');
+$call_to_action_top_line = get_field('call_to_action_top_line');
+$call_to_action_title = get_field('call_to_action_title');
+$about_us_top_line = get_field('about_us_top_line');
+$contact_page_title = get_field('about_us_title');
+$our_blog_top_line = get_field('our_blog_top_line');
+$our_blog_title = get_field('our_blog_title');
+$our_blog_description = get_field('our_blog_description');
+
+
 
 
 ?>
@@ -24,8 +58,8 @@ get_header();
 
                         <div class="mil-banner-content-frame">
                             <div class="mil-banner-content">
-                                <div class="mil-suptitle mil-mb-40">Welcome friend</div>
-                                <h1 class="mil-mb-40">Life while traveling <br>is a pure dream.</h1>
+                                <div class="mil-suptitle mil-mb-40"><?php echo $home_banner_top_line; ?></div>
+                                <h1 class="mil-mb-40"><?php echo $home_banner_title; ?></h1>
                                 <!-- <div class="mil-search-panel mil-mb-20">
                                     <form>
                                         <div class="mil-form-grid">
@@ -69,7 +103,7 @@ get_header();
                                         </button>
                                     </form>
                                 </div> -->
-                                <p><span class="mil-accent-2">*</span>Accusantium doloremque laudantium, totam rem aperiam eaque ipsa.</p>
+                                <p><?php echo $home_banner_description; ?></p>
                             </div>
                         </div>
 
@@ -84,8 +118,8 @@ get_header();
         <div class="mil-content-pad mil-p-100-100">
             <div class="container">
                 <div class="mil-text-center">
-                    <div class="mil-suptitle mil-mb-20 mil-fade-up">Services</div>
-                    <h2 class="mil-mb-100 mil-fade-up">Discover the touch of nature</h2>
+                    <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $services_top_line; ?></div>
+                    <h2 class="mil-mb-100 mil-fade-up"><?php echo $services_title; ?></h2>
                 </div>
                 <div class="row mil-mb-40">
                     <div class="col-md-6 col-xl-3">
@@ -123,7 +157,7 @@ get_header();
                 </div>
                 <div class="row justify-content-between">
                     <div class="col-lg-7">
-                        <p class="mil-fade-up">Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+                        <p class="mil-fade-up"><?php echo $services_description; ?></p>
                     </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
@@ -142,8 +176,8 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 85%; top: -20%; left: -30%; transform: rotate(35deg)" alt="shape">
             <div class="container">
                 <div class="mil-text-center">
-                    <div class="mil-suptitle mil-mb-20 mil-fade-up">Choose us</div>
-                    <h2 class="mil-mb-100 mil-fade-up">Features that will make <br>your vacation unforgettable</h2>
+                    <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $chose_us_top_line; ?></div>
+                    <h2 class="mil-mb-100 mil-fade-up"><?php echo $chose_us_title; ?></h2>
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-xl-4">
@@ -154,8 +188,8 @@ get_header();
                                     <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                 </svg>
                             </div>
-                            <h3 class="mil-mb-20">Beachfront Location</h3>
-                            <p>Our hotel is situated right on the beach, offering stunning ocean views and immediate access to the sandy shores.</p>
+                            <h3 class="mil-mb-20"><?php echo $chose_us_card_one_title; ?></h3>
+                            <p><?php echo $chose_us_card_one_description; ?></p>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-4">
@@ -166,8 +200,8 @@ get_header();
                                     <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                 </svg>
                             </div>
-                            <h3 class="mil-mb-20">Luxury Accommodations</h3>
-                            <p>Experience comfort and style in our well-appointed rooms and suites, designed for a relaxing stay.</p>
+                            <h3 class="mil-mb-20"><?php echo $chose_us_card_two_title; ?></h3>
+                            <p><?php echo $chose_us_card_two_description; ?></p>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-4">
@@ -178,8 +212,8 @@ get_header();
                                     <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                 </svg>
                             </div>
-                            <h3 class="mil-mb-20">On-Site Dining</h3>
-                            <p>Enjoy a variety of culinary delights at our on-site restaurants, catering to different tastes and preferences.</p>
+                            <h3 class="mil-mb-20"><?php echo $chose_us_card_three_title; ?></h3>
+                            <p><?php echo $chose_us_card_three_description; ?></p>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-4">
@@ -190,8 +224,8 @@ get_header();
                                     <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                 </svg>
                             </div>
-                            <h3 class="mil-mb-20">Recreational Facilities</h3>
-                            <p>Our hotel offers a range of recreational activities, including water sports, swimming pools, and fitness centers.</p>
+                            <h3 class="mil-mb-20"><?php echo $chose_us_card_four_title; ?></h3>
+                            <p><?php echo $chose_us_card_four_description; ?></p>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-4">
@@ -202,8 +236,8 @@ get_header();
                                     <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                 </svg>
                             </div>
-                            <h3 class="mil-mb-20">Spa and Wellness Services</h3>
-                            <p>Unwind and rejuvenate at our spa, where you can indulge in massages and treatments for ultimate relaxation.</p>
+                            <h3 class="mil-mb-20"><?php echo $chose_us_card_five_title; ?></h3>
+                            <p><?php echo $chose_us_card_five_description; ?></p>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-4">
@@ -214,8 +248,8 @@ get_header();
                                     <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
                                 </svg>
                             </div>
-                            <h3 class="mil-mb-20">Surfing Lessons</h3>
-                            <p>Our hotel offers surfing lessons and equipment rentals, allowing guests of all levels to enjoy the thrill of riding the waves.</p>
+                            <h3 class="mil-mb-20"><?php echo $chose_us_card_six_title; ?></h3>
+                            <p><?php echo $chose_us_card_six_description; ?></p>
                         </div>
                     </div>
                 </div>
@@ -229,8 +263,8 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 110%; bottom: 15%; left: -30%; opacity: .2" alt="shape">
             <div class="container">
                 <div class="mil-text-center">
-                    <div class="mil-suptitle mil-mb-20 mil-fade-up">Features</div>
-                    <h2 class="mil-mb-100 mil-fade-up">Our best rooms</h2>
+                    <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $features_top_line; ?></div>
+                    <h2 class="mil-mb-100 mil-fade-up"><?php echo $features_title; ?></h2>
                 </div>
                 <div class="row mil-mb-40">
                     <div class="col-md-6 col-xl-4">
@@ -303,7 +337,7 @@ get_header();
                             </ul>
                             <div class="mil-descr">
                                 <h3 class="mil-mb-20">Ocean View</h3>
-                                <p class="mil-mb-40">Accusantium doloremque laudantium, totam rem aperiam beatae vitae dicta sunt, explicabo</p>
+                                <p class="mil-mb-40"><?php echo $features_description; ?></p>
                                 <div class="mil-divider"></div>
                                 <div class="mil-card-bottom">
                                     <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number">49</span>/per night</div>
@@ -751,8 +785,8 @@ get_header();
         <div class="mil-content-pad mil-p-100-100 mil-fade-up">
             <div class="container">
                 <div class="mil-text-center">
-                    <div class="mil-suptitle mil-mb-20 mil-fade-up">Call to action</div>
-                    <h2 class="mil-h2-lg mil-mb-40 mil-fade-up">Do you have any questions?<br>We are available 24/7</h2>
+                    <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $call_to_action_top_line; ?></div>
+                    <h2 class="mil-h2-lg mil-mb-40 mil-fade-up"><?php echo $call_to_action_title; ?></h2>
                     <span class="mil-buttons-frame mil-center mil-fade-up">
                         <a href="contact.html" class="mil-button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
@@ -782,8 +816,8 @@ get_header();
                     <div class="col-xl-5 mil-mb-100">
 
                         <div class="mil-text-frame">
-                            <div class="mil-suptitle mil-mb-20 mil-fade-up">About us</div>
-                            <h2 class="mil-mb-60 mil-fade-up">Why more than a million visitors chose us</h2>
+                            <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $about_us_top_line; ?></div>
+                            <h2 class="mil-mb-60 mil-fade-up"><?php echo $about_us_title; ?></h2>
                             <ul class="mil-about-list">
                                 <li class="mil-fade-up">
                                     <div class="mil-item-head">
@@ -1000,8 +1034,8 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape" style="width: 85%; top: -20%; right: -30%; transform: rotate(-30deg) scaleX(-1);" alt="shape">
             <div class="container">
                 <div class="mil-text-center">
-                    <div class="mil-suptitle mil-mb-20 mil-fade-up">Our Blog</div>
-                    <h2 class="mil-mb-100 mil-fade-up">Latest blog publications</h2>
+                    <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $our_blog_top_line; ?></div>
+                    <h2 class="mil-mb-100 mil-fade-up"><?php echo $our_blog_description; ?></h2>
                 </div>
                 <div class="row mil-mb-40">
                     <div class="col-xl-4">
