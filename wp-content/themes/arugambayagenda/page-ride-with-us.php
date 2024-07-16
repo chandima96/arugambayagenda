@@ -106,7 +106,22 @@ get_header();
                             <p>Call us anytime. We are available 24/7</p>
                         </div>
                     </div>
+
                     <div class="col-xl-4">
+                        <div class="mil-iconbox mil-mb-40-adapt mil-fade-up">
+                            <div class="mil-bg-icon"></div>
+                            <div class="mil-icon mil-icon-fix">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="mil-mb-20">+27 (843) 38X 83 04</h3>
+                            <p>Write to us. We respond quickly</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-xl-4">
                         <div class="mil-iconbox mil-mb-40-adapt mil-fade-up">
                             <div class="mil-bg-icon"></div>
                             <div class="mil-icon mil-icon-fix">
@@ -118,7 +133,7 @@ get_header();
                             <h3 class="mil-mb-20">aquarel.hotel@mail.com</h3>
                             <p>Write to us. We respond quickly</p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-xl-4">
                         <div class="mil-iconbox mil-mb-40-adapt mil-fade-up">
                             <div class="mil-bg-icon"></div>
