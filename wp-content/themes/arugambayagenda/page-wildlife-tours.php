@@ -5,7 +5,6 @@
 get_header();
 
 ?>
-
         <!-- banner -->
         <div class="mil-banner-sm">
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape" style="width: 70%; top: 0; right: -35%; transform: rotate(190deg)" alt="shape">
