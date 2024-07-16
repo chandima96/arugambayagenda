@@ -2,7 +2,9 @@
 
 get_header();
 
+?>
 
+<?php
 $price_per_night = get_field('price_per_night');
 $capacity = get_field('capacity');
 $size = get_field('size');
@@ -13,7 +15,6 @@ $image_four = get_field('image_four');
 $image_five = get_field('image_five');
 $feature_one_title = get_field('feature_one_title');
 $feature_two_title = get_field('feature_two_title');
-
 $feature_three_title = get_field('feature_three_title');
 $feature_four_title = get_field('feature_four_title');
 $feature_five_title = get_field('feature_five_title');
@@ -24,7 +25,6 @@ $faq_section_answer_one = get_field('faq_section_answer_one');
 $faq__section_question_two = get_field('faq__section_question_two');
 $faq_section_answer_two = get_field('faq_section_answer_two');
 $faq_section_question_three = get_field('faq_section_question_three');
-
 $faq_section_answer_three = get_field('faq_section_answer_three');
 $faq_section_question_four = get_field('faq_section_question_four');
 $faq_section_answer_four = get_field('faq_section_answer_four');
@@ -35,7 +35,6 @@ $faq_section_answer_six = get_field('faq_section_answer_six');
 $amenity_section_sub_heading_one = get_field('amenity_section_sub_heading_one');
 $amenity_section_sub_heading_one_description = get_field('amenity_section_sub_heading_one_description');
 $amenity_section_sub_heading_two = get_field('amenity_section_sub_heading_two');
-
 $amenity_section_sub_heading_two_description = get_field('amenity_section_sub_heading_two_description');
 $amenity_section_sub_heading_three = get_field('amenity_section_sub_heading_three');
 $amenity_section_sub_heading_three_description = get_field('amenity_section_sub_heading_three_description');
@@ -44,8 +43,6 @@ $amenity_section_sub_heading_four_description = get_field('amenity_section_sub_h
 $sixth_section_title = get_field('sixth_section_title');
 $seventh_section_top_line = get_field('seventh_section_top_line');
 $seventh_section_title = get_field('seventh_section_title');
-
-
 ?>
 
         <!-- banner -->
