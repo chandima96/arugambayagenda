@@ -171,9 +171,9 @@
                             </div>
                         </div>
                         <div class="col-xl-12">
-                            <div class="mil-field-frame mil-mb-20">
-                                <label>Message</label>
-                                <textarea placeholder="Write a message here"></textarea>
+                        <div class="mil-field-frame mil-mb-20">
+                                <label for="assistance-textarea">Need further assistance? </label>
+                                <textarea id="assistance-textarea" placeholder="Write to us" rows="4" cols="50"></textarea>
                             </div>
                         </div>        
                         <div class="row align-items-center">
