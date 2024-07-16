@@ -1,7 +1,5 @@
 <?php
-/*
-	Template Name: Surfing 
-*/
+
 get_header();
 
 ?>

@@ -1,7 +1,5 @@
 <?php
-/*
-	Template Name: Wild Life Tours
-*/
+
 get_header();
 
 ?>

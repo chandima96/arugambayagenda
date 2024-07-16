@@ -42,7 +42,7 @@
         <div class="mil-top-panel">
             <div class="container">
                 <div class="mil-top-panel-content">
-                    <a href="#." class="mil-logo">
+                    <a href="<?php bloginfo('url'); ?>/" class="mil-logo">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="aquarelle">
                     </a>
                     <div class="mil-menu-btn">
@@ -52,7 +52,7 @@
                         <nav class="mil-menu">
                             <ul>
                                 <li class="mil-current">
-                                    <a href="#.">Home</a>
+                                    <a href="<?php bloginfo('url'); ?>/">Home</a>
                                     <ul>
                                         <li><a href="home-1.html">Type 1</a></li>
                                         <li><a href="home-2.html">Type 2</a></li>
@@ -63,7 +63,7 @@
                                 <li>
                                     <a href="#.">About</a>
                                     <ul>
-                                        <li><a href="about.html">About us</a></li>
+                                        <li><a href="about.html">Wild Life Tours</a></li>
                                         <li><a href="services.html">Services</a></li>
                                         <li><a href="service.html">Single service</a></li>
                                     </ul>
@@ -71,12 +71,13 @@
                                 <li>
                                     <a href="#.">All Tours</a>
                                     <ul>
-                                        <li><a href="search.html">Search room</a></li>
-                                        <li><a href="room-1.html">Room type 1</a></li>
-                                        <li><a href="room-2.html">Room type 2</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/wild-life-tours">Wild Life Tours</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/surfing">Surfing</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/ride-with-us">Ride With Us</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/contact-us">Contact</a></li>
                                 <li>
                                     <a href="#.">Blog</a>
                                     <ul>

@@ -1,7 +1,5 @@
 <?php
-/*
-	Template Name: Experiential Tours
-*/
+
 get_header();
 
 ?>
