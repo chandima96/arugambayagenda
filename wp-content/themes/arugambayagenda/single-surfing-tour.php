@@ -13,6 +13,9 @@ $image_two = get_field('image_two');
 $image_three = get_field('image_three');
 $image_four = get_field('image_four');
 $image_five = get_field('image_five');
+$image_six = get_field('image_six');
+$image_seven = get_field('image_seven');
+$image_eight = get_field('image_eight');
 $feature_one_title = get_field('feature_one_title');
 $feature_two_title = get_field('feature_two_title');
 $feature_three_title = get_field('feature_three_title');
@@ -107,6 +110,21 @@ $seventh_section_title = get_field('seventh_section_title');
                                     <div class="swiper-slide">
                                         <div class="mil-image-frame">
                                             <img src="<?php echo $image_five; ?>" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mil-image-frame">
+                                            <img src="<?php echo $image_six; ?>" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mil-image-frame">
+                                            <img src="<?php echo $image_seven; ?>" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mil-image-frame">
+                                            <img src="<?php echo $image_eight; ?>" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
                                         </div>
                                     </div>
                                 </div>

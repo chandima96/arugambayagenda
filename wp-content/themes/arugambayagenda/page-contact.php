@@ -70,26 +70,8 @@ get_header();
                         </div>
                         <div class="col-xl-6">
                             <div class="mil-field-frame mil-mb-20">
-                                <label>Number of Kids</label>
-                                <input type="email" placeholder="Enter Number of Kids">
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="mil-field-frame mil-mb-20">
-                                <label>Select Date</label>
-                                <input id="check-in" type="text" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly">
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="mil-field-frame mil-mb-20">
-                                <label>Departure Location</label>
-                                <input type="email" placeholder="Enter Departure Location">
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="mil-field-frame mil-mb-20">
-                                <label>Destination</label>
-                                <input type="email" placeholder="Enter Destination">
+                                <label>Website</label>
+                                <input type="websiteil" placeholder="Enter Website">
                             </div>
                         </div>
                         <div class="col-xl-12">
