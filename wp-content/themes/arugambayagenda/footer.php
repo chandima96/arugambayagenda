@@ -166,6 +166,12 @@
                         </div>
                         <div class="col-xl-6">      
                             <div class="mil-field-frame mil-mb-20">
+                                <label>Number of Kids</label>
+                                <input type="text" placeholder="Enter quantity" value="1">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">      
+                            <div class="mil-field-frame mil-mb-20">
                                 <label>Website</label>
                                 <input type="text" placeholder="Enter Website" >
                             </div>
@@ -173,10 +179,10 @@
                         <div class="col-xl-12">
                         <div class="mil-field-frame mil-mb-20">
                                 <label for="assistance-textarea">Need further assistance? </label>
-                                <textarea id="assistance-textarea" placeholder="Write to us" rows="4" cols="50"></textarea>
+                                <textarea id="assistance-textarea" class="custom-height" placeholder="Write to us" rows="4" cols="50"></textarea>
                             </div>
                         </div>        
-                        <div class="row align-items-center">
+                        <div class="row align-items-center justify-content-center">
                             <div class="col-lg-6">
                                 <div class="mil-desctop-right mil-fade-up">
                                     <button type="submit" class="mil-button">

@@ -70,6 +70,12 @@ get_header();
                         </div>
                         <div class="col-xl-6">
                             <div class="mil-field-frame mil-mb-20">
+                                <label>Number of Kids</label>
+                                <input type="email" placeholder="Enter Number of Adults">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="mil-field-frame mil-mb-20">
                                 <label>Website</label>
                                 <input type="websiteil" placeholder="Enter Website">
                             </div>
