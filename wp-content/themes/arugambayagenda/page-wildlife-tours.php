@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: Surfing 
+	Template Name: Wild Life Tours
 */
 get_header();
 
