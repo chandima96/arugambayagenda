@@ -262,7 +262,7 @@ get_header();
                                 </li>
                             </ul>
                             <div class="mil-descr">
-                                <h3 class="mil-mb-20">Ultimate Guide to Traveling When You Have No Money</h3>
+                                <h3 class="mil-mb-20"><?php the_title(); ?></h3>
                                 <p class="mil-mb-20">Accusantium doloremque laudantium, totam rem aperiam beatae vitae dicta sunt, explicabo</p>
                                 <div class="mil-divider"></div>
                                 <div class="mil-card-bottom">
