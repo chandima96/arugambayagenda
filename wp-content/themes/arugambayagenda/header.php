@@ -79,9 +79,9 @@
                                 </li>
                                 <li><a href="<?php bloginfo('url'); ?>/contact-us">Contact</a></li>
                                 <li>
-                                    <a href="#.">Blog</a>
+                                    <a href="<?php bloginfo('url'); ?>/">Blog</a>
                                     <ul>
-                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/">Blog</a></li>
                                         <li><a href="publication.html">Publication</a></li>
                                     </ul>
                                 </li>
