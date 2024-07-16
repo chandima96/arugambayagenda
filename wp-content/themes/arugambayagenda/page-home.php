@@ -786,7 +786,7 @@ $our_blog_description = get_field('our_blog_description');
             <div class="container">
                 <div class="mil-text-center">
                     <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $call_to_action_top_line; ?></div>
-                    <div class="mil-h2-lg mil-mb-40 mil-fade-up"><?php echo $call_to_action_title; ?></div>
+                    <div class="mil-h2-lg mil-mb-40 mil-fade-up font-Montserrat"><?php echo $call_to_action_title; ?></div>
                     <span class="mil-buttons-frame mil-center mil-fade-up">
                         <a href="contact.html" class="mil-button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
