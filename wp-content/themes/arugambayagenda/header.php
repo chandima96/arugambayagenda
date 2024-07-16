@@ -75,6 +75,7 @@
                                 <li>
                                     <a href="#.">Tours</a>
                                     <ul>
+                                        <li><a href="<?php bloginfo('url'); ?>/all-tours">All Tours</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/wild-life-tours">Wild Life Tours</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/surfing">Surfing</a></li>

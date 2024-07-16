@@ -105,10 +105,9 @@ get_header();
 
                         <div class="mil-desctop-right mil-fade-up">
                             <div class="mil-filter">
-                                <a href="#." class="mil-active">All</a>
-                                <a href="#.">Economy</a>
-                                <a href="#.">Standard</a>
-                                <a href="#.">Luxe</a>
+                                <a href="<?php bloginfo('url'); ?>/all-tours">All Tours</a>
+                                <a href="<?php bloginfo('url'); ?>/wild-life-tours">Wild Life Tours</a>
+                                <a href="<?php bloginfo('url'); ?>/surfing">Surfing</a>
                             </div>
                         </div>
 
