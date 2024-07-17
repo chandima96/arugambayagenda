@@ -388,10 +388,18 @@ $seventh_section_title = get_field('seventh_section_title');
                         <div class="mil-sticky mil-stycky-right mil-p-0-100" data-margin-top="140">
 
                             <div class="mil-price-frame mil-mb-20">
-                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo $price_per_night; ?></span>/per night</div>
+                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo $price_per_night; ?></span>/ <?php echo $duration; ?> hour</div>
                             </div>
 
                             <ul class="mil-parameters mil-mb-20">
+                                <li>
+                                    <div class="mil-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                                        </svg>
+                                    </div>
+                                    <div>Adults: <?php echo $capacity; ?></div>
+                                </li>
                                 <li>
                                     <div class="mil-icon">
                                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -408,18 +416,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div><?php echo $capacity; ?></div>
-                                </li>
-                                <li>
-                                    <div class="mil-icon">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.9578 14.6084H12.7089C13.1733 14.6084 13.6187 14.4239 13.9471 14.0955C14.2755 13.7671 14.46 13.3217 14.46 12.8573V11.1062" stroke="black" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M14.46 6.10644V4.35534C14.46 3.89092 14.2755 3.44553 13.9471 3.11713C13.6187 2.78874 13.1733 2.60425 12.7089 2.60425H10.9578" stroke="black" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M5.95898 14.6084H4.20788C3.74346 14.6084 3.29806 14.4239 2.96967 14.0955C2.64128 13.7671 2.45679 13.3217 2.45679 12.8573V11.1062" stroke="black" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M2.45679 6.10644V4.35534C2.45679 3.89092 2.64128 3.44553 2.96967 3.11713C3.29806 2.78874 3.74346 2.60425 4.20788 2.60425H5.95898" stroke="black" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div><?php echo $size; ?></div>
+                                    <div>Kids: <?php echo $size; ?></div>
                                 </li>
                             </ul>
 

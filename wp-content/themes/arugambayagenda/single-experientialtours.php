@@ -388,7 +388,7 @@ $seventh_section_title = get_field('seventh_section_title');
                         <div class="mil-sticky mil-stycky-right mil-p-0-100" data-margin-top="140">
 
                             <div class="mil-price-frame mil-mb-20">
-                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo $price_per_night; ?></span>/per night</div>
+                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo $price_per_night; ?></span>/ <?php echo $duration; ?> hour</div>
                             </div>
 
                             <ul class="mil-parameters mil-mb-20">
@@ -408,7 +408,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div><?php echo $capacity; ?></div>
+                                    <div>Adults: <?php echo $capacity; ?></div>
                                 </li>
                                 <li>
                                     <div class="mil-icon">
@@ -419,7 +419,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                             <path d="M2.45679 6.10644V4.35534C2.45679 3.89092 2.64128 3.44553 2.96967 3.11713C3.29806 2.78874 3.74346 2.60425 4.20788 2.60425H5.95898" stroke="black" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                     </div>
-                                    <div><?php echo $size; ?></div>
+                                    <div>Kids: <?php echo $size; ?></div>
                                 </li>
                             </ul>
 
