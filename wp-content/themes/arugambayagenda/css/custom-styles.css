@@ -91,34 +91,20 @@ footer .mil-footer-content .mil-logo img {
     list-style: none;
     padding: 0;
     margin: 0;
-    max-width: 600px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
 }
 
 .custom-list li {
     position: relative;
-    padding-left: 40px;
-    margin-bottom: 15px;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #333;
-}
-
-.custom-list li:last-child {
-    margin-bottom: 0;
+    padding-left: 30px;
+    margin-bottom: 10px;
 }
 
 .custom-list li::before {
-    content: "\f00c"; 
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+    content: "\2714"; 
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5em;
+    top: 0;
+    font-size: 1.2em;
     color: #00A3B4; 
+    line-height: 1;
 }
