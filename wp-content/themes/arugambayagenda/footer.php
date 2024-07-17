@@ -146,28 +146,16 @@
                                 <input type="text" placeholder="Enter Full Name" >
                             </div>
                         </div> 
-                        <div class="col-xl-6">       
-                        <div class="mil-field-frame mil-mb-20">
-                                <label>Email</label>
-                                <input type="text" placeholder="Enter Email Address" >
-                            </div>
-                        </div>
                         <div class="col-xl-6">      
                             <div class="mil-field-frame mil-mb-20">
                                 <label>WhatsApp Number</label>
                                 <input type="text" placeholder="Enter Number of Adults" >
                             </div>
                         </div>  
-                        <div class="col-xl-6">      
-                            <div class="mil-field-frame mil-mb-20">
-                                <label>Number of Adults</label>
-                                <input type="text" placeholder="Enter quantity" value="1">
-                            </div>
-                        </div>
-                        <div class="col-xl-6">      
-                            <div class="mil-field-frame mil-mb-20">
-                                <label>Number of Kids</label>
-                                <input type="text" placeholder="Enter quantity" value="1">
+                        <div class="col-xl-6">       
+                        <div class="mil-field-frame mil-mb-20">
+                                <label>Email</label>
+                                <input type="text" placeholder="Enter Email Address" >
                             </div>
                         </div>
                         <div class="col-xl-6">      
