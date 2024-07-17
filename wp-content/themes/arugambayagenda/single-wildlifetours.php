@@ -389,7 +389,7 @@ $seventh_section_title = get_field('seventh_section_title');
                         <div class="mil-sticky mil-stycky-right mil-p-0-100" data-margin-top="140">
 
                             <div class="mil-price-frame mil-mb-20">
-                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo $price_per_night; ?></span>/ <?php echo $duration; ?> hour</div>
+                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo $price_per_night; ?></span>/ <?php echo $duration; ?></div>
                             </div>
 
                             <ul class="mil-parameters mil-mb-20">
