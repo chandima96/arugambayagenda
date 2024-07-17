@@ -55,10 +55,10 @@ $seventh_section_title = get_field('seventh_section_title');
             <div class="container">
                 <div class="mil-banner-head">
                     <div class="row align-items-center">
-                        <div class="col-lg-6 col-xl-6">
+                        <div class="col-lg-12 col-xl-12">
                             <h1 class="mil-h2-lg mil-mb-40"><?php the_title(); ?></h1>
                         </div>
-                        <div class="col-lg-6 col-xl-6">
+                        <div class="col-lg-12 col-xl-12">
                             <div class="mil-desctop-right mil-right-no-m mil-fade-up mil-mb-40">
                                 <div class="mil-suptitle mil-breadcrumbs mil-light">
                                     <ul>

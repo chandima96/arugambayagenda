@@ -308,22 +308,17 @@ $our_blog_description = get_field('our_blog_description');
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="mil-card-cover">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/img/rooms/4.1.jpg" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                                <img src="<?php echo get_field('image_one'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="mil-card-cover">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/img/rooms/4.2.jpg" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                                <img src="<?php echo get_field('image_two'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="mil-card-cover">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/img/rooms/4.3.jpg" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mil-card-cover">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/img/rooms/4.4.jpg" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                                <img src="<?php echo get_field('image_three'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
                                             </div>
                                         </div>
                                     </div>
@@ -417,14 +412,14 @@ $our_blog_description = get_field('our_blog_description');
                     <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $call_to_action_top_line; ?></div>
                     <div class="mil-h2-lg mil-mb-40 mil-fade-up font-Montserrat"><h2><?php echo $call_to_action_title; ?></h2></div>
                     <span class="mil-buttons-frame mil-center mil-fade-up">
-                        <a href="contact.html" class="mil-button">
+                        <a href="<?php bloginfo('url'); ?>/contact-us" class="mil-button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
                             <span>Get in touch</span>
                         </a>
-                        <a href="#." class="mil-link mil-open-book-popup">
+                        <a href="<?php bloginfo('url'); ?>/contact-us" class="mil-link mil-open-book-popup">
                             <span>Book now</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
