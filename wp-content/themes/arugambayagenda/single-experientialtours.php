@@ -262,7 +262,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                     <h3><?php echo $faq__section_question_two; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <div class="custom-list"><?php echo $faq_section_answer_one; ?></div>
+                                    <div class="custom-list"><?php echo $faq_section_answer_two; ?></div>
                                 </div>
                             </div>
 
@@ -272,7 +272,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                     <h3><?php echo $faq_section_question_three; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <div class="custom-list"><?php echo $faq_section_answer_one; ?></div>
+                                    <div class="custom-list"><?php echo $faq_section_answer_three; ?></div>
                                 </div>
                             </div>
 
@@ -282,7 +282,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                     <h3><?php echo $faq_section_question_four; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <div class="custom-list"><?php echo $faq_section_answer_one; ?></div>
+                                    <div class="custom-list"><?php echo $faq_section_answer_four; ?></div>
                                 </div>
                             </div>
 
