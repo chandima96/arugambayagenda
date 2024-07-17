@@ -135,17 +135,17 @@ get_header();
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="mil-card-cover">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/rooms/1.1.jpg" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                            <img src="<?php echo get_field('image_one'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="mil-card-cover">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/rooms/1.2.jpg" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                            <img src="<?php echo get_field('image_two'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="mil-card-cover">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/rooms/1.3.jpg" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                            <img src="<?php echo get_field('image_three'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
                                         </div>
                                     </div>
                                 </div>
