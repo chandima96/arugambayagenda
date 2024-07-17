@@ -170,7 +170,7 @@
                                 <textarea id="assistance-textarea" class="custom-height" placeholder="Write to us" rows="4" cols="50"></textarea>
                             </div>
                         </div>        
-                        <div class="row align-items-center justify-content-center">
+                        <div class="row align-items-center justify-content-end">
                             <div class="col-lg-6">
                                 <div class="mil-desctop-right mil-fade-up">
                                     <button type="submit" class="mil-button">
