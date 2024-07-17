@@ -9,12 +9,15 @@ $home_banner_title = get_field('home_banner_title');
 $home_banner_description = get_field('home_banner_description');
 $services_top_line = get_field('services_top_line');
 $services_title = get_field('services_title');
+$service_section_wild_life_tours_image = get_field('service_section_wild_life_tours_image');
+$service_section_experiential_tours_image = get_field('service_section_experiential_tours_image');
+$service_section_surfing_image = get_field('service_section_surfing_image');
+$service_section_ride_with_us_image = get_field('service_section_ride_with_us_image');
 $services_description = get_field('services_description');
 $chose_us_top_line = get_field('chose_us_top_line');
 $chose_us_title = get_field('chose_us_title');
 $chose_us_card_one_title = get_field('chose_us_card_one_title');
 $chose_us_card_one_description = get_field('chose_us_card_one_description');
-
 $chose_us_card_two_title = get_field('chose_us_card_two_title');
 $chose_us_card_two_description = get_field('chose_us_card_two_description');
 $chose_us_card_three_title = get_field('chose_us_card_three_title');
@@ -25,7 +28,6 @@ $chose_us_card_five_title = get_field('chose_us_card_five_title');
 $chose_us_card_five_description = get_field('chose_us_card_five_description');
 $chose_us_card_six_title = get_field('chose_us_card_six_title');
 $chose_us_card_six_description = get_field('chose_us_card_six_description');
-
 $features_top_line = get_field('features_top_line');
 $features_title = get_field('features_title');
 $features_description = get_field('features_description');
@@ -36,9 +38,6 @@ $contact_page_title = get_field('about_us_title');
 $our_blog_top_line = get_field('our_blog_top_line');
 $our_blog_title = get_field('our_blog_title');
 $our_blog_description = get_field('our_blog_description');
-
-
-
 
 ?>
         <!-- banner -->
@@ -125,7 +124,7 @@ $our_blog_description = get_field('our_blog_description');
                     <div class="col-md-6 col-xl-3">
                         <a href="<?php bloginfo('url'); ?>/wild-life-tours" class="mil-service-card mil-mb-40-adapt mil-fade-up">
                             <div class="mil-img-frame">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/services/1.jpg" alt="img">
+                                <img src="<?php echo $service_section_wild_life_tours_image; ?>" alt="img">
                             </div>
                             <div class="mil-description">Wild Life Tours</div>
                         </a>
@@ -133,7 +132,7 @@ $our_blog_description = get_field('our_blog_description');
                     <div class="col-md-6 col-xl-3">
                         <a href="<?php bloginfo('url'); ?>/experiential-tours" class="mil-service-card mil-offset mil-mb-40-adapt mil-fade-up">
                             <div class="mil-img-frame">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/services/2.jpg" alt="img">
+                                <img src="<?php echo $service_section_experiential_tours_image; ?>" alt="img">
                             </div>
                             <div class="mil-description">Experiential Tours</div>
                         </a>
@@ -141,7 +140,7 @@ $our_blog_description = get_field('our_blog_description');
                     <div class="col-md-6 col-xl-3">
                         <a href="<?php bloginfo('url'); ?>/surfing" class="mil-service-card mil-mb-40-adapt mil-fade-up">
                             <div class="mil-img-frame">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/services/3.jpg" alt="img">
+                                <img src="<?php echo $service_section_surfing_image; ?>" alt="img">
                             </div>
                             <div class="mil-description">Surfing</div>
                         </a>
@@ -149,7 +148,7 @@ $our_blog_description = get_field('our_blog_description');
                     <div class="col-md-6 col-xl-3">
                         <a href="<?php bloginfo('url'); ?>/ride-with-us" class="mil-service-card mil-offset mil-mb-40-adapt mil-fade-up">
                             <div class="mil-img-frame">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/services/4.jpg" alt="img">
+                                <img src="<?php echo $service_section_ride_with_us_image; ?>" alt="img">
                             </div>
                             <div class="mil-description">Ride With Us</div>
                         </a>
