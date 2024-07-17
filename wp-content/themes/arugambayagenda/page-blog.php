@@ -41,7 +41,7 @@ get_header();
         <!-- banner end -->
 
         <!-- popular -->
-        <!-- <div class="mil-content-pad mil-p-100-100">
+        <div class="mil-content-pad mil-p-100-100">
             <div class="container">
                 <div class="mil-text-center">
                     <div class="mil-suptitle mil-mb-20 mil-fade-up">Blog</div>
@@ -127,7 +127,7 @@ get_header();
                 </div>
                     <?php endwhile; endif; ?>
                     <?php wp_reset_postdata(); ?> 
-                <div class="row justify-content-between">
+                <!-- <div class="row justify-content-between">
                     <div class="col-lg-7">
                         <p class="mil-fade-up">Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
                     </div>
@@ -138,9 +138,9 @@ get_header();
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
-        </div> -->
+        </div>
         <!-- popular end -->
 
         <!-- blog -->
