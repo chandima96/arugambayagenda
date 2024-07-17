@@ -52,7 +52,7 @@ h3 {
 }
 
 .custom-height {
-    height: 50px !important;
+    height: 70px !important;
 }
 
 :root :where(a:where(:not(.wp-element-button))) {
