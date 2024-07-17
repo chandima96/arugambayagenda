@@ -106,6 +106,10 @@ footer .mil-footer-content .mil-logo img {
     left: 0;
     top: 0;
     font-size: 1.2em;
-    color: #00A3B4; 
+    color: rgb(244, 107, 51); 
     line-height: 1;
+}
+
+.mil-faq-answer p {
+    padding-bottom: 20px !important;
 }
