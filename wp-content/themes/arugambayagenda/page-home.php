@@ -374,25 +374,27 @@ $our_blog_description = get_field('our_blog_description');
                                         <div>Size: 95ft²</div>
                                     </li>
                                 </ul>
-                                <div class="mil-descr">
-                                    <h3 class="mil-mb-20"><?php the_title(); ?></h3>
-                                    <p class="mil-mb-40">Accusantium doloremque laudantium, totam rem aperiam beatae vitae dicta sunt, explicabo</p>
-                                    <div class="mil-divider"></div>
-                                    <div class="mil-card-bottom">
-                                        <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number">49</span>/per night</div>
-                                        <a href="<?php the_permalink(); ?>" class="mil-button mil-icon-button mil-accent-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
-                                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
+                                <a href="<?php the_permalink(); ?>">
+                                    <div class="mil-descr">
+                                        <h3 class="mil-mb-20"><?php the_title(); ?></h3>
+                                        <p class="mil-mb-40">Accusantium doloremque laudantium, totam rem aperiam beatae vitae dicta sunt, explicabo</p>
+                                        <div class="mil-divider"></div>
+                                            <div class="mil-card-bottom">
+                                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number">49</span>/per night</div>
+                                                <a href="<?php the_permalink(); ?>" class="mil-button mil-icon-button mil-accent-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
+                                                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
+                                <?php endwhile; endif; ?>
+                                <?php wp_reset_postdata(); ?>
                         </div>
-                            <?php endwhile; endif; ?>
-                            <?php wp_reset_postdata(); ?>
                     </div>
-                </div>
                 <!-- <div class="row justify-content-between">
                     <div class="col-lg-7">
                         <p class="mil-fade-up">Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>

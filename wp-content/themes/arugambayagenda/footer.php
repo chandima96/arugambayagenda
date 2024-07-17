@@ -6,7 +6,7 @@
                     <div class="row justify-content-between mil-p-100-40">
                         <div class="col-md-4 col-lg-4 mil-mb-60">
 
-                            <a href="#." class="mil-logo mil-mb-40">
+                            <a href="<?php bloginfo('url'); ?>/" class="mil-logo mil-mb-40">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo/footer-logo.png" alt="aquarelle">
                             </a>
 
