@@ -55,10 +55,7 @@ h3 {
     height: 200px !important;
 }
 
-a:not(.wp-element-button) {
-    color: rgb(250, 255, 255) !important;
-    text-decoration: none !important;
-}
+
 
 
 
