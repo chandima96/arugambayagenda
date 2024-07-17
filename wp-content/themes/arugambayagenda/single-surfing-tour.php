@@ -7,6 +7,7 @@ get_header();
 <?php
 $price_per_night = get_field('price_per_night');
 $capacity = get_field('capacity');
+$duration = get_field('duration');
 $size = get_field('size');
 $image_one = get_field('image_one');
 $image_two = get_field('image_two');
