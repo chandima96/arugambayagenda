@@ -47,7 +47,7 @@
             <div class="container">
                 <div class="mil-top-panel-content">
                     <a href="<?php bloginfo('url'); ?>/" class="mil-logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="aquarelle">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.png" alt="aquarelle">
                     </a>
                     <div class="mil-menu-btn">
                         <span></span>
@@ -57,12 +57,6 @@
                             <ul>
                                 <li class="mil-current">
                                     <a href="<?php bloginfo('url'); ?>/">Home</a>
-                                    <ul>
-                                        <li><a href="home-1.html">Type 1</a></li>
-                                        <li><a href="home-2.html">Type 2</a></li>
-                                        <li><a href="home-3.html">Type 3</a></li>
-                                        <li><a href="home-4.html">Type 4</a></li>
-                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#.">About</a>
