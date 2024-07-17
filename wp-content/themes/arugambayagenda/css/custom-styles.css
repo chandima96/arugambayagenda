@@ -63,5 +63,10 @@ h3 {
     color: rgb(250, 255, 255) !important;
 }
 
+.mil-book-popup {
+    width: 80% !important; 
+    max-width: 1000px !important; 
+    margin: 0 auto !important; 
+}
 
 
