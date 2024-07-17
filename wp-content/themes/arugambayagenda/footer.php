@@ -149,7 +149,7 @@
                         <div class="col-xl-6">      
                             <div class="mil-field-frame mil-mb-20">
                                 <label>WhatsApp Number</label>
-                                <input type="text" placeholder="Enter Number of Adults" >
+                                <input type="text" placeholder="Enter WhatsApp Number" >
                             </div>
                         </div>  
                         <div class="col-xl-6">       

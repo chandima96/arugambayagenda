@@ -69,4 +69,8 @@ h3 {
     margin: 0 auto !important; 
 }
 
-
+.mil-book-popup {
+    height: 500px !important; 
+    overflow-y: auto !important; 
+    padding: 20px !important; 
+}
