@@ -86,3 +86,25 @@ footer .mil-footer-content .mil-logo img {
 .margin-top-0 {
     margin-top: 0 !important;
 }
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.custom-list li::before {
+    content: "\2714"; /* Unicode character for checkmark */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+    color: #00A3B4; /* Custom color for the checkmark */
+    line-height: 1;
+}
