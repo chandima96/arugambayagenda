@@ -252,7 +252,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                     <h3><?php echo $faq_section_question_one; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <?php echo $faq_section_answer_one; ?>
+                                    <div class="margin-top-0"><?php echo $faq_section_answer_one; ?></div>
                                 </div>
                             </div>
 

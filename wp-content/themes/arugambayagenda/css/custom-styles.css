@@ -82,3 +82,7 @@ h3 {
 footer .mil-footer-content .mil-logo img {
     width: 250px !important;
 }
+
+.margin-top-0 {
+    margin-top: 0 !important;
+}
