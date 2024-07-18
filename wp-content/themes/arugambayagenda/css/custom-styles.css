@@ -33,6 +33,8 @@ h1 {
 
 p {
     font-family: 'Open Sans' !important;
+    font-weight: 400 !important;
+    color: #333333 !important;
 }
 
 .font-Montserrat {
