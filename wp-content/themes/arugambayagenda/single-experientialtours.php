@@ -292,7 +292,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                     <h3><?php echo $faq_section_question_five; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <div class="custom-list"><?php echo $faq_section_answer_five; ?></div>
+                                    <div class="custom-list-01"><?php echo $faq_section_answer_five; ?></div>
                                 </div>
                             </div>
 

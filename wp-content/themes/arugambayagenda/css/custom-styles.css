@@ -131,3 +131,32 @@ footer .mil-footer-content .mil-logo img {
 .mil-fade-upp p {
     font-weight: 400 !important;
 }
+
+.custom-list-01 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list-01 li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #00A3B4;
+}
+
+.custom-list-01 li::before {
+    content: "\2716"; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+    color: rgb(244, 107, 51); 
+    line-height: 1;
+}
+
+.custom-list-01 h6 {
+    padding-bottom: 20px;
+    text-decoration: none !important;
+}
