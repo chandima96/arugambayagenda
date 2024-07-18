@@ -26,19 +26,19 @@
 
                                     <nav class="mil-footer-menu">
                                         <ul class="footer-link">
-                                            <li class="mil-active">
+                                            <li class="mil-active <?php if(get_the_ID() == '6') { ?>active<?php } ?>">
                                                 <a href="<?php bloginfo('url'); ?>/">Home</a>
                                             </li>
-                                            <li>
-                                                <a href="#">About</a>
+                                            <li class="mil-active <?php if(get_the_ID() == '325') { ?>active<?php } ?>">
+                                                <a href="<?php bloginfo('url'); ?>/">About</a>
                                             </li>
-                                            <li>
+                                            <li class="mil-active <?php if(get_the_ID() == '10') { ?>active<?php } ?>">
                                                 <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
                                             </li>
-                                            <li>
+                                            <li class="mil-active <?php if(get_the_ID() == '11') { ?>active<?php } ?>">
                                                 <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
                                             </li>
-                                            <li>
+                                            <li class="mil-active <?php if(get_the_ID() == '31') { ?>active<?php } ?>">
                                                 <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
                                             </li>
                                         </ul>
