@@ -6,10 +6,11 @@
                     <div class="row justify-content-between mil-p-100-40">
                         <div class="col-md-4 col-lg-4 mil-mb-60">
 
-                            <a href="<?php bloginfo('url'); ?>/" class="mil-logo mil-mb-40">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/logo/footer-logo.png" alt="aquarelle">
-                            </a>
+                            <!-- <a href="<?php bloginfo('url'); ?>/" class="mil-logo mil-mb-40">
+                            </a> -->
                             <div>
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/logo/footer-logo.png" alt="aquarelle">
+
                                 <!-- <h3 class="mb-3">About</h3> -->
                                 <p class="mil-light-soft">Explore Sri Lanka's cultural wonders with Arugambay Agenda's seamless island transfers and curated tours.</p>
                                 <!-- <div class="mil-mb-20 fw-500"></div> -->
