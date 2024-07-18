@@ -276,8 +276,8 @@ get_header();
         <!-- call to action end -->
 
         <!-- recommendation -->
-        <!-- <div class="mil-rooms mil-p-100-100">
-            <div class="container">
+        <div class="mil-rooms mil-p-100-100">
+            <!-- <div class="container">
                 <div class="row justify-content-between align-items-end mil-mb-100">
                     <div class="col-lg-7">
                         <div class="mil-suptitle mil-fade-up mil-mb-20">Welcome friend</div>
@@ -675,8 +675,8 @@ get_header();
                     </div>
                 </div>
 
-            </div>
-        </div> -->
+            </div> -->
+        </div>
         <!-- recommendation end -->
 
 <?php get_footer(); ?>
