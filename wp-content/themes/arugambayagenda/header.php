@@ -77,7 +77,7 @@
                                         <li><a href="<?php bloginfo('url'); ?>/wild-life-tours">Wild Life Tours</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/surfing">Surfing</a></li>
-                                        <li><a href="<?php bloginfo('url'); ?>/ride-with-us">Ride With Us</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/taxi-service">Taxi service</a></li>
                                     </ul>
                                 </li>
 
