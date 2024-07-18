@@ -390,20 +390,21 @@ $our_blog_description = get_field('our_blog_description');
                                 <?php wp_reset_postdata(); ?>
                         </div>
                     </div>
-                <!-- <div class="row justify-content-between">
-                    <div class="col-lg-7">
-                        <p class="mil-fade-up">Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="mil-desctop-right mil-fade-up">
-                            <a href="search.html" class="mil-button">
-                                <span>View all</span>
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
+                        <!-- <div class="row justify-content-between">
+                            <div class="col-lg-7">
+                                <p class="mil-fade-up">Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="mil-desctop-right mil-fade-up">
+                                    <a href="search.html" class="mil-button">
+                                        <span>View all</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
             </div>
-        </div>
+        </div>    
 
         <!-- call to action -->
         <div class="mil-content-pad mil-p-100-100 mil-fade-up">
