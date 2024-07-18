@@ -246,66 +246,79 @@ $seventh_section_title = get_field('seventh_section_title');
 
                         <h3 class="mil-fade-up mil-mb-40">FAQ</h3>
                         <div class="mil-faq-section mil-mb-100">
+                            <?php if (!empty($faq_section_question_one) && !empty($faq_section_answer_one)): ?>
                             <div class="mil-faq-item mil-fade-up">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3><?php echo $faq_section_question_one; ?> </h3>
+                                    <h3><?php echo $faq_section_question_one; ?></h3>
                                 </div>
                                 <div class="mil-faq-answer">
                                     <div class="custom-list"><?php echo $faq_section_answer_one; ?></div>
                                 </div>
                             </div>
+                            <?php endif; ?>
 
+                            <?php if (!empty($faq__section_question_two) && !empty($faq_section_answer_two)): ?>
                             <div class="mil-faq-item mil-fade-up">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3><?php echo $faq__section_question_two; ?> </h3>
+                                    <h3><?php echo $faq__section_question_two; ?></h3>
                                 </div>
                                 <div class="mil-faq-answer">
                                     <div class="custom-list"><?php echo $faq_section_answer_two; ?></div>
                                 </div>
                             </div>
+                            <?php endif; ?>
 
+                            <?php if (!empty($faq_section_question_three) && !empty($faq_section_answer_three)): ?>
                             <div class="mil-faq-item mil-fade-up">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3><?php echo $faq_section_question_three; ?> </h3>
+                                    <h3><?php echo $faq_section_question_three; ?></h3>
                                 </div>
                                 <div class="mil-faq-answer">
                                     <div class="custom-list"><?php echo $faq_section_answer_three; ?></div>
                                 </div>
                             </div>
+                            <?php endif; ?>
 
+                            <?php if (!empty($faq_section_question_four) && !empty($faq_section_answer_four)): ?>
                             <div class="mil-faq-item mil-fade-up">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3><?php echo $faq_section_question_four; ?> </h3>
+                                    <h3><?php echo $faq_section_question_four; ?></h3>
                                 </div>
                                 <div class="mil-faq-answer">
                                     <div class="custom-list"><?php echo $faq_section_answer_four; ?></div>
                                 </div>
                             </div>
+                            <?php endif; ?>
 
+                            <?php if (!empty($faq_section_question_five) && !empty($faq_section_answer_five)): ?>
                             <div class="mil-faq-item mil-fade-up">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3><?php echo $faq_section_question_five; ?> </h3>
+                                    <h3><?php echo $faq_section_question_five; ?></h3>
                                 </div>
                                 <div class="mil-faq-answer">
                                     <div class="custom-list-01"><?php echo $faq_section_answer_five; ?></div>
                                 </div>
                             </div>
+                            <?php endif; ?>
 
+                            <?php if (!empty($faq_section_question_six) && !empty($faq_section_answer_six)): ?>
                             <div class="mil-faq-item mil-fade-up">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3><?php echo $faq_section_question_six; ?> </h3>
+                                    <h3><?php echo $faq_section_question_six; ?></h3>
                                 </div>
                                 <div class="mil-faq-answer">
                                     <div class="custom-list"><?php echo $faq_section_answer_six; ?></div>
                                 </div>
                             </div>
+                            <?php endif; ?>
                         </div>
+
 
                         <!-- amenity -->
                         <div class="row mil-mb-60-adapt">
