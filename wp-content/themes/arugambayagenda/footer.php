@@ -23,12 +23,12 @@
                         </div>
                         <div class="col-md-7 col-lg-6">
                             <div class="row justify-content-end">
-                                <div class="col-md-6 col-lg-7 mil-mb-60">
+                                <div class="col-md-6 col-lg-7 mil-mb-60 mx-md-auto">
                                     <?php
                                     $active_post_ids = array(12, 14, 26, 302, 301, 299, 24, 298, 297, 296, 293, 292, 282, 125);
                                     ?>
                                     <nav class="mil-footer-menu">
-                                        <ul class="footer-link">
+                                        <ul class="footer-link text-center text-md-left">
                                             <li class="<?php if (get_the_ID() == '6') { echo 'mil-active active'; } ?>">
                                                 <a href="<?php bloginfo('url'); ?>/">Home</a>
                                             </li>
