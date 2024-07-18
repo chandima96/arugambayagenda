@@ -23,26 +23,28 @@
                         <div class="col-md-7 col-lg-6">
                             <div class="row justify-content-end">
                                 <div class="col-md-6 col-lg-7 mil-mb-60">
-
-                                <nav class="mil-footer-menu">
-                                    <ul class="footer-link">
-                                        <li class="<?php if (get_the_ID() == '6') { echo 'mil-active active'; } ?>">
-                                            <a href="<?php bloginfo('url'); ?>/">Home</a>
-                                        </li>
-                                        <li class="<?php if (get_the_ID() == '325') { echo 'mil-active active'; } ?>">
-                                            <a href="<?php bloginfo('url'); ?>/about">About</a>
-                                        </li>
-                                        <li class="<?php if (get_the_ID() == '10') { echo 'mil-active active'; } ?>">
-                                            <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
-                                        </li>
-                                        <li class="<?php if (get_the_ID() == '11') { echo 'mil-active active'; } ?>">
-                                            <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
-                                        </li>
-                                        <li class="<?php if (get_the_ID() == '31') { echo 'mil-active active'; } ?>">
-                                            <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
-                                        </li>
-                                    </ul>
-                                </nav>
+                                    <?php
+                                    $active_post_ids = array(12, 14, 26, 302, 301, 299, 24, 298, 297, 296, 293, 292, 282, 125);
+                                    ?>
+                                    <nav class="mil-footer-menu">
+                                        <ul class="footer-link">
+                                            <li class="<?php if (get_the_ID() == '6') { echo 'mil-active active'; } ?>">
+                                                <a href="<?php bloginfo('url'); ?>/">Home</a>
+                                            </li>
+                                            <li class="<?php if (in_array(get_the_ID(), $active_post_ids)) { echo 'mil-active active'; } ?>">
+                                                <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
+                                            </li>
+                                            <li class="<?php if (get_the_ID() == '325') { echo 'mil-active active'; } ?>">
+                                                <a href="<?php bloginfo('url'); ?>/about">About</a>
+                                            </li>
+                                            <li class="<?php if (get_the_ID() == '11') { echo 'mil-active active'; } ?>">
+                                                <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
+                                            </li>
+                                            <li class="<?php if (get_the_ID() == '31') { echo 'mil-active active'; } ?>">
+                                                <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
 
 
 
