@@ -122,6 +122,6 @@ footer .mil-footer-content .mil-logo img {
     max-height: 1400px !important;
 }
 
-.custom-list .col-lg-5.mt-5 {
+.custom-list > .col-lg-5.mt-5 {
     margin-top: 0 !important;
 }
