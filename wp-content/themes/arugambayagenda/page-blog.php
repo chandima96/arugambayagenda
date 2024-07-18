@@ -259,8 +259,8 @@ get_header();
             <div class="container">
                 <div class="row justify-content-between align-items-end mil-mb-100">
                     <div class="col-lg-7">
-                        <div class="mil-suptitle mil-fade-up mil-mb-20"><?php echo $features_top_line; ?></div>
-                        <h2 class="mil-fade-up"><?php echo $features_title; ?></h2>
+                        <div class="mil-suptitle mil-fade-up mil-mb-20">FEATURES</div>
+                        <h2 class="mil-fade-up">Our best rooms</h2>
                     </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
