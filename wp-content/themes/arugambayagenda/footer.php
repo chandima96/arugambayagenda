@@ -79,7 +79,7 @@
                                 <div class="col-md-6 col-lg-5 mil-mb-40">
 
                                     <h5 class="mil-mb-20">Contact</h5>
-                                    <a href="info@arugambayagenda.com" class="mil-light-soft">info@arugambayagenda.com</a>
+                                    <a href="mailto:info@arugambayagenda.com" class="mil-light-soft">info@arugambayagenda.com</a>
                                     <a href="tel:+94766899188" class="mil-light-soft">+94766899188</a> <br>
                                     <a href="tel:+94726479635" class="mil-light-soft">+94726479635</a>
 
