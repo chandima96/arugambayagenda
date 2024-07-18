@@ -69,7 +69,7 @@
                                 <div class="col-md-6 col-lg-5 mil-mb-40">
 
                                     <h5 class="mil-mb-20">Location</h5>
-                                    <a href=""><p> No.54,<br>
+                                    <a href="https://maps.app.goo.gl/iUfoQuGYqZxae2wM8" target="_blank" class="mil-light-soft"><p> No.54,<br>
                                         Tsunami Hotel Road,<br>
                                         Arugambay, 32500<br>
                                         Pottuvil, Srilanka
@@ -79,9 +79,9 @@
                                 <div class="col-md-6 col-lg-5 mil-mb-40">
 
                                     <h5 class="mil-mb-20">Contact</h5>
-                                    <a href="">info@arugambayagenda.com</a>
-                                    <a href="">+94766899188</a>
-                                    <a href="">+94726479635</a>
+                                    <a href="info@arugambayagenda.com" class="mil-light-soft">info@arugambayagenda.com</a>
+                                    <a href="tel:+94766899188" class="mil-light-soft">+94766899188</a> <br>
+                                    <a href="tel:+94726479635" class="mil-light-soft">+94726479635</a>
 
                                 </div>
                             </div>
