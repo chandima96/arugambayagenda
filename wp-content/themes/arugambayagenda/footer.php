@@ -52,11 +52,8 @@
                                             </li>
                                         </ul>
                                     </nav>
-
-
-
-
                                 </div>
+
                                 <div class="col-md-6 col-lg-5 mil-mb-60">
 
                                     <ul class="mil-menu-list">
