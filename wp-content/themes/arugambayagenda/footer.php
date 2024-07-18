@@ -26,23 +26,24 @@
 
                                 <nav class="mil-footer-menu">
                                     <ul class="footer-link">
-                                        <li class="mil-active <?php if (get_the_ID() == '6') { echo 'active'; } ?>">
+                                        <li class="<?php if (get_the_ID() == '6') { echo 'mil-active active'; } ?>">
                                             <a href="<?php bloginfo('url'); ?>/">Home</a>
                                         </li>
-                                        <li class="mil-active <?php if (get_the_ID() == '325') { echo 'active'; } ?>">
+                                        <li class="<?php if (get_the_ID() == '325') { echo 'mil-active active'; } ?>">
                                             <a href="<?php bloginfo('url'); ?>/about">About</a>
                                         </li>
-                                        <li class="mil-active <?php if (get_the_ID() == '10') { echo 'active'; } ?>">
+                                        <li class="<?php if (get_the_ID() == '10') { echo 'mil-active active'; } ?>">
                                             <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
                                         </li>
-                                        <li class="mil-active <?php if (get_the_ID() == '11') { echo 'active'; } ?>">
+                                        <li class="<?php if (get_the_ID() == '11') { echo 'mil-active active'; } ?>">
                                             <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
                                         </li>
-                                        <li class="mil-active <?php if (get_the_ID() == '31') { echo 'active'; } ?>">
+                                        <li class="<?php if (get_the_ID() == '31') { echo 'mil-active active'; } ?>">
                                             <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
                                         </li>
                                     </ul>
                                 </nav>
+
 
 
 
