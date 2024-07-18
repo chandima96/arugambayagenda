@@ -173,3 +173,7 @@ footer .mil-footer-content .mil-logo img {
 .custom-logo-02 {
     width: 100px;
 }
+
+.fw-500 {
+    font-weight: 500 !important;
+}
