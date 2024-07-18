@@ -146,7 +146,7 @@ $our_blog_description = get_field('our_blog_description');
                         </a>
                     </div>
                     <div class="col-md-6 col-xl-3">
-                        <a href="<?php bloginfo('url'); ?>/ride-with-us" class="mil-service-card mil-offset mil-mb-40-adapt mil-fade-up">
+                        <a href="<?php bloginfo('url'); ?>/taxi-service" class="mil-service-card mil-offset mil-mb-40-adapt mil-fade-up">
                             <div class="mil-img-frame">
                                 <img src="<?php echo $service_section_ride_with_us_image; ?>" alt="img">
                             </div>
