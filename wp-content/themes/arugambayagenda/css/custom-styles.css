@@ -112,6 +112,7 @@ footer .mil-footer-content .mil-logo img {
 
 .mil-faq-answer p {
     padding: 0px 0 20px 0 !important;
+    font-weight: 400 !important;
 }
 
 .custom-list h6 {
@@ -124,4 +125,8 @@ footer .mil-footer-content .mil-logo img {
 
 .custom-list > .col-lg-5.mt-5 {
     margin-top: 0 !important;
+}
+
+.custom-p {
+    font-weight: 400 !important;
 }
