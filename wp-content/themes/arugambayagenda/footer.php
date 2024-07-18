@@ -15,8 +15,8 @@
                             </div>
 
                             <div>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/logo/Tripadvisor.svg"  alt="aquarelle">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/logo/gyg-logo.svg" class="mt-5" alt="aquarelle">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/logo/Tripadvisor.svg" class="custom-logo-01" alt="aquarelle">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/logo/gyg-logo.svg" class="mt-2 custom-logo-02" alt="aquarelle">
                             </div>
 
                         </div>
@@ -24,8 +24,8 @@
                             <div class="row justify-content-end">
                                 <div class="col-md-6 col-lg-7 mil-mb-60">
 
-                                    <nav class="mil-footer-menu footer-link">
-                                        <ul>
+                                    <nav class="mil-footer-menu">
+                                        <ul class="footer-link">
                                             <li class="mil-active">
                                                 <a href="home-1.html">Home</a>
                                             </li>
