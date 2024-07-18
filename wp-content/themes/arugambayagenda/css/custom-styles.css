@@ -218,6 +218,10 @@ footer .mil-footer-content .mil-logo img {
 }
 
 @media (max-width: 768px) {
+    footer .mil-footer-content .mil-logo {
+        display: inline !important;
+    }
+
     footer .mil-footer-content {
         text-align: center !important;
     }
