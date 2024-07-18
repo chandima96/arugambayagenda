@@ -160,3 +160,7 @@ footer .mil-footer-content .mil-logo img {
     padding-bottom: 20px;
     text-decoration: none !important;
 }
+
+.footer-link {
+    font-size: 22px !important;
+}

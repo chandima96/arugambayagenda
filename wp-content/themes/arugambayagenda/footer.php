@@ -9,25 +9,22 @@
                             <a href="<?php bloginfo('url'); ?>/" class="mil-logo mil-mb-40">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo/footer-logo.png" alt="aquarelle">
                             </a>
+                            <div>
+                                <h3 class="mil-mb-10">About</h3>
+                                <p class="mil-mb-20">Explore Sri Lanka's cultural wonders with Arugambay Agenda's seamless island transfers and curated tours.</p>
+                            </div>
 
-                            <p class="mil-mb-20">Subscribe our newsletter:</p>
-
-                            <form class="mil-subscribe-form">
-                                <input type="text" placeholder="Enter our email">
-                                <button type="submit">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </button>
-                            </form>
+                            <div>
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/logo/Tripadvisor.svg"  alt="aquarelle">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/logo/gyg-logo.svg" class="mt-5" alt="aquarelle">
+                            </div>
 
                         </div>
                         <div class="col-md-7 col-lg-6">
                             <div class="row justify-content-end">
                                 <div class="col-md-6 col-lg-7 mil-mb-60">
 
-                                    <nav class="mil-footer-menu">
+                                    <nav class="mil-footer-menu footer-link">
                                         <ul>
                                             <li class="mil-active">
                                                 <a href="home-1.html">Home</a>
@@ -54,7 +51,7 @@
                                         <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
                                         <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
                                         <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
-                                        <li><a href="#." class="mil-light-soft">Careers</a></li>
+                                        <li><a href="#." class="mil-light-soft">Site Map</a></li>
                                     </ul>
 
                                 </div>
@@ -141,7 +138,7 @@
                 <form>
                     <div class="row">
                         <div class="col-xl-6">
-                            <div class="mil-field-frame mil-mb-20">
+                            <div class="mil-field-frame footer mil-mb-20">
                                 <label>Name</label>
                                 <input type="text" placeholder="Enter Full Name" >
                             </div>
