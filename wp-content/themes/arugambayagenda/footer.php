@@ -10,7 +10,7 @@
                             </a> -->
                             <div>
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo/footer-logo.png" alt="aquarelle">
-
+                                <a href="https://www.tripadvisor.com/Attraction_Review-g3348959-d25775340-Reviews-Arugambay_Agenda-Arugam_Bay_Eastern_Province.html" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/logo/Tripadvisor.svg" class="custom-logo-01" alt="aquarelle"></a>
                                 <!-- <h3 class="mb-3">About</h3> -->
                                 <p class="mil-light-soft">Explore Sri Lanka's cultural wonders with Arugambay Agenda's seamless island transfers and curated tours.</p>
                                 <!-- <div class="mil-mb-20 fw-500"></div> -->
