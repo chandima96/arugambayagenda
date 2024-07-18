@@ -146,7 +146,7 @@ get_header();
         <div class="mil-p-0-100">
             <div class="container">
                 <div class="mil-map-frame mil-fade-up">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9856.28335847757!2d-3.7356696923005295!3d36.72430199961263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7187e1f7c4b7e7%3A0x9ab7e6940ad5f587!2sPlaya%20Marina%20del%20Este!5e0!3m2!1suk!2sua!4v1701773054642!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://maps.app.goo.gl/iUfoQuGYqZxae2wM8" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
