@@ -289,10 +289,10 @@ $seventh_section_title = get_field('seventh_section_title');
                             <div class="mil-faq-item mil-fade-up">
                                 <div class="mil-faq-question">
                                     <span class="mil-icon">+</span>
-                                    <h3><?php echo $faq_section_question_five; ?></h3>
+                                    <h3><?php echo $faq_section_question_five; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <p><?php echo $faq_section_answer_five; ?></p>
+                                    <div class="custom-list"><?php echo $faq_section_answer_five; ?></div>
                                 </div>
                             </div>
 
@@ -302,7 +302,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                     <h3><?php echo $faq_section_question_six; ?> </h3>
                                 </div>
                                 <div class="mil-faq-answer">
-                                    <p><?php echo $faq_section_answer_six; ?> </p>
+                                    <div class="custom-list"><?php echo $faq_section_answer_six; ?></div>
                                 </div>
                             </div>
                         </div>
