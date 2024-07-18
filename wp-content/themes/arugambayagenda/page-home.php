@@ -858,7 +858,7 @@ $our_blog_description = get_field('our_blog_description');
                     </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
-                            <a href="blog.html" class="mil-button">
+                            <a href="<?php bloginfo('url'); ?>/blog" class="mil-button">
                                 <span>View all</span>
                             </a>
                         </div>
