@@ -60,18 +60,18 @@
                     <div class="mil-mobile-menu">
                         <nav class="mil-menu">
                             <ul>
-                                <li class="mil-current">
+                                <li class="<?php if (get_the_ID() == '6') { echo 'mil-current active'; } ?>">
                                     <a href="<?php bloginfo('url'); ?>/">Home</a>
                                 </li>
-                                <li>
-                                    <a href="#.">About</a>
-                                    <ul>
-                                        <li><a href="about.html">Wild Life Tours</a></li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="service.html">Single service</a></li>
-                                    </ul>
+
+                                <li class="<?php if (get_the_ID() == '325') { echo 'mil-current active'; } ?>">
+                                    <a href="<?php bloginfo('url'); ?>/about">About</a>
                                 </li>
-                                <li>
+
+                                    <?php
+                                    $active_post_ids = array(12, 14, 26, 302, 301, 299, 24, 298, 297, 296, 293, 292, 282, 125);
+                                    ?>
+                                <li class="<?php if (in_array(get_the_ID(), $active_post_ids)) { echo 'mil-current active'; } ?>"> 
                                     <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
                                     <ul>
                                         <li><a href="<?php bloginfo('url'); ?>/wild-life-tours">Wild Life Tours</a></li>
@@ -80,8 +80,12 @@
                                         <li><a href="<?php bloginfo('url'); ?>/ride-with-us">Ride With Us</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="<?php bloginfo('url'); ?>/contact-us">Contact</a></li>
-                                <li>
+
+                                <li class="<?php if (get_the_ID() == '11') { echo 'mil-current active'; } ?>">
+                                    <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
+                                </li>
+
+                                <li class="<?php if (get_the_ID() == '31') { echo 'mil-current active'; } ?>">
                                     <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
                                 </li>
                             </ul>
