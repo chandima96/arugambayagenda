@@ -186,4 +186,6 @@ footer .mil-footer-content .mil-logo img {
     font-size: 20px !important;
     letter-spacing: 0 !important;
     line-height: 35px !important;
+    font-weight: 500;
+    color: rgb(32, 79, 94) !important;
 }

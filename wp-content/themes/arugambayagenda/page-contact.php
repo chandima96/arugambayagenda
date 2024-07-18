@@ -119,7 +119,7 @@ get_header();
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
                             </div>
-                            <div class="contact-custom-text mil-mb-20">">info@arugambayagenda. com</div>
+                            <div class="contact-custom-text mil-mb-20">info@arugambayagenda. com</div>
                             <p>Write to us. We respond quickly</p>
                         </div>
                     </div>
