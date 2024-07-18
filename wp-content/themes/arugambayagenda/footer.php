@@ -86,7 +86,7 @@
                             <div class="mil-mb-20">
                                 <ul class="mil-social-icons">
                                     <li>
-                                        <a href="#." target="_blank" class="social-icon">
+                                        <a href="https://www.facebook.com/profile.php?id=100092304975049&mibextid=LQQJ4d" target="_blank" class="social-icon">
                                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="15" cy="15" r="14" stroke="#204F5E" stroke-width="2" />
                                                 <svg x="7" y="7" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -96,7 +96,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#." target="_blank" class="social-icon">
+                                        <a href="https://www.instagram.com/arugambayagenda/?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank" class="social-icon">
                                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="15" cy="15" r="14" stroke="#204F5E" stroke-width="2" />
                                                 <svg x="7" y="7" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -106,7 +106,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#." target="_blank" class="social-icon">
+                                        <a href="https://www.threads.net/@arugambayagenda" target="_blank" class="social-icon">
                                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="15" cy="15" r="14" stroke="#204F5E" stroke-width="2" />
                                                 <svg x="7" y="7" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -116,7 +116,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#." target="_blank" class="social-icon">
+                                        <a href="https://www.arugambayagenda.com/info.arugambayagenda.com" target="_blank" class="social-icon">
                                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="15" cy="15" r="14" stroke="#204F5E" stroke-width="2" />
                                                 <svg x="7" y="7" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
