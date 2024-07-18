@@ -38,6 +38,9 @@
                                             <li class="<?php if (get_the_ID() == '328') { echo 'mil-active active'; } ?>">
                                                 <a href="<?php bloginfo('url'); ?>/activities">Activities</a>
                                             </li>
+                                            <li class="<?php if (get_the_ID() == '13') { echo 'mil-active active'; } ?>">
+                                                <a href="<?php bloginfo('url'); ?>/taxi-service">Taxi Service</a>
+                                            </li>
                                             <li class="<?php if (get_the_ID() == '325') { echo 'mil-active active'; } ?>">
                                                 <a href="<?php bloginfo('url'); ?>/about">About</a>
                                             </li>
