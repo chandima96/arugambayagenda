@@ -20,6 +20,9 @@ h1 {
     h2 { 
         font-size: 2.5rem !important;  
     }
+    .mil-top-panel .mil-top-panel-content .mil-logo img {
+        width: 50% !important;
+    }
   }
 
 @media (max-width: 576px) {
@@ -29,10 +32,10 @@ h1 {
     h2 { 
         font-size: 2rem !important;  
     }
+    .mil-top-panel .mil-top-panel-content .mil-logo img {
+        width: 40% !important;
+    }
   }  
-
-  
-
 
 p {
     font-family: 'Open Sans' !important;
@@ -85,8 +88,9 @@ h3 {
 }
 
 .mil-top-panel .mil-top-panel-content .mil-logo img {
-    width: 90% !important;
+    width: 75% !important;
 }
+
 
 footer .mil-footer-content .mil-logo img {
     width: 250px !important;
