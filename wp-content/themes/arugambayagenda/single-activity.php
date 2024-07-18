@@ -64,7 +64,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                 <div class="mil-suptitle mil-breadcrumbs mil-light">
                                     <ul>
                                         <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
-                                        <li><a href="<?php bloginfo('url'); ?>/surfing">Activities</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/activities">Activities</a></li>
                                         <li><a href="#"><?php the_title(); ?></a></li>
                                     </ul>
                                 </div>
