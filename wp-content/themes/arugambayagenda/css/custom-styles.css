@@ -177,3 +177,7 @@ footer .mil-footer-content .mil-logo img {
 .fw-500 {
     font-weight: 500 !important;
 }
+
+.mil-footer-menu ul li {
+    margin-bottom: 15px !important;
+}
