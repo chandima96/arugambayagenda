@@ -68,14 +68,20 @@
 
                                 <div class="col-md-6 col-lg-5 mil-mb-40">
 
-                                    <h5 class="mil-mb-20">Spain</h5>
-                                    <p>71 South Los Carneros Road, California +51 174 705 812</p>
+                                    <h5 class="mil-mb-20">Location</h5>
+                                    <a href=""><p> No.54,<br>
+                                        Tsunami Hotel Road,<br>
+                                        Arugambay, 32500<br>
+                                        Pottuvil, Srilanka
+                                    </p></a>
 
                                 </div>
                                 <div class="col-md-6 col-lg-5 mil-mb-40">
 
-                                    <h5 class="mil-mb-20">Argentina</h5>
-                                    <p>Leehove 40, 2678 MC De Lier, Netherlands +31 174 705 811</p>
+                                    <h5 class="mil-mb-20">Contact</h5>
+                                    <a href="">info@arugambayagenda.com</a>
+                                    <a href="">+94766899188</a>
+                                    <a href="">+94726479635</a>
 
                                 </div>
                             </div>
