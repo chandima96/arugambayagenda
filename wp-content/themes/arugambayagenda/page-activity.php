@@ -108,6 +108,7 @@ get_header();
                                 <a href="<?php bloginfo('url'); ?>/all-tours">All Tours</a>
                                 <a href="<?php bloginfo('url'); ?>/wild-life-tours">Wild Life Tours</a>
                                 <a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a>
+                                <a href="<?php bloginfo('url'); ?>/surfing">Surfing</a>
                             </div>
                         </div>
 
@@ -117,7 +118,7 @@ get_header();
                 <div class="row mil-mb-40">
                     <?php 
                         $the_query = new WP_Query(array(
-                            'post_type' => 'surfing-tour',
+                            'post_type' => 'activity',
                             'posts_per_page' => 100,
                             'post__not_in' => array($id),
                         ));

@@ -34,17 +34,17 @@
                                             <li class="<?php if (in_array(get_the_ID(), $active_post_ids)) { echo 'mil-active active'; } ?>">
                                                 <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
                                             </li>
-                                            <li class="<?php if (get_the_ID() == '325') { echo 'mil-active active'; } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/about">Activities</a>
+                                            <li class="<?php if (get_the_ID() == '328') { echo 'mil-active active'; } ?>">
+                                                <a href="<?php bloginfo('url'); ?>/activities">Activities</a>
                                             </li>
                                             <li class="<?php if (get_the_ID() == '325') { echo 'mil-active active'; } ?>">
                                                 <a href="<?php bloginfo('url'); ?>/about">About</a>
                                             </li>
-                                            <li class="<?php if (get_the_ID() == '11') { echo 'mil-active active'; } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
-                                            </li>
                                             <li class="<?php if (get_the_ID() == '31') { echo 'mil-active active'; } ?>">
                                                 <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
+                                            </li>
+                                            <li class="<?php if (get_the_ID() == '11') { echo 'mil-active active'; } ?>">
+                                                <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
                                             </li>
                                         </ul>
                                     </nav>

@@ -108,6 +108,7 @@ get_header();
                                 <a href="<?php bloginfo('url'); ?>/all-tours">All Tours</a>
                                 <a href="<?php bloginfo('url'); ?>/wild-life-tours">Wild Life Tours</a>
                                 <a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a>
+                                <a href="<?php bloginfo('url'); ?>/activities">Activities</a>
                             </div>
                         </div>
 

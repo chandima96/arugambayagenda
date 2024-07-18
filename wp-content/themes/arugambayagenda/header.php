@@ -81,16 +81,14 @@
                                     </ul>
                                 </li>
 
-                                <li class="<?php if (get_the_ID() == '11') { echo 'mil-current active'; } ?>">
-                                    <a href="<?php bloginfo('url'); ?>/contact-us">Activities</a>
+                                <li class="<?php if (get_the_ID() == '328') { echo 'mil-current active'; } ?>">
+                                    <a href="<?php bloginfo('url'); ?>/activities">Activities</a>
                                 </li>
-
-                                <li class="<?php if (get_the_ID() == '11') { echo 'mil-current active'; } ?>">
-                                    <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
-                                </li>
-
                                 <li class="<?php if (get_the_ID() == '31') { echo 'mil-current active'; } ?>">
                                     <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
+                                </li>
+                                <li class="<?php if (get_the_ID() == '11') { echo 'mil-current active'; } ?>">
+                                    <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
                                 </li>
                             </ul>
                         </nav>
