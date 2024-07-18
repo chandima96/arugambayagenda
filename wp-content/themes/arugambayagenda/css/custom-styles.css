@@ -82,24 +82,21 @@ h3 {
 }
 
 .mil-top-panel .mil-top-panel-content .mil-logo img {
-    width: 40% !important; /* Smallest screen width */
+    width: 40% !important; 
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .mil-top-panel .mil-top-panel-content .mil-logo img {
         width: 50% !important;
     }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .mil-top-panel .mil-top-panel-content .mil-logo img {
         width: 60% !important;
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .mil-top-panel .mil-top-panel-content .mil-logo img {
         width: 75% !important;
