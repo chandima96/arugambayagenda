@@ -117,6 +117,7 @@ footer .mil-footer-content .mil-logo img {
 
 .custom-list h6 {
     padding-bottom: 20px;
+    text-decoration: none !important;
 }
 
 .mil-faq-item.active .mil-faq-answer {
