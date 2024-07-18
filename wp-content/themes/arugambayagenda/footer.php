@@ -24,25 +24,26 @@
                             <div class="row justify-content-end">
                                 <div class="col-md-6 col-lg-7 mil-mb-60">
 
-                                    <nav class="mil-footer-menu">
-                                        <ul class="footer-link">
-                                            <li class="mil-active <?php if(get_the_ID() == '6') { ?>active<?php } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/">Home</a>
-                                            </li>
-                                            <li class="mil-active <?php if(get_the_ID() == '325') { ?>active<?php } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/">About</a>
-                                            </li>
-                                            <li class="mil-active <?php if(get_the_ID() == '10') { ?>active<?php } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
-                                            </li>
-                                            <li class="mil-active <?php if(get_the_ID() == '11') { ?>active<?php } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
-                                            </li>
-                                            <li class="mil-active <?php if(get_the_ID() == '31') { ?>active<?php } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
+                                <nav class="mil-footer-menu">
+                                    <ul class="footer-link">
+                                        <li class="mil-active <?php if (get_the_ID() == '6') echo 'active'; ?>">
+                                            <a href="<?php bloginfo('url'); ?>/">Home</a>
+                                        </li>
+                                        <li class="mil-active <?php if (get_the_ID() == '325') echo 'active'; ?>">
+                                            <a href="<?php bloginfo('url'); ?>/about">About</a>
+                                        </li>
+                                        <li class="mil-active <?php if (get_the_ID() == '10') echo 'active'; ?>">
+                                            <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
+                                        </li>
+                                        <li class="mil-active <?php if (get_the_ID() == '11') echo 'active'; ?>">
+                                            <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
+                                        </li>
+                                        <li class="mil-active <?php if (get_the_ID() == '31') echo 'active'; ?>">
+                                            <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
 
                                 </div>
                                 <div class="col-md-6 col-lg-5 mil-mb-60">
