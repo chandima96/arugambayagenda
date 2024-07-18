@@ -216,3 +216,31 @@ footer .mil-footer-content .mil-logo img {
     font-weight: 500;
     color: rgb(32, 79, 94) !important;
 }
+
+@media (max-width: 768px) {
+    footer .mil-footer-content {
+        text-align: center !important;
+    }
+
+    footer .mil-footer-content .row {
+        justify-content: center !important;
+    }
+
+    footer .mil-footer-content .col-md-4,
+    footer .mil-footer-content .col-md-7,
+    footer .mil-footer-content .col-lg-6,
+    footer .mil-footer-content .col-lg-4,
+    footer .mil-footer-content .col-lg-5,
+    footer .mil-footer-content .col-md-6 {
+        margin-bottom: 20px !important;
+    }
+
+    footer .mil-footer-content .mil-social-icons {
+        justify-content: center !important;
+    }
+
+    footer .mil-footer-content .mil-social-icons li {
+        display: inline-block !important;
+        margin: 0 10px !important;
+    }
+}
