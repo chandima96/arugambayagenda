@@ -181,3 +181,9 @@ footer .mil-footer-content .mil-logo img {
 .mil-footer-menu ul li {
     margin-bottom: 15px !important;
 }
+
+.contact-custom-text {
+    font-size: 20px !important;
+    letter-spacing: 0 !important;
+    line-height: 35px !important;
+}
