@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: Surfing 
+	Template Name: Activity 
 */
 get_header();
 

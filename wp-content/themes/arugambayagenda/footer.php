@@ -35,6 +35,9 @@
                                                 <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
                                             </li>
                                             <li class="<?php if (get_the_ID() == '325') { echo 'mil-active active'; } ?>">
+                                                <a href="<?php bloginfo('url'); ?>/about">Activities</a>
+                                            </li>
+                                            <li class="<?php if (get_the_ID() == '325') { echo 'mil-active active'; } ?>">
                                                 <a href="<?php bloginfo('url'); ?>/about">About</a>
                                             </li>
                                             <li class="<?php if (get_the_ID() == '11') { echo 'mil-active active'; } ?>">

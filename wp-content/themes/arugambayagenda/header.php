@@ -82,6 +82,10 @@
                                 </li>
 
                                 <li class="<?php if (get_the_ID() == '11') { echo 'mil-current active'; } ?>">
+                                    <a href="<?php bloginfo('url'); ?>/contact-us">Activities</a>
+                                </li>
+
+                                <li class="<?php if (get_the_ID() == '11') { echo 'mil-current active'; } ?>">
                                     <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
                                 </li>
 
