@@ -153,8 +153,9 @@ $seventh_section_title = get_field('seventh_section_title');
                             <div class="col-12">
                                 <h3 class="mil-fade-up mil-mb-40">Key features</h3>
                             </div>
-                            <div class="col-xl-4">
 
+                            <?php if (!empty($feature_one_title)): ?>
+                            <div class="col-xl-4">
                                 <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon mil-icon-fix">
@@ -164,10 +165,11 @@ $seventh_section_title = get_field('seventh_section_title');
                                     </div>
                                     <h5><?php echo $feature_one_title; ?></h5>
                                 </div>
-
                             </div>
-                            <div class="col-xl-4">
+                            <?php endif; ?>
 
+                            <?php if (!empty($feature_two_title)): ?>
+                            <div class="col-xl-4">
                                 <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon mil-icon-fix">
@@ -177,10 +179,11 @@ $seventh_section_title = get_field('seventh_section_title');
                                     </div>
                                     <h5><?php echo $feature_two_title; ?></h5>
                                 </div>
-
                             </div>
-                            <div class="col-xl-4">
+                            <?php endif; ?>
 
+                            <?php if (!empty($feature_three_title)): ?>
+                            <div class="col-xl-4">
                                 <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon mil-icon-fix">
@@ -190,10 +193,11 @@ $seventh_section_title = get_field('seventh_section_title');
                                     </div>
                                     <h5><?php echo $feature_three_title; ?></h5>
                                 </div>
-
                             </div>
-                            <div class="col-xl-4">
+                            <?php endif; ?>
 
+                            <?php if (!empty($feature_four_title)): ?>
+                            <div class="col-xl-4">
                                 <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon">
@@ -203,10 +207,11 @@ $seventh_section_title = get_field('seventh_section_title');
                                     </div>
                                     <h5><?php echo $feature_four_title; ?></h5>
                                 </div>
-
                             </div>
-                            <div class="col-xl-4">
+                            <?php endif; ?>
 
+                            <?php if (!empty($feature_five_title)): ?>
+                            <div class="col-xl-4">
                                 <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon">
@@ -216,10 +221,11 @@ $seventh_section_title = get_field('seventh_section_title');
                                     </div>
                                     <h5><?php echo $feature_five_title; ?></h5>
                                 </div>
-
                             </div>
-                            <div class="col-xl-4">
+                            <?php endif; ?>
 
+                            <?php if (!empty($feature_six_title)): ?>
+                            <div class="col-xl-4">
                                 <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon">
@@ -229,8 +235,8 @@ $seventh_section_title = get_field('seventh_section_title');
                                     </div>
                                     <h5><?php echo $feature_six_title; ?></h5>
                                 </div>
-
                             </div>
+                            <?php endif; ?>
                         </div>
                         <!-- features -->
 
@@ -390,7 +396,7 @@ $seventh_section_title = get_field('seventh_section_title');
                             <h3 class="mil-fade-up mil-mb-40"><?php echo $sixth_section_title; ?></h3>
 
                             <div class="mil-map-frame mil-fade-up mil-mb-100">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6393.16599479736!2d-2.430872248702666!3d36.81379446199894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7a9db1a1de493f%3A0xc6d411d11ab69d33!2sParque%20de%20Bici!5e0!3m2!1suk!2suk!4v1701096541420!5m2!1suk!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126763.75638037869!2d81.7486873!3d6.8464863!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5bdd4ea90a9dd%3A0x7011ba04a540ae4e!2sArugambay%20Agenda!5e0!3m2!1sen!2slk!4v1721294027474!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                         <!-- map end -->
@@ -535,9 +541,9 @@ $seventh_section_title = get_field('seventh_section_title');
         <!-- call to action end -->
 
         <!-- recommendation -->
-        <!-- <div class="mil-rooms mil-p-100-100">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 110%; bottom: 15%; left: -30%; opacity: .2" alt="shape">
-            <div class="container">
+        <div class="mil-rooms mil-p-100-100">
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 110%; bottom: 15%; left: -30%; opacity: .2" alt="shape"> -->
+            <!-- <div class="container">
                 <div class="row justify-content-between align-items-end mil-mb-100">
                     <div class="col-lg-7">
                         <div class="mil-suptitle mil-fade-up mil-mb-20">Welcome friend</div>
@@ -935,8 +941,8 @@ $seventh_section_title = get_field('seventh_section_title');
                     </div>
                 </div>
 
-            </div>
-        </div> -->
+            </div> -->
+        </div>
         <!-- recommendation end -->
 
 <?php get_footer(); ?>
