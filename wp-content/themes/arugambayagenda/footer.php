@@ -10,8 +10,8 @@
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo/footer-logo.png" alt="aquarelle">
                             </a>
                             <div>
-                                <h3 class="mb-3 fw-500">About</h3>
-                                <p class="mil-mb-20">Explore Sri Lanka's cultural wonders with Arugambay Agenda's seamless island transfers and curated tours.</p>
+                                <h3 class="mb-3">About</h3>
+                                <p class="mil-mb-20 fw-500">Explore Sri Lanka's cultural wonders with Arugambay Agenda's seamless island transfers and curated tours.</p>
                             </div>
 
                             <div>
