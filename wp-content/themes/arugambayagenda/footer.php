@@ -10,8 +10,9 @@
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo/footer-logo.png" alt="aquarelle">
                             </a>
                             <div>
-                                <h3 class="mb-3">About</h3>
-                                <div class="mil-mb-20 fw-500">Explore Sri Lanka's cultural wonders with Arugambay Agenda's seamless island transfers and curated tours.</div>
+                                <!-- <h3 class="mb-3">About</h3> -->
+                                <p class="mil-light-soft">Explore Sri Lanka's cultural wonders with Arugambay Agenda's seamless island transfers and curated tours.</p>
+                                <!-- <div class="mil-mb-20 fw-500"></div> -->
                             </div>
 
                             <div>
@@ -153,7 +154,7 @@
         <div class="mil-book-popup-frame">
             <div class="mil-book-popup">
                 <div class="mil-popup-head mil-mb-40">
-                    <h3 class="mil-h3-lg">Search</h3>
+                    <h3 class="mil-h3-lg">Book Now</h3>
                     <div class="mil-close-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
                             <line x1="18" y1="6" x2="6" y2="18"></line>
