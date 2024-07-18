@@ -161,9 +161,10 @@ footer .mil-footer-content .mil-logo img {
     text-decoration: none !important;
 }
 
-.footer-link {
+.mil-footer-menu ul li a {
     font-size: 22px !important;
 }
+
 
 .custom-logo-01 {
     width: 200px;
