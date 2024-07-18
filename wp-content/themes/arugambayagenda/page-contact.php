@@ -120,7 +120,7 @@ get_header();
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
                             </div>
-                            <h3 class="mil-mb-20">info@arugambayagenda.com</h3>
+                            <h3 class="mil-mb-20">info@arugambayagenda. com</h3>
                             <p>Write to us. We respond quickly</p>
                         </div>
                     </div>
@@ -146,7 +146,7 @@ get_header();
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
                             </div>
-                            <h3 class="mil-mb-20">No.54, Tsunami Hotel Road, Arugambay, 32500 Pottuvil, Srilanka</h3>
+                            <h3 class="mil-mb-20">No.54, Tsunami Hotel Road, Arugambay, 32500 Pottuvil, Srilanka.</h3>
                             <p>We invite you to visit us</p>
                         </div>
                     </div>
