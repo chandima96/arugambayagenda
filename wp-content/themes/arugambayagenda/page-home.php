@@ -38,6 +38,8 @@ $contact_page_title = get_field('about_us_title');
 $our_blog_top_line = get_field('our_blog_top_line');
 $our_blog_title = get_field('our_blog_title');
 $our_blog_description = get_field('our_blog_description');
+$review_location = get_field('review_location');
+$review_description = get_field('review_description');
 
 ?>
         <!-- banner -->
@@ -544,15 +546,31 @@ $our_blog_description = get_field('our_blog_description');
 
                         <div class="swiper-container mil-reviews-slider">
                             <div class="swiper-wrapper">
+                                    <?php 
+                                        $the_query = new WP_Query(array(
+                                            'post_type' => 'reviews',
+                                            'posts_per_page' => 100,
+                                            'post__not_in' => array($id),
+                                        ));
+                                        ?>
+                                        <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
+                                            <?php
+                                            $thumbnail_id = get_post_thumbnail_id();
+                                            $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
+                                            $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                                    ?>
                                 <div class="swiper-slide">
                                     <div class="mil-review-frame mil-text-center" data-swiper-parallax="-250" data-swiper-parallax-opacity="0">
                                         <div class="mil-fade-up">
-                                            <h3 class="mil-mb-10">Sarah Newman</h3>
-                                            <p class="mil-link mil-mb-40">Envato market</p>
+                                            <h3 class="mil-mb-10"><?php the_title(); ?></h3>
+                                            <p class="mil-link mil-mb-40"><?php echo $review_location; ?></p>
                                         </div>
-                                        <p class="mil-fade-up">An unforgettable stay at aquarelle! The beachfront location provided breathtaking views, and the hotel's blend of luxury and a relaxed atmosphere was perfect. The attentive staff and excellent amenities, including a refreshing pool and superb dining options, made my experience truly exceptional. aquarelle is a haven for those seeking relaxation with a touch of indulgence. Already looking forward to my next visit to this seaside paradise!</p>
+                                        <p class="mil-fade-up"><?php echo $review_description; ?></p>
                                     </div>
                                 </div>
+                                        <?php endwhile; endif; ?>
+                                        <?php wp_reset_postdata(); ?>
                             </div>
                         </div>
 
