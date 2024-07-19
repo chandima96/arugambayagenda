@@ -257,19 +257,19 @@ footer .mil-footer-content .mil-logo img {
 }
 
 .mil-iconbox-custom {
-    width: calc(33.333% - 20px);
-    box-sizing: border-box;
+    width: calc(33.333% - 20px) !important;
+    box-sizing: border-box !important;
 }
 
 @media (max-width: 1200px) {
     .mil-iconbox-custom {
-        width: calc(50% - 20px);
+        width: calc(50% - 20px) !important;
     }
 }
 
 @media (max-width: 768px) {
     .mil-iconbox-custom {
-        width: calc(100% - 20px);
+        width: calc(100% - 20px) !important;
     }
 }
 
