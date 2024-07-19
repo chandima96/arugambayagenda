@@ -438,10 +438,10 @@ $seventh_section_title = get_field('seventh_section_title');
                                     <div>Kids: <?php echo $size; ?></div>
                                 </li>
                             </ul>
-
-                            <div class="mil-book-window">
+                            <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?>            
+                            <!-- <div class="mil-book-window">
                                 <form>
-                                <div class="mil-field-frame mil-mb-20">
+                                    <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
                                         <input type="text" placeholder="Enter Full Name">
                                     </div>
@@ -455,15 +455,6 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <label>WhatsApp Number</label>
                                         <input type="text" placeholder="Enter WhatsApp Number">
                                     </div>
-                                    
-                                    <div class="mil-field-frame mil-mb-20">
-                                        <label for="Select an option">Select an option</label>
-                                        <select id="Select an option">
-                                            <option value="1" selected>Select an option</option>
-                                            <option value="2">WaveRise: Beginner Surf Experience</option>
-                                        </select>
-                                    </div>
-
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Check-in</label>
@@ -502,7 +493,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <span>Book now</span>
                                     </button>
                                 </form>
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>
