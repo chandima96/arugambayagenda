@@ -414,7 +414,7 @@ $review_description = get_field('review_description');
         <!-- call to action end -->
 
         <!-- about 1 -->
-        <div class="mil-about mil-p-100-0">
+        <!-- <div class="mil-about mil-p-100-0">
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape" style="width: 180%; bottom: -100%; left: -20%; opacity: .2" alt="shape">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
@@ -473,11 +473,11 @@ $review_description = get_field('review_description');
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- about 1 end -->
 
         <!-- about 2 -->
-        <div class="mil-about">
+        <!-- <div class="mil-about">
             <div class="container">
                 <div class="row justify-content-between align-items-center flex-sm-row-reverse">
                     <div class="col-xl-5 mil-mb-100">
@@ -523,7 +523,7 @@ $review_description = get_field('review_description');
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- about 2 end -->
 
         <!-- reviews -->
@@ -597,7 +597,7 @@ $review_description = get_field('review_description');
         <!-- reviews end -->
 
         <!-- blog -->
-        <div class="mil-rooms mil-p-100-100">
+        <!-- <div class="mil-rooms mil-p-100-100">
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape" style="width: 85%; top: -20%; right: -30%; transform: rotate(-30deg) scaleX(-1);" alt="shape">
             <div class="container">
                 <div class="mil-text-center">
@@ -808,7 +808,7 @@ $review_description = get_field('review_description');
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- blog end -->
 
         <?php get_footer(); ?>
