@@ -42,17 +42,17 @@ get_header();
         <!-- contact form -->
         <div class="mil-content-pad mil-p-100-100">
             <div class="container">
-                <form>
+                <!-- <form>
                     <div class="row">
                         <div class="col-xl-6">
                             <div class="mil-field-frame mil-mb-20">
-                                <label>Name</label>
+                                <label>Full Name</label>
                                 <input type="text" placeholder="Enter Full Name">
                             </div>
                         </div>
                         <div class="col-xl-6">
                             <div class="mil-field-frame mil-mb-20">
-                                <label>Email</label>
+                                <label>E-Mail Address</label>
                                 <input type="email" placeholder="Enter Email Address">
                             </div>
                         </div>
@@ -111,7 +111,8 @@ get_header();
                             </div>
                         </div>
                     </div>
-                </form>
+                </form> -->
+                <?php echo do_shortcode('[contact-form-7 id="ffe4c61" title="Contact form Taxi Service"]'); ?>            
             </div>
         </div>
         <!-- contact form end -->
