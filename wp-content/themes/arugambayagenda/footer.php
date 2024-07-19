@@ -209,7 +209,7 @@
         </div> -->
         <!-- book popup end -->
 
-        <div class="mil-progressbar"></div>
+        <!-- <div class="mil-progressbar"></div> -->
 
     </div>
     <!-- wrapper end -->
