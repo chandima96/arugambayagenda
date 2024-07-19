@@ -439,7 +439,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                 </li>
                             </ul>
 
-                            <div class="mil-book-window">
+                            <!-- <div class="mil-book-window">
                                 <form>
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
@@ -493,8 +493,8 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <span>Book now</span>
                                     </button>
                                 </form>
-                            </div>
-
+                            </div> -->
+                            <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?>            
                         </div>
                     </div>
                     <!-- sidebar end -->
