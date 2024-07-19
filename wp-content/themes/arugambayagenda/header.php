@@ -69,7 +69,7 @@
                                 </li>
 
                                     <?php
-                                    $active_post_ids = array(12, 14, 26, 302, 301, 299, 24, 298, 297, 296, 293, 292, 282, 125);
+                                    $active_post_ids = array(12, 26, 302, 301, 299, 298, 297, 296, 293, 292, 282, 125);
                                     ?>
                                 <li class="<?php if (in_array(get_the_ID(), $active_post_ids)) { echo 'mil-current active'; } ?>"> 
                                     <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
