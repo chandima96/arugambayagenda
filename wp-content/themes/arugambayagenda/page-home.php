@@ -181,7 +181,7 @@ $review_description = get_field('review_description');
                     <h2 class="mil-mb-100 mil-fade-up"><?php echo $chose_us_title; ?></h2>
                 </div>
                 <div class="mil-flexbox mil-flexbox-custom ">
-                    <div class="mil-iconbox mil-fade-up">
+                    <div class="mil-iconbox mil-iconbox-custom mil-fade-up">
                         <div class="mil-bg-icon"></div>
                         <div class="mil-icon">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -191,7 +191,7 @@ $review_description = get_field('review_description');
                         <h3 class="mil-mb-20"><?php echo $chose_us_card_one_title; ?></h3>
                         <p><?php echo $chose_us_card_one_description; ?></p>
                     </div>
-                    <div class="mil-iconbox mil-fade-up">
+                    <div class="mil-iconbox mil-iconbox-custom mil-fade-up">
                         <div class="mil-bg-icon"></div>
                         <div class="mil-icon">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +201,7 @@ $review_description = get_field('review_description');
                         <h3 class="mil-mb-20"><?php echo $chose_us_card_two_title; ?></h3>
                         <p><?php echo $chose_us_card_two_description; ?></p>
                     </div>
-                    <div class="mil-iconbox mil-fade-up">
+                    <div class="mil-iconbox mil-iconbox-custom mil-fade-up">
                         <div class="mil-bg-icon"></div>
                         <div class="mil-icon">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,7 +211,7 @@ $review_description = get_field('review_description');
                         <h3 class="mil-mb-20"><?php echo $chose_us_card_three_title; ?></h3>
                         <p><?php echo $chose_us_card_three_description; ?></p>
                     </div>
-                    <div class="mil-iconbox mil-fade-up">
+                    <div class="mil-iconbox mil-iconbox-custom mil-fade-up">
                         <div class="mil-bg-icon"></div>
                         <div class="mil-icon">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -221,7 +221,7 @@ $review_description = get_field('review_description');
                         <h3 class="mil-mb-20"><?php echo $chose_us_card_four_title; ?></h3>
                         <p><?php echo $chose_us_card_four_description; ?></p>
                     </div>
-                    <div class="mil-iconbox mil-fade-up">
+                    <div class="mil-iconbox mil-iconbox-custom mil-fade-up">
                         <div class="mil-bg-icon"></div>
                         <div class="mil-icon">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
