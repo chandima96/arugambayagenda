@@ -64,8 +64,8 @@
                                     <a href="<?php bloginfo('url'); ?>/">Home</a>
                                 </li>
 
-                                <li class="<?php if (get_the_ID() == '325') { echo 'mil-current active'; } ?>">
-                                    <a href="<?php bloginfo('url'); ?>/about">About</a>
+                                <li class="<?php if (get_the_ID() == '13') { echo 'mil-current active'; } ?>">
+                                    <a href="<?php bloginfo('url'); ?>/taxi-service">Taxi service</a>
                                 </li>
 
                                     <?php
@@ -77,13 +77,19 @@
                                         <li><a href="<?php bloginfo('url'); ?>/wild-life-tours">Wild Life Tours</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/surfing">Surfing</a></li>
-                                        <li><a href="<?php bloginfo('url'); ?>/taxi-service">Taxi service</a></li>
                                     </ul>
                                 </li>
 
-                                <li class="<?php if (get_the_ID() == '328') { echo 'mil-current active'; } ?>">
+                                <?php
+                                    $active_post_ids = array(328, 14, 331, 330, 24 );
+                                    ?>
+                                <li class="<?php if (in_array(get_the_ID(), $active_post_ids)) { echo 'mil-current active'; } ?>"> 
                                     <a href="<?php bloginfo('url'); ?>/activities">Activities</a>
+                                    <ul>
+                                        <li><a href="<?php bloginfo('url'); ?>/surfing">Surfing</a></li>
+                                    </ul>
                                 </li>
+
                                 <li class="<?php if (get_the_ID() == '31') { echo 'mil-current active'; } ?>">
                                     <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
                                 </li>
