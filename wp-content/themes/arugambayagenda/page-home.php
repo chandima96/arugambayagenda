@@ -564,9 +564,9 @@ $review_description = get_field('review_description');
                                     <div class="mil-review-frame mil-text-center" data-swiper-parallax="-250" data-swiper-parallax-opacity="0">
                                         <div class="mil-fade-up">
                                             <h3 class="mil-mb-10"><?php the_title(); ?></h3>
-                                            <p class="mil-link mil-mb-40"><?php echo $review_location; ?></p>
+                                            <p class="mil-link mil-mb-40"><?php the_excerpt(); ?></p>
                                         </div>
-                                        <p class="mil-fade-up"><?php echo $review_description; ?></p>
+                                        <p class="mil-fade-up"><?php the_content(); ?></p>
                                     </div>
                                 </div>
                                         <?php endwhile; endif; ?>
