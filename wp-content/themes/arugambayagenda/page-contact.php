@@ -42,7 +42,7 @@ get_header();
         <!-- contact form -->
         <div class="mil-content-pad mil-p-100-100">
             <div class="container">
-                <form>
+                <!-- <form>
                     <div class="row">
                         <div class="col-xl-6">
                             <div class="mil-field-frame mil-mb-20">
@@ -87,7 +87,8 @@ get_header();
                             </div>
                         </div>
                     </div>
-                </form>
+                </form> -->
+                <?php echo do_shortcode('[contact-form-7 id="65be7d3" title="Contact form - Contact Us"]'); ?>            
             </div>
         </div>
         <!-- contact form end -->
