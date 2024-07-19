@@ -273,26 +273,3 @@ footer .mil-footer-content .mil-logo img {
     }
 }
 
-.mil-popup-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.mil-close-button {
-    cursor: pointer;
-}
-
-.mil-button {
-    background-color: #25D366;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.mil-button:hover {
-    background-color: #128C7E;
-}
