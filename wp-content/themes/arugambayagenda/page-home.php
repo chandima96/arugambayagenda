@@ -180,7 +180,7 @@ $review_description = get_field('review_description');
                     <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $chose_us_top_line; ?></div>
                     <h2 class="mil-mb-100 mil-fade-up"><?php echo $chose_us_title; ?></h2>
                 </div>
-                <div class="mil-flexbox">
+                <div class="mil-flexbox mil-flexbox-custom ">
                     <div class="mil-iconbox mil-fade-up">
                         <div class="mil-bg-icon"></div>
                         <div class="mil-icon">

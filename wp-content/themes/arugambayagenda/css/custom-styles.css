@@ -249,12 +249,12 @@ footer .mil-footer-content .mil-logo img {
     }
 }
 
-/* .mil-flexbox {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-} */
+.mil-flexbox-custom {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    justify-content: center !important;
+}
 
 .mil-iconbox {
     width: calc(33.333% - 20px);
