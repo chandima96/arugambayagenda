@@ -478,7 +478,7 @@ $seventh_section_title = get_field('seventh_section_title');
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Departure location</label>
-                                        <input type="text" placeholder="Enter quantity" value="1">
+                                        <input type="text" placeholder="Enter location" value="1">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
