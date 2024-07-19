@@ -74,7 +74,7 @@
                                 <li class="<?php if (in_array(get_the_ID(), $active_post_ids)) { echo 'mil-current active'; } ?>"> 
                                     <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
                                     <ul>
-                                        <li><a href="<?php bloginfo('url'); ?>/wild-life-tours">Wild Life Tours</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/wild-life-tours">Wild Life $ Eco Tours</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/surfing">Surfing</a></li>
                                     </ul>

@@ -126,7 +126,7 @@ $our_blog_description = get_field('our_blog_description');
                             <div class="mil-img-frame">
                                 <img src="<?php echo $service_section_wild_life_tours_image; ?>" alt="img">
                             </div>
-                            <div class="mil-description">Wild Life Tours</div>
+                            <div class="mil-description">Wild Life $ Eco Tours</div>
                         </a>
                     </div>
                     <div class="col-md-6 col-xl-3">
