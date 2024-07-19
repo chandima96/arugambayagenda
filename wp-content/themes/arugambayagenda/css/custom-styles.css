@@ -278,3 +278,8 @@ footer .mil-footer-content .mil-logo img {
     color: #ffffff !important;
     transition: background-color 0.3s ease, color 0.3s ease !important;
 }
+
+::-webkit-scrollbar {
+    display: block !important;
+
+}
