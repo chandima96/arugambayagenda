@@ -248,3 +248,27 @@ footer .mil-footer-content .mil-logo img {
         margin: 0 10px !important;
     }
 }
+
+.mil-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.mil-iconbox {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+    .mil-iconbox {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .mil-iconbox {
+        flex: 1 1 100%;
+    }
+}
