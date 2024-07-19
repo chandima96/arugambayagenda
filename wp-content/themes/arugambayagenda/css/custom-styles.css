@@ -254,7 +254,7 @@ footer .mil-footer-content .mil-logo img {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-}
+} */
 
 .mil-iconbox {
     width: calc(33.333% - 20px);
@@ -271,7 +271,7 @@ footer .mil-footer-content .mil-logo img {
     .mil-iconbox {
         width: calc(100% - 20px);
     }
-} */
+}
 
 .whatsapp-button:hover {
     background-color: #25D366 !important;
