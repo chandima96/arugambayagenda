@@ -162,49 +162,15 @@
                         </svg>
                     </div>
                 </div>
-                <form>
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="mil-field-frame footer mil-mb-20">
-                                <label>Name</label>
-                                <input type="text" placeholder="Enter Full Name" >
-                            </div>
-                        </div> 
-                        <div class="col-xl-6">      
-                            <div class="mil-field-frame mil-mb-20">
-                                <label>WhatsApp Number</label>
-                                <input type="text" placeholder="Enter WhatsApp Number" >
-                            </div>
-                        </div>  
-                        <div class="col-xl-6">       
-                        <div class="mil-field-frame mil-mb-20">
-                                <label>Email</label>
-                                <input type="text" placeholder="Enter Email Address" >
-                            </div>
-                        </div>
-                        <div class="col-xl-6">      
-                            <div class="mil-field-frame mil-mb-20">
-                                <label>Website</label>
-                                <input type="text" placeholder="Enter Website" >
-                            </div>
-                        </div>
-                        <div class="col-xl-12">
-                        <div class="mil-field-frame mil-mb-20">
-                                <label for="assistance-textarea">Need further assistance? </label>
-                                <textarea id="assistance-textarea" class="custom-height" placeholder="Write to us" rows="4" cols="50"></textarea>
-                            </div>
-                        </div>        
-                        <div class="row align-items-center justify-content-end">
-                            <div class="col-lg-6">
-                                <div class="mil-desctop-right mil-fade-up">
-                                    <button type="submit" class="mil-button">
-                                        <span>Send</span>
-                                    </button>
-                                </div>
-                            </div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="mil-desctop-right mil-fade-up">
+                            <button type="button" class="mil-button" onclick="redirectToWhatsApp()">
+                                <span>Book Now on WhatsApp</span>
+                            </button>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
         <!-- book popup end -->
@@ -212,6 +178,15 @@
         <div class="mil-progressbar"></div>
 
     </div>
+    
+    <script>
+    function redirectToWhatsApp() {
+        var phoneNumber = "your-phone-number"; // Replace with your phone number, including country code (e.g., +123456789)
+        var message = encodeURIComponent("Hello, I would like to book an appointment."); // Customize your message
+        var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + message;
+        window.location.href = url;
+    }
+    </script>
     <!-- wrapper end -->
 
     <!-- jQuery js -->
