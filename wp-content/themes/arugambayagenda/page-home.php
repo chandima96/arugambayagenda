@@ -172,66 +172,66 @@ $our_blog_description = get_field('our_blog_description');
 
         <!-- features -->
         <div class="mil-features mil-p-100-60">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 85%; top: -20%; left: -30%; transform: rotate(35deg)" alt="shape">
-    <div class="container">
-        <div class="mil-text-center">
-            <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $chose_us_top_line; ?></div>
-            <h2 class="mil-mb-100 mil-fade-up"><?php echo $chose_us_title; ?></h2>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 85%; top: -20%; left: -30%; transform: rotate(35deg)" alt="shape">
+            <div class="container">
+                <div class="mil-text-center">
+                    <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $chose_us_top_line; ?></div>
+                    <h2 class="mil-mb-100 mil-fade-up"><?php echo $chose_us_title; ?></h2>
+                </div>
+                <div class="mil-flexbox">
+                    <div class="mil-iconbox mil-fade-up">
+                        <div class="mil-bg-icon"></div>
+                        <div class="mil-icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="mil-mb-20"><?php echo $chose_us_card_one_title; ?></h3>
+                        <p><?php echo $chose_us_card_one_description; ?></p>
+                    </div>
+                    <div class="mil-iconbox mil-fade-up">
+                        <div class="mil-bg-icon"></div>
+                        <div class="mil-icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="mil-mb-20"><?php echo $chose_us_card_two_title; ?></h3>
+                        <p><?php echo $chose_us_card_two_description; ?></p>
+                    </div>
+                    <div class="mil-iconbox mil-fade-up">
+                        <div class="mil-bg-icon"></div>
+                        <div class="mil-icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="mil-mb-20"><?php echo $chose_us_card_three_title; ?></h3>
+                        <p><?php echo $chose_us_card_three_description; ?></p>
+                    </div>
+                    <div class="mil-iconbox mil-fade-up">
+                        <div class="mil-bg-icon"></div>
+                        <div class="mil-icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="mil-mb-20"><?php echo $chose_us_card_four_title; ?></h3>
+                        <p><?php echo $chose_us_card_four_description; ?></p>
+                    </div>
+                    <div class="mil-iconbox mil-fade-up">
+                        <div class="mil-bg-icon"></div>
+                        <div class="mil-icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="mil-mb-20"><?php echo $chose_us_card_five_title; ?></h3>
+                        <p><?php echo $chose_us_card_five_description; ?></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="mil-flexbox">
-            <div class="mil-iconbox mil-fade-up">
-                <div class="mil-bg-icon"></div>
-                <div class="mil-icon">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
-                    </svg>
-                </div>
-                <h3 class="mil-mb-20"><?php echo $chose_us_card_one_title; ?></h3>
-                <p><?php echo $chose_us_card_one_description; ?></p>
-            </div>
-            <div class="mil-iconbox mil-fade-up">
-                <div class="mil-bg-icon"></div>
-                <div class="mil-icon">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
-                    </svg>
-                </div>
-                <h3 class="mil-mb-20"><?php echo $chose_us_card_two_title; ?></h3>
-                <p><?php echo $chose_us_card_two_description; ?></p>
-            </div>
-            <div class="mil-iconbox mil-fade-up">
-                <div class="mil-bg-icon"></div>
-                <div class="mil-icon">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
-                    </svg>
-                </div>
-                <h3 class="mil-mb-20"><?php echo $chose_us_card_three_title; ?></h3>
-                <p><?php echo $chose_us_card_three_description; ?></p>
-            </div>
-            <div class="mil-iconbox mil-fade-up">
-                <div class="mil-bg-icon"></div>
-                <div class="mil-icon">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
-                    </svg>
-                </div>
-                <h3 class="mil-mb-20"><?php echo $chose_us_card_four_title; ?></h3>
-                <p><?php echo $chose_us_card_four_description; ?></p>
-            </div>
-            <div class="mil-iconbox mil-fade-up">
-                <div class="mil-bg-icon"></div>
-                <div class="mil-icon">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
-                    </svg>
-                </div>
-                <h3 class="mil-mb-20"><?php echo $chose_us_card_five_title; ?></h3>
-                <p><?php echo $chose_us_card_five_description; ?></p>
-            </div>
-        </div>
-    </div>
-</div>
         <!-- features end -->
 
 
@@ -533,7 +533,7 @@ $our_blog_description = get_field('our_blog_description');
                     <h2 class="mil-mb-100 mil-fade-up">Customer Voices: <br>Hear What They Say!</h2>
                 </div>
 
-                <div class="mil-revi-pagination mil-mb-40 mil-fade-up"></div>
+                <div class="mil-revi-pagination mil-mb-40 mil-fade-up" style="display: none;"></div>
 
                 <div class="row mil-relative justify-content-center">
                     <div class="col-lg-8">
