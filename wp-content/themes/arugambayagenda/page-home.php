@@ -107,13 +107,22 @@ $review_description = get_field('review_description');
                                 <p><?php echo $home_banner_description; ?></p>
                                 <style>
                                     .counter{
-                                        background-color: rgba(255, 255, 255, 0.578);
+                                        background-color: #d5f1f1b3;
                                         display: flex;
                                         flex-direction: column;
                                         align-items: center;
                                         padding: 12px;
                                         gap: 4px;
                                         border-radius: 16px;
+                                        text-align: center;
+                                        min-height: 195px;
+                                        justify-content: space-around;
+                                    }
+                                    .counter-row{
+                                        width: 95% !important;
+                                    }
+                                    .counter-col{
+                                        width: 95% !important;
                                     }
                                 </style>
                                 <div class="row">
