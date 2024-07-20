@@ -49,7 +49,7 @@ $review_description = get_field('review_description');
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape" style="width: 110%; top: -5%; left: -30%; opacity: .2" alt="shape">
             <div class="container">
                 <div class="mil-banner-img-2">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/images/6.png" alt="banner">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/images/Edited-Banner.webp" alt="banner">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/1.png" alt="object" class="mil-figure mil-1">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/2.png" alt="object" class="mil-figure mil-2">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/3.png" alt="object" class="mil-figure mil-3">
