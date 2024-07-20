@@ -60,7 +60,7 @@ $review_description = get_field('review_description');
                         <div class="mil-banner-content-frame">
                             <div class="mil-banner-content">
                                 <div class="mil-suptitle mil-mb-40"><?php echo $home_banner_top_line; ?></div>
-                                <h1 class="mil-mb-40"><?php echo $home_banner_title; ?></h1>
+                                <h1 class="mil-mb-40" style="font-size: 5rem !important;"><?php echo $home_banner_title; ?></h1>
                                 <!-- <div class="mil-search-panel mil-mb-20">
                                     <form>
                                         <div class="mil-form-grid">
