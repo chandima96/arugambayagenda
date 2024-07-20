@@ -387,7 +387,7 @@ $review_description = get_field('review_description');
         </div>    
 
         <!-- call to action -->
-        <div class="mil-content-pad mil-p-100-100 mil-fade-up">
+        <!-- <div class="mil-content-pad mil-p-100-100 mil-fade-up">
             <div class="container">
                 <div class="mil-text-center">
                     <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $call_to_action_top_line; ?></div>
@@ -410,7 +410,7 @@ $review_description = get_field('review_description');
                     </span>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- call to action end -->
 
         <!-- about 1 -->
