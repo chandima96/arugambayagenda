@@ -309,7 +309,14 @@ footer .mil-footer-content .mil-logo img {
     min-height: 195px;
     justify-content: space-around;
 }
+
 .counter-row{
     width: 95% !important;
     margin-top: 16px;
+}
+
+@media (max-width: 1200px) {
+    .counter-row{
+        width: 100% !important;
+    }
 }
