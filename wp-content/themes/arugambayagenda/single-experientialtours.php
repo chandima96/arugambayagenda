@@ -463,7 +463,7 @@ $seventh_section_title = get_field('seventh_section_title');
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Time</label>
-                                        <input id="check-in-time" type="time" id="appt" name="appt" class="datepicker-here" data-position="bottom left" placeholder="Select Time" autocomplete="off" readonly="readonly">
+                                        <input id="check-in-time" type="time" id="appt" name="appt" time-position="bottom left" placeholder="Select Time" autocomplete="off" readonly="readonly">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
