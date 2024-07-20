@@ -468,12 +468,12 @@ $seventh_section_title = get_field('seventh_section_title');
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Number of Pax</label>
-                                        <input type="number" id="aru-book-name" placeholder="Enter quantity" value="1">
+                                        <input type="number" id="aru-book-name" value="1">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Departure location</label>
-                                        <input type="text" id="aru-book-name" placeholder="Enter quantity">
+                                        <input type="text" id="aru-book-name" placeholder="Departure location">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
