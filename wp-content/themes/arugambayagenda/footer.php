@@ -4,7 +4,7 @@
             <div class="mil-footer-content mil-fade-up">
                 <div class="container">
                     <div class="row justify-content-between mil-p-100-40">
-                        <div class="col-md-4 col-lg-4 mil-mb-60">
+                        <div class="col-md-4 col-lg-4">
 
                             <a href="<?php bloginfo('url'); ?>/" class="mil-logo mil-mb-40">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo/footer-logo.png" alt="aquarelle">
@@ -23,7 +23,7 @@
                         </div>
                         <div class="col-md-7 col-lg-6">
                             <div class="row justify-content-end">
-                                <div class="col-md-6 col-lg-7 mil-mb-60">
+                                <div class="col-md-6 col-lg-7">
                                     <?php
                                     $active_post_ids = array(12, 14, 26, 302, 301, 299, 24, 298, 297, 296, 293, 292, 282, 125);
                                     ?>
@@ -54,7 +54,7 @@
                                     </nav>
                                 </div>
 
-                                <div class="col-md-6 col-lg-5 mil-mb-60">
+                                <div class="col-md-6 col-lg-5">
 
                                     <ul class="mil-menu-list">
                                         <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
