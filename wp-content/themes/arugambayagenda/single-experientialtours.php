@@ -441,7 +441,8 @@ $seventh_section_title = get_field('seventh_section_title');
                             </ul>
 
                             <div class="mil-book-window">
-                                <div>
+                            <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?>
+                                <!-- <div>
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
                                         <input type="text" id="fname" placeholder="Full Name">
@@ -487,7 +488,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                         </svg>
                                         <span>Book now</span>
                                     </button>
-                                </div>
+                                </div> -->
                             </div>
 
                         </div>
