@@ -296,3 +296,20 @@ footer .mil-footer-content .mil-logo img {
     display: block !important;
 
 }
+
+.counter{
+    background-color: #ffffffad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 4px;
+    border-radius: 16px;
+    text-align: center;
+    min-height: 195px;
+    justify-content: space-around;
+}
+.counter-row{
+    width: 95% !important;
+    margin-top: 16px;
+}
