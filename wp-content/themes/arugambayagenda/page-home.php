@@ -527,7 +527,7 @@ $review_description = get_field('review_description');
         <!-- about 2 end -->
 
         <!-- reviews -->
-        <div class="mil-content-pad mil-p-100-100" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/shapes/5.png); background-size: 100%">
+        <div class="mil-content-pad mil-p-100-100" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/shapes/5.png); background-size: 100% overflow-x: hidden;">
             <div class="container">
 
                 <div class="mil-text-center">
