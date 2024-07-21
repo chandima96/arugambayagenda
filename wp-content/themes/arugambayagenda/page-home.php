@@ -634,7 +634,7 @@ $review_description = get_field('review_description');
         </div>
         <!-- reviews end -->
 
-            <div class="container">
+            <div class="container" style="z-index: 100 !important;">
                 <style>
                     .counter{
                         background-color: rgba(255, 255, 255, 0.578);

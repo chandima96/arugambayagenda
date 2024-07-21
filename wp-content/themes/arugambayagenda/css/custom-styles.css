@@ -289,6 +289,9 @@ footer .mil-footer-content .mil-logo img {
     .mil-iconbox-custom {
         width: calc(100% - 20px) !important;
     }
+    .mil-iconbox-counter {
+        width: calc(33.333% - 20px) !important;
+    }
 }
 
 .whatsapp-button:hover {
