@@ -16,8 +16,12 @@
                             </div>
 
                             <div>
+                                <div>
                                 <a href="https://www.tripadvisor.com/Attraction_Review-g3348959-d25775340-Reviews-Arugambay_Agenda-Arugam_Bay_Eastern_Province.html" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/logo/Tripadvisor.svg" class="custom-logo-01" alt="aquarelle"></a>
+                                </div>
+                                <div>
                                 <a href="https://www.getyourguide.com/arugambay-agenda-s304885/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/logo/gyg-logo.svg" class="mt-2 custom-logo-02" alt="aquarelle"></a>
+                                </div>
                             </div>
 
                         </div>
