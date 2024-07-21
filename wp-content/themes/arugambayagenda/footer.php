@@ -15,7 +15,7 @@
                                 <!-- <div class="mil-mb-20 fw-500"></div> -->
                             </div>
 
-                            <div style="display: flex; align-items: center; gap: 12px;">
+                            <div class="other-logo" style="">
                                 <div>
                                     <a href="https://www.getyourguide.com/arugambay-agenda-s304885/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/logo/gyg-logo.svg" class="mt-2 custom-logo-02" alt="aquarelle"></a>
                                 </div>

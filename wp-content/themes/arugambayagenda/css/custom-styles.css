@@ -279,6 +279,10 @@ footer .mil-footer-content .mil-logo img {
     box-sizing: border-box !important;
 }
 
+.other-logo{
+    display: flex; align-items: center; gap: 12px;
+}
+
 @media (max-width: 1200px) {
     .mil-iconbox-custom {
         width: calc(50% - 20px) !important;
@@ -291,6 +295,9 @@ footer .mil-footer-content .mil-logo img {
     }
     .mil-iconbox-counter {
         width: calc(33.333% - 20px) !important;
+    }
+    .other-logo{
+        display: flex; align-items: center; gap: 12px; justify-content: center;
     }
 }
 
