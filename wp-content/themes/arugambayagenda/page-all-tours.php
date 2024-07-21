@@ -193,19 +193,21 @@ get_header();
                                     <div>Kids: <?php echo get_field('size'); ?></div>
                                 </li>
                             </ul>
-                            <div class="mil-descr">
-                                <h3 class="mil-mb-20"><?php the_title(); ?></h3>
-                                <p class="mil-mb-40"><?php echo get_field('description'); ?></p>
-                                <div class="mil-divider"></div>
-                                <div class="mil-card-bottom">
-                                    <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo get_field('price_per_night'); ?></span>/ <?php echo get_field('duration'); ?></div>
-                                    <a href="<?php the_permalink(); ?>" class="mil-button mil-icon-button mil-accent-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
-                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-                                        </svg>
-                                    </a>
+                            <a href="<?php the_permalink(); ?>">
+                                <div class="mil-descr">
+                                    <h3 class="mil-mb-20"><?php the_title(); ?></h3>
+                                    <p class="mil-mb-40"><?php echo get_field('description'); ?></p>
+                                    <div class="mil-divider"></div>
+                                    <div class="mil-card-bottom">
+                                        <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo get_field('price_per_night'); ?></span>/ <?php echo get_field('duration'); ?></div>
+                                        <a href="<?php the_permalink(); ?>" class="mil-button mil-icon-button mil-accent-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
+                                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <?php endwhile; endif; ?>
