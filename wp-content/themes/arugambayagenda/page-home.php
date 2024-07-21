@@ -875,25 +875,25 @@ $review_description = get_field('review_description');
         <!-- blog end -->
 
         <script>
-            window.onload = function() {
-                var elements = [
-                    { id: "count-one", stopValue: 60 },
-                    { id: "count-two", stopValue: 50 },
-                    { id: "count-three", stopValue: 40 },
-                    { id: "count-four", stopValue: 20 }
-                ];
+            // window.onload = function() {
+            //     var elements = [
+            //         { id: "count-one", stopValue: 60 },
+            //         { id: "count-two", stopValue: 50 },
+            //         { id: "count-three", stopValue: 40 },
+            //         { id: "count-four", stopValue: 20 }
+            //     ];
 
-                elements.forEach(function(element) {
-                    var currentCount = 0;
-                    var interval = setInterval(function() {
-                        currentCount++;
-                        document.getElementById(element.id).innerText = currentCount;
-                        if (currentCount >= element.stopValue) {
-                            clearInterval(interval);
-                        }
-                    }, 50); // Adjust the interval time to speed up or slow down the counter
-                });
-            };
+            //     elements.forEach(function(element) {
+            //         var currentCount = 0;
+            //         var interval = setInterval(function() {
+            //             currentCount++;
+            //             document.getElementById(element.id).innerText = currentCount;
+            //             if (currentCount >= element.stopValue) {
+            //                 clearInterval(interval);
+            //             }
+            //         }, 50);
+            //     });
+            // };
         </script>
 
         <?php get_footer(); ?>
