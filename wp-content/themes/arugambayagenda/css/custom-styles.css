@@ -269,6 +269,11 @@ footer .mil-footer-content .mil-logo img {
     justify-content: center !important;
 }
 
+.mil-iconbox{
+    padding: 24px !important;
+    padding-right: 24px !important;
+}
+
 .mil-iconbox-custom {
     width: calc(33.333% - 20px) !important;
     box-sizing: border-box !important;
