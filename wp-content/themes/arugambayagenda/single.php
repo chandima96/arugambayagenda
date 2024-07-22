@@ -12,6 +12,7 @@ $blog_image_seven = get_field('blog_image_seven');
 $blog_image_eight = get_field('blog_image_eight');
 $blog_description = get_field('blog_description');
 $author = get_field('author');
+$published_date = get_field('published_date');
 
 ?>
 
@@ -232,7 +233,7 @@ $author = get_field('author');
                                                 <path d="M14.6885 5.12402H1.68564" stroke="#272746" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </div>
-                                        <div>29.08.2024</div>
+                                        <div><?php echo $published_date; ?></div>
                                     </li>
                                 </ul>
                                 <div class="mil-descr">
