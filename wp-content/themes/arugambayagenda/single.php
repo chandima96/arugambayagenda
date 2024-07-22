@@ -182,16 +182,22 @@ $author = get_field('author');
                                         <div class="swiper-slide">
                                             <div class="mil-card-cover">
                                                 <img src="<?php echo get_field('blog_image_one'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
-                                            </div>
+                                            </div>                                        
+                                        </div>
+                                        <div class="swiper-slide">
                                             <div class="mil-card-cover">
                                                 <img src="<?php echo get_field('blog_image_two'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
-                                            </div>
+                                            </div>                                        
+                                        </div>
+                                        <div class="swiper-slide">
                                             <div class="mil-card-cover">
                                                 <img src="<?php echo get_field('blog_image_three'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
-                                            </div>
+                                            </div>                                        
+                                        </div>
+                                        <div class="swiper-slide">
                                             <div class="mil-card-cover">
                                                 <img src="<?php echo get_field('blog_image_four'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
-                                            </div>                                           
+                                            </div>                                        
                                         </div>
                                     </div>
                                     <div class="mil-card-nav">
@@ -234,7 +240,7 @@ $author = get_field('author');
                                     <p class="mil-mb-20"><?php echo get_field('blog_description'); ?></p>
                                     <div class="mil-divider"></div>
                                     <div class="mil-card-bottom">
-                                        <a href="<?php the_permalink(); ?>">
+                                        <a href="">
                                             <div class="mil-link">
                                                 <span>Read more</span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
