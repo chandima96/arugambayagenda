@@ -82,11 +82,10 @@
                                 <div class="col-md-6 col-lg-5 mil-mb-40">
 
                                     <h5 class="mil-mb-20">Location</h5>
-                                    <a href="https://maps.app.goo.gl/iUfoQuGYqZxae2wM8" target="_blank" class="mil-light-soft"><p> No.54,<br>
+                                    <a href="https://maps.app.goo.gl/iUfoQuGYqZxae2wM8" target="_blank" class="mil-light-soft">No.54,
                                         Tsunami Hotel Road,
                                         Arugambay, 32500
-                                        Pottuvil, Srilanka
-                                    </p></a>
+                                        Pottuvil, Srilanka</a>
 
                                 </div>
                                 <div class="col-md-6 col-lg-5 mil-mb-40">
