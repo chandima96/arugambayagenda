@@ -236,7 +236,6 @@ $review_description = get_field('review_description');
         </div>
         <!-- features end -->
 
-
         <div class="mil-rooms mil-p-100-100">
             <div class="container">
                 <div class="row justify-content-between align-items-end mil-mb-100">
