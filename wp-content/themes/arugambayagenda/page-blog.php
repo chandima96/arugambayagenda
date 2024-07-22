@@ -288,7 +288,7 @@ get_header();
                     <div class="swiper-wrapper">
                                 <?php 
                                     $the_query = new WP_Query(array(
-                                        'post_type' => array('wildlifetours', 'experientialtours', 'surfing-tour', 'activity'),
+                                        'post_type' => array('post'),
                                         'posts_per_page' => 100,
                                         'post__not_in' => array($id),
                                     ));
