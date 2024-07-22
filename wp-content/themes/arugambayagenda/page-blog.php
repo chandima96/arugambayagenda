@@ -50,7 +50,7 @@ get_header();
                 <div class="row mil-mb-40">
                             <?php 
                                 $the_query = new WP_Query(array(
-                                    'post_type' => 'blogs',
+                                    'post_type' => 'post',
                                     'posts_per_page' => 100,
                                     'post__not_in' => array($id),
                                 ));
