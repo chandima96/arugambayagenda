@@ -85,11 +85,10 @@
                                 <li class="<?php if (in_array(get_the_ID(), $active_post_ids)) { echo 'mil-current active'; } ?>"> 
                                     <a href="<?php bloginfo('url'); ?>/activities">Activities</a>
                                     <ul>
-                                        <li><a href="<?php bloginfo('url'); ?>/activities">Surfing</a></li>
-                                    </ul>
-                                    <ul>
+                                        <li><a href="<?php bloginfo('url'); ?>/activities">Activities</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/surfing">Surfing</a></li>
                                     </ul>
+
                                 </li>
 
                                 <li class="<?php if (get_the_ID() == '31') { echo 'mil-current active'; } ?>">
