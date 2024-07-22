@@ -252,7 +252,6 @@ $author = get_field('author');
                                     </div>
                                 </div>
                             </a>
-
                         </div>
                             <?php endwhile; endif; ?>
                             <?php wp_reset_postdata(); ?>   
