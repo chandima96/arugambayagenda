@@ -145,7 +145,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <p class="mil-light-soft">© 2024 Copyrights by Arugambay Agenda. All Rights Reserved</p>
+                            <p class="mil-light-soft">© <?php echo date("Y"); ?> Arugambay Agenda. Built by <a href="https://portfolio.metadilan.com/" target="_blank" rel="noopener noreferrer">Metadilan</a></p>
                         </div>
                     </div>
                 </div>
