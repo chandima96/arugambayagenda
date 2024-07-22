@@ -81,7 +81,7 @@
 
                                 <div class="col-md-6 col-lg-5 mil-mb-40">
 
-                                    <h5 class="mil-mb-20">Location</h5>
+                                    <h5 class="mil-mb-20"><i class="bi bi-geo-alt"></i> Location </h5>
                                     <a href="https://maps.app.goo.gl/iUfoQuGYqZxae2wM8" target="_blank" class="mil-light-soft">No.54,
                                         Tsunami Hotel Road,
                                         Arugambay, 32500
@@ -90,10 +90,10 @@
                                 </div>
                                 <div class="col-md-6 col-lg-5 mil-mb-40">
 
-                                    <h5 class="mil-mb-20">Contact</h5>
-                                    <a href="mailto:info@arugambayagenda.com" class="mil-light-soft">info@arugambayagenda.com</a>
-                                    <a href="tel:+94766899188" class="mil-light-soft">+94766899188</a> <br>
-                                    <a href="tel:+94726479635" class="mil-light-soft">+94726479635</a>
+                                    <h5 class="mil-mb-20"><i class="bi bi-person-lines-fill"></i> Contact</h5>
+                                    <a href="mailto:info@arugambayagenda.com" class="mil-light-soft"><i class="bi bi-envelope"></i> info@arugambayagenda.com</a>
+                                    <a href="tel:+94766899188" class="mil-light-soft"><i class="bi bi-telephone"></i> +94 76 689 9188</a> <br>
+                                    <a href="tel:+94726479635" class="mil-light-soft"><i class="bi bi-telephone"></i> +94 72 647 9635</a>
 
                                 </div>
                             </div>
