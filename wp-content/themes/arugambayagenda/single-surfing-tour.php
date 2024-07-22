@@ -327,7 +327,7 @@ $seventh_section_title = get_field('seventh_section_title');
 
 
                         <!-- amenity -->
-                        <div class="row mil-mb-60-adapt">
+                        <!-- <div class="row mil-mb-60-adapt">
                             <div class="col-12">
                                 <h3 class="mil-fade-up mil-mb-40">Amenity</h3>
                             </div>
@@ -387,7 +387,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- amenity end -->
 

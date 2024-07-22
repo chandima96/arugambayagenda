@@ -34,7 +34,7 @@
                                     <nav class="mil-footer-menu">
                                         <ul class="footer-link">
                                             <li class="<?php if (get_the_ID() == '6') { echo 'mil-active active'; } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/">Home</a>
+                                                <a href="<?php bloginfo('url'); ?>/" class="footer-menu-align">Home</a>
                                             </li>
                                             <li class="<?php if (in_array(get_the_ID(), $active_post_ids)) { echo 'mil-active active'; } ?>">
                                                 <a href="<?php bloginfo('url'); ?>/all-tours" class="footer-menu-align">Tours</a>
