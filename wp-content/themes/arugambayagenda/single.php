@@ -236,13 +236,15 @@ $published_date = get_field('published_date');
                                         <div><?php echo $published_date; ?></div>
                                     </li>
                                 </ul>
+                            </a>
+                            <a href="<?php the_permalink(); ?>">
                                 <div class="mil-descr">
                                     <h3 class="mil-mb-20"><?php the_title(); ?></h3>
                                     <p class="mil-mb-20"><?php the_excerpt() ?></p>
                                     <div class="mil-divider"></div>
                                     <div class="mil-card-bottom">
                                         <div class="mil-link">
-                                            <span><a href="<?php the_permalink(); ?>">Read more</a></span>
+                                            <span>Read more</span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -250,8 +252,7 @@ $published_date = get_field('published_date');
                                         </div>
                                     </div>
                                 </div>
-                            </a>
-
+                            </a>    
                         </div>
                             <?php endwhile; endif; ?>
                             <?php wp_reset_postdata(); ?>   
