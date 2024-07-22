@@ -689,7 +689,7 @@ $seventh_section_title = get_field('seventh_section_title');
                     </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
-                            <a href="search.html" class="mil-button">
+                            <a href="<?php bloginfo('url'); ?>/surfing" class="mil-button">
                                 <span>View all</span>
                             </a>
                         </div>
