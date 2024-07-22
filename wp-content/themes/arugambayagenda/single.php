@@ -236,8 +236,6 @@ $published_date = get_field('published_date');
                                         <div><?php echo $published_date; ?></div>
                                     </li>
                                 </ul>
-                            </a>
-                            <a href="<?php the_permalink(); ?>">
                                 <div class="mil-descr">
                                     <h3 class="mil-mb-20"><?php the_title(); ?></h3>
                                     <p class="mil-mb-20"><?php the_excerpt() ?></p>
@@ -252,7 +250,8 @@ $published_date = get_field('published_date');
                                         </div>
                                     </div>
                                 </div>
-                            </a>    
+                            </a>
+
                         </div>
                             <?php endwhile; endif; ?>
                             <?php wp_reset_postdata(); ?>   
