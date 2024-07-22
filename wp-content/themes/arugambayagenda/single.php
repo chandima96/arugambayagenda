@@ -161,102 +161,103 @@ $author = get_field('author');
 
                 <div class="swiper-container mil-reco-slider mil-mb-40">
                     <div class="swiper-wrapper">
-                                <?php 
-                                    $the_query = new WP_Query(array(
-                                        'post_type' => 'post',
-                                        'posts_per_page' => 100,
-                                        'post__not_in' => array($id),
-                                    ));
-                                    ?>
-                                    <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                        <?php 
+                            $the_query = new WP_Query(array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 100,
+                                'post__not_in' => array($id),
+                            ));
+                        ?>
+                        <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
-                                        <?php
-                                        $thumbnail_id = get_post_thumbnail_id();
-                                        $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
-                                        $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-                                ?>
-                        <div class="swiper-slide">
-                            <a href="<?php the_permalink(); ?>" class="mil-card mil-mb-40-adapt mil-fade-up">
-                                <div class="swiper-container mil-card-slider">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="mil-card-cover">
-                                                <img src="<?php echo get_field('blog_image_one'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
-                                            </div>                                        
+                            <?php
+                            $thumbnail_id = get_post_thumbnail_id();
+                            $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
+                            $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                            ?>
+                            <div class="swiper-slide">
+                                <a href="<?php the_permalink(); ?>" class="mil-card mil-mb-40-adapt mil-fade-up">
+                                    <div class="swiper-container mil-card-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="mil-card-cover">
+                                                    <img src="<?php echo get_field('blog_image_one'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                                </div>                                        
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="mil-card-cover">
+                                                    <img src="<?php echo get_field('blog_image_two'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                                </div>                                        
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="mil-card-cover">
+                                                    <img src="<?php echo get_field('blog_image_three'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                                </div>                                        
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="mil-card-cover">
+                                                    <img src="<?php echo get_field('blog_image_four'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                                </div>                                        
+                                            </div>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="mil-card-cover">
-                                                <img src="<?php echo get_field('blog_image_two'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
-                                            </div>                                        
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mil-card-cover">
-                                                <img src="<?php echo get_field('blog_image_three'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
-                                            </div>                                        
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mil-card-cover">
-                                                <img src="<?php echo get_field('blog_image_four'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
-                                            </div>                                        
-                                        </div>
-                                    </div>
-                                    <div class="mil-card-nav">
-                                        <div class="mil-slider-btn mil-card-prev">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                <polyline points="12 5 19 12 12 19"></polyline>
-                                            </svg>
-                                        </div>
-                                        <div class="mil-slider-btn mil-card-next">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                <polyline points="12 5 19 12 12 19"></polyline>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="mil-card-pagination"></div>
-                                </div>
-                                <ul class="mil-parameters">
-                                    <li>
-                                        <div class="mil-icon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/faces/6.jpg" alt="author">
-                                        </div>
-                                        <div><?php echo $author; ?></div>
-                                    </li>
-                                    <li>
-                                        <div class="mil-icon">
-                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M13.1881 2.62402H3.18597C2.35736 2.62402 1.68564 3.29574 1.68564 4.12435V13.1263C1.68564 13.9549 2.35736 14.6266 3.18597 14.6266H13.1881C14.0168 14.6266 14.6885 13.9549 14.6885 13.1263V4.12435C14.6885 3.29574 14.0168 2.62402 13.1881 2.62402Z" stroke="#272746" stroke-width="1.00189" stroke-linejoin="round" />
-                                                <path d="M4.18536 1.62305V2.63226" stroke="#272746" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M12.188 1.62305V2.63226" stroke="#272746" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M14.6885 5.12402H1.68564" stroke="#272746" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        <div><?php echo $published_date; ?></div>
-                                    </li>
-                                </ul>
-                                <div class="mil-descr">
-                                    <h3 class="mil-mb-20"><?php the_title(); ?></h3>
-                                    <p class="mil-mb-20"><?php echo get_field('blog_description'); ?></p>
-                                    <div class="mil-divider"></div>
-                                    <div class="mil-card-bottom">
-                                        <a href="">
-                                            <div class="mil-link">
-                                                <span>Read more</span>
+                                        <div class="mil-card-nav">
+                                            <div class="mil-slider-btn mil-card-prev">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                                     <line x1="5" y1="12" x2="19" y2="12"></line>
                                                     <polyline points="12 5 19 12 12 19"></polyline>
                                                 </svg>
                                             </div>
-                                        </a>
+                                            <div class="mil-slider-btn mil-card-next">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="mil-card-pagination"></div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                            <?php endwhile; endif; ?>
-                            <?php wp_reset_postdata(); ?>   
+                                    <ul class="mil-parameters">
+                                        <li>
+                                            <div class="mil-icon">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/img/faces/6.jpg" alt="author">
+                                            </div>
+                                            <div><?php echo get_the_author(); ?></div>
+                                        </li>
+                                        <li>
+                                            <div class="mil-icon">
+                                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.1881 2.62402H3.18597C2.35736 2.62402 1.68564 3.29574 1.68564 4.12435V13.1263C1.68564 13.9549 2.35736 14.6266 3.18597 14.6266H13.1881C14.0168 14.6266 14.6885 13.9549 14.6885 13.1263V4.12435C14.6885 3.29574 14.0168 2.62402 13.1881 2.62402Z" stroke="#272746" stroke-width="1.00189" stroke-linejoin="round" />
+                                                    <path d="M4.18536 1.62305V2.63226" stroke="#272746" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M12.188 1.62305V2.63226" stroke="#272746" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M14.6885 5.12402H1.68564" stroke="#272746" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div><?php echo get_the_date(); ?></div>
+                                        </li>
+                                    </ul>
+                                    <div class="mil-descr">
+                                        <h3 class="mil-mb-20"><?php the_title(); ?></h3>
+                                        <p class="mil-mb-20"><?php echo get_field('blog_description'); ?></p>
+                                        <div class="mil-divider"></div>
+                                        <div class="mil-card-bottom">
+                                            <a href="">
+                                                <div class="mil-link">
+                                                    <span>Read more</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <?php endwhile; endif; ?>
+                        <?php wp_reset_postdata(); ?>   
                     </div>
                 </div>
+
 
                 <div class="row justify-content-between">
                     <div class="col-lg-7">
