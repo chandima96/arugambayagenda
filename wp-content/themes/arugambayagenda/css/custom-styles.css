@@ -260,6 +260,10 @@ footer .mil-footer-content .mil-logo img {
         display: inline-block !important;
         margin: 0 10px !important;
     }
+    .footer-menu-align {
+        display: flex !important;
+        justify-content: center !important;
+    }
 }
 
 .mil-flexbox-custom {

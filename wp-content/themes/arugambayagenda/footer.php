@@ -37,22 +37,22 @@
                                                 <a href="<?php bloginfo('url'); ?>/">Home</a>
                                             </li>
                                             <li class="<?php if (in_array(get_the_ID(), $active_post_ids)) { echo 'mil-active active'; } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
+                                                <a href="<?php bloginfo('url'); ?>/all-tours" class="footer-menu-align">Tours</a>
                                             </li>
                                             <li class="<?php if (get_the_ID() == '328') { echo 'mil-active active'; } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/activities">Activities</a>
+                                                <a href="<?php bloginfo('url'); ?>/activities" class="footer-menu-align">Activities</a>
                                             </li>
                                             <li class="<?php if (get_the_ID() == '13') { echo 'mil-active active'; } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/taxi-service">Taxi Service</a>
+                                                <a href="<?php bloginfo('url'); ?>/taxi-service" class="footer-menu-align">Taxi Service</a>
                                             </li>
                                             <li class="<?php if (get_the_ID() == '325') { echo 'mil-active active'; } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/about">About</a>
+                                                <a href="<?php bloginfo('url'); ?>/about" class="footer-menu-align">About</a>
                                             </li>
                                             <li class="<?php if (get_the_ID() == '31') { echo 'mil-active active'; } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/blog">Blog</a>
+                                                <a href="<?php bloginfo('url'); ?>/blog" class="footer-menu-align">Blog</a>
                                             </li>
                                             <li class="<?php if (get_the_ID() == '11') { echo 'mil-active active'; } ?>">
-                                                <a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
+                                                <a href="<?php bloginfo('url'); ?>/contact-us" class="footer-menu-align">Contact</a>
                                             </li>
                                         </ul>
                                     </nav>
