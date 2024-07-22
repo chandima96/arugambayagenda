@@ -68,7 +68,22 @@ get_header();
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="mil-card-cover">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/blog/4.jpg" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                            <img src="<?php echo get_field('blog_image_one'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mil-card-cover">
+                                            <img src="<?php echo get_field('blog_image_two'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mil-card-cover">
+                                            <img src="<?php echo get_field('blog_image_three'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mil-card-cover">
+                                            <img src="<?php echo get_field('blog_image_four'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
                                         </div>
                                     </div>
                                 </div>
@@ -93,7 +108,7 @@ get_header();
                                     <div class="mil-icon">
                                         <img src="<?php echo get_template_directory_uri(); ?>/img/faces/6.jpg" alt="author">
                                     </div>
-                                    <div>Paul T.</div>
+                                    <div><?php echo get_field('author'); ?></div>
                                 </li>
                                 <li>
                                     <div class="mil-icon">
@@ -104,12 +119,12 @@ get_header();
                                             <path d="M14.6885 5.12402H1.68564" stroke="#272746" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                     </div>
-                                    <div>29.08.2024</div>
+                                    <div><?php echo get_field('published_date'); ?></div>
                                 </li>
                             </ul>
                             <div class="mil-descr">
                                 <h3 class="mil-mb-20"><?php the_title(); ?></h3>
-                                <p class="mil-mb-20">Accusantium doloremque laudantium, totam rem aperiam beatae vitae dicta sunt, explicabo</p>
+                                <p class="mil-mb-20"><?php the_excerpt() ?></p>
                                 <div class="mil-divider"></div>
                                 <div class="mil-card-bottom">
                                     <div class="mil-link">
