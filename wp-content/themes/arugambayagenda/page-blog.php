@@ -48,7 +48,6 @@ get_header();
                     <h2 class="mil-mb-100 mil-fade-up">Popular publications</h2>
                 </div>
                 <div class="row mil-mb-40">
-                    <div class="col-md-6 col-xl-6">
                                 <?php 
                                 $the_query = new WP_Query(array(
                                     'post_type' => 'post',
@@ -63,6 +62,7 @@ get_header();
                                     $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
                                     $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                                 ?>
+                    <div class="col-md-6 col-xl-6">
                         <a href="<?php the_permalink(); ?>" class="mil-card mil-mb-40-adapt mil-fade-up">
                             <div class="swiper-container mil-card-slider">
                                 <div class="swiper-wrapper">
@@ -157,6 +157,10 @@ get_header();
             </div>
         </div>
         <!-- popular end -->
+
+
+
+        
 
         <!-- blog -->
         <!-- <div class="mil-rooms mil-p-100-100">
