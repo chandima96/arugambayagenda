@@ -148,11 +148,11 @@ $review_description = get_field('review_description');
                         </a>
                     </div>
                     <div class="col-md-6 col-xl-3">
-                        <a href="<?php bloginfo('url'); ?>/taxi-service" class="mil-service-card mil-offset mil-mb-40-adapt mil-fade-up">
+                        <a href="<?php bloginfo('url'); ?>/activities/" class="mil-service-card mil-offset mil-mb-40-adapt mil-fade-up">
                             <div class="mil-img-frame">
                                 <img src="<?php echo $service_section_ride_with_us_image; ?>" alt="img">
                             </div>
-                            <div class="mil-description">Ride With Us</div>
+                            <div class="mil-description">Activities</div>
                         </a>
                     </div>
                 </div>
