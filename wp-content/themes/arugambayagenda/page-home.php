@@ -596,17 +596,6 @@ $review_description = get_field('review_description');
         <!-- reviews end -->
 
             <div class="container" style="z-index: 100 !important;">
-                <style>
-                    .counter{
-                        background-color: rgba(255, 255, 255, 0.578);
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        padding: 12px;
-                        gap: 4px;
-                        border-radius: 16px;
-                    }
-                </style>
                 <div class="mil-flexbox-custom mil-p-100-60">
                     <div class="mil-iconbox-counter">
                         <div class="counter mil-fade-up">
