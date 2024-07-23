@@ -303,7 +303,7 @@ footer .mil-footer-content .mil-logo img {
         width: calc(100% - 20px) !important;
     }
     .mil-iconbox-counter {
-        width: calc(33.333% - 20px) !important;
+        width: calc(50% - 20px) !important;
     }
     .other-logo{
         display: flex; align-items: center; gap: 12px; justify-content: center;
