@@ -48,7 +48,8 @@ get_header();
                     <h2 class="mil-mb-100 mil-fade-up">Popular publications</h2>
                 </div>
                 <div class="row mil-mb-40">
-                            <?php 
+                    <div class="col-md-6 col-xl-6">
+                                <?php 
                                 $the_query = new WP_Query(array(
                                     'post_type' => 'post',
                                     'posts_per_page' => 100,
@@ -61,8 +62,7 @@ get_header();
                                     $thumbnail_id = get_post_thumbnail_id();
                                     $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
                                     $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-                            ?>
-                    <div class="col-md-6 col-xl-6">
+                                ?>
                         <a href="<?php the_permalink(); ?>" class="mil-card mil-mb-40-adapt mil-fade-up">
                             <div class="swiper-container mil-card-slider">
                                 <div class="swiper-wrapper">
@@ -139,9 +139,9 @@ get_header();
                         </a>
 
                     </div>
+                        <?php endwhile; endif; ?>
+                        <?php wp_reset_postdata(); ?> 
                 </div>
-                    <?php endwhile; endif; ?>
-                    <?php wp_reset_postdata(); ?> 
                 <!-- <div class="row justify-content-between">
                     <div class="col-lg-7">
                         <p class="mil-fade-up">Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
@@ -389,8 +389,7 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
-                            </a>
-
+                            </a>    
                         </div>
                             <?php endwhile; endif; ?>
                             <?php wp_reset_postdata(); ?>   
