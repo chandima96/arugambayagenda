@@ -344,3 +344,13 @@ footer .mil-footer-content .mil-logo img {
         width: 100% !important;
     }
 }
+
+.home-title{
+    font-size: 5rem !important;
+}
+
+@media (max-width: 576px) {
+    .home-title{
+        font-size: 3.5rem !important;
+    }
+}
