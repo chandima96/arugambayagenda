@@ -387,3 +387,7 @@ footer .mil-footer-content .mil-logo img {
     font-size: 16px !important;
 }
 
+.blog-description p {
+    padding: 0px 0 20px 0 !important;
+    font-weight: 400 !important;
+}
