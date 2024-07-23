@@ -124,7 +124,7 @@ get_header();
                             </ul>
                             <div class="mil-descr">
                                 <h3 class="mil-mb-20"><?php the_title(); ?></h3>
-                                <p class="mil-mb-20"><?php the_excerpt() ?></p>
+                                <p class="mil-mb-20 font-16"><?php the_excerpt() ?></p>
                                 <div class="mil-divider"></div>
                                 <div class="mil-card-bottom">
                                     <div class="mil-link">
