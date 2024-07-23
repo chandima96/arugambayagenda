@@ -196,7 +196,7 @@ get_header();
                             <a href="<?php the_permalink(); ?>">
                                 <div class="mil-descr">
                                     <h3 class="mil-mb-20"><?php the_title(); ?></h3>
-                                    <p class="mil-mb-40"><?php echo get_field('description'); ?></p>
+                                    <p class="mil-mb-40"><?php echo get_field('description', false, false); ?></p>
                                     <div class="mil-divider"></div>
                                     <div class="mil-card-bottom">
                                         <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo get_field('price_per_night'); ?></span>/ <?php echo get_field('duration'); ?></div>
@@ -207,7 +207,7 @@ get_header();
                                         </a>
                                     </div>
                                 </div>
-                            </a>    
+                            </a>   
                         </div>
                     </div>
                         <?php endwhile; endif; ?>
