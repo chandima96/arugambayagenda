@@ -439,51 +439,46 @@ $seventh_section_title = get_field('seventh_section_title');
                                 </li>
                             </ul>
 
-                            <!-- <div class="mil-book-window">
-                                <form>
+                            <div class="mil-book-window">
+                                <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?>
+                                <!-- <div>
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
-                                        <input type="text" placeholder="Enter Full Name">
+                                        <input type="text" id="fname" placeholder="Full Name">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>E-Mail Address</label>
-                                        <input type="text" placeholder="Enter E-Mail Address">
+                                        <input type="email" id="aru-book-name" placeholder="E-Mail Address">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>WhatsApp Number</label>
-                                        <input type="text" placeholder="Enter WhatsApp Number">
+                                        <input type="tel" id="aru-book-name" placeholder="WhatsApp Number">
                                     </div>
-
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label>Check-in</label>
+                                        <label>Date</label>
                                         <input id="check-in" type="text" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label>Check-out</label>
-                                        <input id="check-out" type="text" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly">
+                                        <label>Time</label>
+                                        <input id="check-in-time" type="time" id="appt" name="appt" time-position="bottom left" placeholder="Select Time" autocomplete="off" readonly="readonly">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label>Number of Adults</label>
-                                        <input type="text" placeholder="Enter quantity" value="1">
-                                    </div>
-                                    
-                                    <div class="mil-field-frame mil-mb-20">
-                                        <label>Number of Kids</label>
-                                        <input type="text" placeholder="Enter quantity" value="1">
+                                        <label>Number of Pax</label>
+                                        <input type="number" id="aru-book-name" value="1">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Departure location</label>
-                                        <input type="text" placeholder="Enter location" value="1">
+                                        <input type="text" id="aru-book-name" placeholder="Departure location">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label for="assistance-textarea">Need further assistance? </label>
-                                        <textarea id="assistance-textarea" placeholder="Write to us" rows="4" cols="50"></textarea>
+                                        <textarea id="assistance-textarea" id="aru-book-name" placeholder="Write to us" rows="4" cols="50"></textarea>
                                     </div>
 
                                     <button type="submit" class="mil-button mil-accent-1">
@@ -492,9 +487,8 @@ $seventh_section_title = get_field('seventh_section_title');
                                         </svg>
                                         <span>Book now</span>
                                     </button>
-                                </form>
-                            </div> -->
-                            <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?>            
+                                </div> -->
+                            </div>     
                         </div>
                     </div>
                     <!-- sidebar end -->
