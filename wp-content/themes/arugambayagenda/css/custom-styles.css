@@ -377,4 +377,10 @@ footer .mil-footer-content .mil-logo img {
     font-size: 15px !important;
 }
 
+.container-footer-logos {
+    width: 200px !important;
+    height: 200px !important;
+    border: none !important;
+}
+
 
