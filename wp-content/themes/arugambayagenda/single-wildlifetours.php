@@ -159,9 +159,9 @@ $seventh_section_title = get_field('seventh_section_title');
                                 <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon mil-icon-fix">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
-                                        </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                    </svg>
                                     </div>
                                     <h5><?php echo $feature_one_title; ?></h5>
                                 </div>
@@ -173,9 +173,9 @@ $seventh_section_title = get_field('seventh_section_title');
                                 <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon mil-icon-fix">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
-                                        </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                    </svg>
                                     </div>
                                     <h5><?php echo $feature_two_title; ?></h5>
                                 </div>
@@ -187,9 +187,9 @@ $seventh_section_title = get_field('seventh_section_title');
                                 <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon mil-icon-fix">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
-                                        </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                    </svg>
                                     </div>
                                     <h5><?php echo $feature_three_title; ?></h5>
                                 </div>
@@ -201,9 +201,9 @@ $seventh_section_title = get_field('seventh_section_title');
                                 <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
-                                        </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                    </svg>
                                     </div>
                                     <h5><?php echo $feature_four_title; ?></h5>
                                 </div>
@@ -215,9 +215,9 @@ $seventh_section_title = get_field('seventh_section_title');
                                 <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
-                                        </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                    </svg>
                                     </div>
                                     <h5><?php echo $feature_five_title; ?></h5>
                                 </div>
@@ -229,9 +229,9 @@ $seventh_section_title = get_field('seventh_section_title');
                                 <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="15" cy="15" r="14" stroke="#22BCEC" stroke-width="2" />
-                                        </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                    </svg>
                                     </div>
                                     <h5><?php echo $feature_six_title; ?></h5>
                                 </div>
