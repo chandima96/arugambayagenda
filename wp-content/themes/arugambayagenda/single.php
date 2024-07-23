@@ -133,7 +133,7 @@ $published_date = get_field('published_date');
         <!-- publication end -->
 
         <!-- recommendation -->
-        <div class="mil-rooms mil-p-100-100">
+        <!-- <div class="mil-rooms mil-p-100-100">
             <div class="container">
                 <div class="row justify-content-between align-items-end mil-mb-100">
                     <div class="col-lg-7">
@@ -274,7 +274,7 @@ $published_date = get_field('published_date');
                 </div>
 
             </div>
-        </div>
+        </div> -->
         <!-- recommendation end -->
 
 <?php get_footer(); ?>
