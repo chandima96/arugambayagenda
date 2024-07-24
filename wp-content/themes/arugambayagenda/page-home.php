@@ -939,6 +939,13 @@ $review_description = get_field('review_description');
             <script>
                 document.addEventListener("DOMContentLoaded", function() {
                     const counters = document.querySelectorAll(".mil-iconbox-counter .odometer");
+                    
+                    // Ensure the counters have data-count attributes
+                    counters.forEach(counter => {
+                        if (!counter.hasAttribute("data-count")) {
+                            console.error("Counter missing data-count attribute:", counter);
+                        }
+                    });
 
                     const options = {
                         root: null, // Use the viewport as the root
@@ -958,12 +965,14 @@ $review_description = get_field('review_description');
                         });
                     }, options);
 
-                    // Observe each counter element
-                    counters.forEach(counter => {
-                        observer.observe(counter);
-                    });
+                    // Observe the section containing the counters
+                    const counterSection = document.querySelector(".mil-iconbox-counter");
+                    if (counterSection) {
+                        observer.observe(counterSection);
+                    } else {
+                        console.error("Counter section not found");
+                    }
                 });
-
             </script>
 
         <?php get_footer(); ?>
