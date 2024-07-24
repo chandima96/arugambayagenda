@@ -686,11 +686,11 @@ $seventh_section_title = get_field('seventh_section_title');
         <!-- recommendation end -->
 
 <?php get_footer(); ?>
-<!-- <script>  
+<script>  
 		window.onload = function() { 
 			 document.getElementById('postId').value = '<?php echo get_the_ID();?>';
 			 document.getElementById('postTitle').value = '<?php echo the_title();?>';
 		};
      
  
-    </script> -->
+    </script>
