@@ -500,8 +500,4 @@ body {
     }
 }
 
-.mil-iconbox-counter .mil-icon:hover svg {
-    fill: #ff6347; /* Change to desired hover color */
-    transform: scale(1.1); /* Slightly increase the size on hover */
-    transition: fill 0.3s ease, transform 0.3s ease; /* Smooth transition */
-}
+
