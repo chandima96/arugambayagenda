@@ -971,42 +971,49 @@ $review_description = get_field('review_description');
         </script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        // Select all counter sections and elements
-        const counterSections = document.querySelectorAll('[id^="counter-section-"]');
-        const counters = document.querySelectorAll('[id^="counter-"]');
+        const sections = [
+            { sectionId: 'counter-section-1', counterId: 'counter-1' },
+            { sectionId: 'counter-section-2', counterId: 'counter-2' },
+            { sectionId: 'counter-section-3', counterId: 'counter-3' },
+            { sectionId: 'counter-section-4', counterId: 'counter-4' },
+            { sectionId: 'counter-section-5', counterId: 'counter-5' }
+        ];
 
-        let countersStarted = Array(counters.length).fill(false);
+        sections.forEach(({ sectionId, counterId }) => {
+            const counterSection = document.getElementById(sectionId);
+            const counterElement = document.getElementById(counterId);
 
-        function startCounter(counterElement) {
-            const countTo = parseInt(counterElement.getAttribute('data-count'), 10);
-            let count = 0;
+            let counterStarted = false;
 
-            const updateCounter = () => {
-                count += Math.ceil(countTo / 100);
-                if (count >= countTo) {
-                    count = countTo;
-                    clearInterval(interval);
-                }
-                counterElement.textContent = count;
-            };
+            function startCounter() {
+                const countTo = parseInt(counterElement.getAttribute('data-count'), 10);
+                let count = 0;
 
-            const interval = setInterval(updateCounter, 20);
-        }
+                const updateCounter = () => {
+                    count += Math.ceil(countTo / 100);
+                    if (count >= countTo) {
+                        count = countTo;
+                        clearInterval(interval);
+                    }
+                    counterElement.textContent = count;
+                };
 
-        function checkScroll() {
-            counterSections.forEach((section, index) => {
-                const rect = section.getBoundingClientRect();
+                const interval = setInterval(updateCounter, 20);
+            }
+
+            function checkScroll() {
+                const rect = counterSection.getBoundingClientRect();
                 const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
 
-                if (rect.top < viewportHeight && !countersStarted[index]) {
-                    countersStarted[index] = true;
-                    startCounter(counters[index]);
+                if (rect.top < viewportHeight && !counterStarted) {
+                    counterStarted = true;
+                    startCounter();
                 }
-            });
-        }
+            }
 
-        window.addEventListener('scroll', checkScroll);
-        checkScroll(); // Run initially in case already scrolled
+            window.addEventListener('scroll', checkScroll);
+            checkScroll(); // Run initially in case already scrolled
+        });
     });
 </script>
 
