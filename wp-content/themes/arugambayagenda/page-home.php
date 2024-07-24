@@ -536,7 +536,7 @@ $review_description = get_field('review_description');
             <h2>Meet the <span class="highlight">team</span></h2>
             <div class="team-container">
                 <div class="team-member">
-                    <img src="img/images/5.png" alt="Maria Smith">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/images/5.png" alt="Maria Smith">
                     <h3>Maria Smith</h3>
                     <p>Frontend Developer</p>
                     <div class="social-links">
@@ -546,7 +546,7 @@ $review_description = get_field('review_description');
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="img/images/5.png" alt="Darren Randolph">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/images/5.png" alt="Darren Randolph">
                     <h3>Darren Randolph</h3>
                     <p>Marketing Expert</p>
                     <div class="social-links">
@@ -556,7 +556,7 @@ $review_description = get_field('review_description');
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="img/images/5.png" alt="Ayat Black">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/images/5.png" alt="Ayat Black">
                     <h3>Ayat Black</h3>
                     <p>Web Designer</p>
                     <div class="social-links">
