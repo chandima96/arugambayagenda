@@ -400,3 +400,7 @@ footer .mil-footer-content .mil-logo img {
     font-size: 2.5rem !important;
     color: rgb(32, 79, 94) !important;
 }
+
+.padding-top-0 {
+    padding-top: 0 !important;
+}

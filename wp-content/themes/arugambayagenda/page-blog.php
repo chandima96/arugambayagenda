@@ -108,7 +108,7 @@ get_header();
                                     <div class="mil-icon">
                                         <img src="<?php echo get_template_directory_uri(); ?>/img/faces/6.jpg" alt="author">
                                     </div>
-                                    <div><?php the_author(); ?></div>
+                                    <!-- <div><?php the_author(); ?></div> -->
                                 </li>
                                 <li>
                                     <div class="mil-icon">
@@ -376,7 +376,7 @@ get_header();
                                                 <path d="M14.6885 5.12402H1.68564" stroke="#272746" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </div>
-                                        <div><?php the_date(); ?></div>
+                                        <div><?php echo get_field('date_field'); ?></div>
                                     </li>
                                 </ul>
                                 <div class="mil-descr">
