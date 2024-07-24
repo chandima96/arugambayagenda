@@ -446,8 +446,9 @@ body {
 
 .team-member:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 25px rgba(243, 253, 253, 0.5); 
 }
+
 
 .team-member img {
     width: 120px;
