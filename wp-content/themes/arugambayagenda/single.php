@@ -133,12 +133,12 @@ $published_date = get_field('published_date');
         <!-- publication end -->
 
         <!-- recommendation -->
-        <!-- <div class="mil-rooms mil-p-100-100">
+        <div class="mil-rooms mil-p-100-100">
             <div class="container">
                 <div class="row justify-content-between align-items-end mil-mb-100">
                     <div class="col-lg-7">
-                        <div class="mil-suptitle mil-fade-up mil-mb-20">Publications</div>
-                        <h2 class="mil-fade-up">Recommended for reading</h2>
+                        <div class="mil-suptitle mil-fade-up mil-mb-20">FEATURES</div>
+                        <h2 class="mil-fade-up">Our best rooms</h2>
                     </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
@@ -224,7 +224,7 @@ $published_date = get_field('published_date');
                                         <div class="mil-icon">
                                             <img src="<?php echo get_template_directory_uri(); ?>/img/faces/6.jpg" alt="author">
                                         </div>
-                                        <div><?php echo $author; ?></div>
+                                        <!-- <div><?php the_author(); ?></div> -->
                                     </li>
                                     <li>
                                         <div class="mil-icon">
@@ -235,12 +235,12 @@ $published_date = get_field('published_date');
                                                 <path d="M14.6885 5.12402H1.68564" stroke="#272746" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </div>
-                                        <div><?php echo $published_date; ?></div>
+                                        <div><?php echo get_field('date_field'); ?></div>
                                     </li>
                                 </ul>
                                 <div class="mil-descr">
                                     <h3 class="mil-mb-20"><?php the_title(); ?></h3>
-                                    <p class="mil-mb-20 "><?php the_excerpt() ?></p>
+                                    <p class="mil-mb-20"><?php the_excerpt() ?></p>
                                     <div class="mil-divider"></div>
                                     <div class="mil-card-bottom">
                                         <div class="mil-link">
@@ -252,29 +252,14 @@ $published_date = get_field('published_date');
                                         </div>
                                     </div>
                                 </div>
-                            </a>
-
+                            </a>    
                         </div>
                             <?php endwhile; endif; ?>
                             <?php wp_reset_postdata(); ?>   
                     </div>
                 </div>
-
-                <div class="row justify-content-between">
-                    <div class="col-lg-7">
-                        <p class="mil-fade-up">Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="mil-desctop-right mil-fade-up">
-                            <a href="<?php bloginfo('url'); ?>/blog" class="mil-button">
-                                <span>View all</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div> -->
+        </div> 
         <!-- recommendation end -->
 
 <?php get_footer(); ?>
