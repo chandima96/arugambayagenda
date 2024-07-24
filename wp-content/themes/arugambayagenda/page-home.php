@@ -274,7 +274,7 @@ $review_description = get_field('review_description');
                     <div class="swiper-wrapper">
                                     <?php 
                                         $the_query = new WP_Query(array(
-                                            'post_type' => array('activity', 'surfing-tour', 'experientialtours', 'wildlifetours'  ),
+                                            'post_type' => array('wildlifetours', 'surfing-tour', 'experientialtours', 'activity'  ),
                                             'posts_per_page' => 100,
                                             'post__not_in' => array($id),
                                         ));
