@@ -969,44 +969,47 @@ $review_description = get_field('review_description');
             //     });
             // };
         </script>
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                    const counterSection = document.getElementById('counter-section');
-                    const counterElement = document.getElementById('counter');
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Select all counter sections and elements
+        const counterSections = document.querySelectorAll('[id^="counter-section-"]');
+        const counters = document.querySelectorAll('[id^="counter-"]');
 
-                    let counterStarted = false;
+        let countersStarted = Array(counters.length).fill(false);
 
-                    function startCounter() {
-                        const countTo = parseInt(counterElement.getAttribute('data-count'), 10);
-                        let count = 0;
+        function startCounter(counterElement) {
+            const countTo = parseInt(counterElement.getAttribute('data-count'), 10);
+            let count = 0;
 
-                        const updateCounter = () => {
-                            count += Math.ceil(countTo / 100);
-                            if (count >= countTo) {
-                                count = countTo;
-                                clearInterval(interval);
-                            }
-                            counterElement.textContent = count;
-                        };
+            const updateCounter = () => {
+                count += Math.ceil(countTo / 100);
+                if (count >= countTo) {
+                    count = countTo;
+                    clearInterval(interval);
+                }
+                counterElement.textContent = count;
+            };
 
-                        const interval = setInterval(updateCounter, 20);
-                    }
+            const interval = setInterval(updateCounter, 20);
+        }
 
-                    function checkScroll() {
-                        const rect = counterSection.getBoundingClientRect();
-                        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+        function checkScroll() {
+            counterSections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
 
-                        if (rect.top < viewportHeight && !counterStarted) {
-                            counterStarted = true;
-                            startCounter();
-                        }
-                    }
+                if (rect.top < viewportHeight && !countersStarted[index]) {
+                    countersStarted[index] = true;
+                    startCounter(counters[index]);
+                }
+            });
+        }
 
-                    window.addEventListener('scroll', checkScroll);
-                    checkScroll(); // Run initially in case already scrolled
-                });
+        window.addEventListener('scroll', checkScroll);
+        checkScroll(); // Run initially in case already scrolled
+    });
+</script>
 
-            </script>
 
 
         <?php get_footer(); ?>
