@@ -272,20 +272,50 @@ $review_description = get_field('review_description');
 
                 <div class="swiper-container mil-reco-slider mil-mb-40">
                     <div class="swiper-wrapper">
-                                <?php 
-                                    $the_query = new WP_Query(array(
-                                        'post_type' => array('wildlifetours', 'experientialtours', 'surfing-tour', 'activity'),
-                                        'posts_per_page' => 100,
-                                        'post__not_in' => array($id),
-                                    ));
-                                    ?>
-                                    <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                            <?php 
+                                // Query for 'wildlifetours'
+                                $wildlifetours_query = new WP_Query(array(
+                                    'post_type' => 'wildlifetours',
+                                    'posts_per_page' => -1, // Get all posts
+                                    'post__not_in' => array($id),
+                                ));
 
-                                        <?php
+                                // Query for 'experientialtours'
+                                $experientialtours_query = new WP_Query(array(
+                                    'post_type' => 'experientialtours',
+                                    'posts_per_page' => -1, // Get all posts
+                                    'post__not_in' => array($id),
+                                ));
+
+                                // Query for 'surfing-tour'
+                                $surfing_tour_query = new WP_Query(array(
+                                    'post_type' => 'surfing-tour',
+                                    'posts_per_page' => -1, // Get all posts
+                                    'post__not_in' => array($id),
+                                ));
+
+                                // Query for 'activity'
+                                $activity_query = new WP_Query(array(
+                                    'post_type' => 'activity',
+                                    'posts_per_page' => -1, // Get all posts
+                                    'post__not_in' => array($id),
+                                ));
+
+                                // Merge the posts in the desired order
+                                $merged_posts = array_merge(
+                                    $wildlifetours_query->posts,
+                                    $experientialtours_query->posts,
+                                    $surfing_tour_query->posts,
+                                    $activity_query->posts
+                                );
+
+                                // Iterate over the merged posts
+                                if (!empty($merged_posts)) :
+                                    foreach ($merged_posts as $post) : setup_postdata($post); 
                                         $thumbnail_id = get_post_thumbnail_id();
                                         $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
                                         $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-                                ?> 
+                            ?>
                         <div class="swiper-slide">
                             <div class="mil-card mil-mb-40-adapt mil-fade-up">
                                 <div class="swiper-container mil-card-slider">
@@ -370,8 +400,9 @@ $review_description = get_field('review_description');
                                     </a>
                                 </div>
                             </div>
-                                <?php endwhile; endif; ?>
+                                <?php endforeach; ?>
                                 <?php wp_reset_postdata(); ?>
+                                <?php endif; ?>
                         </div>
                     </div>
                         <!-- <div class="row justify-content-between">
