@@ -214,35 +214,7 @@
         <!-- <div class="mil-progressbar"></div> -->
 
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const counters = document.querySelectorAll(".mil-iconbox-counter .odometer");
 
-            const options = {
-                root: null, // Use the viewport as the root
-                rootMargin: "0px",
-                threshold: 0.1 // Trigger when at least 10% of the section is visible
-            };
-
-            const observer = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // Your code to start the counter
-                        counters.forEach(counter => {
-                            counter.innerHTML = counter.getAttribute("data-count");
-                        });
-                        observer.unobserve(entry.target); // Stop observing once the counter is started
-                    }
-                });
-            }, options);
-
-            // Observe each counter element
-            counters.forEach(counter => {
-                observer.observe(counter);
-            });
-        });
-
-    </script>
     <!-- wrapper end -->
 
     <!-- jQuery js -->
