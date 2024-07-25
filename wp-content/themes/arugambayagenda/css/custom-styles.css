@@ -508,17 +508,15 @@ body {
 }
 
 .contact-number {
-    color: green;
+    color: #111827;
     font-weight: bold;
     text-decoration: none; 
+    transition: transform 0.2s; 
 }
 
 .contact-number:hover {
-    fill: rgb(0, 151, 178);
-}
-
-.contact-number a:hover {
-    transform: scale(1.2);
+    color: rgb(0, 151, 178); 
+    transform: scale(1.2); 
 }
 
 
