@@ -498,7 +498,7 @@ body {
 }
 
 .icon:hover {
-    fill: #007bff;
+    fill: rgb(0, 151, 178);
 }
 
 @media (max-width: 768px) {
@@ -506,5 +506,20 @@ body {
         flex: 1 1 100%;
     }
 }
+
+.contact-number {
+    color: green;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.contact-number:hover {
+    fill: rgb(0, 151, 178);
+}
+
+.contact-number a:hover {
+    transform: scale(1.2);
+}
+
 
 
