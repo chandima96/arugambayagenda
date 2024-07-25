@@ -562,25 +562,6 @@ $review_description = get_field('review_description');
                                     <img src="<?php echo $attachment_image; ?>">
                                 <?php } ?>  
                             <h3><?php the_title(); ?></h3>
-                                <?php
-                                    function format_contact_number($number) {
-                                        return substr($number, 0, 3) . ' ' . substr($number, 3, 3) . ' ' . substr($number, 6, 2) . ' ' . substr($number, 8, 2);
-                                    }
-                                    
-                                    function customize_excerpt($excerpt) {
-                                        // Match all 10-digit numbers in the excerpt
-                                        $pattern = '/\b(\d{3})(\d{3})(\d{2})(\d{2})\b/';
-                                        $replacement = function ($matches) {
-                                            return format_contact_number($matches[0]);
-                                        };
-                                    
-                                        // Replace all matched 10-digit numbers with the formatted number
-                                        $excerpt = preg_replace_callback($pattern, $replacement, $excerpt);
-                                    
-                                        return $excerpt;
-                                    }
-                                    add_filter('the_excerpt', 'customize_excerpt');
-                                ?>                            
                             <p><?php the_excerpt() ?></p>
                             <div class="social-links">
                                 <a href="<?php echo get_field('favebook_link'); ?> " target="_blank" ><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
