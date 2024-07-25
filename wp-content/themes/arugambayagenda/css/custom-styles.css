@@ -370,11 +370,17 @@ footer .mil-footer-content .mil-logo img {
 
 .wpcf7 form.sent .wpcf7-response-output {
     border-radius: 15px !important;
-    border: 2px solid #00a0d2 ;
-    padding: 15px !important;
+    border: 2px solid #00a0d2;
     border-color: #00a0d2 !important;
-    background-color: transparent !important;
+    background-color: #00a0d28c;
     font-size: 15px !important;
+    color: white;
+    font-weight: 400;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+    padding: 8px;
 }
 
 .container-footer-logos {
