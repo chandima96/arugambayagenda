@@ -525,7 +525,6 @@ body {
 
 .mil-iconbox-counter:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(75, 135, 175, 0.2);
 }
 
 
