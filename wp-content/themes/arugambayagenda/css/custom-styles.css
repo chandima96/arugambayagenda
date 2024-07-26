@@ -527,4 +527,9 @@ body {
     transform: translateY(-10px);
 }
 
+.mil-iconbox-counter:hover icon {
+    transform: scale(1.1);
+}
+
+
 
