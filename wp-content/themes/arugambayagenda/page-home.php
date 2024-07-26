@@ -173,7 +173,7 @@ $review_description = get_field('review_description');
         <!-- services end -->
 
         <!-- call to action -->
-        <div class="mil-content-pad mil-p-100-100 mil-fade-up padding-top-60">
+        <div class="mil-content-pad mil-p-100-100 mil-fade-up margin-top-60">
             <div class="container">
                 <div class="mil-text-center">
                     <div class="mil-suptitle mil-mb-20 mil-fade-up">Taxi service</div>
