@@ -584,7 +584,7 @@ $review_description = get_field('review_description');
                                 <?php } ?>  
 
                                 <h3><?php the_title(); ?></h3>
-                                <p><?php echo get_field('designation'); ?></p>
+                                <p class="margin-bottom-5"><?php echo get_field('designation'); ?></p>
                                 <p>
                                     <?php
                                         $contact_number = get_field('contact_number'); 

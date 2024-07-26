@@ -148,6 +148,17 @@ $seventh_section_title = get_field('seventh_section_title');
                         </div>
                         <!-- room slider end -->
 
+                        <!-- description -->
+                        <div class="row">
+                            <div class="col-xl-11">
+                                <div class="mil-dercription mil-mb-100">
+                                    <h3 class="mil-fade-up mil-mb-40">Description</h3>
+                                    <?php echo $description; ?>                                
+                                </div>
+                            </div>
+                        </div>
+                        <!-- description end -->
+
                         <!-- features -->
                         <div class="row mil-mb-60-adapt">
                             <div class="col-12">
@@ -239,16 +250,6 @@ $seventh_section_title = get_field('seventh_section_title');
                             <?php endif; ?>
                         </div>
                         <!-- features -->
-
-                        <!-- description -->
-                        <div class="row">
-                            <div class="col-xl-11">
-                                <div class="mil-dercription mil-mb-100">
-                                    <h3 class="mil-fade-up mil-mb-40">Description</h3>
-                                    <?php echo $description; ?>                                </div>
-                            </div>
-                        </div>
-                        <!-- description end -->
 
                         <h3 class="mil-fade-up mil-mb-40">FAQ</h3>
                         <div class="mil-faq-section mil-mb-100">

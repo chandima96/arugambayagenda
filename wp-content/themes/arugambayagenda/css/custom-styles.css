@@ -46,6 +46,7 @@ h2 {
 
 p {
     font-family: 'Poppins', sans-serif !important;
+    font-size: 16px !important;
     font-weight: 400 !important;
     color: #333333 !important;
 }
@@ -541,4 +542,8 @@ body {
 
 .margin-top-60 {
     margin-top: 60px;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5px !important;
 }
