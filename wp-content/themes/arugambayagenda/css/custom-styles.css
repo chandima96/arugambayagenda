@@ -527,7 +527,7 @@ body {
     transform: translateY(-10px);
 }
 
-.mil-iconbox-counter:hover icon {
+.mil-iconbox-counter:hover svg {
     transform: scale(1.1);
 }
 
