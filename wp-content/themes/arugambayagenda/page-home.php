@@ -958,56 +958,56 @@ $review_description = get_field('review_description');
             //     });
             // };
         </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                // Select all counter sections and elements
-                const counters = [
-                    { sectionId: 'counter-section-1', counterId: 'counter-1' },
-                    { sectionId: 'counter-section-2', counterId: 'counter-2' },
-                    { sectionId: 'counter-section-3', counterId: 'counter-3' },
-                    { sectionId: 'counter-section-4', counterId: 'counter-4' },
-                    { sectionId: 'counter-section-5', counterId: 'counter-5' }
-                ];
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select all counter sections and elements
+            const counters = [
+                { sectionId: 'counter-section-1', counterId: 'counter-1' },
+                { sectionId: 'counter-section-2', counterId: 'counter-2' },
+                { sectionId: 'counter-section-3', counterId: 'counter-3' },
+                { sectionId: 'counter-section-4', counterId: 'counter-4' },
+                { sectionId: 'counter-section-5', counterId: 'counter-5' }
+            ];
 
-                counters.forEach(({ sectionId, counterId }) => {
-                    const counterSection = document.getElementById(sectionId);
-                    const counterElement = document.getElementById(counterId);
+            counters.forEach(({ sectionId, counterId }) => {
+                const counterSection = document.getElementById(sectionId);
+                const counterElement = document.getElementById(counterId);
 
-                    let counterStarted = false;
+                let counterStarted = false;
 
-                    function startCounter() {
-                        const countTo = parseInt(counterElement.getAttribute('data-count'), 10);
-                        let count = 0;
+                function startCounter() {
+                    const countTo = parseInt(counterElement.getAttribute('data-count'), 10);
+                    let count = 0;
 
-                        const updateCounter = () => {
-                            count += Math.ceil(countTo / 100);
-                            if (count >= countTo) {
-                                count = countTo;
-                                clearInterval(interval);
-                                counterElement.textContent = `${count}+`; // Append "+" after the count
-                            } else {
-                                counterElement.textContent = count;
-                            }
-                        };
-
-                        const interval = setInterval(updateCounter, 20);
-                    }
-
-                    function checkScroll() {
-                        const rect = counterSection.getBoundingClientRect();
-                        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-
-                        if (rect.top < viewportHeight && !counterStarted) {
-                            counterStarted = true;
-                            startCounter();
+                    const updateCounter = () => {
+                        count += Math.ceil(countTo / 100);
+                        if (count >= countTo) {
+                            count = countTo;
+                            clearInterval(interval);
+                            counterElement.innerHTML = `${count}<span class="plus-sign">+</span>`; // Append "+" after the count
+                        } else {
+                            counterElement.textContent = count;
                         }
-                    }
+                    };
 
-                    window.addEventListener('scroll', checkScroll);
-                    checkScroll(); // Run initially in case already scrolled
-                });
+                    const interval = setInterval(updateCounter, 20);
+                }
+
+                function checkScroll() {
+                    const rect = counterSection.getBoundingClientRect();
+                    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+                    if (rect.top < viewportHeight && !counterStarted) {
+                        counterStarted = true;
+                        startCounter();
+                    }
+                }
+
+                window.addEventListener('scroll', checkScroll);
+                checkScroll(); // Run initially in case already scrolled
             });
-        </script>
+        });
+    </script>
 
 
 
