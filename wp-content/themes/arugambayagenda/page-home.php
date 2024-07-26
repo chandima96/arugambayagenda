@@ -659,7 +659,7 @@ $review_description = get_field('review_description');
 
                     </div>
                 </div>
-                    <div class="row justify-content-between">
+                    <div class="row justify-content-between padding-top-60">
                         <div class="col-lg-7">
                             <p class="mil-fade-up">Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
                         </div>
@@ -674,7 +674,7 @@ $review_description = get_field('review_description');
             </div>
         </div>
         <!-- reviews end -->
-         
+
 
             <div class="container" style="z-index: 100 !important;">
                 <div class="mil-flexbox-custom mil-p-100-60">

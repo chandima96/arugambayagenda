@@ -535,4 +535,6 @@ body {
     color: rgb(244 107 51 / 73%); 
 }
 
-
+.padding-top-60 {
+    padding-top: 60px;
+}
