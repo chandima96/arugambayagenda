@@ -1,5 +1,5 @@
         <!-- footer -->
-        <footer>
+        <footer style="overflow-y: hidden !important;">
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 85%; top: -15%; left: -40%; transform: rotate(-50deg)" alt="shape">
             <div class="mil-footer-content mil-fade-up">
                 <div class="container">
