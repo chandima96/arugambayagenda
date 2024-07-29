@@ -1155,17 +1155,40 @@ $counter_five = get_field('counter_five');
         });
     </script>
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script>
-        const recoSlider = new Swiper('.mil-reco-slider', {
-            navigation: {
-                nextEl: '.mil-reco-next',
-                prevEl: '.mil-reco-prev',
-            },
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Swiper
+            var swiper = new Swiper('.mil-reco-slider', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: '.mil-reco-next',
+                    prevEl: '.mil-reco-prev',
+                },
+                breakpoints: {
+                    // Responsive settings
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                },
+            });
         });
-
     </script>
-
-
-
+    
 
         <?php get_footer(); ?>
