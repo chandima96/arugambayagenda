@@ -162,7 +162,7 @@ $counter_five = get_field('counter_five');
                     </div>
                 </div>
                 <div class="mil-text-center">
-                    <div class="mil-desctop-right mil-fade-up btn-center">
+                    <div class="mil-fade-up btn-center">
                         <a href="<?php bloginfo('url'); ?>/all-tours" class="mil-button">
                             <span>Contact Us</span>
                         </a>
