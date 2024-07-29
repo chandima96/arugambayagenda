@@ -572,12 +572,11 @@ $counter_five = get_field('counter_five');
                     </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
-
                             <div class="mil-slider-nav mil-recommendation-nav mil-fade-up">
-                                <div class="mil-slider-arrow mil-prev mil-reco-prev">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                <div class="mil-slider-arrow mil-reco-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+                                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                                        <polyline points="12 19 5 12 12 5"></polyline>
                                     </svg>
                                 </div>
                                 <div class="mil-slider-arrow mil-reco-next">
@@ -587,11 +586,9 @@ $counter_five = get_field('counter_five');
                                     </svg>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
                 <div class="swiper-container mil-reco-slider mil-mb-40">
                     <div class="swiper-wrapper">
                                      <?php 
@@ -1156,6 +1153,16 @@ $counter_five = get_field('counter_five');
                 checkScroll(); // Run initially in case already scrolled
             });
         });
+    </script>
+
+    <script>
+        const recoSlider = new Swiper('.mil-reco-slider', {
+            navigation: {
+                nextEl: '.mil-reco-next',
+                prevEl: '.mil-reco-prev',
+            },
+        });
+
     </script>
 
 
