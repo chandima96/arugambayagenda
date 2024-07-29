@@ -568,8 +568,8 @@ $counter_five = get_field('counter_five');
             <div class="container">
                 <div class="row justify-content-between align-items-end mil-mb-100">
                     <div class="col-lg-7">
-                        <div class="mil-suptitle mil-fade-up mil-mb-20"><?php echo $features_top_line; ?></div>
-                        <h2 class="mil-fade-up"><?php echo $features_title; ?></h2>
+                        <div class="mil-suptitle mil-fade-up mil-mb-20">Team</div>
+                        <h2 class="mil-fade-up">Meet the <span class="highlight">team</span></h2>
                     </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
@@ -588,16 +588,9 @@ $counter_five = get_field('counter_five');
                                     </svg>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-                <div class="mil-content-pad mil-p-100-100">
-                    <div class="container">
-                        <div class="mil-text-center">
-                            <div class="mil-suptitle mil-mb-20 mil-fade-up">Team</div>
-                            <h2 class="mil-mb-100 mil-fade-up">Meet the <span class="highlight">team</span></h2>
-                        </div>
                         <div class="swiper-container team-slider">
                             <div class="swiper-wrapper">
                                 <?php 
@@ -643,8 +636,6 @@ $counter_five = get_field('counter_five');
                                 <?php wp_reset_postdata(); ?>
                             </div>
                         </div>
-                    </div>
-                </div>
             </div> 
         </div>    
         <!-- Team End -->
