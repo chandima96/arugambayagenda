@@ -666,22 +666,22 @@ $counter_five = get_field('counter_five');
                                 <div class="swiper-slide">
                                     <div class="review-client">
                                         <?php
-                                            if ( has_post_thumbnail() ) {
+                                        if ( has_post_thumbnail() ) {
                                             $attachment_image = wp_get_attachment_url( get_post_thumbnail_id() );
-                                            ?>
-                                            <img src="<?php echo $attachment_image; ?>">
-                                        <?php } ?>  
+                                        ?>
+                                            <img src="<?php echo $attachment_image; ?>" alt="Client Image">
+                                        <?php } ?>
                                     </div>
                                     <div class="mil-review-frame mil-text-center" data-swiper-parallax="-250" data-swiper-parallax-opacity="0">
                                         <div class="mil-fade-up">
                                             <h3 class="mil-mb-10"><?php the_title(); ?></h3>
-                                            <p class="mil-link "><?php the_content(); ?></p>
+                                            <p class="mil-link"><?php the_content(); ?></p>
                                         </div>
                                         <p class="mil-fade-up mil-mt-40"><?php the_excerpt(); ?></p>
                                     </div>
                                 </div>
-                                        <?php endwhile; endif; ?>
-                                        <?php wp_reset_postdata(); ?>
+                                    <?php endwhile; endif; ?>
+                                    <?php wp_reset_postdata(); ?>
                             </div>
                         </div>
 
