@@ -161,10 +161,15 @@ $counter_five = get_field('counter_five');
                         </a>
                     </div>
                 </div>
-                <div class="row justify-content-between">
-                    <!-- <div class="col-lg-7">
+                <div class="mil-desctop-right mil-fade-up btn-center">
+                    <a href="<?php bloginfo('url'); ?>/all-tours" class="mil-button">
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+                <!-- <div class="row justify-content-between">
+                    <div class="col-lg-7">
                         <p class="mil-fade-up"><?php echo $services_description; ?></p>
-                    </div> -->
+                    </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up btn-center">
                             <a href="<?php bloginfo('url'); ?>/all-tours" class="mil-button">
@@ -172,7 +177,7 @@ $counter_five = get_field('counter_five');
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- services end -->
