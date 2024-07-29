@@ -694,7 +694,14 @@ $counter_five = get_field('counter_five');
 
                     </div>
                 </div>
-                    <div class="row justify-content-between padding-top-60">
+                <div class="mil-text-center">
+                    <div class="mil-fade-up btn-center">
+                        <a href="<?php bloginfo('url'); ?>/contact-us" class="mil-button">
+                            <span>More Reviews</span>
+                        </a>
+                    </div>
+                </div>
+                    <!-- <div class="row justify-content-between padding-top-60">
                         <div class="col-lg-7">
                             <p class="mil-fade-up">Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
                         </div>
@@ -705,7 +712,7 @@ $counter_five = get_field('counter_five');
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
             </div>
         </div>
         <!-- reviews end -->
