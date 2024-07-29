@@ -679,9 +679,7 @@ $counter_five = get_field('counter_five');
                                             <h3 class="mil-mb-10"><?php the_title(); ?></h3>
                                             <p class="mil-link"><?php the_content(); ?></p>
                                         </div>
-                                        <!-- <p class="mil-fade-up mil-mt-40"><?php the_excerpt(); ?></p> -->
-                                        <p class="mil-fade-up mil-mt-40">Sample excerpt content content content content content</p>
-
+                                        <p class="mil-fade-up mil-mt-40"><?php the_excerpt(); ?></p>
                                     </div>
                                 </div>
                                     <?php endwhile; endif; ?>
