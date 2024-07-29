@@ -91,8 +91,8 @@
 
                                     <h5 class="mil-mb-20"><i class="bi bi-person-lines-fill"></i> Contact</h5>
                                     <a href="mailto:info@arugambayagenda.com" class="mil-light-soft"><i class="bi bi-envelope"></i> info@arugambayagenda.com</a>
-                                    <a href="tel:+94766899188" class="mil-light-soft"><i class="bi bi-telephone"></i> +94 76 689 9188</a> <br>
-                                    <a href="tel:+94726479635" class="mil-light-soft"><i class="bi bi-telephone"></i> +94 72 647 9635</a>
+                                    <a href="tel:+94726479635" class="mil-light-soft"><i class="bi bi-telephone"></i>+94 72 647 9635</a> <br>
+                                    <a href="tel:+94766899188" class="mil-light-soft"><i class="bi bi-telephone"></i>+94 76 689 9188</a>
 
                                 </div>
                             </div>

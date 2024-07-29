@@ -22,7 +22,7 @@ get_header();
 
                         <div class="mil-banner-content-frame">
                             <div class="mil-banner-content mil-text-center">
-                                <h1 class="mil-mb-40">Choose the room <br>of your dreams</h1>
+                                <h1 class="mil-mb-40">All Tours</h1>
                                 <div class="mil-suptitle mil-breadcrumbs">
                                     <ul>
                                         <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
@@ -105,7 +105,7 @@ get_header();
 
                         <div class="mil-desctop-right mil-fade-up">
                             <div class="mil-filter">
-                                <a href="<?php bloginfo('url'); ?>/wild-life-tours">Wild Life & Eco Tours</a>
+                                <a href="<?php bloginfo('url'); ?>/wild-life-tours">Wildlife & Eco Tours</a>
                                 <a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a>
                                 <a href="<?php bloginfo('url'); ?>/surfing">Surfing</a>
                             </div>

@@ -133,7 +133,7 @@ $counter_five = get_field('counter_five');
                             <div class="mil-img-frame">
                                 <img src="<?php echo $service_section_wild_life_tours_image; ?>" alt="img">
                             </div>
-                            <div class="mil-description">Wild Life & Eco Tours</div>
+                            <div class="mil-description">Wildlife & Eco Tours</div>
                         </a>
                     </div>
                     <div class="col-md-6 col-xl-3">
@@ -704,7 +704,7 @@ $counter_five = get_field('counter_five');
         <!-- reviews end -->
                                         
             <div class="mil-text-center">
-                <h2 class="mil-mb-100 mil-fade-up">Meet the <span class="highlight">team</span></h2>
+                <h2 class="mil-fade-up padding-top-60">Served so far</h2>
             </div>
             <div class="container" style="z-index: 100 !important;">
                 <div class="mil-flexbox-custom mil-p-100-60">
