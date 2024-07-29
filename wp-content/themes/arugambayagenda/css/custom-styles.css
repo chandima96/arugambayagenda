@@ -573,7 +573,8 @@ body {
 }
 
 .review-client img {
-    max-width: 100%;
-    height: auto; 
-    border-radius: 50%; 
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px; 
 }
