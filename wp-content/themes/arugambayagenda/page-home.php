@@ -161,10 +161,12 @@ $counter_five = get_field('counter_five');
                         </a>
                     </div>
                 </div>
-                <div class="mil-desctop-right mil-fade-up btn-center">
-                    <a href="<?php bloginfo('url'); ?>/all-tours" class="mil-button">
-                        <span>Contact Us</span>
-                    </a>
+                <div class="mil-text-center">
+                    <div class="mil-desctop-right mil-fade-up btn-center">
+                        <a href="<?php bloginfo('url'); ?>/all-tours" class="mil-button">
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
                 </div>
                 <!-- <div class="row justify-content-between">
                     <div class="col-lg-7">
