@@ -573,7 +573,6 @@ $counter_five = get_field('counter_five');
                     </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
-
                             <div class="mil-slider-nav mil-recommendation-nav mil-fade-up">
                                 <div class="mil-slider-arrow mil-prev mil-reco-prev">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
@@ -591,51 +590,51 @@ $counter_five = get_field('counter_five');
                         </div>
                     </div>
                 </div>
-                        <div class="swiper-container team-slider">
-                            <div class="swiper-wrapper">
-                                <?php 
-                                    $the_query = new WP_Query(array(
-                                        'post_type' => 'team',
-                                        'posts_per_page' => 100,
-                                        'post__not_in' => array($id),
-                                    ));
-                                ?>
-                                <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                    <?php
-                                        $thumbnail_id = get_post_thumbnail_id();
-                                        $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
-                                        $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-                                    ?>
-                                    <div class="swiper-slide">
-                                        <div class="team-member">
-                                            <?php if (has_post_thumbnail()) { ?>
-                                                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="<?php echo esc_attr($thumbnail_meta); ?>">
-                                            <?php } ?>
-                                            <h3><?php the_title(); ?></h3>
-                                            <p class="margin-bottom-5"><?php echo get_field('designation'); ?></p>
-                                            <p>
-                                                <?php
-                                                    $contact_number = get_field('contact_number'); 
-                                                    if ($contact_number) {
-                                                        $formatted_number = format_contact_number($contact_number);
-                                                        echo '<a href="tel:' . $contact_number . '" class="contact-number">' . $formatted_number . '</a>';
-                                                    } else {
-                                                        echo 'Contact number not available';
-                                                    }
-                                                ?>
-                                            </p>
-                                            <div class="social-links">
-                                                <a href="<?php echo get_field('facebook_link'); ?>" target="_blank" >[Facebook Icon]</a>
-                                                <a href="<?php echo get_field('twitter_link'); ?>" target="_blank" >[Twitter Icon]</a>
-                                                <a href="<?php echo get_field('instagram_link'); ?>" target="_blank" >[Instagram Icon]</a>
-                                                <a href="<?php echo get_field('linkedin_link'); ?>" target="_blank" >[LinkedIn Icon]</a>
-                                            </div>
-                                        </div>
+                <div class="swiper-container team-slider">
+                    <div class="swiper-wrapper">
+                        <?php 
+                            $the_query = new WP_Query(array(
+                                'post_type' => 'team',
+                                'posts_per_page' => 100,
+                                'post__not_in' => array($id),
+                            ));
+                        ?>
+                        <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                            <?php
+                                $thumbnail_id = get_post_thumbnail_id();
+                                $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
+                                $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                            ?>
+                            <div class="swiper-slide">
+                                <div class="team-member">
+                                    <?php if (has_post_thumbnail()) { ?>
+                                        <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="<?php echo esc_attr($thumbnail_meta); ?>">
+                                    <?php } ?>
+                                    <h3><?php the_title(); ?></h3>
+                                    <p class="margin-bottom-5"><?php echo get_field('designation'); ?></p>
+                                    <p>
+                                        <?php
+                                            $contact_number = get_field('contact_number'); 
+                                            if ($contact_number) {
+                                                $formatted_number = format_contact_number($contact_number);
+                                                echo '<a href="tel:' . $contact_number . '" class="contact-number">' . $formatted_number . '</a>';
+                                            } else {
+                                                echo 'Contact number not available';
+                                            }
+                                        ?>
+                                    </p>
+                                    <div class="social-links">
+                                        <a href="<?php echo get_field('facebook_link'); ?>" target="_blank">[Facebook Icon]</a>
+                                        <a href="<?php echo get_field('twitter_link'); ?>" target="_blank">[Twitter Icon]</a>
+                                        <a href="<?php echo get_field('instagram_link'); ?>" target="_blank">[Instagram Icon]</a>
+                                        <a href="<?php echo get_field('linkedin_link'); ?>" target="_blank">[LinkedIn Icon]</a>
                                     </div>
-                                <?php endwhile; endif; ?>
-                                <?php wp_reset_postdata(); ?>
+                                </div>
                             </div>
-                        </div>
+                        <?php endwhile; endif; ?>
+                        <?php wp_reset_postdata(); ?>
+                    </div>
+                </div>
             </div> 
         </div>    
         <!-- Team End -->
@@ -1085,38 +1084,22 @@ $counter_five = get_field('counter_five');
         });
     </script>
 
-            <!-- Swiper JS and CSS inclusion -->
-            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
 
-        <!-- Initialize Swiper -->
-        <script>
-        var swiper = new Swiper('.team-slider', {
-            slidesPerView: 3,
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize the team slider with custom navigation buttons
+        var teamSlider = new Swiper('.team-slider', {
+            slidesPerView: 1,
             spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.mil-reco-next',
+                prevEl: '.mil-reco-prev',
             },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            }
+            loop: true, // Optional: Enable looping of slides
+            // Add any other Swiper options you need here
         });
+    });
+
     </script>
 
 
