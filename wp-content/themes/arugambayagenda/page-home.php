@@ -307,7 +307,7 @@ $counter_five = get_field('counter_five');
                     <div class="swiper-wrapper">
                                     <?php 
                                         $the_query = new WP_Query(array(
-                                            'post_type' => array('wildlifetours', 'surfing-tour', 'experientialtours', 'activity'  ),
+                                            'post_type' => array('wildlifetours', 'experientialtours'),
                                             'posts_per_page' => 100,
                                             'post__not_in' => array($id),
                                         ));
