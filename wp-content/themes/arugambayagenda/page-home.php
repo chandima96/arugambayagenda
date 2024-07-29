@@ -1133,7 +1133,7 @@ $counter_five = get_field('counter_five');
         });
     </script>
 
-
+    <script src="script.js"></script>
 
 
         <?php get_footer(); ?>
