@@ -62,7 +62,7 @@ $counter_five = get_field('counter_five');
                 <div class="row align-items-center">
                     <div class="col-xl-10">
 
-                        <div class="mil-banner-content-frame">
+                        <div class="mil-banner-content-frame mobile-content-center ">
                             <div class="mil-banner-content" style="padding-top: 0px !important;">
                                 <div class="mil-suptitle mil-mb-40"><?php echo $home_banner_top_line; ?></div>
                                 <h1 class="mil-mb-40 home-title"><?php echo $home_banner_title; ?></h1>
