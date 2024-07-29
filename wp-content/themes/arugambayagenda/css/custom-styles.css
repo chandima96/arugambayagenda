@@ -555,3 +555,7 @@ body {
     }
 }
 
+.btn-center {
+    text-align: center !important;
+}
+

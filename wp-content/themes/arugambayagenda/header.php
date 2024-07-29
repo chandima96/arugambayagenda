@@ -81,7 +81,7 @@
                                 </li>
 
                                 <?php
-                                    $active_post_ids = array(328, 14, 331, 330, 31);
+                                    $active_post_ids = array(328, 331, 330, 31);
                                     ?>
                                 <li class="<?php if (in_array(get_the_ID(), $active_post_ids)) { echo 'mil-current active'; } ?>"> 
                                     <a href="<?php bloginfo('url'); ?>/activities">Activities</a>
@@ -90,7 +90,7 @@
                                         <li><a href="<?php bloginfo('url'); ?>/blog">Blog</a></li>
                                     </ul>
                                 </li>
-                                
+
                                 <li class="<?php if (get_the_ID() == '13') { echo 'mil-current active'; } ?>">
                                     <a href="<?php bloginfo('url'); ?>/taxi-service">Taxi service</a>
                                 </li>
