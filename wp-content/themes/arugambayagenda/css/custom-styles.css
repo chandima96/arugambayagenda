@@ -579,4 +579,6 @@ body {
     margin-bottom: 20px; 
 }
 
-
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    color: rgb(244, 107, 51) !important;
+}
