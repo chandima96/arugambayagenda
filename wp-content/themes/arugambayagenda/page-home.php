@@ -563,7 +563,7 @@ $counter_five = get_field('counter_five');
         </div> -->
         <!-- about 2 end -->
 
-        <!-- Team -->
+        <!-- Team Section -->
         <div class="mil-rooms mil-p-100-100">
             <div class="container">
                 <div class="row justify-content-between align-items-end mil-mb-100">
@@ -574,13 +574,13 @@ $counter_five = get_field('counter_five');
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
                             <div class="mil-slider-nav mil-recommendation-nav mil-fade-up">
-                                <div class="mil-slider-arrow mil-prev mil-reco-prev">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                <div class="mil-slider-arrow team-slider-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+                                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                                        <polyline points="12 19 5 12 12 5"></polyline>
                                     </svg>
                                 </div>
-                                <div class="mil-slider-arrow mil-reco-next">
+                                <div class="mil-slider-arrow team-slider-next">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                         <line x1="5" y1="12" x2="19" y2="12"></line>
                                         <polyline points="12 5 19 12 12 19"></polyline>
@@ -590,7 +590,7 @@ $counter_five = get_field('counter_five');
                         </div>
                     </div>
                 </div>
-                <div class="swiper-container team-slider">
+                <div class="swiper-container team-swiper">
                     <div class="swiper-wrapper">
                         <?php 
                             $the_query = new WP_Query(array(
@@ -638,6 +638,7 @@ $counter_five = get_field('counter_five');
             </div> 
         </div>    
         <!-- Team End -->
+
 
 
         <!-- reviews -->
@@ -1085,22 +1086,34 @@ $counter_five = get_field('counter_five');
     </script>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize the first slider
+            var firstSlider = new Swiper('.first-slider-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: '.first-slider-next',
+                    prevEl: '.first-slider-prev',
+                },
+                loop: true, // Optional: Enable looping of slides
+                // Add any other Swiper options you need here
+            });
 
-    document.addEventListener('DOMContentLoaded', function () {
-        // Initialize the team slider with custom navigation buttons
-        var teamSlider = new Swiper('.team-slider', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: '.mil-reco-next',
-                prevEl: '.mil-reco-prev',
-            },
-            loop: true, // Optional: Enable looping of slides
-            // Add any other Swiper options you need here
+            // Initialize the team slider with custom navigation buttons
+            var teamSlider = new Swiper('.team-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: '.team-slider-next',
+                    prevEl: '.team-slider-prev',
+                },
+                loop: true, // Optional: Enable looping of slides
+                // Add any other Swiper options you need here
+            });
         });
-    });
 
     </script>
+
 
 
 
