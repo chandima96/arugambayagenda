@@ -627,6 +627,68 @@ $counter_five = get_field('counter_five');
         </div>
         <!-- Team End -->
 
+        <!-- test -->
+
+        <div class="carousel">
+        <button class="carousel-button left" id="prevButton">&#10094;</button>
+        <div class="carousel-track-container">
+            <ul class="carousel-track">
+                <?php 
+                $the_query = new WP_Query(array(
+                    'post_type' => 'team',
+                    'posts_per_page' => 100,
+                    'post__not_in' => array($id),
+                ));
+                if ($the_query->have_posts()) : 
+                    while ($the_query->have_posts()) : 
+                        $the_query->the_post(); 
+                        $thumbnail_id = get_post_thumbnail_id();
+                        $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
+                        $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                ?>
+                <li class="carousel-slide">
+                    <div class="team-member">
+                        <?php if (has_post_thumbnail()) : ?>
+                            <img class="carousel-image" src="<?php echo esc_url($thumbnail_url[0]); ?>" alt="<?php echo esc_attr($thumbnail_meta); ?>">
+                        <?php endif; ?>
+                        <h3><?php the_title(); ?></h3>
+                        <p class="margin-bottom-5"><?php echo get_field('designation'); ?></p>
+                        <p>
+                            <?php
+                            $contact_number = get_field('contact_number'); 
+                            if ($contact_number) {
+                                $formatted_number = format_contact_number($contact_number);
+                                echo '<a href="tel:' . esc_attr($contact_number) . '" class="contact-number">' . esc_html($formatted_number) . '</a>';
+                            } else {
+                                echo 'Contact number not available';
+                            }
+                            ?>
+                        </p>
+                        <div class="social-links">
+                            <a href="<?php echo esc_url(get_field('favebook_link')); ?>" target="_blank">
+                                <!-- Facebook SVG Icon -->
+                            </a>
+                            <a href="<?php echo esc_url(get_field('twiter_link')); ?>" target="_blank">
+                                <!-- Twitter SVG Icon -->
+                            </a>
+                            <a href="<?php echo esc_url(get_field('instagram_link')); ?>" target="_blank">
+                                <!-- Instagram SVG Icon -->
+                            </a>
+                            <a href="<?php echo esc_url(get_field('linkedin_link')); ?>" target="_blank">
+                                <!-- LinkedIn SVG Icon -->
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <?php endwhile; endif; ?>
+                <?php wp_reset_postdata(); ?>
+            </ul>
+        </div>
+        <button class="carousel-button right" id="nextButton">&#10095;</button>
+    </div>
+
+        <!-- test -->
+
         <!-- reviews -->
         <div class="mil-content-pad mil-p-100-100" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/shapes/5.png); background-size: 100%; overflow-x: hidden;">
             <div class="container">
