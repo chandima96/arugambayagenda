@@ -12,30 +12,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $page_slug = htmlspecialchars($_POST['page_slug']);
     $page_title = htmlspecialchars($_POST['page_title']);
 
-    // Redirect to the same page with the slug and title in the URL
-    header("Location: booking-confirmation.php?slug=" . urlencode($page_slug) . "&title=" . urlencode($page_title) . "&fname=" . urlencode($fname));
+    // Redirect with the form data as query parameters
+    header("Location: /booking-confirmation?slug=" . urlencode($page_slug) . "&title=" . urlencode($page_title) . "&fname=" . urlencode($fname));
     exit();
 }
 
-// If redirected, retrieve the slug, title, and name from the query parameters
+// Retrieve the form data from the query parameters after the redirect
 $page_slug = isset($_GET['slug']) ? htmlspecialchars($_GET['slug']) : '';
 $page_title = isset($_GET['title']) ? htmlspecialchars($_GET['title']) : '';
 $fname = isset($_GET['fname']) ? htmlspecialchars($_GET['fname']) : '';
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $page_title; ?> - Booking Confirmation</title>
-</head>
-<body>
+
     <h1><?php echo $page_title; ?></h1>
     <p>Thank you, <?php echo $fname; ?>, for your booking!</p>
     <p>Form Page Slug: <?php echo $page_slug; ?></p>
-</body>
-</html>
+
 
 
 
