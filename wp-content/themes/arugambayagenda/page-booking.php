@@ -1,32 +1,29 @@
 <?php
+/* Template Name: Booking Confirmation */
+
 get_header();
 
-// Fetch query parameters
-$page_slug = isset($_GET['page_slug']) ? sanitize_text_field($_GET['page_slug']) : 'default-slug';
-$page_title = isset($_GET['page_title']) ? sanitize_text_field($_GET['page_title']) : 'Default Title';
+// Get the query parameters
+$fname = isset($_GET['fname']) ? htmlspecialchars($_GET['fname']) : 'Guest';
+$page_slug = isset($_GET['page_slug']) ? htmlspecialchars($_GET['page_slug']) : 'unknown';
+$page_title = isset($_GET['page_title']) ? htmlspecialchars($_GET['page_title']) : 'Booking Confirmation';
+?>
 
-// Fetch form data
-$fname = isset($_GET['fname']) ? sanitize_text_field($_GET['fname']) : '';
-$email = isset($_GET['email']) ? sanitize_email($_GET['email']) : '';
-$whatsapp = isset($_GET['whatsapp']) ? sanitize_text_field($_GET['whatsapp']) : '';
-$date = isset($_GET['date']) ? sanitize_text_field($_GET['date']) : '';
-$pax = isset($_GET['pax']) ? intval($_GET['pax']) : '';
-$kids = isset($_GET['kids']) ? intval($_GET['kids']) : '';
-$location = isset($_GET['location']) ? sanitize_text_field($_GET['location']) : '';
-$assistance = isset($_GET['assistance']) ? sanitize_textarea_field($_GET['assistance']) : '';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $page_title; ?></title>
+</head>
+<body>
+    <h1><?php echo $page_title; ?></h1>
+    <p>Thank you, <?php echo $fname; ?>, for your booking.</p>
+    <p>Your booking details have been successfully submitted.</p>
+    <p>Page Slug: <?php echo $page_slug; ?></p>
+</body>
+</html>
 
-
-
-// Display form details
-echo '<h2>Form Details</h2>';
-echo '<p><strong>Full Name:</strong> ' . esc_html($fname) . '</p>';
-echo '<p><strong>E-Mail Address:</strong> ' . esc_html($email) . '</p>';
-echo '<p><strong>WhatsApp Number:</strong> ' . esc_html($whatsapp) . '</p>';
-echo '<p><strong>Date:</strong> ' . esc_html($date) . '</p>';
-echo '<p><strong>Number of Pax:</strong> ' . esc_html($pax) . '</p>';
-echo '<p><strong>Number of Kids:</strong> ' . esc_html($kids) . '</p>';
-echo '<p><strong>Departure Location:</strong> ' . esc_html($location) . '</p>';
-echo '<p><strong>Need Further Assistance:</strong> ' . esc_html($assistance) . '</p>';
-
+<?php
 get_footer();
 ?>
