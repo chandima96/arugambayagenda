@@ -33,9 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $page_slug = isset($_POST['page_slug']) ? htmlspecialchars($_POST['page_slug']) : '';
     $page_title = isset($_POST['page_title']) ? htmlspecialchars($_POST['page_title']) : '';
 
-    // Redirect with query string parameters
-    header("Location: /booking-confirmation?slug=" . urlencode($page_slug) . "&title=" . urlencode($page_title) . "&fname=" . urlencode($fname));
-    exit();
+
 }
 
 // Retrieve parameters from the query string
