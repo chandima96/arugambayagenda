@@ -1,5 +1,7 @@
 <?php
-
+/*
+	Template Name: Booking Confirmation 
+*/
 get_header();
 
 ?>
