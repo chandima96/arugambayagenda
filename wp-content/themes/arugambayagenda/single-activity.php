@@ -414,7 +414,7 @@ $seventh_section_title = get_field('seventh_section_title');
                         <div class="mil-sticky mil-stycky-right mil-p-0-100" data-margin-top="140">
 
                             <div class="mil-price-frame mil-mb-20">
-                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo $price_per_night; ?></span>/ <?php echo $duration; ?></div>
+                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo $price_per_night; ?></span>/ <span>per pax /</span> <?php echo $duration; ?></div>
                             </div>
 
                             <ul class="mil-parameters mil-mb-20">
@@ -537,8 +537,8 @@ $seventh_section_title = get_field('seventh_section_title');
             <div class="container">
                 <div class="row justify-content-between align-items-end mil-mb-100">
                     <div class="col-lg-7">
-                        <div class="mil-suptitle mil-fade-up mil-mb-20">Welcome friend</div>
-                        <h2 class="mil-fade-up">We recommend</h2>
+                        <div class="mil-suptitle mil-fade-up mil-mb-20">Discover</div>
+                        <h2 class="mil-fade-up">You might also like...</h2>
                     </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
@@ -674,7 +674,7 @@ $seventh_section_title = get_field('seventh_section_title');
                     </div>
                 </div>
 
-                <div class="row justify-content-between">
+                <!-- <div class="row justify-content-between">
                     <div class="col-lg-7">
                         <p class="mil-fade-up">Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
                     </div>
@@ -685,8 +685,7 @@ $seventh_section_title = get_field('seventh_section_title');
                             </a>
                         </div>
                     </div>
-                </div>
-
+                </div> -->
             </div>
         </div>
         <!-- recommendation end -->
