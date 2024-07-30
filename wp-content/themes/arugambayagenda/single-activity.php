@@ -341,7 +341,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                     <th><h5 class="feature-h5">Number of Adults</h5></th>
                                     <th><h5 class="feature-h5">Number of Adults</h5></th>
                                 </tr>
-                                <tr>
+                                <tr class="custom-margin-top-6 ">
                                     <td></td>
                                     <td></td>
                                     <td></td>

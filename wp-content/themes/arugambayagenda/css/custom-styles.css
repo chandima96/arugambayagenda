@@ -657,7 +657,12 @@ body {
     background-color: rgb(250, 255, 255);
     padding-top: 12px;
     padding-bottom: 12px;
+    border-radius: 16px;
 }
 .custom-table tr:nth-child(even) {
     background-color: rgb(213, 241, 241);
+}
+
+.custom-margin-top-6 {
+    margin-top: 6px !important;
 }
