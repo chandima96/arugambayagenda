@@ -649,7 +649,7 @@ body {
     margin-top: 20px;
 }
 .custom-table th, .custom-table td {
-    border: 1px solid rgb(213, 241, 241);
+    border: 1px solid transparent;
     padding: 8px;
     text-align: center;
 }
