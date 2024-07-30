@@ -497,7 +497,7 @@ $seventh_section_title = get_field('seventh_section_title');
                             <div class="mil-book-window">
                                 <!-- <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?> -->
                                  
-                                <div>
+                                <form action="page-booking.php" method="post">
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
                                         <input type="text" id="fname" placeholder="Full Name">
@@ -537,13 +537,16 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <textarea id="assistance-textarea" placeholder="Write to us" rows="4" cols="50"></textarea>
                                     </div>
 
+                                    <input type="hidden" name="page_slug" value="your-form-page-slug">
+                                    <input type="hidden" name="page_title" value="Your Form Page Title">
+
                                     <button type="submit" class="mil-button mil-accent-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
                                             <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
                                         </svg>
-                                        <span>Book now</span>
+                                        <span>Confirm</span>
                                     </button>
-                                </div>
+                                </form>
                             </div>     
                         </div>
                     </div>
