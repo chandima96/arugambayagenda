@@ -2,8 +2,17 @@
 /*
     Template Name: Booking Confirmation
 */
-
-get_header();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<?php
 
 // Error reporting (for debugging purposes)
 ini_set('display_errors', 1);
@@ -41,4 +50,5 @@ $fname = isset($_GET['fname']) ? htmlspecialchars($_GET['fname']) : '';
     <p>Form Page Slug: <?php echo $page_slug; ?></p>
 </div>
 
-<?php get_footer(); ?>
+</body>
+</html>
