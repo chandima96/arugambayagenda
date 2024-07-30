@@ -546,6 +546,11 @@ $seventh_section_title = get_field('seventh_section_title');
                                         </svg>
                                         <span>Confirm</span>
                                     </button>
+                                    <?php
+                                        global $post;
+                                        $slug = $post->post_name;
+                                        ?>
+                                        <h1><?php echo esc_html($slug); ?></h1>
                                 </form>
                             </div>     
                         </div>
