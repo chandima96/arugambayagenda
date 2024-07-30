@@ -495,8 +495,9 @@ $seventh_section_title = get_field('seventh_section_title');
                             </ul>
 
                             <div class="mil-book-window">
-                                <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?>
-                                <!-- <div>
+                                <!-- <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?> -->
+                                 
+                                <div>
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
                                         <input type="text" id="fname" placeholder="Full Name">
@@ -504,12 +505,12 @@ $seventh_section_title = get_field('seventh_section_title');
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>E-Mail Address</label>
-                                        <input type="email" id="aru-book-name" placeholder="E-Mail Address">
+                                        <input type="email" id="aru-book-email" placeholder="E-Mail Address">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>WhatsApp Number</label>
-                                        <input type="tel" id="aru-book-name" placeholder="WhatsApp Number">
+                                        <input type="tel" id="aru-book-tel" placeholder="WhatsApp Number">
                                     </div>
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Date</label>
@@ -517,23 +518,23 @@ $seventh_section_title = get_field('seventh_section_title');
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label>Time</label>
-                                        <input id="check-in-time" type="time" id="appt" name="appt" time-position="bottom left" placeholder="Select Time" autocomplete="off" readonly="readonly">
+                                        <label>Number of Pax</label>
+                                        <input type="number" id="aru-book-pax" value="1">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label>Number of Pax</label>
-                                        <input type="number" id="aru-book-name" value="1">
+                                        <label>Number of Kids</label>
+                                        <input type="number" id="aru-book-kids" value="1">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Departure location</label>
-                                        <input type="text" id="aru-book-name" placeholder="Departure location">
+                                        <input type="text" id="aru-book-location" placeholder="Departure location">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label for="assistance-textarea">Need further assistance? </label>
-                                        <textarea id="assistance-textarea" id="aru-book-name" placeholder="Write to us" rows="4" cols="50"></textarea>
+                                        <textarea id="assistance-textarea" placeholder="Write to us" rows="4" cols="50"></textarea>
                                     </div>
 
                                     <button type="submit" class="mil-button mil-accent-1">
@@ -542,7 +543,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                         </svg>
                                         <span>Book now</span>
                                     </button>
-                                </div> -->
+                                </div>
                             </div>     
                         </div>
                     </div>
