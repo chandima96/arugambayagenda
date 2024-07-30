@@ -500,41 +500,42 @@ $seventh_section_title = get_field('seventh_section_title');
                                 <form action="/booking-confirmation" method="post">
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
-                                        <input type="text" id="fname" placeholder="Full Name">
+                                        <input type="text" id="fname" name="fname" placeholder="Full Name" required>
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>E-Mail Address</label>
-                                        <input type="email" id="aru-book-email" placeholder="E-Mail Address">
+                                        <input type="email" id="aru-book-email" name="email" placeholder="E-Mail Address" required>
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>WhatsApp Number</label>
-                                        <input type="tel" id="aru-book-tel" placeholder="WhatsApp Number">
+                                        <input type="tel" id="aru-book-tel" name="whatsapp" placeholder="WhatsApp Number" required>
                                     </div>
+
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Date</label>
-                                        <input id="check-in" type="text" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly">
+                                        <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Number of Pax</label>
-                                        <input type="number" id="aru-book-pax" value="1">
+                                        <input type="number" id="aru-book-pax" name="pax" value="1" min="1" required>
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Number of Kids</label>
-                                        <input type="number" id="aru-book-kids" value="1">
+                                        <input type="number" id="aru-book-kids" name="kids" value="1" min="0" required>
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Departure location</label>
-                                        <input type="text" id="aru-book-location" placeholder="Departure location">
+                                        <input type="text" id="aru-book-location" name="location" placeholder="Departure location" required>
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label for="assistance-textarea">Need further assistance? </label>
-                                        <textarea id="assistance-textarea" placeholder="Write to us" rows="4" cols="50"></textarea>
+                                        <textarea id="assistance-textarea" name="assistance" placeholder="Write to us" rows="4" cols="50"></textarea>
                                     </div>
 
                                     <input type="hidden" name="page_slug" value="your-form-page-slug">
