@@ -17,6 +17,15 @@
     }
 }
 
+function display_page_slug() {
+    if (is_singular()) {
+        global $post;
+        $slug = get_post_field('post_name', $post);
+        return 'The slug of this page is: ' . esc_html($slug);
+    }
+    return '';
+}
 
+add_shortcode('page_slug', 'display_page_slug');
 
 
