@@ -538,7 +538,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <textarea id="assistance-textarea" name="assistance" placeholder="Write to us" rows="4" cols="50"></textarea>
                                     </div>
 
-                                    <input type="hidden" name="page_slug" value="booking-confirmation">
+                                    <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">
 
                                     <button type="submit" class="mil-button mil-accent-1">

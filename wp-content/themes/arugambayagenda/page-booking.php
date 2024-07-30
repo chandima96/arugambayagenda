@@ -19,8 +19,8 @@ echo '<title>' . $page_title . '</title>';
 // Display the page title
 echo '<h1>' . $page_title . '</h1>';
 
-// Display the slug
-echo '<h2>Page Slug: ' . $page_slug . '</h2>';
+// Display the form page slug
+echo '<h2>Form Page Slug: ' . $page_slug . '</h2>';
 
 // Display form details
 echo '<h2>Form Details</h2>';
