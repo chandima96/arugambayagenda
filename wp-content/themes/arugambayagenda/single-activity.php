@@ -337,9 +337,9 @@ $seventh_section_title = get_field('seventh_section_title');
                         <div class="container-table">
                             <table class="custom-table">
                                 <tr>
-                                    <th>No of Pax</th>
-                                    <th>Number of Adults</th>
-                                    <th>Number of Adults</th>
+                                    <th><h5 class="feature-h5">No of Pax</h5></th>
+                                    <th><h5 class="feature-h5">Number of Adults</h5></th>
+                                    <th><h5 class="feature-h5">Number of Adults</h5></th>
                                 </tr>
                                 <tr>
                                     <td></td>
