@@ -497,7 +497,7 @@ $seventh_section_title = get_field('seventh_section_title');
                             <div class="mil-book-window">
                                 <!-- <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?> -->
                                  
-                                <form action="/booking-confirmation" method="get">
+                                <form action="/booking-confirmation" method="post">
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
                                         <input type="text" id="fname" name="fname" placeholder="Full Name" required>
