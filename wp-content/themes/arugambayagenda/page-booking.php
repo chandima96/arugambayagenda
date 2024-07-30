@@ -1,17 +1,17 @@
 <?php
 // Fetch query parameters
-$page_slug = isset($_GET['page_slug']) ? $_GET['page_slug'] : 'default-slug';
-$page_title = isset($_GET['page_title']) ? $_GET['page_title'] : 'Default Title';
+$page_slug = isset($_POST['page_slug']) ? $_POST['page_slug'] : 'default-slug';
+$page_title = isset($_POST['page_title']) ? $_POST['page_title'] : 'Default Title';
 
 // Fetch form data
-$fname = isset($_GET['fname']) ? htmlspecialchars($_GET['fname']) : '';
-$email = isset($_GET['email']) ? htmlspecialchars($_GET['email']) : '';
-$whatsapp = isset($_GET['whatsapp']) ? htmlspecialchars($_GET['whatsapp']) : '';
-$date = isset($_GET['date']) ? htmlspecialchars($_GET['date']) : '';
-$pax = isset($_GET['pax']) ? htmlspecialchars($_GET['pax']) : '';
-$kids = isset($_GET['kids']) ? htmlspecialchars($_GET['kids']) : '';
-$location = isset($_GET['location']) ? htmlspecialchars($_GET['location']) : '';
-$assistance = isset($_GET['assistance']) ? htmlspecialchars($_GET['assistance']) : '';
+$fname = isset($_POST['fname']) ? htmlspecialchars($_POST['fname']) : '';
+$email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
+$whatsapp = isset($_POST['whatsapp']) ? htmlspecialchars($_POST['whatsapp']) : '';
+$date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
+$pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
+$kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
+$location = isset($_POST['location']) ? htmlspecialchars($_POST['location']) : '';
+$assistance = isset($_POST['assistance']) ? htmlspecialchars($_POST['assistance']) : '';
 
 // Set the title of the page
 echo '<title>' . $page_title . '</title>';
