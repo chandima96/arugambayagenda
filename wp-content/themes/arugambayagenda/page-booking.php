@@ -1,35 +1,36 @@
 <?php
+get_header();
+
 // Fetch query parameters
-$page_slug = isset($_GET['page_slug']) ? $_GET['page_slug'] : 'default-slug';
-$page_title = isset($_GET['page_title']) ? $_GET['page_title'] : 'Default Title';
+$page_slug = isset($_GET['page_slug']) ? sanitize_text_field($_GET['page_slug']) : 'default-slug';
+$page_title = isset($_GET['page_title']) ? sanitize_text_field($_GET['page_title']) : 'Default Title';
 
 // Fetch form data
-$fname = isset($_GET['fname']) ? htmlspecialchars($_GET['fname']) : '';
-$email = isset($_GET['email']) ? htmlspecialchars($_GET['email']) : '';
-$whatsapp = isset($_GET['whatsapp']) ? htmlspecialchars($_GET['whatsapp']) : '';
-$date = isset($_GET['date']) ? htmlspecialchars($_GET['date']) : '';
-$pax = isset($_GET['pax']) ? htmlspecialchars($_GET['pax']) : '';
-$kids = isset($_GET['kids']) ? htmlspecialchars($_GET['kids']) : '';
-$location = isset($_GET['location']) ? htmlspecialchars($_GET['location']) : '';
-$assistance = isset($_GET['assistance']) ? htmlspecialchars($_GET['assistance']) : '';
-
-// Set the title of the page
-echo '<title>' . $page_title . '</title>';
+$fname = isset($_GET['fname']) ? sanitize_text_field($_GET['fname']) : '';
+$email = isset($_GET['email']) ? sanitize_email($_GET['email']) : '';
+$whatsapp = isset($_GET['whatsapp']) ? sanitize_text_field($_GET['whatsapp']) : '';
+$date = isset($_GET['date']) ? sanitize_text_field($_GET['date']) : '';
+$pax = isset($_GET['pax']) ? intval($_GET['pax']) : '';
+$kids = isset($_GET['kids']) ? intval($_GET['kids']) : '';
+$location = isset($_GET['location']) ? sanitize_text_field($_GET['location']) : '';
+$assistance = isset($_GET['assistance']) ? sanitize_textarea_field($_GET['assistance']) : '';
 
 // Display the page title
-echo '<h1>' . $page_title . '</h1>';
+echo '<h1>' . esc_html($page_title) . '</h1>';
 
 // Display the page slug
-echo '<p>Page Slug: ' . $page_slug . '</p>';
+echo '<p><strong>Page Slug:</strong> ' . esc_html($page_slug) . '</p>';
 
 // Display form details
 echo '<h2>Form Details</h2>';
-echo '<p><strong>Full Name:</strong> ' . $fname . '</p>';
-echo '<p><strong>E-Mail Address:</strong> ' . $email . '</p>';
-echo '<p><strong>WhatsApp Number:</strong> ' . $whatsapp . '</p>';
-echo '<p><strong>Date:</strong> ' . $date . '</p>';
-echo '<p><strong>Number of Pax:</strong> ' . $pax . '</p>';
-echo '<p><strong>Number of Kids:</strong> ' . $kids . '</p>';
-echo '<p><strong>Departure Location:</strong> ' . $location . '</p>';
-echo '<p><strong>Need Further Assistance:</strong> ' . $assistance . '</p>';
+echo '<p><strong>Full Name:</strong> ' . esc_html($fname) . '</p>';
+echo '<p><strong>E-Mail Address:</strong> ' . esc_html($email) . '</p>';
+echo '<p><strong>WhatsApp Number:</strong> ' . esc_html($whatsapp) . '</p>';
+echo '<p><strong>Date:</strong> ' . esc_html($date) . '</p>';
+echo '<p><strong>Number of Pax:</strong> ' . esc_html($pax) . '</p>';
+echo '<p><strong>Number of Kids:</strong> ' . esc_html($kids) . '</p>';
+echo '<p><strong>Departure Location:</strong> ' . esc_html($location) . '</p>';
+echo '<p><strong>Need Further Assistance:</strong> ' . esc_html($assistance) . '</p>';
+
+get_footer();
 ?>
