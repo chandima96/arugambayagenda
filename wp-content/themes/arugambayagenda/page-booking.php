@@ -2,7 +2,7 @@
 /*
 	Template Name: Booking Confirmation 
 */
-get_header();
+
 ?>
 
 
@@ -24,4 +24,3 @@ echo '<p>Page Slug: ' . htmlspecialchars($page_slug) . '</p>';
 ?>
 
 
-<?php get_footer(); ?>
