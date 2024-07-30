@@ -635,3 +635,8 @@ body {
 .feature-h5 {
     font-size: 14px !important;
 }
+
+.icon-w-h {
+    width: 40px !important;
+    height: 40px !important;
+}
