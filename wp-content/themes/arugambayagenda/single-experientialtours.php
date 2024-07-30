@@ -671,6 +671,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                     </div>
                                 </a>
                             </div>
+                            
                         </div>
                             <?php endwhile; endif; ?>
                             <?php wp_reset_postdata(); ?>
