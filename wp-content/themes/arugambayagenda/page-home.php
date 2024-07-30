@@ -568,7 +568,7 @@ $counter_five = get_field('counter_five');
             <div class="container">
                 <div class="mil-text-center">
                     <div class="mil-suptitle mil-mb-20 mil-fade-up">Team</div>
-                    <h2 class="mil-mb-100 mil-fade-up">Meet the <span class="highlight">team</span></h2>
+                    <h2 class="mil-mb-100 mil-fade-up">Our Experts</h2>
                 </div>
                 <div class="team-section">
                     <div class="team-container">
@@ -790,8 +790,8 @@ $counter_five = get_field('counter_five');
 
 
         <!-- blog -->
-        <!-- <div class="mil-rooms mil-p-100-100">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape" style="width: 85%; top: -20%; right: -30%; transform: rotate(-30deg) scaleX(-1);" alt="shape">
+        <div class="mil-rooms mil-p-100-100">
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape" style="width: 85%; top: -20%; right: -30%; transform: rotate(-30deg) scaleX(-1);" alt="shape">
             <div class="container">
                 <div class="mil-text-center">
                     <div class="mil-suptitle mil-mb-20 mil-fade-up"><?php echo $our_blog_top_line; ?></div>
@@ -1000,8 +1000,8 @@ $counter_five = get_field('counter_five');
                         </div>
                     </div>
                 </div>
-            </div>
-        </div> -->
+            </div> -->
+        </div>
         <!-- blog end -->
 
         <script>
