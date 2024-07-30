@@ -166,7 +166,7 @@ $seventh_section_title = get_field('seventh_section_title');
 
                             <?php if (!empty($feature_one_title)): ?>
                             <div class="col-xl-4">
-                                <div class="mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
+                                <div class="icon-box-padding-4 mil-iconbox mil-iconbox-sm mil-mb-40-adapt mil-fade-up">
                                     <div class="mil-bg-icon"></div>
                                     <div class="mil-icon mil-icon-fix">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
@@ -175,7 +175,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                         </svg>
                                     </div>
 
-                                    <h5><?php echo $feature_one_title; ?></h5>
+                                    <h5 class="feature-h5"><?php echo $feature_one_title; ?></h5>
                                 </div>
                             </div>
                             <?php endif; ?>

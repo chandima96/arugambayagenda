@@ -627,3 +627,11 @@ body {
 .carousel-button.right {
     right: 10px;
 }
+
+.icon-box-padding-4 {
+    padding: 4px !important;
+}
+
+.feature-h5 {
+    font-size: 14px !important;
+}
