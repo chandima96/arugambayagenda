@@ -496,27 +496,8 @@ $seventh_section_title = get_field('seventh_section_title');
 
                             <div class="mil-book-window">
                                 <!-- <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?> -->
-                                <?php
-                                // Check if the form is submitted
-                                if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                                    // Capture form data
-                                    $fname = isset($_POST['fname']) ? htmlspecialchars($_POST['fname']) : '';
-                                    $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
-                                    $whatsapp = isset($_POST['whatsapp']) ? htmlspecialchars($_POST['whatsapp']) : '';
-                                    $date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
-                                    $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
-                                    $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
-                                    $location = isset($_POST['location']) ? htmlspecialchars($_POST['location']) : '';
-                                    $assistance = isset($_POST['assistance']) ? htmlspecialchars($_POST['assistance']) : '';
-                                    $page_slug = isset($_POST['page_slug']) ? htmlspecialchars($_POST['page_slug']) : '';
-                                    $page_title = isset($_POST['page_title']) ? htmlspecialchars($_POST['page_title']) : '';
-
-                                    // Redirect to confirmation page with query parameters
-                                    header("Location: /booking-confirmation?fname=$fname&page_slug=$page_slug&page_title=$page_title");
-                                    exit();
-                                }
-                                ?>
-                                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                                 
+                                <form action="/booking-confirmation" method="post">
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
                                         <input type="text" id="fname" name="fname" placeholder="Full Name" required>

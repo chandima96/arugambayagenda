@@ -1,29 +1,35 @@
 <?php
-/* Template Name: Booking Confirmation */
+// Fetch query parameters
+$page_slug = isset($_GET['page_slug']) ? $_GET['page_slug'] : 'default-slug';
+$page_title = isset($_GET['page_title']) ? $_GET['page_title'] : 'Default Title';
 
-get_header();
+// Fetch form data
+$fname = isset($_GET['fname']) ? htmlspecialchars($_GET['fname']) : '';
+$email = isset($_GET['email']) ? htmlspecialchars($_GET['email']) : '';
+$whatsapp = isset($_GET['whatsapp']) ? htmlspecialchars($_GET['whatsapp']) : '';
+$date = isset($_GET['date']) ? htmlspecialchars($_GET['date']) : '';
+$pax = isset($_GET['pax']) ? htmlspecialchars($_GET['pax']) : '';
+$kids = isset($_GET['kids']) ? htmlspecialchars($_GET['kids']) : '';
+$location = isset($_GET['location']) ? htmlspecialchars($_GET['location']) : '';
+$assistance = isset($_GET['assistance']) ? htmlspecialchars($_GET['assistance']) : '';
 
-// Get the query parameters
-$fname = isset($_GET['fname']) ? htmlspecialchars($_GET['fname']) : 'Guest';
-$page_slug = isset($_GET['page_slug']) ? htmlspecialchars($_GET['page_slug']) : 'unknown';
-$page_title = isset($_GET['page_title']) ? htmlspecialchars($_GET['page_title']) : 'Booking Confirmation';
-?>
+// Set the title of the page
+echo '<title>' . $page_title . '</title>';
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $page_title; ?></title>
-</head>
-<body>
-    <h1><?php echo $page_title; ?></h1>
-    <p>Thank you, <?php echo $fname; ?>, for your booking.</p>
-    <p>Your booking details have been successfully submitted.</p>
-    <p>Page Slug: <?php echo $page_slug; ?></p>
-</body>
-</html>
+// Display the page title
+echo '<h1>' . $page_title . '</h1>';
 
-<?php
-get_footer();
+// Display the page slug
+echo '<p>Page Slug: ' . $page_slug . '</p>';
+
+// Display form details
+echo '<h2>Form Details</h2>';
+echo '<p><strong>Full Name:</strong> ' . $fname . '</p>';
+echo '<p><strong>E-Mail Address:</strong> ' . $email . '</p>';
+echo '<p><strong>WhatsApp Number:</strong> ' . $whatsapp . '</p>';
+echo '<p><strong>Date:</strong> ' . $date . '</p>';
+echo '<p><strong>Number of Pax:</strong> ' . $pax . '</p>';
+echo '<p><strong>Number of Kids:</strong> ' . $kids . '</p>';
+echo '<p><strong>Departure Location:</strong> ' . $location . '</p>';
+echo '<p><strong>Need Further Assistance:</strong> ' . $assistance . '</p>';
 ?>
