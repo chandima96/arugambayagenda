@@ -640,3 +640,28 @@ body {
     width: 40px !important;
     height: 40px !important;
 }
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.custom-table th {
+    background-color: #e6f7ff;
+    color: #005580;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

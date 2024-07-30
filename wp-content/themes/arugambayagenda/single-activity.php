@@ -257,6 +257,54 @@ $seventh_section_title = get_field('seventh_section_title');
                         </div>
                         <!-- features -->
 
+                        <!-- Table -->
+                        <div class="container">
+                            <h2>Tour Details</h2>
+                            <table class="custom-table">
+                                <tr>
+                                    <th>No of Pax</th>
+                                    <th>Number of Adults</th>
+                                    <th>Number of Adults</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- Table End -->
+
                         <h3 class="mil-fade-up mil-mb-40">FAQ</h3>
                         <div class="mil-faq-section mil-mb-100">
                             <?php if (!empty($faq_section_question_one) && !empty($faq_section_answer_one)): ?>
