@@ -152,7 +152,7 @@ $seventh_section_title = get_field('seventh_section_title');
                         <div class="row">
                             <div class="col-xl-11">
                                 <div class="mil-dercription mil-mb-100">
-                                    <h3 class="mil-fade-up mil-mb-40">Description</h3>
+                                    <!-- <h3 class="mil-fade-up mil-mb-40">Description</h3> -->
                                     <?php echo $description; ?>                                </div>
                             </div>
                         </div>
