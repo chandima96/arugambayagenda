@@ -15,11 +15,7 @@ $kids = isset($_GET['kids']) ? intval($_GET['kids']) : '';
 $location = isset($_GET['location']) ? sanitize_text_field($_GET['location']) : '';
 $assistance = isset($_GET['assistance']) ? sanitize_textarea_field($_GET['assistance']) : '';
 
-// Display the page title
-echo '<h1>' . esc_html($page_title) . '</h1>';
 
-// Display the page slug
-echo '<p><strong>Page Slug:</strong> ' . esc_html($page_slug) . '</p>';
 
 // Display form details
 echo '<h2>Form Details</h2>';
