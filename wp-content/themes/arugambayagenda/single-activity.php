@@ -726,12 +726,6 @@ $seventh_section_title = get_field('seventh_section_title');
                     </div>
                 </div>
 
-                                        <?php
-                                        global $post;
-                                        $slug = $post->post_name;
-                                        ?>
-                                        <h1><?php echo esc_html($slug); ?></h1>
-
                 <!-- <div class="row justify-content-between">
                     <div class="col-lg-7">
                         <p class="mil-fade-up">Accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
