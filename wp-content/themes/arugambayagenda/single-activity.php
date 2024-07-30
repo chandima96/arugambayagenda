@@ -546,11 +546,6 @@ $seventh_section_title = get_field('seventh_section_title');
                                         </svg>
                                         <span>Confirm</span>
                                     </button>
-                                    <?php
-                                        global $post;
-                                        $slug = $post->post_name;
-                                        ?>
-                                        <h1><?php echo esc_html($slug); ?></h1>
                                 </form>
                             </div>     
                         </div>
@@ -730,6 +725,12 @@ $seventh_section_title = get_field('seventh_section_title');
                             <?php wp_reset_postdata(); ?>
                     </div>
                 </div>
+
+                                        <?php
+                                        global $post;
+                                        $slug = $post->post_name;
+                                        ?>
+                                        <h1><?php echo esc_html($slug); ?></h1>
 
                 <!-- <div class="row justify-content-between">
                     <div class="col-lg-7">
