@@ -259,7 +259,6 @@ $seventh_section_title = get_field('seventh_section_title');
 
                         <!-- Table -->
                         <div class="container-table">
-                            <h2>Tour Details</h2>
                             <table class="custom-table">
                                 <tr>
                                     <th>No of Pax</th>

@@ -642,12 +642,10 @@ body {
 }
 
 .container-table {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+ margin-bottom: 60px;
 }
 .custom-table {
-    width: 100%;
+    width: auto;
     border-collapse: collapse;
     margin-top: 20px;
 }
