@@ -667,13 +667,13 @@ body {
     margin-top: 6px !important;
 }
 
-.donation-form-group .donation-frequency-buttons,
+.donation-form-group .donation-time-buttons,
 .donation-form-group .donation-donation-slots {
     display: flex;
     justify-content: space-between;
 }
 
-.donation-form-group .donation-frequency-buttons button,
+.donation-form-group .donation-time-buttons button,
 .donation-form-group .donation-donation-slots button {
     padding: 10px;
     flex: 1;
@@ -681,7 +681,7 @@ body {
     cursor: pointer;
 }
 
-.donation-form-group .donation-frequency-buttons button:first-child,
+.donation-form-group .donation-time-buttons button:first-child,
 .donation-form-group .donation-donation-slots button:first-child {
     margin-bottom: 20px;
     margin-top: 5px;
@@ -698,7 +698,7 @@ body {
     background-color: rgb(234, 251, 251);
 }
 
-.donation-form-group .donation-frequency-buttons button:last-child,
+.donation-form-group .donation-time-buttons button:last-child,
 .donation-form-group .donation-donation-slots button:last-child {
     margin-bottom: 20px;
     margin-top: 5px;
