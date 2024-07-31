@@ -495,8 +495,7 @@ $seventh_section_title = get_field('seventh_section_title');
                             </ul>
 
                             <div class="mil-book-window">
-                                <!-- <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?> -->
-                                <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
+                                <form>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Number of Pax</label>
