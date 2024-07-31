@@ -683,6 +683,8 @@ body {
 
 .donation-form-group .donation-frequency-buttons button:first-child,
 .donation-form-group .donation-donation-slots button:first-child {
+    margin-bottom: 20px;
+    margin-top: 5px;
     margin-left: 0;
     position: relative;
     font-family: "Outfit", sans-serif;
@@ -698,6 +700,8 @@ body {
 
 .donation-form-group .donation-frequency-buttons button:last-child,
 .donation-form-group .donation-donation-slots button:last-child {
+    margin-bottom: 20px;
+    margin-top: 5px;
     margin-left: 0;
     position: relative;
     font-family: "Outfit", sans-serif;
