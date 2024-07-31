@@ -20,7 +20,7 @@ get_header();
                                 <div class="mil-suptitle mil-breadcrumbs mil-light">
                                     <ul>
                                         <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
-                                        <li><a href="<?php bloginfo('url'); ?>/">Booking Confirmation</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/"><?php echo htmlspecialchars($post_title); ?></a></li>
                                         <li><a href="#"><?php the_title(); ?></a></li>
                                     </ul>
                                 </div>
