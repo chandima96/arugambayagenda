@@ -513,14 +513,14 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
                                     </div>
 
-                                    <div class="donation-form-group">
+                                    <div class="mil-field-frame mil-mb-20">
                                         <label>Donation Frequency</label>
-                                        <div class="donation-frequency-buttons">
-                                            <button type="button" onclick="setFrequency('monthly', this)">Monthly</button>
-                                            <button type="button" onclick="setFrequency('annually', this)">Annually</button>
-                                        </div>
-                                        <input type="hidden" id="frequency" name="frequency">
+                                        <select id="frequency" name="frequency" required>
+                                            <option value="monthly">8.00 AM</option>
+                                            <option value="annually">5.00 PM</option>
+                                        </select>
                                     </div>
+
                                     <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">
 
