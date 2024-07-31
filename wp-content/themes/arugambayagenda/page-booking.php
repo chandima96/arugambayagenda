@@ -1,20 +1,16 @@
 <?php
-// Handle URL Parameters
 $query_string = $_SERVER['QUERY_STRING'];
 
-// Split the query string into type and id parts
 $params = explode('/?', $query_string);
-$type_param = $params[0]; // 'type=activity'
-$id_param = isset($params[1]) ? $params[1] : null; // 'id=356'
+$type_param = $params[0]; 
+$id_param = isset($params[1]) ? $params[1] : null;
 
-// Extract 'type' and 'id' values
 parse_str($type_param, $type_params);
 $type = isset($type_params['type']) ? $type_params['type'] : null;
 
 parse_str($id_param, $id_params);
 $post_id = isset($id_params['id']) ? $id_params['id'] : null;
 
-// Check if the post ID is valid and retrieve the post title
 if ($post_id) {
     $post = get_post($post_id);
     if ($post) {
@@ -26,7 +22,6 @@ if ($post_id) {
     $post_title = "No Post ID provided.";
 }
 
-// Fetch and sanitize form data
 $page_slug = isset($_POST['page_slug']) ? htmlspecialchars($_POST['page_slug']) : 'default-slug';
 $page_title = isset($_POST['page_title']) ? htmlspecialchars($_POST['page_title']) : 'Default Title';
 $fname = isset($_POST['fname']) ? htmlspecialchars($_POST['fname']) : '';
@@ -38,7 +33,6 @@ $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
 $location = isset($_POST['location']) ? htmlspecialchars($_POST['location']) : '';
 $assistance = isset($_POST['assistance']) ? htmlspecialchars($_POST['assistance']) : '';
 
-// Output
 echo '<title>' . htmlspecialchars($page_title) . '</title>';
 echo '<h1>' . htmlspecialchars($page_title) . '</h1>';
 echo '<h2>Post ID: ' . htmlspecialchars($post_id) . '</h2>';
