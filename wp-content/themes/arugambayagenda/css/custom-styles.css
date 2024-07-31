@@ -712,8 +712,7 @@ body {
 }
 
 .donation-form-group .selected {
-    border-color: #4CAF50;
-    color: white;
+    color: rgb(0, 151, 178);
 }
 
 .donation-form-group label {
