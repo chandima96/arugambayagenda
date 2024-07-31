@@ -111,10 +111,10 @@ get_header();
                             <p>You can reserve now & pay later with this activity option.</p>
                         </div>
                         <div class="booking-price-breakdown">
-                            <p>Adult 3 × $34.98</p>
-                            <p>$104.94</p>
+                            <p>Adult <?php echo htmlspecialchars($pax); ?> × $34.98</p>
+                            <p>Kids <?php echo htmlspecialchars($kids); ?> × $34.98</p>
                         </div>
-                        <div class="booking-total-price">Total price $104.94</div>
+                        <div class="booking-total-price">Total price <?php echo htmlspecialchars($total_amount); ?></div>
                         <!-- <div class="booking-buttons">
                         <a href="#" class="booking-button secondary">Add to cart</a>
                         <a href="#" class="booking-button">Book now</a>
