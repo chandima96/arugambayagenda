@@ -26,11 +26,12 @@ $post_title = get_the_title($post_id);
         } else {
             $post_title = "No Post ID provided.";
         }
+
+$page_title = isset($_POST['page_title']) ? htmlspecialchars($_POST['page_title']) : 'Default Title';
 $date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
 $time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : '';
 $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
 $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
-
 ?>        
 
 
