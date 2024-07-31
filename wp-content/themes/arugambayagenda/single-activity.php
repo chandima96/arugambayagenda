@@ -519,7 +519,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                             <button type="button" onclick="setFrequency('monthly', this)">8.00 AM</button>
                                             <button type="button" onclick="setFrequency('annually', this)">5.00 PM</button>
                                         </div>
-                                        <input type="hidden" id="time" name="time">
+                                        <input type="hidden" id="frequency" name="frequency">
                                     </div>
                                     
 
