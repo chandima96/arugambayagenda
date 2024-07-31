@@ -344,6 +344,25 @@ get_header();
         }
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const date = urlParams.get('date');
+            const time = urlParams.get('time');
+            const pax = urlParams.get('pax');
+            const kids = urlParams.get('kids');
+            const totalAmount = urlParams.get('total_amount');
+
+            // Populate the Contact Form 7 fields
+            if (date) document.querySelector('[name="date"]').value = date;
+            if (time) document.querySelector('[name="time"]').value = time;
+            if (pax) document.querySelector('[name="pax"]').value = pax;
+            if (kids) document.querySelector('[name="kids"]').value = kids;
+            if (totalAmount) document.querySelector('[name="total_amount"]').value = totalAmount;
+        });
+    </script>
+
 
 
 
