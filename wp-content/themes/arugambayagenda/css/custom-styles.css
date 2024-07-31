@@ -821,5 +821,11 @@ body {
     gap: 12px !important;
 }
 
+@media (max-width: 1200px) {
+    .booking-card {
+        margin-bottom: 20px;
+    }
+}
+
 
 
