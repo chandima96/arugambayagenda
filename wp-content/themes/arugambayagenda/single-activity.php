@@ -514,10 +514,10 @@ $seventh_section_title = get_field('seventh_section_title');
                                     </div>
 
                                     <div class="donation-form-group">
-                                        <label>Donation Frequency</label>
+                                        <label>Time</label>
                                         <div class="donation-frequency-buttons">
-                                            <button type="button" onclick="setFrequency('monthly', this)">Monthly</button>
-                                            <button type="button" onclick="setFrequency('annually', this)">Annually</button>
+                                            <button type="button" onclick="setFrequency('monthly', this)">8.00 AM</button>
+                                            <button type="button" onclick="setFrequency('annually', this)">5.00 PM</button>
                                         </div>
                                         <input type="hidden" id="frequency" name="frequency">
                                     </div>
@@ -533,26 +533,6 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <span>Confirm</span>
                                     </button>
                                 </form>
-<script>
-    function setFrequency(frequency, button) {
-        document.getElementById('frequency').value = frequency;
-        clearSelected('donation-frequency-buttons');
-        button.classList.add('selected');
-    }
-
-    function setDonationAmount(amount, button) {
-        document.getElementById('other-amount').value = amount;
-        clearSelected('donation-donation-slots');
-        button.classList.add('selected');
-    }
-
-    function clearSelected(groupClass) {
-        var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].classList.remove('selected');
-        }
-    }
-</script>
                             </div>     
                         </div>
                     </div>
@@ -751,11 +731,30 @@ $seventh_section_title = get_field('seventh_section_title');
         <!-- recommendation end -->
 
 <?php get_footer(); ?>
-<script>  
+    <script>  
 		window.onload = function() { 
 			 document.getElementById('postId').value = '<?php echo get_the_ID();?>';
 			 document.getElementById('postTitle').value = '<?php echo the_title();?>';
 		};
-     
- 
     </script>
+
+    <script>
+    function setFrequency(frequency, button) {
+        document.getElementById('frequency').value = frequency;
+        clearSelected('donation-frequency-buttons');
+        button.classList.add('selected');
+    }
+
+    function setDonationAmount(amount, button) {
+        document.getElementById('other-amount').value = amount;
+        clearSelected('donation-donation-slots');
+        button.classList.add('selected');
+    }
+
+    function clearSelected(groupClass) {
+        var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove('selected');
+        }
+    }
+</script>
