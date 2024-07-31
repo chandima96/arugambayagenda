@@ -34,6 +34,12 @@ get_header();
     $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
     $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
 
+    echo '<p><strong>Date:</strong> ' . htmlspecialchars($date) . '</p>';
+    echo '<p><strong>Time:</strong> ' . htmlspecialchars($time) . '</p>';
+    echo '<p><strong>Number of Pax:</strong> ' . htmlspecialchars($pax) . '</p>';
+    echo '<p><strong>Number of Kids:</strong> ' . htmlspecialchars($kids) . '</p>';
+    echo '<p><strong>Total Amount:</strong> $' . htmlspecialchars($total_amount)  . '</p>';
+
 ?>     
         <!-- banner -->
         <div class="mil-p-100-60">
