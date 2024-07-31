@@ -521,31 +521,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                         </div>
                                         <input type="hidden" id="frequency" name="frequency">
                                     </div>
-
-                                    <script>
-                                        function setFrequency(frequency, button) {
-                                            // Set hidden input value
-                                            document.getElementById('frequency').value = frequency;
-
-                                            // Clear the 'selected' class from all buttons in the group
-                                            clearSelected('donation-frequency-buttons');
-                                            
-                                            // Add the 'selected' class to the clicked button
-                                            button.classList.add('selected');
-                                        }
-
-                                        function clearSelected(groupClass) {
-                                            // Get the group of buttons
-                                            var group = document.querySelector(`.${groupClass}`);
-                                            if (group) {
-                                                // Remove 'selected' class from all buttons
-                                                var buttons = group.getElementsByTagName('button');
-                                                for (var i = 0; i < buttons.length; i++) {
-                                                    buttons[i].classList.remove('selected');
-                                                }
-                                            }
-                                        }
-                                    </script>
+                                    
 
                                     <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">
@@ -557,6 +533,26 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <span>Confirm</span>
                                     </button>
                                 </form>
+<script>
+    function setFrequency(frequency, button) {
+        document.getElementById('frequency').value = frequency;
+        clearSelected('donation-frequency-buttons');
+        button.classList.add('selected');
+    }
+
+    function setDonationAmount(amount, button) {
+        document.getElementById('other-amount').value = amount;
+        clearSelected('donation-donation-slots');
+        button.classList.add('selected');
+    }
+
+    function clearSelected(groupClass) {
+        var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove('selected');
+        }
+    }
+</script>
                             </div>     
                         </div>
                     </div>
