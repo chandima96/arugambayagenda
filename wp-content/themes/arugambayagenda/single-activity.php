@@ -507,7 +507,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <input type="email" id="aru-book-email" name="email" placeholder="E-Mail Address" required>
                                     </div> -->
 
-                                    
+
                                     <!-- <div class="mil-field-frame mil-mb-20">
                                         <label>WhatsApp Number</label>
                                         <input type="tel" id="aru-book-tel" name="whatsapp" placeholder="WhatsApp Number" required>
