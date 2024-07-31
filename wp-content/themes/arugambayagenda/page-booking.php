@@ -72,7 +72,7 @@ $assistance = isset($_POST['assistance']) ? htmlspecialchars($_POST['assistance'
                                     <ul>
                                         <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/"><?php echo htmlspecialchars($post_title); ?></a></li>
-                                        <li><a href="#"><?php the_title(); ?></a></li>
+                                        <li><a href="#"><?php echo htmlspecialchars($page_title); ?></a></li>
                                     </ul>
                                 </div>
                             </div>
