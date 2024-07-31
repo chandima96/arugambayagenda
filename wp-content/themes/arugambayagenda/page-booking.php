@@ -33,7 +33,6 @@ get_header();
     $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
     $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
     $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
-
 ?>     
         <!-- banner -->
         <div class="mil-p-100-60">
@@ -77,7 +76,6 @@ get_header();
                         echo '<p><strong>Number of Pax:</strong> ' . htmlspecialchars($pax) . '</p>';
                         echo '<p><strong>Number of Kids:</strong> ' . htmlspecialchars($kids) . '</p>';
                         echo '<p><strong>Total Amount:</strong> $' . htmlspecialchars($total_amount)  . '</p>';
-
                     ?>
                     </div>
                     <!-- sidebar -->
@@ -336,6 +334,13 @@ get_header();
                 buttons[i].classList.remove('selected');
             }
         }
+    </script>
+
+    <script>  
+		window.onload = function() { 
+			 document.getElementById('postId').value = '<?php echo get_the_ID();?>';
+			 document.getElementById('postTitle').value = '<?php echo the_title();?>';
+		};
     </script>
 
     <script>
