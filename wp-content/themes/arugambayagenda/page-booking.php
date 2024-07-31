@@ -27,7 +27,9 @@ get_header();
         $post_title = "No Post ID provided.";
     }
 
+    
     $page_title = isset($_POST['page_title']) ? htmlspecialchars($_POST['page_title']) : 'Default Title';
+    $post_title = isset($_POST['post_title']) ? htmlspecialchars($_POST['post_title']) : '';
     $date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
     $time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : '';
     $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
@@ -336,19 +338,13 @@ get_header();
         }
     </script>
 
-    <script>  
-		window.onload = function() { 
-			 document.getElementById('postId').value = '<?php echo get_the_ID();?>';
-			 document.getElementById('postTitle').value = '<?php echo the_title();?>';
-		};
-    </script>
-
     <script>
             document.addEventListener('DOMContentLoaded', function() {
             const date = '<?php echo $date; ?>';
             const time = '<?php echo $time; ?>';
             const pax = '<?php echo $pax; ?>';
             const kids = '<?php echo $kids; ?>';
+            const totalAmount = '<?php echo $post_title; ?>';
             const totalAmount = '<?php echo $total_amount; ?>';
 
             setTimeout(function() {
@@ -356,6 +352,7 @@ get_header();
                 document.querySelector('input[name="time"]').value = time;
                 document.querySelector('input[name="pax"]').value = pax;
                 document.querySelector('input[name="kids"]').value = kids;
+                document.querySelector('input[name="post_title"]').value = post_title;
                 document.querySelector('input[name="total_amount"]').value = totalAmount;
             }, 1000); 
         });
