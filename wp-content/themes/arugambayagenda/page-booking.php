@@ -13,6 +13,16 @@ $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
 $location = isset($_POST['location']) ? htmlspecialchars($_POST['location']) : '';
 $assistance = isset($_POST['assistance']) ? htmlspecialchars($_POST['assistance']) : '';
 
+// Fetch post ID from the URL query parameter
+$post_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+$post_type = isset($_GET['type']) ? htmlspecialchars($_GET['type']) : '';
+
+// Get the post title using the post ID
+$post_title = '';
+if ($post_id > 0) {
+    $post_title = get_the_title($post_id);
+}
+
 // Set the title of the page
 echo '<title>' . $page_title . '</title>';
 
@@ -21,6 +31,11 @@ echo '<h1>' . $page_title . '</h1>';
 
 // Display the form page slug
 echo '<h2>Form Page Slug: ' . $page_slug . '</h2>';
+
+// Display the post title if available
+if (!empty($post_title)) {
+    echo '<h2>Post Title: ' . $post_title . '</h2>';
+}
 
 // Display form details
 echo '<h2>Form Details</h2>';
