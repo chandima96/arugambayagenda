@@ -86,7 +86,7 @@ s
                         <div class="mil-sticky mil-stycky-right mil-p-0-100" data-margin-top="140">
 
                             <div class="mil-price-frame mil-mb-20">
-                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo htmlspecialchars($total_amount); ?></span>/ <span>per pax /</span> <?php echo $duration; ?></div>
+                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo htmlspecialchars($total_amount); ?></span>/ <span><?php echo htmlspecialchars($pax); ?> Adults and <span><?php echo htmlspecialchars($kids); ?> Kids</span> /</span> <?php echo $duration; ?></div>
                             </div>
 
                             <ul class="mil-parameters mil-mb-20">
