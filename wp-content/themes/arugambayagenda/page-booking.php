@@ -64,7 +64,7 @@ $assistance = isset($_POST['assistance']) ? htmlspecialchars($_POST['assistance'
                 <div class="mil-banner-head">
                     <div class="row align-items-center">
                         <div class="col-lg-12 col-xl-12">
-                            <h1 class="mil-h2-lg mil-mb-40"><?php the_title(); ?></h1>
+                            <h1 class="mil-h2-lg mil-mb-40"><?php echo htmlspecialchars($page_title); ?></h1>
                         </div>
                         <div class="col-lg-12 col-xl-12">
                             <div class="mil-desctop-right mil-right-no-m mil-fade-up">
