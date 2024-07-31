@@ -684,11 +684,31 @@ body {
 .donation-form-group .donation-frequency-buttons button:first-child,
 .donation-form-group .donation-donation-slots button:first-child {
     margin-left: 0;
+    position: relative;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    /* color: rgb(32, 79, 94); */
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+    border: solid 1px rgb(213, 241, 241);
+    border-radius: 5px;
+    background-color: rgb(234, 251, 251);
 }
 
 .donation-form-group .donation-frequency-buttons button:last-child,
 .donation-form-group .donation-donation-slots button:last-child {
-    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    /* color: rgb(32, 79, 94); */
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+    border: solid 1px rgb(213, 241, 241);
+    border-radius: 5px;
+    background-color: rgb(234, 251, 251);
 }
 
 .donation-form-group .selected {
