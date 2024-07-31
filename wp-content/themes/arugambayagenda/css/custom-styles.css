@@ -667,35 +667,31 @@ body {
     margin-top: 6px !important;
 }
 
-.mil-field-frame {
-    margin-bottom: 20px;
-}
-
-.mil-field-frame label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.time-selector-buttons {
+.donation-form-group .donation-frequency-buttons,
+.donation-form-group .donation-donation-slots {
     display: flex;
-    gap: 10px; /* Adjust spacing between buttons as needed */
+    justify-content: space-between;
 }
 
-.time-selector-buttons button {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+.donation-form-group .donation-frequency-buttons button,
+.donation-form-group .donation-donation-slots button {
+    padding: 10px;
+    flex: 1;
+    margin: 0 5px;
     cursor: pointer;
-    background-color: #f9f9f9; /* Default background color */
-    transition: background-color 0.3s ease;
 }
 
-.time-selector-buttons button.selected {
-    background-color: #007bff; /* Background color for selected button */
-    color: white; /* Text color for selected button */
+.donation-form-group .donation-frequency-buttons button:first-child,
+.donation-form-group .donation-donation-slots button:first-child {
+    margin-left: 0;
 }
 
-.time-selector-buttons button:hover {
-    background-color: #e2e6ea; /* Hover background color */
+.donation-form-group .donation-frequency-buttons button:last-child,
+.donation-form-group .donation-donation-slots button:last-child {
+    margin-right: 0;
+}
+
+.donation-form-group .selected {
+    background-color: #4CAF50;
+    color: white;
 }
