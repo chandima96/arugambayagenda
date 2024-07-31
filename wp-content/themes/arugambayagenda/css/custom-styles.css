@@ -820,3 +820,7 @@ body {
     background-color: #e1e3e6;
     color: #333;
   }
+
+  .custom-margin-10 {
+    margin-right: 10px;
+  }
