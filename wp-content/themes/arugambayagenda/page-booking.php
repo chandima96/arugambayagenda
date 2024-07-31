@@ -1,12 +1,26 @@
 <?php
-// Load WordPress environment
-require($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
+// Retrieve the 'id' and 'type' parameters from the URL
+$post_id = isset($_GET['id']) ? $_GET['id'] : null;
+$post_type = isset($_GET['type']) ? $_GET['type'] : null;
 
-// Debugging: Check if WordPress is loaded
-if (!function_exists('get_the_title')) {
-    die('WordPress environment not loaded.');
+// Check if the post ID is valid and retrieve the post title
+if ($post_id) {
+    $post = get_post($post_id);
+    if ($post) {
+        $post_title = get_the_title($post_id);
+        echo "Post ID: " . $post_id . "<br>";
+        echo "Post Title: " . $post_title . "<br>";
+    } else {
+        echo "Invalid Post ID.";
+    }
+} else {
+    echo "No Post ID provided.";
 }
+?>
 
+
+
+<?php
 // Fetch query parameters
 $page_slug = isset($_POST['page_slug']) ? $_POST['page_slug'] : 'default-slug';
 $page_title = isset($_POST['page_title']) ? $_POST['page_title'] : 'Default Title';
@@ -21,22 +35,6 @@ $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
 $location = isset($_POST['location']) ? htmlspecialchars($_POST['location']) : '';
 $assistance = isset($_POST['assistance']) ? htmlspecialchars($_POST['assistance']) : '';
 
-// Fetch post ID from the URL query parameter
-$post_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
-$post_type = isset($_GET['type']) ? htmlspecialchars($_GET['type']) : '';
-
-// Debugging: Display fetched post ID
-echo '<p>Post ID: ' . $post_id . '</p>';
-
-// Get the post title using the post ID
-$post_title = '';
-if ($post_id > 0) {
-    $post_title = get_the_title($post_id);
-}
-
-// Debugging: Display fetched post title
-echo '<p>Post Title: ' . $post_title . '</p>';
-
 // Set the title of the page
 echo '<title>' . $page_title . '</title>';
 
@@ -45,11 +43,6 @@ echo '<h1>' . $page_title . '</h1>';
 
 // Display the form page slug
 echo '<h2>Form Page Slug: ' . $page_slug . '</h2>';
-
-// Display the post title if available
-if (!empty($post_title)) {
-    echo '<h2>Post Title: ' . $post_title . '</h2>';
-}
 
 // Display form details
 echo '<h2>Form Details</h2>';
