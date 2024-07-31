@@ -2,6 +2,11 @@
 // Load WordPress environment
 require($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
 
+// Debugging: Check if WordPress is loaded
+if (!function_exists('get_the_title')) {
+    die('WordPress environment not loaded.');
+}
+
 // Fetch query parameters
 $page_slug = isset($_POST['page_slug']) ? $_POST['page_slug'] : 'default-slug';
 $page_title = isset($_POST['page_title']) ? $_POST['page_title'] : 'Default Title';
@@ -20,11 +25,17 @@ $assistance = isset($_POST['assistance']) ? htmlspecialchars($_POST['assistance'
 $post_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 $post_type = isset($_GET['type']) ? htmlspecialchars($_GET['type']) : '';
 
+// Debugging: Display fetched post ID
+echo '<p>Post ID: ' . $post_id . '</p>';
+
 // Get the post title using the post ID
 $post_title = '';
 if ($post_id > 0) {
     $post_title = get_the_title($post_id);
 }
+
+// Debugging: Display fetched post title
+echo '<p>Post Title: ' . $post_title . '</p>';
 
 // Set the title of the page
 echo '<title>' . $page_title . '</title>';
