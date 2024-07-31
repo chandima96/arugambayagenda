@@ -72,21 +72,41 @@ get_header();
 
                     <!-- content -->
                      <?php
-                                             echo '<p><strong>Date:</strong> ' . htmlspecialchars($date) . '</p>';
-                                             echo '<p><strong>Time:</strong> ' . htmlspecialchars($time) . '</p>';
-                                             echo '<p><strong>Number of Pax:</strong> ' . htmlspecialchars($pax) . '</p>';
-                                             echo '<p><strong>Number of Kids:</strong> ' . htmlspecialchars($kids) . '</p>';
-                                             echo '<p><strong>Total Amount:</strong> $' . htmlspecialchars($total_amount)  . '</p>';
-s
+                        echo '<p><strong>Date:</strong> ' . htmlspecialchars($date) . '</p>';
+                        echo '<p><strong>Time:</strong> ' . htmlspecialchars($time) . '</p>';
+                        echo '<p><strong>Number of Pax:</strong> ' . htmlspecialchars($pax) . '</p>';
+                        echo '<p><strong>Number of Kids:</strong> ' . htmlspecialchars($kids) . '</p>';
+                        echo '<p><strong>Total Amount:</strong> $' . htmlspecialchars($total_amount)  . '</p>';
+
                     ?>
                     </div>
                     <!-- sidebar -->
                     <div class="col-xl-4" data-sticky-container>
-
                         <div class="mil-sticky mil-stycky-right mil-p-0-100" data-margin-top="140">
 
                             <div class="mil-book-window">
-                                <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?>
+                                <?php
+                                    // Retrieve the values from the form or query parameters
+                                    $date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
+                                    $time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : '';
+                                    $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
+                                    $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
+                                    $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
+                                ?>
+
+                                <form action="/your-form-handler-url/" method="post">
+                                    <!-- Add hidden fields with the values -->
+                                    <input type="hidden" name="your_date" value="<?php echo $date; ?>">
+                                    <input type="hidden" name="your_time" value="<?php echo $time; ?>">
+                                    <input type="hidden" name="number_of_pax" value="<?php echo $pax; ?>">
+                                    <input type="hidden" name="number_of_kids" value="<?php echo $kids; ?>">
+                                    <input type="hidden" name="total_amount" value="<?php echo $total_amount; ?>">
+
+                                    <!-- Embed the Contact Form 7 shortcode -->
+                                    <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?>
+                                </form>
+
+                                <!-- <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?> -->
                                 <!-- <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
