@@ -515,11 +515,11 @@ $seventh_section_title = get_field('seventh_section_title');
 
                                     <div class="donation-form-group">
                                         <label>Time</label>
-                                        <div class="donation-frequency-buttons">
-                                            <button type="button" onclick="setFrequency('monthly', this)">8.00 AM</button>
-                                            <button type="button" onclick="setFrequency('annually', this)">5.00 PM</button>
+                                        <div class="donation-time-buttons">
+                                            <button type="button" onclick="settime('monthly', this)">8.00 AM</button>
+                                            <button type="button" onclick="settime('annually', this)">5.00 PM</button>
                                         </div>
-                                        <input type="hidden" id="frequency" name="frequency">
+                                        <input type="hidden" id="time" name="time">
                                     </div>
                                     
 
@@ -739,9 +739,9 @@ $seventh_section_title = get_field('seventh_section_title');
     </script>
 
     <script>
-    function setFrequency(frequency, button) {
-        document.getElementById('frequency').value = frequency;
-        clearSelected('donation-frequency-buttons');
+    function settime(time, button) {
+        document.getElementById('time').value = time;
+        clearSelected('donation-time-buttons');
         button.classList.add('selected');
     }
 
