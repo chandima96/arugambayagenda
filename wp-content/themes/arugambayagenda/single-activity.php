@@ -497,21 +497,6 @@ $seventh_section_title = get_field('seventh_section_title');
                             <div class="mil-book-window">
                                 <!-- <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?> -->
                                 <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
-                                    <!-- <div class="mil-field-frame mil-mb-20">
-                                        <label>Full Name</label>
-                                        <input type="text" id="fname" name="fname" placeholder="Full Name" required>
-                                    </div>
-
-                                    <div class="mil-field-frame mil-mb-20">
-                                        <label>E-Mail Address</label>
-                                        <input type="email" id="aru-book-email" name="email" placeholder="E-Mail Address" required>
-                                    </div> -->
-
-
-                                    <!-- <div class="mil-field-frame mil-mb-20">
-                                        <label>WhatsApp Number</label>
-                                        <input type="tel" id="aru-book-tel" name="whatsapp" placeholder="WhatsApp Number" required>
-                                    </div> -->
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Number of Pax</label>
@@ -543,16 +528,6 @@ $seventh_section_title = get_field('seventh_section_title');
                                             <!-- Add more options as needed -->
                                         </select>
                                     </div>
-
-                                    <!-- <div class="mil-field-frame mil-mb-20">
-                                        <label>Departure location</label>
-                                        <input type="text" id="aru-book-location" name="location" placeholder="Departure location" required>
-                                    </div>
-
-                                    <div class="mil-field-frame mil-mb-20">
-                                        <label for="assistance-textarea">Need further assistance? </label>
-                                        <textarea id="assistance-textarea" name="assistance" placeholder="Write to us" rows="4" cols="50"></textarea>
-                                    </div> -->
 
                                     <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">

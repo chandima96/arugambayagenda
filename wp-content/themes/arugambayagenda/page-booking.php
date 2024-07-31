@@ -4,7 +4,7 @@ get_header();
 
 ?>
 
-<!-- <?php
+<?php
 $query_string = $_SERVER['QUERY_STRING'];
 
 $params = explode('/?', $query_string);
@@ -38,21 +38,21 @@ $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
 $location = isset($_POST['location']) ? htmlspecialchars($_POST['location']) : '';
 $assistance = isset($_POST['assistance']) ? htmlspecialchars($_POST['assistance']) : '';
 
-                        echo '<title>' . htmlspecialchars($page_title) . '</title>';
-                        echo '<h1>' . htmlspecialchars($page_title) . '</h1>';
-                        // echo '<h2>Post ID: ' . htmlspecialchars($post_id) . '</h2>';
-                        echo '<h2>Post Title: ' . htmlspecialchars($post_title) . '</h2>';
-                        echo '<h2>Form Page Slug: ' . htmlspecialchars($page_slug) . '</h2>';
-                        echo '<h2>Form Details</h2>';
-                        echo '<p><strong>Full Name:</strong> ' . htmlspecialchars($fname) . '</p>';
-                        echo '<p><strong>E-Mail Address:</strong> ' . htmlspecialchars($email) . '</p>';
-                        echo '<p><strong>WhatsApp Number:</strong> ' . htmlspecialchars($whatsapp) . '</p>';
-                        echo '<p><strong>Date:</strong> ' . htmlspecialchars($date) . '</p>';
-                        echo '<p><strong>Number of Pax:</strong> ' . htmlspecialchars($pax) . '</p>';
-                        echo '<p><strong>Number of Kids:</strong> ' . htmlspecialchars($kids) . '</p>';
-                        echo '<p><strong>Departure Location:</strong> ' . htmlspecialchars($location) . '</p>';
-                        echo '<p><strong>Need Further Assistance:</strong> ' . htmlspecialchars($assistance) . '</p>';
-?>         -->
+                        // echo '<title>' . htmlspecialchars($page_title) . '</title>';
+                        // echo '<h1>' . htmlspecialchars($page_title) . '</h1>';
+                        // // echo '<h2>Post ID: ' . htmlspecialchars($post_id) . '</h2>';
+                        // echo '<h2>Post Title: ' . htmlspecialchars($post_title) . '</h2>';
+                        // echo '<h2>Form Page Slug: ' . htmlspecialchars($page_slug) . '</h2>';
+                        // echo '<h2>Form Details</h2>';
+                        // echo '<p><strong>Full Name:</strong> ' . htmlspecialchars($fname) . '</p>';
+                        // echo '<p><strong>E-Mail Address:</strong> ' . htmlspecialchars($email) . '</p>';
+                        // echo '<p><strong>WhatsApp Number:</strong> ' . htmlspecialchars($whatsapp) . '</p>';
+                        // echo '<p><strong>Date:</strong> ' . htmlspecialchars($date) . '</p>';
+                        // echo '<p><strong>Number of Pax:</strong> ' . htmlspecialchars($pax) . '</p>';
+                        // echo '<p><strong>Number of Kids:</strong> ' . htmlspecialchars($kids) . '</p>';
+                        // echo '<p><strong>Departure Location:</strong> ' . htmlspecialchars($location) . '</p>';
+                        // echo '<p><strong>Need Further Assistance:</strong> ' . htmlspecialchars($assistance) . '</p>';
+?>        
 
 
 
