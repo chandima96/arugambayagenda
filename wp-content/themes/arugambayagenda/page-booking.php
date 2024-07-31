@@ -88,9 +88,13 @@ get_header();
                             </svg>                        
                             <span>3 hours</span>
                         </div>
-                        <div class="booking-select-time">
-                            <button class="booking-time-button selected">5:30 AM</button>
-                            <button class="booking-time-button">3:30 PM</button>
+                        <div class="donation-form-group">
+                            <label>Time</label>
+                            <div class="donation-time-buttons">
+                                <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
+                                <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
+                            </div>
+                            <input type="hidden" id="time" name="time">
                         </div>
                         <div class="booking-info">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar-check custom-margin-10" viewBox="0 0 16 16">
