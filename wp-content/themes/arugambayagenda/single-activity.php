@@ -516,8 +516,8 @@ $seventh_section_title = get_field('seventh_section_title');
                                     <div class="donation-form-group">
                                         <label>Time</label>
                                         <div class="donation-time-buttons">
-                                            <button type="button" onclick="settime('monthly', this)">8.00 AM</button>
-                                            <button type="button" onclick="settime('annually', this)">5.00 PM</button>
+                                            <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
+                                            <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
                                         </div>
                                         <input type="hidden" id="time" name="time">
                                     </div>
