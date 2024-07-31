@@ -157,6 +157,15 @@ $assistance = isset($_POST['assistance']) ? htmlspecialchars($_POST['assistance'
                                         <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
                                     </div>
 
+                                    <div class="donation-form-group">
+                                        <label>Time</label>
+                                        <div class="donation-time-buttons">
+                                            <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
+                                            <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
+                                        </div>
+                                        <input type="hidden" id="time" name="time">
+                                    </div>
+
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Number of Pax</label>
                                         <input type="number" id="aru-book-pax" name="pax" value="1" min="1" required>
