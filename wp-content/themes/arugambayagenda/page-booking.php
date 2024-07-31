@@ -346,22 +346,21 @@ get_header();
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Get URL parameters
-            const urlParams = new URLSearchParams(window.location.search);
-            const date = urlParams.get('date');
-            const time = urlParams.get('time');
-            const pax = urlParams.get('pax');
-            const kids = urlParams.get('kids');
-            const totalAmount = urlParams.get('total_amount');
+        const date = '<?php echo $date; ?>';
+        const time = '<?php echo $time; ?>';
+        const pax = '<?php echo $pax; ?>';
+        const kids = '<?php echo $kids; ?>';
+        const totalAmount = '<?php echo $total_amount; ?>';
 
-            // Populate the Contact Form 7 fields
-            if (date) document.querySelector('[name="date"]').value = date;
-            if (time) document.querySelector('[name="time"]').value = time;
-            if (pax) document.querySelector('[name="pax"]').value = pax;
-            if (kids) document.querySelector('[name="kids"]').value = kids;
-            if (totalAmount) document.querySelector('[name="total_amount"]').value = totalAmount;
-        });
-    </script>
+        setTimeout(function() {
+            document.querySelector('input[name="date"]').value = date;
+            document.querySelector('input[name="time"]').value = time;
+            document.querySelector('input[name="pax"]').value = pax;
+            document.querySelector('input[name="kids"]').value = kids;
+            document.querySelector('input[name="total_amount"]').value = totalAmount;
+        }, 1000); 
+    });
+</script>
 
 
 
