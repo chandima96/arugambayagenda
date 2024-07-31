@@ -5,41 +5,35 @@ get_header();
 ?>
 
 <?php
-$query_string = $_SERVER['QUERY_STRING'];
+    $query_string = $_SERVER['QUERY_STRING'];
 
-$params = explode('/?', $query_string);
-$type_param = $params[0]; 
-$id_param = isset($params[1]) ? $params[1] : null;
+    $params = explode('/?', $query_string);
+    $type_param = $params[0]; 
+    $id_param = isset($params[1]) ? $params[1] : null;
 
-parse_str($type_param, $type_params);
-$type = isset($type_params['type']) ? $type_params['type'] : null;
-parse_str($id_param, $id_params);
-$post_id = isset($id_params['id']) ? $id_params['id'] : null;
+    parse_str($type_param, $type_params);
+    $type = isset($type_params['type']) ? $type_params['type'] : null;
+    parse_str($id_param, $id_params);
+    $post_id = isset($id_params['id']) ? $id_params['id'] : null;
 
-if ($post_id) {
-    $post = get_post($post_id);
-    if ($post) {
-        $post_title = get_the_title($post_id);
+    if ($post_id) {
+        $post = get_post($post_id);
+        if ($post) {
+            $post_title = get_the_title($post_id);
+        } else {
+            $post_title = "Invalid Post ID.";
+        }
     } else {
-        $post_title = "Invalid Post ID.";
+        $post_title = "No Post ID provided.";
     }
-} else {
-    $post_title = "No Post ID provided.";
-}
 
-$page_title = isset($_POST['page_title']) ? htmlspecialchars($_POST['page_title']) : 'Default Title';
-$date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
-$time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : '';
-$pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
-$kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
-$total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
+    $page_title = isset($_POST['page_title']) ? htmlspecialchars($_POST['page_title']) : 'Default Title';
+    $date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
+    $time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : '';
+    $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
+    $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
+    $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
 
-echo "Page Title: " . $page_title . "<br>";
-echo "Date: " . $date . "<br>";
-echo "Time: " . $time . "<br>";
-echo "Number of Pax: " . $pax . "<br>";
-echo "Number of Kids: " . $kids . "<br>";
-echo "Total Amount: $" . $total_amount . "<br>";
 ?>     
         <!-- banner -->
         <div class="mil-p-100-60">
@@ -78,22 +72,12 @@ echo "Total Amount: $" . $total_amount . "<br>";
 
                     <!-- content -->
                      <?php
-                                            //  echo '<title>' . htmlspecialchars($page_title) . '</title>';
-                                            //  echo '<h1>' . htmlspecialchars($page_title) . '</h1>';
-                                            //  // echo '<h2>Post ID: ' . htmlspecialchars($post_id) . '</h2>';
-                                            //  echo '<h2>Post Title: ' . htmlspecialchars($post_title) . '</h2>';
-                                            //  echo '<h2>Form Page Slug: ' . htmlspecialchars($page_slug) . '</h2>';
-                                            //  echo '<h2>Form Details</h2>';
-                                            //  echo '<p><strong>Full Name:</strong> ' . htmlspecialchars($fname) . '</p>';
-                                            //  echo '<p><strong>E-Mail Address:</strong> ' . htmlspecialchars($email) . '</p>';
-                                            //  echo '<p><strong>WhatsApp Number:</strong> ' . htmlspecialchars($whatsapp) . '</p>';
                                              echo '<p><strong>Date:</strong> ' . htmlspecialchars($date) . '</p>';
                                              echo '<p><strong>Time:</strong> ' . htmlspecialchars($time) . '</p>';
                                              echo '<p><strong>Number of Pax:</strong> ' . htmlspecialchars($pax) . '</p>';
                                              echo '<p><strong>Number of Kids:</strong> ' . htmlspecialchars($kids) . '</p>';
                                              echo '<p><strong>Total Amount:</strong> $' . htmlspecialchars($total_amount)  . '</p>';
-                                            //  echo '<p><strong>Departure Location:</strong> ' . htmlspecialchars($location) . '</p>';
-                                            //  echo '<p><strong>Need Further Assistance:</strong> ' . htmlspecialchars($assistance) . '</p>';
+s
                     ?>
                     </div>
                     <!-- sidebar -->
@@ -102,7 +86,7 @@ echo "Total Amount: $" . $total_amount . "<br>";
                         <div class="mil-sticky mil-stycky-right mil-p-0-100" data-margin-top="140">
 
                             <div class="mil-price-frame mil-mb-20">
-                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo $price_per_night; ?></span>/ <span>per pax /</span> <?php echo $duration; ?></div>
+                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo htmlspecialchars($total_amount); ?></span>/ <span>per pax /</span> <?php echo $duration; ?></div>
                             </div>
 
                             <ul class="mil-parameters mil-mb-20">
