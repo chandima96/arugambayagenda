@@ -669,8 +669,8 @@ body {
 
 .donation-form-group .donation-time-buttons,
 .donation-form-group .donation-donation-slots {
-    display: flex !important;
-    justify-content: space-between !important;
+    display: flex;
+    justify-content: space-between;
 }
 
 .donation-form-group .donation-time-buttons button,

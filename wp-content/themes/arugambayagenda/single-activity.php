@@ -522,7 +522,6 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <input type="hidden" id="time" name="time">
                                     </div>
                                     
-
                                     <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">
 
