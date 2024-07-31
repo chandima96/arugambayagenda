@@ -34,12 +34,6 @@ get_header();
     $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
     $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
 
-    echo '<p><strong>Date:</strong> ' . htmlspecialchars($date) . '</p>';
-    echo '<p><strong>Time:</strong> ' . htmlspecialchars($time) . '</p>';
-    echo '<p><strong>Number of Pax:</strong> ' . htmlspecialchars($pax) . '</p>';
-    echo '<p><strong>Number of Kids:</strong> ' . htmlspecialchars($kids) . '</p>';
-    echo '<p><strong>Total Amount:</strong> $' . htmlspecialchars($total_amount)  . '</p>';
-
 ?>     
         <!-- banner -->
         <div class="mil-p-100-60">
@@ -345,22 +339,22 @@ get_header();
     </script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const date = '<?php echo $date; ?>';
-        const time = '<?php echo $time; ?>';
-        const pax = '<?php echo $pax; ?>';
-        const kids = '<?php echo $kids; ?>';
-        const totalAmount = '<?php echo $total_amount; ?>';
+            document.addEventListener('DOMContentLoaded', function() {
+            const date = '<?php echo $date; ?>';
+            const time = '<?php echo $time; ?>';
+            const pax = '<?php echo $pax; ?>';
+            const kids = '<?php echo $kids; ?>';
+            const totalAmount = '<?php echo $total_amount; ?>';
 
-        setTimeout(function() {
-            document.querySelector('input[name="date"]').value = date;
-            document.querySelector('input[name="time"]').value = time;
-            document.querySelector('input[name="pax"]').value = pax;
-            document.querySelector('input[name="kids"]').value = kids;
-            document.querySelector('input[name="total_amount"]').value = totalAmount;
-        }, 1000); 
-    });
-</script>
+            setTimeout(function() {
+                document.querySelector('input[name="date"]').value = date;
+                document.querySelector('input[name="time"]').value = time;
+                document.querySelector('input[name="pax"]').value = pax;
+                document.querySelector('input[name="kids"]').value = kids;
+                document.querySelector('input[name="total_amount"]').value = totalAmount;
+            }, 1000); 
+        });
+    </script>
 
 
 
