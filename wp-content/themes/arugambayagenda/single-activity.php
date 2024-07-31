@@ -739,22 +739,22 @@ $seventh_section_title = get_field('seventh_section_title');
     </script>
 
     <script>
-    function settime(time, button) {
-        document.getElementById('time').value = time;
-        clearSelected('donation-time-buttons');
-        button.classList.add('selected');
-    }
-
-    function setDonationAmount(amount, button) {
-        document.getElementById('other-amount').value = amount;
-        clearSelected('donation-donation-slots');
-        button.classList.add('selected');
-    }
-
-    function clearSelected(groupClass) {
-        var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].classList.remove('selected');
+        function settime(time, button) {
+            document.getElementById('time').value = time;
+            clearSelected('donation-time-buttons');
+            button.classList.add('selected');
         }
-    }
-</script>
+
+        function setDonationAmount(amount, button) {
+            document.getElementById('other-amount').value = amount;
+            clearSelected('donation-donation-slots');
+            button.classList.add('selected');
+        }
+
+        function clearSelected(groupClass) {
+            var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('selected');
+            }
+        }
+    </script>

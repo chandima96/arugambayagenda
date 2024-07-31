@@ -367,7 +367,26 @@ $assistance = isset($_POST['assistance']) ? htmlspecialchars($_POST['assistance'
 
 <?php get_footer(); ?>
 
+    <script>
+        function settime(time, button) {
+            document.getElementById('time').value = time;
+            clearSelected('donation-time-buttons');
+            button.classList.add('selected');
+        }
 
+        function setDonationAmount(amount, button) {
+            document.getElementById('other-amount').value = amount;
+            clearSelected('donation-donation-slots');
+            button.classList.add('selected');
+        }
+
+        function clearSelected(groupClass) {
+            var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('selected');
+            }
+        }
+    </script>
 
 
 
