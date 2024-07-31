@@ -32,10 +32,8 @@ $date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
 $time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : '';
 $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
 $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
+$total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
 ?>        
-
-
-
         <!-- banner -->
         <div class="mil-p-100-60">
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape" style="width: 70%; top: 0; right: -12%; transform: rotate(180deg)" alt="shape">
@@ -86,6 +84,7 @@ $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
                                              echo '<p><strong>Time:</strong> ' . htmlspecialchars($time) . '</p>';
                                              echo '<p><strong>Number of Pax:</strong> ' . htmlspecialchars($pax) . '</p>';
                                              echo '<p><strong>Number of Kids:</strong> ' . htmlspecialchars($kids) . '</p>';
+                                             echo '<p><strong>Total Amount:</strong> $' . $total_amount . '</p>';
                                             //  echo '<p><strong>Departure Location:</strong> ' . htmlspecialchars($location) . '</p>';
                                             //  echo '<p><strong>Need Further Assistance:</strong> ' . htmlspecialchars($assistance) . '</p>';
                     ?>

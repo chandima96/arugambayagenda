@@ -499,6 +499,7 @@ $seventh_section_title = get_field('seventh_section_title');
 
                             <div class="mil-book-window">
                                 <!-- <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?> -->
+                                <input type="hidden" id="hiddenTotalAmount" name="total_amount">
                                 <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
 
                                     <div class="mil-field-frame mil-mb-20">
@@ -892,6 +893,15 @@ $seventh_section_title = get_field('seventh_section_title');
         });
         button.classList.add('selected');
         document.getElementById('time').value = time;
+    }
+</script>
+
+<script>
+    function updateTotalAmount1() {
+    var totalAmount = total1 + total2;
+    document.getElementById('totalAmount1').innerText = '$' + totalAmount.toFixed(2);
+    document.getElementById('totalAmountText1').value = '$' + totalAmount.toFixed(2);
+    document.getElementById('hiddenTotalAmount').value = totalAmount.toFixed(2);
     }
 </script>
 
