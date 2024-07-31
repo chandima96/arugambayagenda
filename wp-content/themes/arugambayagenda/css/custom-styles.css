@@ -666,3 +666,36 @@ body {
 .custom-margin-top-6 {
     margin-top: 6px !important;
 }
+
+.mil-field-frame {
+    margin-bottom: 20px;
+}
+
+.mil-field-frame label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.time-selector-buttons {
+    display: flex;
+    gap: 10px; /* Adjust spacing between buttons as needed */
+}
+
+.time-selector-buttons button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f9f9f9; /* Default background color */
+    transition: background-color 0.3s ease;
+}
+
+.time-selector-buttons button.selected {
+    background-color: #007bff; /* Background color for selected button */
+    color: white; /* Text color for selected button */
+}
+
+.time-selector-buttons button:hover {
+    background-color: #e2e6ea; /* Hover background color */
+}

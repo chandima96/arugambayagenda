@@ -512,19 +512,20 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <label>Date</label>
                                         <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
                                     </div>
-
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label for="start-time">Start Time</label>
-                                        <select id="start-time" name="start-time" required>
-                                            <option value="08:00 AM">8:00 AM</option>
-                                        </select>
+                                        <label>Start Time</label>
+                                        <div class="time-selector-buttons">
+                                            <button type="button" onclick="setTime('08:00 AM', this)">8:00 AM</button>
+                                        </div>
+                                        <input type="hidden" id="start-time" name="start-time">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label for="end-time">End Time</label>
-                                        <select id="end-time" name="end-time" required>
-                                            <option value="05:00 PM">5:00 PM</option>
-                                        </select>
+                                        <label>End Time</label>
+                                        <div class="time-selector-buttons">
+                                            <button type="button" onclick="setTime('05:00 PM', this)">5:00 PM</button>
+                                        </div>
+                                        <input type="hidden" id="end-time" name="end-time">
                                     </div>
 
                                     <input type="hidden" name="page_slug" value="form-page-slug">
@@ -536,7 +537,22 @@ $seventh_section_title = get_field('seventh_section_title');
                                         </svg>
                                         <span>Confirm</span>
                                     </button>
-                                </form>
+                                </form> 
+                                <script>
+                                    function setTime(time, button) {
+                                        const inputId = button.parentElement.previousElementSibling.id;
+                                        document.getElementById(inputId).value = time;
+                                        clearSelected(button.parentElement);
+                                        button.classList.add('selected');
+                                    }
+
+                                    function clearSelected(container) {
+                                        const buttons = container.getElementsByTagName('button');
+                                        for (let i = 0; i < buttons.length; i++) {
+                                            buttons[i].classList.remove('selected');
+                                        }
+                                    }
+                                </script>
                             </div>     
                         </div>
                     </div>
@@ -545,6 +561,8 @@ $seventh_section_title = get_field('seventh_section_title');
             </div>
         </div>
         <!-- room info end -->
+
+
 
         <!-- call to action -->
         <div class="mil-content-pad mil-p-100-100 mil-fade-up">
