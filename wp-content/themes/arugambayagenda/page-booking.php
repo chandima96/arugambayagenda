@@ -94,18 +94,6 @@ get_header();
                                     $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
                                 ?>
 
-                                <form action="/your-form-handler-url/" method="post">
-                                    <!-- Add hidden fields with the values -->
-                                    <input type="hidden" name="your_date" value="<?php echo $date; ?>">
-                                    <input type="hidden" name="your_time" value="<?php echo $time; ?>">
-                                    <input type="hidden" name="number_of_pax" value="<?php echo $pax; ?>">
-                                    <input type="hidden" name="number_of_kids" value="<?php echo $kids; ?>">
-                                    <input type="hidden" name="total_amount" value="<?php echo $total_amount; ?>">
-
-                                    <!-- Embed the Contact Form 7 shortcode -->
-                                    <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?>
-                                </form>
-
                                 <!-- <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?> -->
                                 <!-- <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
                                     <div class="mil-field-frame mil-mb-20">
