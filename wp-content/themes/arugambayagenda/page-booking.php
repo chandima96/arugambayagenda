@@ -112,6 +112,8 @@ get_header();
                         </div>
                         <div class="booking-price-breakdown">
                             <p>Adult <?php echo htmlspecialchars($pax); ?> × $34.98</p>
+                        </div>
+                        <div class="booking-price-breakdown">
                             <p>Kids <?php echo htmlspecialchars($kids); ?> × $34.98</p>
                         </div>
                         <div class="booking-total-price">Total price <?php echo htmlspecialchars($total_amount); ?></div>
