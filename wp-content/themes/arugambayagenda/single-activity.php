@@ -524,14 +524,21 @@ $seventh_section_title = get_field('seventh_section_title');
 
                                     <script>
                                         function setFrequency(frequency, button) {
+                                            // Set hidden input value
                                             document.getElementById('frequency').value = frequency;
+
+                                            // Clear the 'selected' class from all buttons in the group
                                             clearSelected('donation-frequency-buttons');
+                                            
+                                            // Add the 'selected' class to the clicked button
                                             button.classList.add('selected');
                                         }
 
                                         function clearSelected(groupClass) {
+                                            // Get the group of buttons
                                             var group = document.querySelector(`.${groupClass}`);
                                             if (group) {
+                                                // Remove 'selected' class from all buttons
                                                 var buttons = group.getElementsByTagName('button');
                                                 for (var i = 0; i < buttons.length; i++) {
                                                     buttons[i].classList.remove('selected');
@@ -539,6 +546,7 @@ $seventh_section_title = get_field('seventh_section_title');
                                             }
                                         }
                                     </script>
+
                                     <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">
 
