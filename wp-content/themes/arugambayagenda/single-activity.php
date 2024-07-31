@@ -495,7 +495,8 @@ $seventh_section_title = get_field('seventh_section_title');
                             </ul>
 
                             <div class="mil-book-window">
-                                <form>
+                                <!-- <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?> -->
+                                <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Number of Pax</label>
@@ -516,7 +517,6 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <label for="start-time">Start Time</label>
                                         <select id="start-time" name="start-time" required>
                                             <option value="08:00 AM">8:00 AM</option>
-                                            <!-- Add more options as needed -->
                                         </select>
                                     </div>
 
@@ -524,7 +524,6 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <label for="end-time">End Time</label>
                                         <select id="end-time" name="end-time" required>
                                             <option value="05:00 PM">5:00 PM</option>
-                                            <!-- Add more options as needed -->
                                         </select>
                                     </div>
 
