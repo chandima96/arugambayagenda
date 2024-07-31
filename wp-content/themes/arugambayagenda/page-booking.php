@@ -17,15 +17,15 @@ parse_str($id_param, $id_params);
 $post_id = isset($id_params['id']) ? $id_params['id'] : null;
 
 if ($post_id) {
-$post = get_post($post_id);
-if ($post) {
-$post_title = get_the_title($post_id);
+    $post = get_post($post_id);
+    if ($post) {
+        $post_title = get_the_title($post_id);
     } else {
         $post_title = "Invalid Post ID.";
-            }
-        } else {
-            $post_title = "No Post ID provided.";
-        }
+    }
+} else {
+    $post_title = "No Post ID provided.";
+}
 
 $page_title = isset($_POST['page_title']) ? htmlspecialchars($_POST['page_title']) : 'Default Title';
 $date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
@@ -33,7 +33,14 @@ $time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : '';
 $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
 $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
 $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
-?>        
+
+echo "Page Title: " . $page_title . "<br>";
+echo "Date: " . $date . "<br>";
+echo "Time: " . $time . "<br>";
+echo "Number of Pax: " . $pax . "<br>";
+echo "Number of Kids: " . $kids . "<br>";
+echo "Total Amount: $" . $total_amount . "<br>";
+?>     
         <!-- banner -->
         <div class="mil-p-100-60">
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape" style="width: 70%; top: 0; right: -12%; transform: rotate(180deg)" alt="shape">
