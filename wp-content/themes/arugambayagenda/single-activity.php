@@ -499,9 +499,8 @@ $seventh_section_title = get_field('seventh_section_title');
 
                             <div class="mil-book-window">
                                 <!-- <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?> -->
-                                <input type="hidden" id="hiddenTotalAmount" name="total_amount">
                                 <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
-
+                                    <input type="hidden" id="hiddenTotalAmount" name="total_amount">
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Number of Pax</label>
                                         <input type="number" id="aru-book-pax" name="pax" value="1" min="1" required onchange="calculate_adult_amount1(this.value)">
