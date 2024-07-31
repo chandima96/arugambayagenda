@@ -84,7 +84,7 @@ $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_a
                                              echo '<p><strong>Time:</strong> ' . htmlspecialchars($time) . '</p>';
                                              echo '<p><strong>Number of Pax:</strong> ' . htmlspecialchars($pax) . '</p>';
                                              echo '<p><strong>Number of Kids:</strong> ' . htmlspecialchars($kids) . '</p>';
-                                             echo '<p><strong>Total Amount:</strong> $' . $total_amount . '</p>';
+                                             echo '<p><strong>Total Amount:</strong> $' . htmlspecialchars($total_amount) . '</p>';
                                             //  echo '<p><strong>Departure Location:</strong> ' . htmlspecialchars($location) . '</p>';
                                             //  echo '<p><strong>Need Further Assistance:</strong> ' . htmlspecialchars($assistance) . '</p>';
                     ?>
