@@ -85,16 +85,7 @@ get_header();
                         <div class="mil-sticky mil-stycky-right mil-p-0-100" data-margin-top="140">
 
                             <div class="mil-book-window">
-                                <?php
-                                    // Retrieve the values from the form or query parameters
-                                    $date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
-                                    $time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : '';
-                                    $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
-                                    $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
-                                    $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
-                                ?>
-
-                                <!-- <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?> -->
+                                <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?>
                                 <!-- <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
