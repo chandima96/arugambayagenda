@@ -753,7 +753,18 @@ body {
     color: #333333 !important;
   }
 
+    @media (max-width: 678px) {
+    .booking-card p {
+        font-size: 14px !important;
+      }  
+    }
 
+    @media (max-width: 509px) {
+    .booking-card p {
+        font-size: 12px !important;
+        }  
+    }   
+  
   .booking-icon-text {
     display: flex;
     align-items: center;
@@ -806,6 +817,18 @@ body {
     font-weight: 600;
     margin-top: 10px;
   }
+
+  @media (max-width: 678px) {
+    .booking-total-price {
+        font-size: 25px !important;
+      }  
+    }
+
+    @media (max-width: 509px) {
+    .booking-total-price {
+        font-size: 20px !important;
+        }  
+    }  
 
   .booking-buttons {
     display: flex;
