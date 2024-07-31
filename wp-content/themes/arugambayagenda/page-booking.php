@@ -70,13 +70,42 @@ get_header();
                     <div class="col-xl-8">
 
                     <!-- content -->
-                     <?php
+                     <!-- <?php
                         echo '<p><strong>Date:</strong> ' . htmlspecialchars($date) . '</p>';
                         echo '<p><strong>Time:</strong> ' . htmlspecialchars($time) . '</p>';
                         echo '<p><strong>Number of Pax:</strong> ' . htmlspecialchars($pax) . '</p>';
                         echo '<p><strong>Number of Kids:</strong> ' . htmlspecialchars($kids) . '</p>';
                         echo '<p><strong>Total Amount:</strong> $' . htmlspecialchars($total_amount)  . '</p>';
-                    ?>
+                    ?> -->
+
+                    <div class="booking-card">
+                        <h2>Arugambay: Mangrove Watching in Pottuvil Lagoon</h2>
+                        <div class="booking-icon-text">
+                        <img src="clock-icon.png" alt="clock">
+                        <span>3 hours</span>
+                        </div>
+                        <div class="booking-select-time">
+                        <button class="booking-time-button selected">5:30 AM</button>
+                        <button class="booking-time-button">3:30 PM</button>
+                        </div>
+                        <div class="booking-info">
+                        <img src="calendar-icon.png" alt="calendar">
+                        <span>Cancel before 5:30 AM on August 6 for a full refund</span>
+                        </div>
+                        <div class="booking-info">
+                        <img src="credit-card-icon.png" alt="credit card">
+                        <span>You can reserve now & pay later with this activity option.</span>
+                        </div>
+                        <div class="booking-price-breakdown">
+                        <span>Adult 3 × $34.98</span>
+                        <span>$104.94</span>
+                        </div>
+                        <div class="booking-total-price">Total price $104.94</div>
+                        <div class="booking-buttons">
+                        <a href="#" class="booking-button secondary">Add to cart</a>
+                        <a href="#" class="booking-button">Book now</a>
+                        </div>
+                    </div>
                     </div>
                     <!-- sidebar -->
                     <div class="col-xl-4" data-sticky-container>
