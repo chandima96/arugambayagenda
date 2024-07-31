@@ -1,7 +1,18 @@
 <?php
-// Retrieve the 'id' and 'type' parameters from the URL
-$post_id = isset($_GET['id']) ? $_GET['id'] : null;
-$post_type = isset($_GET['type']) ? $_GET['type'] : null;
+// Retrieve the full query string
+$query_string = $_SERVER['QUERY_STRING'];
+
+// Manually parse the 'type' parameter to separate 'type' and 'id'
+$params = explode('/?', $query_string);
+$type_param = $params[0]; // This will get the 'type=activity' part
+$id_param = isset($params[1]) ? $params[1] : null; // This will get the 'id=356' part
+
+// Extract 'type' and 'id' values
+parse_str($type_param, $type_params);
+$type = isset($type_params['type']) ? $type_params['type'] : null;
+
+parse_str($id_param, $id_params);
+$post_id = isset($id_params['id']) ? $id_params['id'] : null;
 
 // Check if the post ID is valid and retrieve the post title
 if ($post_id) {
@@ -17,7 +28,6 @@ if ($post_id) {
     echo "No Post ID provided.";
 }
 ?>
-
 
 
 <?php
