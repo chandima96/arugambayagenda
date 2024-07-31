@@ -26,18 +26,11 @@ $post_title = get_the_title($post_id);
         } else {
             $post_title = "No Post ID provided.";
         }
-
-$page_slug = isset($_POST['page_slug']) ? htmlspecialchars($_POST['page_slug']) : 'default-slug';
-$page_title = isset($_POST['page_title']) ? htmlspecialchars($_POST['page_title']) : 'Default Title';
-$fname = isset($_POST['fname']) ? htmlspecialchars($_POST['fname']) : '';
-$email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
-$whatsapp = isset($_POST['whatsapp']) ? htmlspecialchars($_POST['whatsapp']) : '';
 $date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
 $time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : '';
 $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
 $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
-$location = isset($_POST['location']) ? htmlspecialchars($_POST['location']) : '';
-$assistance = isset($_POST['assistance']) ? htmlspecialchars($_POST['assistance']) : '';
+
 ?>        
 
 
