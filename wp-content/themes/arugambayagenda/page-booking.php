@@ -1,4 +1,7 @@
 <?php
+// Load WordPress environment
+require($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
+
 // Fetch query parameters
 $page_slug = isset($_POST['page_slug']) ? $_POST['page_slug'] : 'default-slug';
 $page_title = isset($_POST['page_title']) ? $_POST['page_title'] : 'Default Title';
