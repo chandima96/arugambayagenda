@@ -522,6 +522,23 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <input type="hidden" id="frequency" name="frequency">
                                     </div>
 
+                                    <script>
+                                        function setFrequency(frequency, button) {
+                                            document.getElementById('frequency').value = frequency;
+                                            clearSelected('donation-frequency-buttons');
+                                            button.classList.add('selected');
+                                        }
+
+                                        function clearSelected(groupClass) {
+                                            var group = document.querySelector(`.${groupClass}`);
+                                            if (group) {
+                                                var buttons = group.getElementsByTagName('button');
+                                                for (var i = 0; i < buttons.length; i++) {
+                                                    buttons[i].classList.remove('selected');
+                                                }
+                                            }
+                                        }
+                                    </script>
                                     <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">
 
@@ -532,26 +549,6 @@ $seventh_section_title = get_field('seventh_section_title');
                                         <span>Confirm</span>
                                     </button>
                                 </form>
-<script>
-    function setFrequency(frequency, button) {
-        document.getElementById('frequency').value = frequency;
-        clearSelected('donation-frequency-buttons');
-        button.classList.add('selected');
-    }
-
-    function setDonationAmount(amount, button) {
-        document.getElementById('other-amount').value = amount;
-        clearSelected('donation-donation-slots');
-        button.classList.add('selected');
-    }
-
-    function clearSelected(groupClass) {
-        var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].classList.remove('selected');
-        }
-    }
-</script>
                             </div>     
                         </div>
                     </div>
