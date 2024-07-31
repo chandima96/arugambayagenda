@@ -88,8 +88,10 @@ get_header();
                             </svg>                        
                             <p><?php echo get_field('duration'); ?></p>
                         </div>
+                        <p>Select a starting time</p>
+                        <p><?php echo htmlspecialchars($date); ?></p>
                         <div class="donation-form-group custom-time-width ">
-                            <label>Time</label>
+                            <label></label>
                             <div class="donation-time-buttons">
                                 <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
                                 <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
