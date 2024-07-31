@@ -88,7 +88,7 @@ get_header();
                             </svg>                        
                             <p>3 hours</p>
                         </div>
-                        <div class="donation-form-group">
+                        <div class="donation-form-group custom-time-width ">
                             <label>Time</label>
                             <div class="donation-time-buttons">
                                 <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
