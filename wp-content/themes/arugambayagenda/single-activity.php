@@ -498,18 +498,6 @@ $seventh_section_title = get_field('seventh_section_title');
                             </ul>
 
                             <div class="mil-book-window">
-                            <?php
-                                    // Capture data from form-01
-                                    $date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
-                                    $time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : '';
-                                    $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
-                                    $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
-                                    $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
-
-                                    // Redirect to form-02 page with the data as query parameters
-                                    header("Location: /path-to-form-02-page?date=" . urlencode($date) . "&time=" . urlencode($time) . "&pax=" . urlencode($pax) . "&kids=" . urlencode($kids) . "&total_amount=" . urlencode($total_amount));
-                                    exit;
-                                    ?>
                                 <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
                                     <input type="hidden" id="hiddenTotalAmount" name="total_amount">
 
