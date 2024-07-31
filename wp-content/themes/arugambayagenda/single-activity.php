@@ -764,134 +764,138 @@ $seventh_section_title = get_field('seventh_section_title');
 
 <script>
     var total1 = 0;
-var total2 = 0;
-var nonselected = "a";
+    var total2 = 0;
+    var nonselected = "a";
 
-function calculate_adult_amount1(value1) {
-    if (value1 == "") {
-        value1 = 0;
+    function calculate_adult_amount1(value1) {
+        if (value1 == "") {
+            value1 = 0;
+        }
+        value1 = parseInt(value1);
+        var unitprice = 0;
+
+        switch (value1) {
+            case 0:
+                unitprice = 0;
+                break;
+            case 1:
+                unitprice = 50.17;
+                break;
+            case 2:
+                unitprice = 33.88;
+                break;
+            case 3:
+                unitprice = 28.45;
+                break;
+            case 4:
+                unitprice = 33.88;
+                break;
+            case 5:
+                unitprice = 30.63;
+                break;
+            case 6:
+                unitprice = 28.45;
+                break;
+            case 7:
+                unitprice = 31.56;
+                break;
+            case 8:
+                unitprice = 29.81;
+                break;
+            case 9:
+                unitprice = 28.45;
+                break;
+            case 10:
+                unitprice = 30.63;
+                break;
+            default:
+                nonselected = "more";
+                unitprice = 0;
+        }
+
+        if (nonselected == "more") {
+            total1 = unitprice * parseInt(value1);
+            document.getElementById('totalAmount1').innerText = "Not Allowed More than 10";
+            updateTotalAmount1();
+        } else {
+            total1 = unitprice * parseInt(value1);
+            document.getElementById('totalAmount1').innerText = '$' + total1.toFixed(2);
+            updateTotalAmount1();
+        }
     }
 
-    value1 = parseInt(value1);
-    var unitprice = 0;
+    function calculate_kid_amount1(value2) {
+        if (value2 == "") {
+            value2 = 0;
+        }
+        value2 = parseInt(value2);
+        var unitprice = 0;
 
-    switch (value1) {
-        case 0:
-            unitprice = 0;
-            break;
-        case 1:
-            unitprice = 50.17;
-            break;
-        case 2:
-            unitprice = 33.88;
-            break;
-        case 3:
-            unitprice = 28.45;
-            break;
-        case 4:
-            unitprice = 33.88;
-            break;
-        case 5:
-            unitprice = 30.63;
-            break;
-        case 6:
-            unitprice = 28.45;
-            break;
-        case 7:
-            unitprice = 31.56;
-            break;
-        case 8:
-            unitprice = 29.81;
-            break;
-        case 9:
-            unitprice = 28.45;
-            break;
-        case 10:
-            unitprice = 30.63;
-            break;
-        default:
-            nonselected = "more";
-            unitprice = 0;
-    }
-    if (nonselected == "more") {
-        total1 = unitprice * parseInt(value1);
-        document.getElementById('totalAmount_adult1').innerText = "Not Allowed More than 10";
-        updateTotalAmount1();
-    } else {
-        total1 = unitprice * parseInt(value1);
-        document.getElementById('totalAmount_adult1').innerText = '$' + total1.toFixed(2);
-        document.getElementById('totalAmountadult1').value = '$' + total1.toFixed(2);
-        updateTotalAmount1();
-    }
-}
+        switch (value2) {
+            case 0:
+                unitprice = 0;
+                break;
+            case 1:
+                unitprice = 25.09;
+                break;
+            case 2:
+                unitprice = 16.94;
+                break;
+            case 3:
+                unitprice = 14.23;
+                break;
+            case 4:
+                unitprice = 16.94;
+                break;
+            case 5:
+                unitprice = 15.31;
+                break;
+            case 6:
+                unitprice = 14.23;
+                break;
+            case 7:
+                unitprice = 15.78;
+                break;
+            case 8:
+                unitprice = 14.91;
+                break;
+            case 9:
+                unitprice = 14.23;
+                break;
+            case 10:
+                unitprice = 15.31;
+                break;
+            default:
+                nonselected = "more";
+                unitprice = 0;
+        }
 
-function calculate_kid_amount1(value2) {
-    if (value2 == "") {
-        value2 = 0;
-    }
-
-    value2 = parseInt(value2);
-    var unitprice = 0;
-
-    switch (value2) {
-        case 0:
-            unitprice = 0;
-            break;
-        case 1:
-            unitprice = 25.09;
-            break;
-        case 2:
-            unitprice = 16.94;
-            break;
-        case 3:
-            unitprice = 14.23;
-            break;
-        case 4:
-            unitprice = 16.94;
-            break;
-        case 5:
-            unitprice = 15.31;
-            break;
-        case 6:
-            unitprice = 14.23;
-            break;
-        case 7:
-            unitprice = 15.78;
-            break;
-        case 8:
-            unitprice = 14.91;
-            break;
-        case 9:
-            unitprice = 14.23;
-            break;
-        case 10:
-            unitprice = 15.31;
-            break;
-        default:
-            nonselected = "more";
-            unitprice = 0;
+        if (nonselected == "more") {
+            total2 = unitprice * parseInt(value2);
+            document.getElementById('totalAmount1').innerText = "Not Allowed More than 10";
+            updateTotalAmount1();
+        } else {
+            total2 = unitprice * parseInt(value2);
+            document.getElementById('totalAmount1').innerText = '$' + total2.toFixed(2);
+            updateTotalAmount1();
+        }
     }
 
-    if (nonselected == "more") {
-        total2 = unitprice * parseInt(value2);
-        document.getElementById('totalAmount_kids1').innerText = "Not Allowed More than 10";
-        updateTotalAmount1();
-    } else {
-        total2 = unitprice * parseInt(value2);
-        document.getElementById('totalAmount_kids1').innerText = '$' + total2.toFixed(2);
-        document.getElementById('totalAmountkids1').value = '$' + total2.toFixed(2);
-        updateTotalAmount1();
+    function updateTotalAmount1() {
+        var totalAmount = total1 + total2;
+        document.getElementById('totalAmount1').innerText = '$' + totalAmount.toFixed(2);
     }
-}
 
-function updateTotalAmount1() {
-    var totalAmount = total1 + total2;
-    document.getElementById('totalAmount1').innerText = '$' + totalAmount.toFixed(2);
-    document.getElementById('totalAmountText1').value = '$' + totalAmount.toFixed(2);
-    document.getElementById('hiddenTotalAmount').value = totalAmount.toFixed(2);
-}
-
+    function settime(time, button) {
+        var buttons = document.querySelectorAll('.donation-time-buttons button');
+        buttons.forEach(function(btn) {
+            btn.classList.remove('selected');
+        });
+        button.classList.add('selected');
+        document.getElementById('time').value = time;
+    }
 </script>
+
 
 
     
