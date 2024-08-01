@@ -383,7 +383,7 @@ get_header();
     </script>
 
     <script>
-            document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const date = '<?php echo $date; ?>';
             const time = '<?php echo $time; ?>';
             const pax = '<?php echo $pax; ?>';
@@ -392,15 +392,35 @@ get_header();
             const postTitle = '<?php echo $post_title; ?>';
 
             setTimeout(function() {
-                document.querySelector('input[name="date"]').value = date;
-                document.querySelector('input#time').value = time;
-                document.querySelector('input[name="time"]').value = time;
-                document.querySelector('input[name="pax"]').value = pax;
-                document.querySelector('input[name="kids"]').value = kids;
-                document.querySelector('input[name="total_amount"]').value = totalAmount;
-                document.querySelector('input[name="post_title"]').value = postTitle;
-            }, 1000); 
+                // Log values to ensure they're correct
+                console.log('Date:', date);
+                console.log('Time:', time);
+                console.log('Pax:', pax);
+                console.log('Kids:', kids);
+                console.log('Total Amount:', totalAmount);
+                console.log('Post Title:', postTitle);
+
+                // Check if the form is present in the DOM
+                const form = document.querySelector('form.wpcf7-form');
+                if (form) {
+                    const timeInput = form.querySelector('input#time');
+                    if (timeInput) {
+                        timeInput.value = time;
+                    } else {
+                        console.warn('Input with ID "time" not found');
+                    }
+                    
+                    form.querySelector('input[name="date"]').value = date;
+                    form.querySelector('input[name="pax"]').value = pax;
+                    form.querySelector('input[name="kids"]').value = kids;
+                    form.querySelector('input[name="total_amount"]').value = totalAmount;
+                    form.querySelector('input[name="post_title"]').value = postTitle;
+                } else {
+                    console.warn('Form not found');
+                }
+            }, 1000);
         });
+
     </script>
 
 
