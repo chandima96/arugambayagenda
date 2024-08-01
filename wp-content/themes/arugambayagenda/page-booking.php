@@ -362,7 +362,7 @@ get_header();
 
 <?php get_footer(); ?>
 
-    <script>
+    <!-- <script>
         function settime(time, button) {
             document.getElementById('time').value = time;
             clearSelected('donation-time-buttons');
@@ -381,7 +381,7 @@ get_header();
                 buttons[i].classList.remove('selected');
             }
         }
-    </script>
+    </script> -->
 
     <script>
             document.addEventListener('DOMContentLoaded', function() {
