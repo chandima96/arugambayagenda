@@ -361,7 +361,7 @@ get_header();
 
 <?php get_footer(); ?>
 
-    <script>
+    <!-- <script>
         function settime(time, button) {
             document.getElementById('time').value = time;
             clearSelected('donation-time-buttons');
@@ -380,7 +380,7 @@ get_header();
                 buttons[i].classList.remove('selected');
             }
         }
-    </script>
+    </script> -->
 
     <script>
             document.addEventListener('DOMContentLoaded', function() {
@@ -393,7 +393,6 @@ get_header();
 
             setTimeout(function() {
                 document.querySelector('input[name="date"]').value = date;
-                document.querySelector('input#time').value = time;
                 document.querySelector('input[name="time"]').value = time;
                 document.querySelector('input[name="pax"]').value = pax;
                 document.querySelector('input[name="kids"]').value = kids;
