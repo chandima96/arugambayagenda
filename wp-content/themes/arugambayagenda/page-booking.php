@@ -5,39 +5,35 @@ get_header();
 ?>
 
 <?php
-get_header();
+    $query_string = $_SERVER['QUERY_STRING'];
 
-// Extract query parameters
-$query_string = $_SERVER['QUERY_STRING'];
-$params = explode('/?', $query_string);
-$type_param = $params[0];
-$id_param = isset($params[1]) ? $params[1] : null;
+    $params = explode('/?', $query_string);
+    $type_param = $params[0]; 
+    $id_param = isset($params[1]) ? $params[1] : null;
 
-parse_str($type_param, $type_params);
-$type = isset($type_params['type']) ? $type_params['type'] : null;
-parse_str($id_param, $id_params);
-$post_id = isset($id_params['id']) ? $id_params['id'] : null;
+    parse_str($type_param, $type_params);
+    $type = isset($type_params['type']) ? $type_params['type'] : null;
+    parse_str($id_param, $id_params);
+    $post_id = isset($id_params['id']) ? $id_params['id'] : null;
 
-if ($post_id) {
-    $post = get_post($post_id);
-    if ($post) {
-        $post_title = get_the_title($post_id);
+    if ($post_id) {
+        $post = get_post($post_id);
+        if ($post) {
+            $post_title = get_the_title($post_id);
+        } else {
+            $post_title = "Invalid Post ID.";
+        }
     } else {
-        $post_title = "Invalid Post ID.";
+        $post_title = "No Post ID provided.";
     }
-} else {
-    $post_title = "No Post ID provided.";
-}
 
-// Retrieve POST data
-$page_title = isset($_POST['page_title']) ? htmlspecialchars($_POST['page_title']) : 'Default Title';
-$date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
-$time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : '';
-$pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
-$kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
-$total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
-?>
-    
+    $page_title = isset($_POST['page_title']) ? htmlspecialchars($_POST['page_title']) : 'Default Title';
+    $date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : '';
+    $time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : '';
+    $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
+    $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
+    $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
+?>     
         <!-- banner -->
         <div class="mil-p-100-60">
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape" style="width: 70%; top: 0; right: -12%; transform: rotate(180deg)" alt="shape">
@@ -91,15 +87,19 @@ $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_a
                         </div>
                         <p>Select a starting time</p>
                         <p><?php echo htmlspecialchars($date); ?></p>
-                        <div class="donation-form-group custom-time-width">
+                        <div class="donation-form-group custom-time-width ">
                             <label></label>
+                            <?php
+                                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                                    $selected_time = isset($_POST['time']) ? $_POST['time'] : 'No time selected';
+                                }
+                            ?>
                             <div class="donation-time-buttons">
                                 <button type="button" onclick="setTime('8.00 AM', this)" class="<?php echo isset($_POST['time']) && $_POST['time'] === '8.00 AM' ? 'selected' : ''; ?>">8.00 AM</button>
                                 <button type="button" onclick="setTime('5.00 PM', this)" class="<?php echo isset($_POST['time']) && $_POST['time'] === '5.00 PM' ? 'selected' : ''; ?>">5.00 PM</button>
                             </div>
                             <input type="hidden" id="time" name="time" value="<?php echo isset($_POST['time']) ? htmlspecialchars($_POST['time']) : ''; ?>">
                         </div>
-
                         <!-- <div class="booking-info">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar-check custom-margin-10" viewBox="0 0 16 16">
                                 <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
@@ -123,7 +123,7 @@ $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_a
                         <div class="booking-total-price">Total price <span style="color:#0097b2;"><?php echo htmlspecialchars($total_amount); ?></span></div>
                         <!-- <div class="booking-buttons">
                             <a href="#" class="booking-button secondary">Add to cart</a>
-                            <a href="#" class="booking-button">Book now</a>
+                        <a href="#" class="booking-button">Book now</a>
                         </div> -->
                     </div>
                     </div>
@@ -132,7 +132,8 @@ $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_a
                         <div class="mil-sticky mil-stycky-right mil-p-0-100" data-margin-top="140">
 
                             <div class="mil-book-window">
-                                <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours" time="' . htmlspecialchars($time) . '"]'); ?>                                <!-- <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
+                                    <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?>
+                                <!-- <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Full Name</label>
                                         <input type="text" id="fname" name="fname" placeholder="Full Name" required>
@@ -384,7 +385,6 @@ $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_a
         }
     </script> -->
 
-
     <script>
             document.addEventListener('DOMContentLoaded', function() {
             const date = '<?php echo $date; ?>';
@@ -396,15 +396,16 @@ $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_a
 
             setTimeout(function() {
                 document.querySelector('input[name="date"]').value = date;
-                document.querySelector('input#time').value = time;
                 document.querySelector('input[name="time"]').value = time;
                 document.querySelector('input[name="pax"]').value = pax;
                 document.querySelector('input[name="kids"]').value = kids;
                 document.querySelector('input[name="total_amount"]').value = totalAmount;
                 document.querySelector('input[name="post_title"]').value = postTitle;
-            }, 1000);
+            }, 1000); 
         });
+    </script>
 
+    <script>
         function setTime(time, button) {
             document.getElementById('time').value = time;
             clearSelected('donation-time-buttons');
