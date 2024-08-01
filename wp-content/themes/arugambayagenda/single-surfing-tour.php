@@ -486,10 +486,16 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
                                     </div>
 
-                                    <div class="mil-field-frame mil-mb-20">
+                                    <!-- <div class="mil-field-frame mil-mb-20">
                                         <label for="appointment-time">Choose a time</label>
                                         <input type="time" id="appointment-time" name="appointment-time">
-                                    </div>  
+                                    </div>   -->
+
+                                    <div class="col-sm-6 col-lg-5 mb-3 mb-sm-0">
+                                        <label class="form-label">Choose a time</label>
+                                        <div class="time-picker" data-coreui-locale="en-US" data-coreui-seconds="false" data-coreui-toggle="time-picker"></div>
+                                    </div>
+
 
                                     <!-- <div class="donation-form-group">
                                         <label>Time</label>
