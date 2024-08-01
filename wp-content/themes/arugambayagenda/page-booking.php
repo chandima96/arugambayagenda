@@ -90,14 +90,14 @@ get_header();
                         </div>
                         <p>Select a starting time</p>
                         <p><?php echo htmlspecialchars($date); ?></p>
-                        <div class="donation-form-group custom-time-width ">
+                        <!-- <div class="donation-form-group custom-time-width ">
                             <label></label>
                             <div class="donation-time-buttons">
                                 <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
                                 <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
                             </div>
                             <input type="hidden" id="time" name="time">
-                        </div>
+                        </div> -->
                         <div class="booking-info">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar-check custom-margin-10" viewBox="0 0 16 16">
                                 <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
