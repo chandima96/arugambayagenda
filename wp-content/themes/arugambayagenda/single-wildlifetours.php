@@ -746,25 +746,34 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                     unitprice = 0;
                     break;
                 case 1:
-                    unitprice = 208.21;
+                    unitprice = <?php echo $price_case_one; ?>;
                     break;
                 case 2:
-                    unitprice = 118.05;
+                    unitprice = <?php echo $price_case_two; ?>;
                     break;
                 case 3:
-                    unitprice = 90.79;
+                    unitprice = <?php echo $price_case_three; ?>;
                     break;
                 case 4:
-                    unitprice = 76.11;
+                    unitprice = <?php echo $price_case_four; ?>;
                     break;
                 case 5:
-                    unitprice = 69.82;
+                    unitprice = <?php echo $price_case_five; ?>;
                     break;
                 case 6:
-                    unitprice = 65.00;
+                    unitprice = <?php echo $price_case_six; ?>;
                     break;
                 case 7:
-                    unitprice = 59.28;
+                    unitprice = <?php echo $price_case_seven; ?>;
+                    break;
+                case 8:
+                    unitprice = <?php echo $price_case_eight; ?>;
+                    break;
+                case 9:
+                    unitprice = <?php echo $price_case_nine; ?>;
+                    break;
+                case 10:
+                    unitprice = <?php echo $price_case_ten; ?>;
                     break;
                 default:
                     nonselected = "more";
@@ -794,30 +803,40 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                     unitprice = 0;
                     break;
                 case 1:
-                    unitprice = 83.28;
+                    unitprice = <?php echo $price_case_kids_one; ?>;
                     break;
                 case 2:
-                    unitprice = 47.22;
+                    unitprice = <?php echo $price_case_kids_two; ?>;
                     break;
                 case 3:
-                    unitprice = 36.32;
+                    unitprice = <?php echo $price_case_kids_three; ?>;
                     break;
                 case 4:
-                    unitprice = 30.45;
+                    unitprice = <?php echo $price_case_kids_four; ?>;
                     break;
                 case 5:
-                    unitprice = 27.93;
+                    unitprice = <?php echo $price_case_kids_five; ?>;
                     break;
                 case 6:
-                    unitprice = 26.00;
+                    unitprice = <?php echo $price_case_kids_six; ?>;
                     break;
                 case 7:
-                    unitprice = 23.71;
+                    unitprice = <?php echo $price_case_kids_seven; ?>;
+                    break;
+                case 8:
+                    unitprice = <?php echo $price_case_kids_eight; ?>;
+                    break;
+                case 9:
+                    unitprice = <?php echo $price_case_kids_nine; ?>;
+                    break;
+                case 10:
+                    unitprice = <?php echo $price_case_kids_ten; ?>;
                     break;
                 default:
                     nonselected = "more";
                     unitprice = 0;
             }
+
             if (nonselected == "more") {
                 total2 = unitprice * parseInt(value2);
                 document.getElementById('totalAmount1').innerText = "Not Allowed More than 10";
