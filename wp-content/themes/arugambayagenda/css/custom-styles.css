@@ -768,6 +768,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    justify-content: end;
   }
 
   .booking-icon-text img {
