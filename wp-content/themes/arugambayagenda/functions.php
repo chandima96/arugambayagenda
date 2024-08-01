@@ -28,7 +28,4 @@ function display_page_slug() {
 
 add_shortcode('page_slug', 'display_page_slug');
 
-function custom_shortcode_att( $atts ) {
-    return isset($atts['time']) ? $atts['time'] : '';
-}
-add_shortcode('shortcode_att', 'custom_shortcode_att');
+
