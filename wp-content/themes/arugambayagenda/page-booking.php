@@ -385,7 +385,7 @@ get_header();
         }
     </script> -->
 
-<script>
+    <script>
     document.addEventListener('DOMContentLoaded', function() {
         const date = '<?php echo $date; ?>';
         const time = '<?php echo $time; ?>';
@@ -402,6 +402,12 @@ get_header();
             document.querySelector('input[name="kids"]').value = kids;
             document.querySelector('input[name="total_amount"]').value = totalAmount;
             document.querySelector('input[name="post_title"]').value = postTitle;
+
+            // Initialize hidden field in Contact Form 7
+            const contactFormHiddenField = document.querySelector('input[name="selected_time"]');
+            if (contactFormHiddenField) {
+                contactFormHiddenField.value = time;
+            }
         }, 1000); 
     });
 
