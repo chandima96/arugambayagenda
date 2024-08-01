@@ -89,10 +89,16 @@ get_header();
                         <p><?php echo htmlspecialchars($date); ?></p>
                         <div class="donation-form-group custom-time-width ">
                             <label></label>
+                            <?php
+                                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                                    $selected_time = isset($_POST['time']) ? $_POST['time'] : 'No time selected';
+                                }
+                            ?>
                             <div class="donation-time-buttons">
-                                <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
-                                <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
+                                <button type="button" onclick="setTime('8.00 AM', this)" class="<?php echo isset($_POST['time']) && $_POST['time'] === '8.00 AM' ? 'selected' : ''; ?>">8.00 AM</button>
+                                <button type="button" onclick="setTime('5.00 PM', this)" class="<?php echo isset($_POST['time']) && $_POST['time'] === '5.00 PM' ? 'selected' : ''; ?>">5.00 PM</button>
                             </div>
+                            <input type="hidden" id="time" name="time" value="<?php echo isset($_POST['time']) ? htmlspecialchars($_POST['time']) : ''; ?>">
                         </div>
                         <!-- <div class="booking-info">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar-check custom-margin-10" viewBox="0 0 16 16">
@@ -397,6 +403,21 @@ get_header();
                 document.querySelector('input[name="post_title"]').value = postTitle;
             }, 1000); 
         });
+    </script>
+
+    <script>
+        function setTime(time, button) {
+            document.getElementById('time').value = time;
+            clearSelected('donation-time-buttons');
+            button.classList.add('selected');
+        }
+
+        function clearSelected(groupClass) {
+            var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('selected');
+            }
+        }
     </script>
 
 

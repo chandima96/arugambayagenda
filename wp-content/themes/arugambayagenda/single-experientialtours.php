@@ -493,7 +493,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                             <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
                                             <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
                                         </div>
-                                        <input type="hidden" id="time" name="time">
+                                        <input type="hidden" id="time" name="time" value="<?php echo isset($_POST['time']) ? htmlspecialchars($_POST['time']) : ''; ?>">
                                     </div>
 
                                     <input type="hidden" name="page_slug" value="form-page-slug">
@@ -871,4 +871,19 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
             calculate_adult_amount1(document.getElementById('aru-book-pax').value);
             calculate_kid_amount1(document.getElementById('aru-book-kids').value);
         };
+    </script>
+
+    <script>
+        function setTime(time, button) {
+            document.getElementById('time').value = time;
+            clearSelected('donation-time-buttons');
+            button.classList.add('selected');
+        }
+
+        function clearSelected(groupClass) {
+            var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('selected');
+            }
+        }
     </script>
