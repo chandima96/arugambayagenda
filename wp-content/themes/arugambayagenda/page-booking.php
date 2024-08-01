@@ -401,6 +401,7 @@ get_header();
 
             setTimeout(function() {
                 document.querySelector('input[name="date"]').value = date;
+                document.querySelector('input#time').value = time;
                 document.querySelector('input[name="time"]').value = time;
                 document.querySelector('input[name="pax"]').value = pax;
                 document.querySelector('input[name="kids"]').value = kids;

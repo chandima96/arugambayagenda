@@ -468,7 +468,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                 </li>
                             </ul>
                             <div class="mil-book-window">
-                                <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>&id=<?php echo get_the_ID(); ?>" method="post">
+                                <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
                                     <input type="hidden" id="hiddenTotalAmount" name="total_amount">
 
                                     <div class="mil-field-frame mil-mb-20">
@@ -488,7 +488,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label for="appointment-time">Choose a time</label>
-                                        <input type="time" id="appointment-time" name="appointment-time">
+                                        <input type="time" id="appointment-time" name="appointment-time" onchange="document.getElementById('time').value = this.value;">
                                         <input type="hidden" id="time" name="time">
                                     </div>  
 
@@ -502,7 +502,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <span>Confirm</span>
                                     </button>
                                 </form>
-                            </div>
+                            </div>  
                         </div>
                     </div>
                     <!-- sidebar end -->
@@ -864,10 +864,4 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
             calculate_adult_amount1(document.getElementById('aru-book-pax').value);
             calculate_kid_amount1(document.getElementById('aru-book-kids').value);
         };
-    </script>
-    
-    <script>
-        document.getElementById('appointment-time').addEventListener('change', function() {
-            document.getElementById('time').value = this.value;
-        });
     </script>
