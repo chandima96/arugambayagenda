@@ -468,7 +468,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                 </li>
                             </ul>
                             <div class="mil-book-window">
-                                <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
+                                <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>&id=<?php echo get_the_ID(); ?>" method="post">
                                     <input type="hidden" id="hiddenTotalAmount" name="total_amount">
 
                                     <div class="mil-field-frame mil-mb-20">
@@ -492,15 +492,6 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <input type="hidden" id="time" name="time">
                                     </div>  
 
-                                    <!-- <div class="donation-form-group">
-                                        <label>Time</label>
-                                        <div class="donation-time-buttons">
-                                            <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
-                                            <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
-                                        </div>
-                                        <input type="hidden" id="time" name="time">
-                                    </div> -->
-
                                     <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">
 
@@ -511,7 +502,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <span>Confirm</span>
                                     </button>
                                 </form>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                     <!-- sidebar end -->
@@ -873,4 +864,10 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
             calculate_adult_amount1(document.getElementById('aru-book-pax').value);
             calculate_kid_amount1(document.getElementById('aru-book-kids').value);
         };
+    </script>
+    
+    <script>
+        document.getElementById('appointment-time').addEventListener('change', function() {
+            document.getElementById('time').value = this.value;
+        });
     </script>
