@@ -490,9 +490,6 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <label for="timePicker" class="form-label">Select Time</label>
                                         <div class="input-group date" id="timePicker" data-td-target-input="nearest" data-td-target-toggle="nearest">
                                             <input type="text" class="form-control datetimepicker-input" data-td-target="#timePicker"/>
-                                            <span class="input-group-text" data-td-target="#timePicker" data-td-toggle="datetimepicker">
-                                                <i class="fa fa-clock-o"></i>
-                                            </span>
                                         </div>
                                     </div>
 
