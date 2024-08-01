@@ -865,3 +865,24 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
             calculate_kid_amount1(document.getElementById('aru-book-kids').value);
         };
     </script>
+
+    
+    <script>
+        function convertTo24HourFormat(time) {
+            const [timePart, modifier] = time.split(' ');
+            let [hours, minutes] = timePart.split(':');
+            
+            if (modifier === 'PM' && hours !== '12') {
+                hours = parseInt(hours, 10) + 12;
+            } else if (modifier === 'AM' && hours === '12') {
+                hours = '00';
+            }
+            
+            // Format hours and minutes
+            hours = String(hours).padStart(2, '0');
+            minutes = String(minutes).padStart(2, '0');
+            
+            const formattedTime = `${hours}:${minutes}`;
+            document.getElementById('time').value = formattedTime;
+        }
+    </script>
