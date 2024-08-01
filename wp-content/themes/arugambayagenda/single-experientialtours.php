@@ -47,6 +47,26 @@ $amenity_section_sub_heading_four_description = get_field('amenity_section_sub_h
 $sixth_section_title = get_field('sixth_section_title');
 $seventh_section_top_line = get_field('seventh_section_top_line');
 $seventh_section_title = get_field('seventh_section_title');
+$price_case_one = get_field('price_case_one');
+$price_case_two = get_field('price_case_two');
+$price_case_three = get_field('price_case_three');
+$price_case_four = get_field('price_case_four');
+$price_case_five = get_field('price_case_five');
+$price_case_six = get_field('price_case_six');
+$price_case_seven = get_field('price_case_seven');
+$price_case_eight = get_field('price_case_eight');
+$price_case_nine = get_field('price_case_nine');
+$price_case_ten = get_field('price_case_ten');
+$price_case_kids_one = get_field('price_case_kids_one');
+$price_case_kids_two = get_field('price_case_kids_two');
+$price_case_kids_three = get_field('price_case_kids_three');
+$price_case_kids_four = get_field('price_case_kids_four');
+$price_case_kids_five = get_field('price_case_kids_five');
+$price_case_kids_six = get_field('price_case_kids_six');
+$price_case_kids_seven = get_field('price_case_kids_seven');
+$price_case_kids_eight = get_field('price_case_kids_eight');
+$price_case_kids_nine = get_field('price_case_kids_nine');
+$price_case_kids_ten = get_field('price_case_kids_ten');
 ?>
 
         <!-- banner -->
@@ -689,8 +709,6 @@ $seventh_section_title = get_field('seventh_section_title');
 			 document.getElementById('postId').value = '<?php echo get_the_ID();?>';
 			 document.getElementById('postTitle').value = '<?php echo the_title();?>';
 		};
-     
- 
     </script>
 
     <script>
@@ -731,34 +749,34 @@ $seventh_section_title = get_field('seventh_section_title');
                     unitprice = 0;
                     break;
                 case 1:
-                    unitprice = 50.17;
+                    unitprice = <?php echo $price_case_one; ?>;
                     break;
                 case 2:
-                    unitprice = 33.88;
+                    unitprice = <?php echo $price_case_two; ?>;
                     break;
                 case 3:
-                    unitprice = 28.45;
+                    unitprice = <?php echo $price_case_three; ?>;
                     break;
                 case 4:
-                    unitprice = 33.88;
+                    unitprice = <?php echo $price_case_four; ?>;
                     break;
                 case 5:
-                    unitprice = 30.63;
+                    unitprice = <?php echo $price_case_five; ?>;
                     break;
                 case 6:
-                    unitprice = 28.45;
+                    unitprice = <?php echo $price_case_six; ?>;
                     break;
                 case 7:
-                    unitprice = 31.56;
+                    unitprice = <?php echo $price_case_seven; ?>;
                     break;
                 case 8:
-                    unitprice = 29.81;
+                    unitprice = <?php echo $price_case_eight; ?>;
                     break;
                 case 9:
-                    unitprice = 28.45;
+                    unitprice = <?php echo $price_case_nine; ?>;
                     break;
                 case 10:
-                    unitprice = 30.63;
+                    unitprice = <?php echo $price_case_ten; ?>;
                     break;
                 default:
                     nonselected = "more";
@@ -788,34 +806,34 @@ $seventh_section_title = get_field('seventh_section_title');
                     unitprice = 0;
                     break;
                 case 1:
-                    unitprice = 25.09;
+                    unitprice = <?php echo $price_case_kids_one; ?>;
                     break;
                 case 2:
-                    unitprice = 16.94;
+                    unitprice = <?php echo $price_case_kids_two; ?>;
                     break;
                 case 3:
-                    unitprice = 14.23;
+                    unitprice = <?php echo $price_case_kids_three; ?>;
                     break;
                 case 4:
-                    unitprice = 16.94;
+                    unitprice = <?php echo $price_case_kids_four; ?>;
                     break;
                 case 5:
-                    unitprice = 15.31;
+                    unitprice = <?php echo $price_case_kids_five; ?>;
                     break;
                 case 6:
-                    unitprice = 14.23;
+                    unitprice = <?php echo $price_case_kids_six; ?>;
                     break;
                 case 7:
-                    unitprice = 15.78;
+                    unitprice = <?php echo $price_case_kids_seven; ?>;
                     break;
                 case 8:
-                    unitprice = 14.91;
+                    unitprice = <?php echo $price_case_kids_eight; ?>;
                     break;
                 case 9:
-                    unitprice = 14.23;
+                    unitprice = <?php echo $price_case_kids_nine; ?>;
                     break;
                 case 10:
-                    unitprice = 15.31;
+                    unitprice = <?php echo $price_case_kids_ten; ?>;
                     break;
                 default:
                     nonselected = "more";
