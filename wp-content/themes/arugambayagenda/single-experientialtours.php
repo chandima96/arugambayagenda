@@ -447,58 +447,45 @@ $seventh_section_title = get_field('seventh_section_title');
                                     <div>Kids: <?php echo $size; ?></div>
                                 </li>
                             </ul>
-
                             <div class="mil-book-window">
-                            <?php echo do_shortcode('[contact-form-7 id="3251d29" title="Contact form Tours"]'); ?>
-                                <!-- <div>
-                                    <div class="mil-field-frame mil-mb-20">
-                                        <label>Full Name</label>
-                                        <input type="text" id="fname" placeholder="Full Name">
-                                    </div>
-
-                                    <div class="mil-field-frame mil-mb-20">
-                                        <label>E-Mail Address</label>
-                                        <input type="email" id="aru-book-name" placeholder="E-Mail Address">
-                                    </div>
-
-                                    <div class="mil-field-frame mil-mb-20">
-                                        <label>WhatsApp Number</label>
-                                        <input type="tel" id="aru-book-name" placeholder="WhatsApp Number">
-                                    </div>
-                                    <div class="mil-field-frame mil-mb-20">
-                                        <label>Date</label>
-                                        <input id="check-in" type="text" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly">
-                                    </div>
-
-                                    <div class="mil-field-frame mil-mb-20">
-                                        <label>Time</label>
-                                        <input id="check-in-time" type="time" id="appt" name="appt" time-position="bottom left" placeholder="Select Time" autocomplete="off" readonly="readonly">
-                                    </div>
+                                <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
+                                    <input type="hidden" id="hiddenTotalAmount" name="total_amount">
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Number of Pax</label>
-                                        <input type="number" id="aru-book-name" value="1">
+                                        <input type="number" id="aru-book-pax" name="pax" value="1" min="1" required onchange="calculate_adult_amount1(this.value)">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label>Departure location</label>
-                                        <input type="text" id="aru-book-name" placeholder="Departure location">
+                                        <label>Number of Kids</label>
+                                        <input type="number" id="aru-book-kids" name="kids" value="0" min="0" required onchange="calculate_kid_amount1(this.value)">
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label for="assistance-textarea">Need further assistance? </label>
-                                        <textarea id="assistance-textarea" id="aru-book-name" placeholder="Write to us" rows="4" cols="50"></textarea>
+                                        <label>Date</label>
+                                        <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
                                     </div>
+
+                                    <div class="donation-form-group">
+                                        <label>Time</label>
+                                        <div class="donation-time-buttons">
+                                            <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
+                                            <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
+                                        </div>
+                                        <input type="hidden" id="time" name="time">
+                                    </div>
+
+                                    <input type="hidden" name="page_slug" value="form-page-slug">
+                                    <input type="hidden" name="page_title" value="Booking Confirmation">
 
                                     <button type="submit" class="mil-button mil-accent-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
                                             <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
                                         </svg>
-                                        <span>Book now</span>
+                                        <span>Confirm</span>
                                     </button>
-                                </div> -->
-                            </div>
-
+                                </form>
+                            </div>  
                         </div>
                     </div>
                     <!-- sidebar end -->
@@ -697,11 +684,172 @@ $seventh_section_title = get_field('seventh_section_title');
 
 <?php get_footer(); ?>
 
- <script>  
+    <script>  
 		window.onload = function() { 
 			 document.getElementById('postId').value = '<?php echo get_the_ID();?>';
 			 document.getElementById('postTitle').value = '<?php echo the_title();?>';
 		};
      
  
+    </script>
+
+    <script>
+        function settime(time, button) {
+            document.getElementById('time').value = time;
+            clearSelected('donation-time-buttons');
+            button.classList.add('selected');
+        }
+
+        function setDonationAmount(amount, button) {
+            document.getElementById('other-amount').value = amount;
+            clearSelected('donation-donation-slots');
+            button.classList.add('selected');
+        }
+
+        function clearSelected(groupClass) {
+            var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('selected');
+            }
+        }
+    </script>
+
+    <script>
+        var total1 = 0;
+        var total2 = 0;
+        var nonselected = "a";
+
+        function calculate_adult_amount1(value1) {
+            if (value1 == "") {
+                value1 = 0;
+            }
+            value1 = parseInt(value1);
+            var unitprice = 0;
+
+            switch (value1) {
+                case 0:
+                    unitprice = 0;
+                    break;
+                case 1:
+                    unitprice = 50.17;
+                    break;
+                case 2:
+                    unitprice = 33.88;
+                    break;
+                case 3:
+                    unitprice = 28.45;
+                    break;
+                case 4:
+                    unitprice = 33.88;
+                    break;
+                case 5:
+                    unitprice = 30.63;
+                    break;
+                case 6:
+                    unitprice = 28.45;
+                    break;
+                case 7:
+                    unitprice = 31.56;
+                    break;
+                case 8:
+                    unitprice = 29.81;
+                    break;
+                case 9:
+                    unitprice = 28.45;
+                    break;
+                case 10:
+                    unitprice = 30.63;
+                    break;
+                default:
+                    nonselected = "more";
+                    unitprice = 0;
+            }
+
+            if (nonselected == "more") {
+                total1 = unitprice * parseInt(value1);
+                document.getElementById('totalAmount1').innerText = "Not Allowed More than 10";
+                updateTotalAmount1();
+            } else {
+                total1 = unitprice * parseInt(value1);
+                document.getElementById('totalAmount1').innerText = '$' + total1.toFixed(2);
+                updateTotalAmount1();
+            }
+        }
+
+        function calculate_kid_amount1(value2) {
+            if (value2 == "") {
+                value2 = 0;
+            }
+            value2 = parseInt(value2);
+            var unitprice = 0;
+
+            switch (value2) {
+                case 0:
+                    unitprice = 0;
+                    break;
+                case 1:
+                    unitprice = 25.09;
+                    break;
+                case 2:
+                    unitprice = 16.94;
+                    break;
+                case 3:
+                    unitprice = 14.23;
+                    break;
+                case 4:
+                    unitprice = 16.94;
+                    break;
+                case 5:
+                    unitprice = 15.31;
+                    break;
+                case 6:
+                    unitprice = 14.23;
+                    break;
+                case 7:
+                    unitprice = 15.78;
+                    break;
+                case 8:
+                    unitprice = 14.91;
+                    break;
+                case 9:
+                    unitprice = 14.23;
+                    break;
+                case 10:
+                    unitprice = 15.31;
+                    break;
+                default:
+                    nonselected = "more";
+                    unitprice = 0;
+            }
+
+            if (nonselected == "more") {
+                total2 = unitprice * parseInt(value2);
+                document.getElementById('totalAmount1').innerText = "Not Allowed More than 10";
+                updateTotalAmount1();
+            } else {
+                total2 = unitprice * parseInt(value2);
+                document.getElementById('totalAmount1').innerText = '$' + total2.toFixed(2);
+                updateTotalAmount1();
+            }
+        }
+
+        function updateTotalAmount1() {
+            var totalAmount = total1 + total2;
+            document.getElementById('totalAmount1').innerText = '$' + totalAmount.toFixed(2);
+            document.getElementById('hiddenTotalAmount').value = totalAmount.toFixed(2);
+        }
+
+        function settime(time, button) {
+            var buttons = document.querySelectorAll('.donation-time-buttons button');
+            buttons.forEach(function(btn) {
+                btn.classList.remove('selected');
+            });
+            button.classList.add('selected');
+            document.getElementById('time').value = time;
+        }
+
+        window.onload = function() {
+            calculate_adult_amount1(document.getElementById('aru-book-pax').value);
+            calculate_kid_amount1(document.getElementById('aru-book-kids').value);
+        };
     </script>
