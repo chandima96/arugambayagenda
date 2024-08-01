@@ -746,40 +746,39 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                     unitprice = 0;
                     break;
                 case 1:
-                    unitprice = <?php echo $price_case_one; ?>;
+                    unitprice = <?php echo isset($price_case_one) && !empty($price_case_one) ? $price_case_one : 0; ?>;
                     break;
                 case 2:
-                    unitprice = <?php echo $price_case_two; ?>;
+                    unitprice = <?php echo isset($price_case_two) && !empty($price_case_two) ? $price_case_two : 0; ?>;
                     break;
                 case 3:
-                    unitprice = <?php echo $price_case_three; ?>;
+                    unitprice = <?php echo isset($price_case_three) && !empty($price_case_three) ? $price_case_three : 0; ?>;
                     break;
                 case 4:
-                    unitprice = <?php echo $price_case_four; ?>;
+                    unitprice = <?php echo isset($price_case_four) && !empty($price_case_four) ? $price_case_four : 0; ?>;
                     break;
                 case 5:
-                    unitprice = <?php echo $price_case_five; ?>;
+                    unitprice = <?php echo isset($price_case_five) && !empty($price_case_five) ? $price_case_five : 0; ?>;
                     break;
                 case 6:
-                    unitprice = <?php echo $price_case_six; ?>;
+                    unitprice = <?php echo isset($price_case_six) && !empty($price_case_six) ? $price_case_six : 0; ?>;
                     break;
                 case 7:
-                    unitprice = <?php echo $price_case_seven; ?>;
+                    unitprice = <?php echo isset($price_case_seven) && !empty($price_case_seven) ? $price_case_seven : 0; ?>;
                     break;
                 case 8:
-                    unitprice = <?php echo $price_case_eight; ?>;
+                    unitprice = <?php echo isset($price_case_eight) && !empty($price_case_eight) ? $price_case_eight : 0; ?>;
                     break;
                 case 9:
-                    unitprice = <?php echo $price_case_nine; ?>;
+                    unitprice = <?php echo isset($price_case_nine) && !empty($price_case_nine) ? $price_case_nine : 0; ?>;
                     break;
                 case 10:
-                    unitprice = <?php echo $price_case_ten; ?>;
+                    unitprice = <?php echo isset($price_case_ten) && !empty($price_case_ten) ? $price_case_ten : 0; ?>;
                     break;
                 default:
                     nonselected = "more";
                     unitprice = 0;
             }
-
             if (nonselected == "more") {
                 total1 = unitprice * parseInt(value1);
                 document.getElementById('totalAmount1').innerText = "Not Allowed More than 10";
@@ -803,34 +802,34 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                     unitprice = 0;
                     break;
                 case 1:
-                    unitprice = <?php echo $price_case_kids_one; ?>;
+                    unitprice = <?php echo isset($price_case_kids_one) && !empty($price_case_kids_one) ? $price_case_kids_one : 0; ?>;
                     break;
                 case 2:
-                    unitprice = <?php echo $price_case_kids_two; ?>;
+                    unitprice = <?php echo isset($price_case_kids_two) && !empty($price_case_kids_two) ? $price_case_kids_two : 0; ?>;
                     break;
                 case 3:
-                    unitprice = <?php echo $price_case_kids_three; ?>;
+                    unitprice = <?php echo isset($price_case_kids_three) && !empty($price_case_kids_three) ? $price_case_kids_three : 0; ?>;
                     break;
                 case 4:
-                    unitprice = <?php echo $price_case_kids_four; ?>;
+                    unitprice = <?php echo isset($price_case_kids_four) && !empty($price_case_kids_four) ? $price_case_kids_four : 0; ?>;
                     break;
                 case 5:
-                    unitprice = <?php echo $price_case_kids_five; ?>;
+                    unitprice = <?php echo isset($price_case_kids_five) && !empty($price_case_kids_five) ? $price_case_kids_five : 0; ?>;
                     break;
                 case 6:
-                    unitprice = <?php echo $price_case_kids_six; ?>;
+                    unitprice = <?php echo isset($price_case_kids_six) && !empty($price_case_kids_six) ? $price_case_kids_six : 0; ?>;
                     break;
                 case 7:
-                    unitprice = <?php echo $price_case_kids_seven; ?>;
+                    unitprice = <?php echo isset($price_case_kids_seven) && !empty($price_case_kids_seven) ? $price_case_kids_seven : 0; ?>;
                     break;
                 case 8:
-                    unitprice = <?php echo $price_case_kids_eight; ?>;
+                    unitprice = <?php echo isset($price_case_kids_eight) && !empty($price_case_kids_eight) ? $price_case_kids_eight : 0; ?>;
                     break;
                 case 9:
-                    unitprice = <?php echo $price_case_kids_nine; ?>;
+                    unitprice = <?php echo isset($price_case_kids_nine) && !empty($price_case_kids_nine) ? $price_case_kids_nine : 0; ?>;
                     break;
                 case 10:
-                    unitprice = <?php echo $price_case_kids_ten; ?>;
+                    unitprice = <?php echo isset($price_case_kids_ten) && !empty($price_case_kids_ten) ? $price_case_kids_ten : 0; ?>;
                     break;
                 default:
                     nonselected = "more";
