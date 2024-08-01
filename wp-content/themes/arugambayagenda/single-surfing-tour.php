@@ -44,7 +44,7 @@ $amenity_section_sub_heading_three = get_field('amenity_section_sub_heading_thre
 $amenity_section_sub_heading_three_description = get_field('amenity_section_sub_heading_three_description');
 $amenity_section_sub_heading_four = get_field('amenity_section_sub_heading_four');
 $amenity_section_sub_heading_four_description = get_field('amenity_section_sub_heading_four_description');
-$sixth_section_title = get_field('sixth_section_title');
+// $sixth_section_title = get_field('sixth_section_title');
 $seventh_section_top_line = get_field('seventh_section_top_line');
 $seventh_section_title = get_field('seventh_section_title');
 $price_case_one = get_field('price_case_one');
@@ -277,7 +277,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                         </div>
                         <!-- features -->
 
-                        <h3 class="mil-fade-up mil-mb-40">FAQ</h3>
+                        <h3 class="mil-fade-up mil-mb-40">DISCOVER</h3>
                         <div class="mil-faq-section mil-mb-100">
                             <?php if (!empty($faq_section_question_one) && !empty($faq_section_answer_one)): ?>
                             <div class="mil-faq-item mil-fade-up">
@@ -420,7 +420,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
 
                         <!-- map -->
                         <div>
-                            <h3 class="mil-fade-up mil-mb-40"><?php echo $sixth_section_title; ?></h3>
+                            <h3 class="mil-fade-up mil-mb-40">Location</h3>
 
                             <div class="mil-map-frame mil-fade-up mil-mb-100">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126763.75638037869!2d81.7486873!3d6.8464863!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5bdd4ea90a9dd%3A0x7011ba04a540ae4e!2sArugambay%20Agenda!5e0!3m2!1sen!2slk!4v1721294027474!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

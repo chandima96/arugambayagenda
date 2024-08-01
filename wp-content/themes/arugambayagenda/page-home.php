@@ -169,13 +169,13 @@ $counter_five = get_field('counter_five');
                     </div>
                 </div> -->
                 <div class="row justify-content-between">
-                    <div class="col-lg-7">
+                    <div class="col-lg-9">
                         <p class="mil-fade-up"><?php echo $services_description; ?></p>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-3">
                         <div class="mil-desctop-right mil-fade-up btn-center">
                             <a href="<?php bloginfo('url'); ?>/all-tours" class="mil-button">
-                                <span>Contact Us</span>
+                                <span>PLAN MY HOLIDAY</span>
                             </a>
                         </div>
                     </div>
