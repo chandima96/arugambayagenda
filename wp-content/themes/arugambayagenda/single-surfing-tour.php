@@ -486,14 +486,24 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
                                     </div>
 
-                                    <div class="donation-form-group">
+                                    <div class="mil-field-frame mil-mb-20">
+                                        <label for="timePicker" class="form-label">Select Time</label>
+                                        <div class="input-group date" id="timePicker" data-td-target-input="nearest" data-td-target-toggle="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-td-target="#timePicker"/>
+                                            <span class="input-group-text" data-td-target="#timePicker" data-td-toggle="datetimepicker">
+                                                <i class="fa fa-clock-o"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="donation-form-group">
                                         <label>Time</label>
                                         <div class="donation-time-buttons">
                                             <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
                                             <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
                                         </div>
                                         <input type="hidden" id="time" name="time">
-                                    </div>
+                                    </div> -->
 
                                     <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">
