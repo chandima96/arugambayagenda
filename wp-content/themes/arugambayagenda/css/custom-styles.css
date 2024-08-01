@@ -733,11 +733,10 @@ body {
 
 .booking-card {
     width: 100%;
-    background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border: 1px solid #e1e3e6;
+    border: 6px solid #ffffff;
   }
 
   .booking-card h2 {
@@ -808,7 +807,7 @@ body {
 
   .booking-price-breakdown {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     margin-bottom: 10px;
   }
 
@@ -816,6 +815,7 @@ body {
     font-size: 30px;
     font-weight: 600;
     margin-top: 10px;
+    text-align: end;
   }
 
   @media (max-width: 678px) {

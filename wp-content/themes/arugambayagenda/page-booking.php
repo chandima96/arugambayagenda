@@ -44,17 +44,6 @@ get_header();
                         <div class="col-lg-12 col-xl-12">
                             <h1 class="mil-h2-lg mil-mb-40"><?php echo htmlspecialchars($page_title); ?></h1>
                         </div>
-                        <div class="col-lg-12 col-xl-12">
-                            <div class="mil-desctop-right mil-right-no-m mil-fade-up">
-                                <div class="mil-suptitle mil-breadcrumbs mil-light">
-                                    <ul>
-                                        <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
-                                        <li><a href="<?php bloginfo('url'); ?>/"><?php echo htmlspecialchars($post_title); ?></a></li>
-                                        <li><a href="#"><?php echo htmlspecialchars($page_title); ?></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -79,7 +68,11 @@ get_header();
                     ?> -->
 
                     <div class="booking-card">
-                        <h2><?php echo htmlspecialchars($post_title); ?></h2>
+                        <div>
+                            <img src="" alt="">
+                            <h2><?php echo htmlspecialchars($post_title); ?></h2>
+                        </div>
+                        
                         <div class="booking-icon-text">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-clock-history custom-margin-10" viewBox="0 0 16 16">
                                 <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/>
@@ -117,7 +110,7 @@ get_header();
                         <div class="booking-price-breakdown">
                             <p>Kids <?php echo htmlspecialchars($kids); ?> × $34.98</p>
                         </div>
-                        <div class="booking-total-price">Total price <?php echo htmlspecialchars($total_amount); ?></div>
+                        <div class="booking-total-price">Total price <span style="color:#0097b2;"><?php echo htmlspecialchars($total_amount); ?></span></div>
                         <!-- <div class="booking-buttons">
                         <a href="#" class="booking-button secondary">Add to cart</a>
                         <a href="#" class="booking-button">Book now</a>
