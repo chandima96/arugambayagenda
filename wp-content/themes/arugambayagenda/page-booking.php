@@ -89,6 +89,14 @@ get_header();
                             <p><?php echo get_field('duration'); ?></p>
                         </div>
                         <p>Select a starting time</p>
+                                             <?php
+                        echo '<p><strong>Date:</strong> ' . htmlspecialchars($date) . '</p>';
+                        echo '<p><strong>Time:</strong> ' . htmlspecialchars($time) . '</p>';
+                        echo '<p><strong>Number of Pax:</strong> ' . htmlspecialchars($pax) . '</p>';
+                        echo '<p><strong>Number of Kids:</strong> ' . htmlspecialchars($kids) . '</p>';
+                        echo '<p><strong>Total Amount:</strong> $' . htmlspecialchars($total_amount)  . '</p>';
+                    ?>
+                        
                         <p><?php echo htmlspecialchars($date); ?></p>
                         <div class="donation-form-group custom-time-width ">
                             <label></label>
