@@ -487,10 +487,8 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label for="timePicker" class="form-label">Select Time</label>
-                                        <div class="input-group date" id="timePicker" data-td-target-input="nearest" data-td-target-toggle="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-td-target="#timePicker"/>
-                                        </div>
+                                        <label for="appointment-time">Choose a time for your appointment:</label>
+                                        <input type="time" id="appointment-time" name="appointment-time">
                                     </div>
 
                                     <!-- <div class="donation-form-group">

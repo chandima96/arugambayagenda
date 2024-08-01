@@ -26,12 +26,6 @@
     <!-- custom css -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom-styles.css">
     <!-- page name -->
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus/5.1.2/css/tempus-dominus.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus/5.1.2/js/tempus-dominus.min.js"></script>
-
     <?php wp_head(); ?>
 </head>
 
