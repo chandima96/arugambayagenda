@@ -68,9 +68,13 @@ get_header();
                     ?> -->
 
                     <div class="booking-card">
-                        <div>
-                            <img src="" alt="">
-                            <h2><?php echo htmlspecialchars($post_title); ?></h2>
+                        <div class="row">
+                            <div class="col-xl-3">
+                                <img src="https://arugambay.metadilan.com/wp-content/uploads/2024/07/2-2.webp" alt="">
+                            </div>
+                            <div class="col-xl-9">
+                                <h2><?php echo htmlspecialchars($post_title); ?></h2>
+                            </div>
                         </div>
                         
                         <div class="booking-icon-text">
