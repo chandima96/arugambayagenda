@@ -385,40 +385,45 @@ get_header();
         }
     </script> -->
 
-    <script>
-            document.addEventListener('DOMContentLoaded', function() {
-            const date = '<?php echo $date; ?>';
-            const time = '<?php echo $time; ?>';
-            const pax = '<?php echo $pax; ?>';
-            const kids = '<?php echo $kids; ?>';
-            const totalAmount = '<?php echo $total_amount; ?>';
-            const postTitle = '<?php echo $post_title; ?>';
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const date = '<?php echo $date; ?>';
+        const time = '<?php echo $time; ?>';
+        const pax = '<?php echo $pax; ?>';
+        const kids = '<?php echo $kids; ?>';
+        const totalAmount = '<?php echo $total_amount; ?>';
+        const postTitle = '<?php echo $post_title; ?>';
 
-            setTimeout(function() {
-                document.querySelector('input[name="date"]').value = date;
-                document.querySelector('input[name="time"]').value = time;
-                document.querySelector('input[name="pax"]').value = pax;
-                document.querySelector('input[name="kids"]').value = kids;
-                document.querySelector('input[name="total_amount"]').value = totalAmount;
-                document.querySelector('input[name="post_title"]').value = postTitle;
-            }, 1000); 
-        });
-    </script>
+        setTimeout(function() {
+            document.querySelector('input[name="date"]').value = date;
+            document.querySelector('input#time').value = time;
+            document.querySelector('input[name="time"]').value = time;
+            document.querySelector('input[name="pax"]').value = pax;
+            document.querySelector('input[name="kids"]').value = kids;
+            document.querySelector('input[name="total_amount"]').value = totalAmount;
+            document.querySelector('input[name="post_title"]').value = postTitle;
+        }, 1000); 
+    });
 
-    <script>
-        function setTime(time, button) {
-            document.getElementById('time').value = time;
-            clearSelected('donation-time-buttons');
-            button.classList.add('selected');
+    function setTime(time, button) {
+        document.getElementById('time').value = time;
+        clearSelected('donation-time-buttons');
+        button.classList.add('selected');
+
+        // Update the hidden field in the Contact Form 7 form
+        const contactFormHiddenField = document.querySelector('input[name="selected_time"]');
+        if (contactFormHiddenField) {
+            contactFormHiddenField.value = time;
         }
+    }
 
-        function clearSelected(groupClass) {
-            var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
-            for (var i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove('selected');
-            }
+    function clearSelected(groupClass) {
+        var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove('selected');
         }
-    </script>
+    }
+</script>
 
 
 
