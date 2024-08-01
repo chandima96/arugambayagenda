@@ -487,9 +487,9 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label for="appointment-time">Choose a time for your appointment:</label>
+                                        <label for="appointment-time">Choose a time</label>
                                         <input type="time" id="appointment-time" name="appointment-time">
-                                    </div>
+                                    </div>  
 
                                     <!-- <div class="donation-form-group">
                                         <label>Time</label>
