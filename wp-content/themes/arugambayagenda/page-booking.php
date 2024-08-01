@@ -390,6 +390,7 @@ get_header();
             const pax = '<?php echo $pax; ?>';
             const kids = '<?php echo $kids; ?>';
             const totalAmount = '<?php echo $total_amount; ?>';
+            const postTitle = '<?php echo $post_title; ?>';
 
             setTimeout(function() {
                 document.querySelector('input[name="date"]').value = date;
@@ -397,6 +398,7 @@ get_header();
                 document.querySelector('input[name="pax"]').value = pax;
                 document.querySelector('input[name="kids"]').value = kids;
                 document.querySelector('input[name="total_amount"]').value = totalAmount;
+                document.querySelector('input[name="post_title"]').value = postTitle;
             }, 1000); 
         });
     </script>
