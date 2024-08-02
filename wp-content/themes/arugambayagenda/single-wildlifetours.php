@@ -494,7 +494,11 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <label>Time</label>
                                         <div class="donation-time-buttons">
                                             <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
-                                            <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
+                                            <?php
+                                            $page_id = get_the_ID();
+                                            if ($page_id !== 293 && $page_id !== 292): ?>
+                                                <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
+                                            <?php endif; ?>
                                         </div>
                                         <input type="hidden" id="time" name="time">
                                     </div>
