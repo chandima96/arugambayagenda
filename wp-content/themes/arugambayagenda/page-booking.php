@@ -127,15 +127,10 @@ get_header();
                         </div>
                         <div class="booking-price-breakdown">
                             <div class="booking-info">
-                                <svg width="24" height="24" class="custom-margin-10 icon-color" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32" cy="18" r="10" fill="#FFD700" />
-                                    <rect x="24" y="28" width="16" height="28" fill="#1E90FF" />
-                                    <line x1="24" y1="42" x2="12" y2="52" stroke="#000" stroke-width="2" />
-                                    <line x1="40" y1="42" x2="52" y2="52" stroke="#000" stroke-width="2" />
-                                    <line x1="24" y1="56" x2="12" y2="64" stroke="#000" stroke-width="2" />
-                                    <line x1="40" y1="56" x2="52" y2="64" stroke="#000" stroke-width="2" />
-                                </svg>                    
                             <?php if ($kids > 0): ?>
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 104.9 122.88" style="enable-background:new 0 0 104.9 122.88" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g>
+                                    <path class="st0" d="M52.5,0C64.3,0,73.86,9.46,73.86,21.14c0,11.67-9.56,21.14-21.36,21.14c-11.8,0-21.36-9.46-21.36-21.14 C31.14,9.46,40.7,0,52.5,0L52.5,0z M74.61,64.75l16.72,12.69c8.01,6.08,18.75-4.67,10.75-10.75L74.61,45.85v-0.1l-44.2,0v0.02 l-0.02-0.02L2.82,66.79c-7.99,6.1,2.76,16.85,10.75,10.75l16.84-12.85l0,28.69h2.29v21.91c0,4.18,3.42,7.6,7.6,7.6 c4.18,0,7.6-3.42,7.6-7.6V93.37h9.21v21.91c0,4.18,3.42,7.6,7.6,7.6c4.18,0,7.6-3.42,7.6-7.6V93.37h2.29V64.75L74.61,64.75 L74.61,64.75z"/></g>
+                                </svg>                 
                                 <p>Kids <?php echo htmlspecialchars($kids); ?> (Age: 11 and Younger)</p>
                             <?php endif; ?>                            </div>
                         </div>
