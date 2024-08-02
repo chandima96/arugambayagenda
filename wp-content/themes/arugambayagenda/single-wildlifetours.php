@@ -436,7 +436,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                         <div class="mil-sticky mil-stycky-right mil-p-0-100" data-margin-top="140">
 
                             <div class="mil-price-frame mil-mb-20">
-                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number" id="totalAmount1"></span>/ <span>per pax /</span> <?php echo $duration; ?></div>
+                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo $price_case_two; ?></span> <span>per pax /</span> <?php echo $duration; ?></div>
                             </div>
 
                             <ul class="mil-parameters mil-mb-20">
@@ -502,6 +502,10 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         </div>
                                         <input type="hidden" id="time" name="time">
                                     </div>
+                                    <div class="booking-total-price" style="display:flex; justify-content: space-between;">
+                                        <div>Total price </div>
+                                        <div style="color:#0097b2;" id="totalAmount1"></div>
+                                    </div>
 
                                     <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">
@@ -510,7 +514,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
                                             <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
                                         </svg>
-                                        <span>Confirm</span>
+                                        <span>Book Now</span>
                                     </button>
                                 </form>
                             </div>  
