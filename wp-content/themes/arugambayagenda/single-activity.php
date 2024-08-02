@@ -484,7 +484,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
 
                         <div class="mil-sticky mil-stycky-right mil-p-0-100" data-margin-top="140">
                             <div class="mil-price-frame mil-mb-20">
-                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number" id="totalAmount1"></span>/ <span>per pax /</span> <?php echo $duration; ?></div>
+                                <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo $price_case_two; ?></span> <span>per pax /</span> <?php echo $duration; ?></div>
                             </div>
  
                             <!-- <div class="mil-price-frame mil-mb-20">
@@ -546,6 +546,10 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                             <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
                                         </div>
                                         <input type="hidden" id="time" name="time">
+                                    </div>
+                                    <div class="booking-total-price" style="display:flex; justify-content: space-between;">
+                                        <div>Total price </div>
+                                        <div style="color:#0097b2;" id="totalAmount1"></div>
                                     </div>
 
                                     <input type="hidden" name="page_slug" value="form-page-slug">
