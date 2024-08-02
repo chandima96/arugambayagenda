@@ -114,14 +114,9 @@ get_header();
                         </div>
                         <div class="booking-price-breakdown">
                             <div class="booking-info">
-                            <svg width="24" height="24" class="custom-margin-10 icon-color" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32" cy="18" r="10" fill="#FFD700" />
-                                    <rect x="24" y="28" width="16" height="28" fill="#1E90FF" />
-                                    <line x1="24" y1="42" x2="12" y2="52" stroke="#000" stroke-width="2" />
-                                    <line x1="40" y1="42" x2="52" y2="52" stroke="#000" stroke-width="2" />
-                                    <line x1="24" y1="56" x2="12" y2="64" stroke="#000" stroke-width="2" />
-                                    <line x1="40" y1="56" x2="52" y2="64" stroke="#000" stroke-width="2" />
-                                </svg>                      
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-standing custom-margin-10 icon-color" viewBox="0 0 16 16">
+                                    <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0"/>
+                                </svg>                     
                                 <p>Adult <?php echo htmlspecialchars($pax); ?> (Age: 12-99)</p>
                             </div>
                         </div>
