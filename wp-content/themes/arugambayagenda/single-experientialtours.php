@@ -487,14 +487,20 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
                                     </div>
 
-                                    <div class="donation-form-group">
+                                    <div class="mil-field-frame mil-mb-20">
+                                        <label for="appointment-time">Choose a time</label>
+                                        <input type="time" id="appointment-time" name="appointment-time" onchange="document.getElementById('time').value = this.value;">
+                                        <input type="hidden" id="time" name="time">
+                                    </div> 
+
+                                    <!-- <div class="donation-form-group">
                                         <label>Time</label>
                                         <div class="donation-time-buttons">
                                             <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
                                             <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
                                         </div>
                                         <input type="hidden" id="time" name="time" value="<?php echo isset($_POST['time']) ? htmlspecialchars($_POST['time']) : ''; ?>">
-                                    </div>
+                                    </div> -->
 
                                     <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">
@@ -874,6 +880,26 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
     </script>
 
     <script>
+        function convertTo24HourFormat(time) {
+            const [timePart, modifier] = time.split(' ');
+            let [hours, minutes] = timePart.split(':');
+            
+            if (modifier === 'PM' && hours !== '12') {
+                hours = parseInt(hours, 10) + 12;
+            } else if (modifier === 'AM' && hours === '12') {
+                hours = '00';
+            }
+            
+            // Format hours and minutes
+            hours = String(hours).padStart(2, '0');
+            minutes = String(minutes).padStart(2, '0');
+            
+            const formattedTime = `${hours}:${minutes}`;
+            document.getElementById('time').value = formattedTime;
+        }
+    </script>
+
+    <!-- <script>
         function setTime(time, button) {
             document.getElementById('time').value = time;
             clearSelected('donation-time-buttons');
@@ -886,4 +912,4 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                 buttons[i].classList.remove('selected');
             }
         }
-    </script>
+    </script> -->
