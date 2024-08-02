@@ -509,7 +509,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
                                             <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
                                         </svg>
-                                        <span>Confirm</span>
+                                        <span>Book Now</span>
                                     </button>
                                 </form>
                             </div>  
@@ -899,17 +899,3 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
         }
     </script>
 
-    <!-- <script>
-        function setTime(time, button) {
-            document.getElementById('time').value = time;
-            clearSelected('donation-time-buttons');
-            button.classList.add('selected');
-        }
-
-        function clearSelected(groupClass) {
-            var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
-            for (var i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove('selected');
-            }
-        }
-    </script> -->
