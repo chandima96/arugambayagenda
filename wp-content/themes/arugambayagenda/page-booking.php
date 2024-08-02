@@ -70,7 +70,9 @@ get_header();
                     <div class="booking-card">
                         <div class="row">
                             <div class="col-xl-3">
-                            <?php echo get_field('image_one'); ?>
+                                <div class="mil-card-cover">
+                                    <img src="<?php echo get_field('image_one'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
+                                </div>                            
                             </div>
                             <div class="col-xl-9">
                                 <h2><?php echo htmlspecialchars($post_title); ?></h2>
