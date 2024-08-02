@@ -862,8 +862,14 @@ body {
 }
 
 .booking-heading {
+    justify-content: center;
     text-align: center;
     display: flex;
     align-items: center;
 }
 
+@media (max-width: 1200px) {
+    .booking-heading {
+        margin-bottom: 10px;
+    }
+}
