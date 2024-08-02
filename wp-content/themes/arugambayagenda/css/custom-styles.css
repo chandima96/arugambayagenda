@@ -862,6 +862,7 @@ body {
 }
 
 .booking-heading {
+    text-align: center;
     display: flex;
     align-items: center;
 }
