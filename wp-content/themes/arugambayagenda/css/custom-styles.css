@@ -856,4 +856,9 @@ body {
     fill: #0097b2 !important;
 }
 
+.image-booking {
+    width: 200px !important;
+    border-radius: 18px !important;
+}
+
 
