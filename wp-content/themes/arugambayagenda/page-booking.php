@@ -69,8 +69,8 @@ get_header();
 
                     <div class="booking-card">
                         <div class="row">
-                            <div class="col-xl-3" style="background-image: url(https://arugambay.metadilan.com/wp-content/uploads/2024/07/2-2.webp);">
-                                
+                            <div class="col-xl-3">
+                            <?php echo get_field('image_one'); ?>
                             </div>
                             <div class="col-xl-9">
                                 <h2><?php echo htmlspecialchars($post_title); ?></h2>
