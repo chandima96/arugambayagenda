@@ -116,7 +116,9 @@ get_header();
                             <p>Adult <?php echo htmlspecialchars($pax); ?> (Age: 12-99)</p>
                         </div>
                         <div class="booking-price-breakdown">
-                            <p>Kids <?php echo htmlspecialchars($kids); ?> (Age: 11 and Younger)</p>
+                            <?php if ($kids > 0): ?>
+                                <p>Kids <?php echo htmlspecialchars($kids); ?> (Age: 11 and Younger)</p>
+                            <?php endif; ?>
                         </div>
                         <div class="booking-total-price">Total price <span style="color:#0097b2;"><?php echo htmlspecialchars($total_amount); ?></span></div>
                         <!-- <div class="booking-buttons">
