@@ -707,7 +707,7 @@ $counter_five = get_field('counter_five');
                 </div>
                 <div class="mil-text-center margin-top-30">
                     <div class="mil-fade-up btn-center">
-                        <a href="<?php bloginfo('url'); ?>/contact-us" class="mil-button">
+                        <a href="https://www.google.com/maps/place/Arugambay+Agenda/@6.8464933,81.8285143,17z/data=!4m8!3m7!1s0x3ae5bdd4ea90a9dd:0x7011ba04a540ae4e!8m2!3d6.8464933!4d81.8310892!9m1!1b1!16s%2Fg%2F11v01t6bc_?entry=ttu" target="_blank" class="mil-button">
                             <span>More Reviews</span>
                         </a>
                     </div>
