@@ -69,10 +69,10 @@ get_header();
 
                     <div class="booking-card">
                         <div class="row">
-                            <div class="col-xl-3">
+                            <div class="col-xl-3 booking-heading ">
                                 <img src="<?php echo get_field('image_one'); ?>" class="image-booking">
                             </div>
-                            <div class="col-xl-9">
+                            <div class="col-xl-9 booking-heading ">
                                 <h2><?php echo htmlspecialchars($post_title); ?></h2>
                             </div>
                         </div>
