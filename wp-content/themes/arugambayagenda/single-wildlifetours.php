@@ -476,10 +476,14 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <input type="number" id="aru-book-pax" name="pax" value="1" min="1" required onchange="calculate_adult_amount1(this.value)">
                                     </div>
 
+                                        <?php
+                                        $page_id = get_the_ID();
+                                        if ($page_id !== 293 && $page_id !== 292): ?>
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Number of Kids</label>
                                         <input type="number" id="aru-book-kids" name="kids" value="0" min="0" required onchange="calculate_kid_amount1(this.value)">
                                     </div>
+                                        <?php endif; ?>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Date</label>
