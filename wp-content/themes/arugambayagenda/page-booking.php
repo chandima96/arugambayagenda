@@ -33,7 +33,7 @@ get_header();
     $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
     $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
     $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
-?>     
+?>      
         <!-- banner -->
         <div class="mil-p-100-60">
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape" style="width: 70%; top: 0; right: -12%; transform: rotate(180deg)" alt="shape">
@@ -87,7 +87,8 @@ get_header();
                         </div>
                         <p>Select a starting time</p>
                         <p><?php echo htmlspecialchars($date); ?></p>
-                        <div class="donation-form-group custom-time-width ">
+                        <p><?php echo htmlspecialchars($time); ?></p>
+                        <!-- <div class="donation-form-group custom-time-width ">
                             <label></label>
                             <?php
                                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -99,7 +100,7 @@ get_header();
                                 <button type="button" onclick="setTime('5.00 PM', this)" class="<?php echo isset($_POST['time']) && $_POST['time'] === '5.00 PM' ? 'selected' : ''; ?>">5.00 PM</button>
                             </div>
                             <input type="hidden" id="time" name="time" value="<?php echo isset($_POST['time']) ? htmlspecialchars($_POST['time']) : ''; ?>">
-                        </div>
+                        </div> -->
                         <!-- <div class="booking-info">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar-check custom-margin-10" viewBox="0 0 16 16">
                                 <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
@@ -385,8 +386,8 @@ get_header();
         }
     </script> -->
 
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
         const date = '<?php echo $date; ?>';
         const time = '<?php echo $time; ?>';
         const pax = '<?php echo $pax; ?>';
@@ -409,28 +410,48 @@ get_header();
                 contactFormHiddenField.value = time;
             }
         }, 1000); 
-    });
+        });
 
-    function setTime(time, button) {
-        document.getElementById('time').value = time;
-        clearSelected('donation-time-buttons');
-        button.classList.add('selected');
+        function setTime(time, button) {
+            document.getElementById('time').value = time;
+            clearSelected('donation-time-buttons');
+            button.classList.add('selected');
 
-        // Update the hidden field in the Contact Form 7 form
-        const contactFormHiddenField = document.querySelector('input[name="selected_time"]');
-        if (contactFormHiddenField) {
-            contactFormHiddenField.value = time;
+            // Update the hidden field in the Contact Form 7 form
+            const contactFormHiddenField = document.querySelector('input[name="selected_time"]');
+            if (contactFormHiddenField) {
+                contactFormHiddenField.value = time;
+            }
         }
-    }
 
-    function clearSelected(groupClass) {
-        var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].classList.remove('selected');
+        function clearSelected(groupClass) {
+            var buttons = document.getElementsByClassName(groupClass)[0].getElementsByTagName('button');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('selected');
+            }
         }
-    }
-</script>
+    </script> -->
 
 
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const date = '<?php echo $date; ?>';
+            const time = '<?php echo $time; ?>';
+            const pax = '<?php echo $pax; ?>';
+            const kids = '<?php echo $kids; ?>';
+            const totalAmount = '<?php echo $total_amount; ?>';
+            const postTitle = '<?php echo $post_title; ?>';
 
+            setTimeout(function() {
+                document.querySelector('input[name="date"]').value = date;
+                document.querySelector('input#time').value = time;
+                document.querySelector('input[name="time"]').value = time;
+                document.querySelector('input[name="pax"]').value = pax;
+                document.querySelector('input[name="kids"]').value = kids;
+                document.querySelector('input[name="total_amount"]').value = totalAmount;
+                document.querySelector('input[name="post_title"]').value = postTitle;
+            }, 1000); 
+        });
+    </script>
+   
 
