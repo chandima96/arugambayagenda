@@ -805,10 +805,11 @@ body {
     width: 20px;
     margin-right: 8px;
   }
+  
 
   .booking-price-breakdown {
     display: flex;
-    justify-content: end;
+    justify-content: start;
     margin-bottom: 10px;
   }
 
