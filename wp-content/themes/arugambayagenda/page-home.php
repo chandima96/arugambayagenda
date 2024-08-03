@@ -571,13 +571,10 @@ $counter_five = get_field('counter_five');
                     <h2 class="mil-mb-100 mil-fade-up">Our Experts</h2>
                 </div>
                         <div class="row">    
-                            <div class="col-xl-6">
-                                <div>
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/images/hanas.webp" alt="">
-                                </div>
-                                
+                            <div class="col-xl-4" style="justify-content: center; align-items: center;">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/images/hanas.webp" alt="" style="border-radius: 21px; width: 300px;">
                             </div>
-                            <div class="col-xl-5">
+                            <div class="col-xl-7">
                                 <p class="mil-fade-up mil-mb-20">Hey there, I’m Hanas, the heart and soul behind Arugambay Agenda. As the founder of this venture, I’m on a mission to share the enchantment of my beloved hometown, Arugambay, with the world. I’m a true Arugambay native, born and raised on the East Coast of Sri Lanka. Picture me as the youngest member of a lively family, nestled among the sounds of the ocean and the warmth of a tight-knit clan.</p>
 
                                 <div class="mil-signature-frame mil-fade-up mil-mb-40-adapt">
