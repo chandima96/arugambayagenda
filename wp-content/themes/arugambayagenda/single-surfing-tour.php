@@ -487,7 +487,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label for="appointment-time">Choose a time</label>
+                                        <label for="appointment-time">Choose a time (between 6 AM & 4 PM)</label>
                                         <input type="time" id="appointment-time" name="appointment-time" min="06:00" max="16:00" onchange="document.getElementById('time').value = this.value;">
                                         <input type="hidden" id="time" name="time">
                                     </div>  
