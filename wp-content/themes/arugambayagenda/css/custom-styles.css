@@ -284,6 +284,11 @@ footer .mil-footer-content .mil-logo img {
     box-sizing: border-box !important;
 }
 
+.mil-iconbox-custom-team{
+    width: calc(25% - 20px) !important;
+    box-sizing: border-box !important;
+}
+
 .mil-iconbox-counter {
     width: calc(20% - 20px) !important;
     box-sizing: border-box !important;
@@ -308,6 +313,10 @@ footer .mil-footer-content .mil-logo img {
     }
     .other-logo{
         display: flex; align-items: center; gap: 12px; justify-content: center;
+    }
+    .mil-iconbox-custom-team{
+        width: calc(50% - 20px) !important;
+        box-sizing: border-box !important;
     }
 }
 
@@ -445,7 +454,6 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
     text-align: center;
     margin: 10px;
     flex: 1 1 300px;

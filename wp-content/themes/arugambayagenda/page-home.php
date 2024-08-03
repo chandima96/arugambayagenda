@@ -625,7 +625,7 @@ $counter_five = get_field('counter_five');
                                             $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
                                             $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                                     ?>
-                        <div class="mil-iconbox-custom">
+                        <div class="mil-iconbox-custom-team">
                             <div class="team-member">
 
                                 <?php
