@@ -473,7 +473,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                     <input type="hidden" id="hiddenTotalAmount" name="total_amount">
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label>Number of Pax</label>
+                                        <label>Number of Adult</label>
                                         <input type="number" id="aru-book-pax" name="pax" value="1" min="1" required onchange="calculate_adult_amount1(this.value)">
                                     </div>
 

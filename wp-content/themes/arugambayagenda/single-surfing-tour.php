@@ -472,7 +472,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                     <input type="hidden" id="hiddenTotalAmount" name="total_amount">
 
                                     <div class="mil-field-frame mil-mb-20">
-                                        <label>Number of Pax</label>
+                                        <label>Number of Adult</label>
                                         <input type="number" id="aru-book-pax" name="pax" value="1" min="1" required onchange="calculate_adult_amount1(this.value)">
                                     </div>
 
@@ -488,7 +488,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label for="appointment-time">Choose a time</label>
-                                        <input type="time" id="appointment-time" name="appointment-time" onchange="document.getElementById('time').value = this.value;">
+                                        <input type="time" id="appointment-time" name="appointment-time" min="06:00" max="16:00" onchange="document.getElementById('time').value = this.value;">
                                         <input type="hidden" id="time" name="time">
                                     </div>  
                                     <div class="booking-total-price" style="display:flex; justify-content: space-between;">
