@@ -478,7 +478,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
 
                                         <?php
                                         $page_id = get_the_ID();
-                                        if ($page_id !== 293 && $page_id !== 292): ?>
+                                        if ($page_id !== 296): ?>
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Number of Kids</label>
                                         <input type="number" id="aru-book-kids" name="kids" value="0" min="0" required onchange="calculate_kid_amount1(this.value)">
@@ -496,7 +496,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                             <button type="button" onclick="settime('8.00 AM', this)">8.00 AM</button>
                                             <?php
                                             $page_id = get_the_ID();
-                                            if ($page_id !== 293 && $page_id !== 292): ?>
+                                            if ($page_id !== 296): ?>
                                                 <button type="button" onclick="settime('5.00 PM', this)">5.00 PM</button>
                                             <?php endif; ?>
                                         </div>
