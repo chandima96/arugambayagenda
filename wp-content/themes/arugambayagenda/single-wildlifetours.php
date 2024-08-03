@@ -508,7 +508,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Date</label>
-                                        <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
+                                        <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" required>
                                     </div>
 
                                     <div class="donation-form-group">
@@ -541,7 +541,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                                 <button type="button" onclick="settime('5.00 AM', this)">5.00 AM</button>
                                             <?php endif; ?>
                                         </div>
-                                        <input type="hidden" id="time" name="time">
+                                        <input type="hidden" id="time" name="time" required>
                                         <!-- Time -->
                                     </div>
                                     <div class="booking-total-price" style="display:flex; justify-content: space-between;">
