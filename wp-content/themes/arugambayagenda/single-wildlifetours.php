@@ -542,7 +542,6 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                             <?php endif; ?>
                                         </div>
                                         <input type="hidden" id="time" name="time" required>
-                                        <input type="text" style="display:none;" required>
                                         <!-- Time -->
                                     </div>
                                     <div class="booking-total-price" style="display:flex; justify-content: space-between;">
