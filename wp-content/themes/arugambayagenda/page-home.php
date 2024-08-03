@@ -589,7 +589,7 @@ $counter_five = get_field('counter_five');
                         <div class="mil-illustration-5">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" alt="shape">
                             <div class="mil-main-img mil-fade-up">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/images/hanas.webp" alt="img" style="border-radius: 20px;">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/images/IMG_2790.webp" alt="img" style="border-radius: 20px;">
                             </div>
                             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/1.png" alt="object" class="mil-figure mil-1 mil-fade-up">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/2.png" alt="object" class="mil-figure mil-2 mil-fade-up">
