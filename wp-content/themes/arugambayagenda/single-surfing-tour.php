@@ -469,7 +469,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                             </ul>
                             <div class="mil-book-window">
                                 <form action="/booking-confirmation/?type=<?php echo get_post_type(); ?>/?id=<?php echo get_the_ID(); ?>" method="post">
-                                    <input type="hidden" id="hiddenTotalAmount" name="total_amount">
+                                    <input type="hidden" id="hiddenTotalAmount" name="total_amount" required>
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Number of Adult</label>
@@ -488,16 +488,16 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label for="appointment-time">Choose a time (between 6 AM & 4 PM)</label>
-                                        <input type="time" id="appointment-time" name="appointment-time" min="06:00" max="16:00" onchange="document.getElementById('time').value = this.value;">
-                                        <input type="hidden" id="time" name="time">
+                                        <input type="time" id="appointment-time" name="appointment-time" min="06:00" max="16:00" onchange="document.getElementById('time').value = this.value;" required>
+                                        <input type="hidden" id="time" name="time" required>
                                     </div>  
                                     <div class="booking-total-price" style="display:flex; justify-content: space-between;">
                                         <div>Total price </div>
                                         <div style="color:#0097b2;" id="totalAmount1"></div>
                                     </div>
 
-                                    <input type="hidden" name="page_slug" value="form-page-slug">
-                                    <input type="hidden" name="page_title" value="Booking Confirmation">
+                                    <input type="hidden" name="page_slug" value="form-page-slug" required>
+                                    <input type="hidden" name="page_title" value="Booking Confirmation" required>
 
                                     <button type="submit" class="mil-button mil-accent-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
