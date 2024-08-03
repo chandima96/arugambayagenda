@@ -649,36 +649,6 @@ $counter_five = get_field('counter_five');
                 </div>
             </div>
         </div>
-
-        <div class="mil-content-pad mil-p-100-60">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-xl-12">
-                        <div class="mil-suptitle mil-mb-20 mil-fade-up">About us</div>
-                        <h2 class="mil-mb-60-adapt mil-fade-up">Story about us</h2>
-                    </div>
-                    <div class="col-xl-6">
-                        
-                    </div>
-                    <div class="col-xl-5">
-                        <p class="mil-fade-up mil-mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis donec et odio pellentesque. Nisi est sit amet facilisis magna. Semper feugiat nibh sed pulvinar. Id leo in vitae turpis massa sed elementum tempus. Eget est lorem ipsum dolor. Bibendum enim facilisis gravida neque. Nibh ipsum consequat nisl vel. Fermentum dui faucibus in ornare quam viverra.</p>
-
-                        <p class="mil-fade-up mil-mb-40">Sollicitudin ac. Pellentesque elit eget gravida cum sociis. In fermentum et sollicitudin ac. Leo integer malesuada nunc vel risus commodo viverra maecenas.</p>
-
-                        <div class="mil-signature-frame mil-fade-up mil-mb-40-adapt">
-                            <div class="mil-author-frame">
-                                <img src="img/faces/4.jpg" alt="Author">
-                                <div class="mil-author-text">
-                                    <h4 class="mil-mb-10">Emma Miller</h4>
-                                    <p>Hotel administrator</p>
-                                </div>
-                            </div>
-                            <img src="img/signature.png" alt="Signature" class="mil-signature">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Team End -->
 
         <!-- test -->
