@@ -874,3 +874,11 @@ body {
         text-align: center;
     }
 }
+
+
+
+@media (min-width: 992px) {
+    .tab-text-center{
+        text-align: center !important;
+    }
+}
