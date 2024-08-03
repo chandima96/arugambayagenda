@@ -589,7 +589,7 @@ $counter_five = get_field('counter_five');
                         <div class="mil-illustration-5">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" alt="shape">
                             <div class="mil-main-img mil-fade-up">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/images/hanas.webp" alt="img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/images/hanas.webp" alt="img" style="border-radius: 20px;">
                             </div>
                             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/1.png" alt="object" class="mil-figure mil-1 mil-fade-up">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/2.png" alt="object" class="mil-figure mil-2 mil-fade-up">
@@ -610,7 +610,7 @@ $counter_five = get_field('counter_five');
                     <h2 class="mil-mb-100 mil-fade-up">Our Experts</h2>
                 </div>
                 <div class="team-section">
-                    <div class="team-container">
+                    <div class="mil-flexbox-custom">
                                     <?php 
                                         $the_query = new WP_Query(array(
                                             'post_type' => 'team',
@@ -625,7 +625,7 @@ $counter_five = get_field('counter_five');
                                             $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
                                             $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                                     ?>
-                        <div class="team-member">
+                        <div class="mil-iconbox-custom">
 
                                 <?php
                                         if ( has_post_thumbnail() ) {
