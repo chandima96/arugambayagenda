@@ -190,7 +190,7 @@ $counter_five = get_field('counter_five');
                 <div class="mil-text-center">
                     <div class="mil-suptitle mil-mb-20 mil-fade-up">Taxi service</div>
                     <h2 class="mil-h2-lg mil-mb-40 mil-fade-up">Ride with us</h2>
-                    <p class="mil-mb-20 mil-fade-up">Island-Wide Transfers & Taxi Services - Arugambay Agenda: “Ride with Us” Wherever you are, wherever you want to go, count on Arugambay Agenda for safe and reliable taxi services. We've got you covered island-wide. Your journey, your way. Book your ride today!</p>
+                    <p class="mil-mb-20 mil-fade-up">Island-Wide Transfers & Taxi Services - Arugambay Agenda: “Ride with Us” <br>Wherever you are, wherever you want to go, <br>count on Arugambay Agenda for safe and reliable taxi services. <br>We've got you covered island-wide. <br>Your journey, your way. Book your ride today!</p>
                     <span class="mil-buttons-frame mil-center mil-fade-up">
                         <a href="<?php bloginfo('url'); ?>/taxi-service" class="mil-button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
