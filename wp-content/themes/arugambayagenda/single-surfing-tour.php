@@ -483,7 +483,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
 
                                     <div class="mil-field-frame mil-mb-20">
                                         <label>Date</label>
-                                        <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
+                                        <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" required>
                                     </div>
 
                                     <div class="mil-field-frame mil-mb-20">
