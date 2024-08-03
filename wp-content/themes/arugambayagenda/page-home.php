@@ -570,7 +570,7 @@ $counter_five = get_field('counter_five');
                     <div class="mil-suptitle mil-mb-20 mil-fade-up">Team</div>
                     <h2 class="mil-mb-100 mil-fade-up">Our Experts</h2>
                 </div>
-                            
+                        <div class="row">    
                             <div class="col-xl-6">
                                 <div>
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/images/hanas.webp" alt="">
@@ -596,6 +596,7 @@ $counter_five = get_field('counter_five');
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         
                 <div class="team-section">
                     <div class="team-container">
