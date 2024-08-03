@@ -487,11 +487,31 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
                                     </div>
 
-                                    <div class="mil-field-frame mil-mb-20">
-                                        <label for="appointment-time">Choose a time</label>
-                                        <input type="time" id="appointment-time" name="appointment-time" onchange="document.getElementById('time').value = this.value;">
+                                    <div class="donation-form-group">
+                                        <label>Time</label>
+                                        <div class="donation-time-buttons">
+                                            <?php
+                                            $page_id = get_the_ID();
+                                            if ($page_id === 365): ?>
+                                                <!-- Two Day In Highland Tour -->
+                                                <button type="button" onclick="settime('5.00 AM', this)">5.00 AM</button>
+                                            <?php elseif ($page_id === 301): ?>
+                                                <!-- Day trip to Ella  -->
+                                                <button type="button" onclick="settime('3.00 AM', this)">3.00 AM</button>
+                                                <button type="button" onclick="settime('4.00 AM', this)">4.00 AM</button>
+                                                <button type="button" onclick="settime('5.00 AM', this)">5.00 AM</button>
+                                            <?php elseif ($page_id === 302): ?>
+                                                <!-- Day trip to Ella  -->
+                                                <button type="button" onclick="settime('5.00 AM', this)">5.00 AM</button>
+                                                <button type="button" onclick="settime('7.00 AM', this)">7.00 AM</button>
+                                                <button type="button" onclick="settime('9.00 AM', this)">9.00 AM</button>
+                                            <?php else: ?>
+                                                <!-- Colombo City Excursion -->
+                                                <button type="button" onclick="settime('9.00 AM', this)">9.00 AM</button>
+                                            <?php endif; ?>
+                                        </div>
                                         <input type="hidden" id="time" name="time">
-                                    </div> 
+                                    </div>
 
                                     <!-- <div class="donation-form-group">
                                         <label>Time</label>
