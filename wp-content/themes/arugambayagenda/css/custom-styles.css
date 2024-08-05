@@ -9,6 +9,10 @@ html{
     scrollbar-color: lightblue white;
 }
 
+html body{
+    overflow: auto !important;
+}
+
 h1 {
     font-family: 'Montserrat' !important;
     font-weight: 600 !important;

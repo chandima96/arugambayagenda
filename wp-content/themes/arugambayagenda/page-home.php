@@ -578,7 +578,7 @@ $counter_five = get_field('counter_five');
 
                             <span class="mil-buttons-frame mil-fade-up">
                                 <a href="https://wa.me/+94726479635" class="mil-button">
-                                    <span>Chat with Hanas test</span>
+                                    <span>Chat with Hanas</span>
                                 </a>
                             </span>
                         </div>
