@@ -107,7 +107,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
 
                         <!-- room slider -->
                         <div class="mil-slider-frame mil-frame-2 mil-mb-100">
-                            <div class="swiper-container mil-room-slider" >
+                            <div class="swiper-container mil-room-slider" style="overflow: hidden">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="mil-image-frame">
