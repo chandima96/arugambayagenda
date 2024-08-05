@@ -214,11 +214,11 @@
         <!-- <div class="mil-progressbar"></div> -->
 
     </div>
-    <script>
+    <!-- <script>
         window.addEventListener('touchmove', function(event) {
         event.preventDefault();
         }, { passive: false });
-    </script>
+    </script> -->
 
     <!-- wrapper end -->
 
