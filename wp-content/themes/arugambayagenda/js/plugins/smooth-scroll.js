@@ -561,10 +561,10 @@ function isContentOverflowing(el) {
 }
 
 // typically for <body> and <html>
-function overflowNotHidden(el) {
-    var overflow = getComputedStyle(el, '').getPropertyValue('overflow-y');
-    return (overflow !== 'hidden');
-}
+// function overflowNotHidden(el) {
+//     var overflow = getComputedStyle(el, '').getPropertyValue('overflow-y');
+//     return (overflow !== 'hidden');
+// }
 
 // for all other elements
 function overflowAutoOrScroll(el) {
