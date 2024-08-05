@@ -225,7 +225,7 @@
     <!-- jQuery js -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/jquery.min.js"></script>
     <!-- smooth scroll js -->
-    <!-- <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/smooth-scroll.js"></script> -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/smooth-scroll.js"></script>
     <!-- swiper js -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/swiper.min.js"></script>
     <!-- datepicker js -->
