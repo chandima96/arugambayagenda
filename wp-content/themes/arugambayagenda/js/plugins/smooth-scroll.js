@@ -161,14 +161,14 @@ function init() {
 /**
  * Removes event listeners and other traces left on the page.
  */
-// function cleanup() {
-//     observer && observer.disconnect();
-//     removeEvent(wheelEvent, wheel);
-//     removeEvent('mousedown', mousedown);
-//     removeEvent('keydown', keydown);
-//     removeEvent('resize', refreshSize);
-//     removeEvent('load', init);
-// }
+function cleanup() {
+    observer && observer.disconnect();
+    removeEvent(wheelEvent, wheel);
+    removeEvent('mousedown', mousedown);
+    removeEvent('keydown', keydown);
+    removeEvent('resize', refreshSize);
+    removeEvent('load', init);
+}
 
 
 /************************************************
