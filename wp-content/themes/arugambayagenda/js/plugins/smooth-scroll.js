@@ -567,10 +567,10 @@ function isContentOverflowing(el) {
 // }
 
 // for all other elements
-function overflowAutoOrScroll(el) {
-    var overflow = getComputedStyle(el, '').getPropertyValue('overflow-y');
-    return (overflow === 'scroll' || overflow === 'auto');
-}
+// function overflowAutoOrScroll(el) {
+//     var overflow = getComputedStyle(el, '').getPropertyValue('overflow-y');
+//     return (overflow === 'scroll' || overflow === 'auto');
+// }
 
 // for all other elements
 function isScrollBehaviorSmooth(el) {
