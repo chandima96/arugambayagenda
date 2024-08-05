@@ -208,44 +208,44 @@ $(function () {
     popup
 
     ------------------------------------------- */
-    // $('.mil-open-book-popup').on('click', function () {
-    //     $('.mil-book-popup-frame').addClass('mil-active');
-    //     $('html, body').css({
-    //         overflow: 'hidden',
-    //     });
-    // });
+    $('.mil-open-book-popup').on('click', function () {
+        $('.mil-book-popup-frame').addClass('mil-active');
+        $('html, body').css({
+            overflow: 'hidden',
+        });
+    });
 
-    // $('.mil-close-button').on('click', function () {
-    //     $('.mil-book-popup-frame').removeClass('mil-active');
-    //     $('html, body').css({
-    //         overflow: 'scroll',
-    //     });
-    // });
+    $('.mil-close-button').on('click', function () {
+        $('.mil-book-popup-frame').removeClass('mil-active');
+        $('html, body').css({
+            overflow: 'scroll',
+        });
+    });
 
-    // $(document).mouseup(function (e) {
-    //     var div = $(".mil-book-popup , .datepickers-container");
-    //     if (!div.is(e.target) &&
-    //         div.has(e.target).length === 0) {
-    //         $('.mil-book-popup-frame').removeClass('mil-active');
-    //         $('html, body').css({
-    //             overflow: 'scroll',
-    //         });
-    //     }
-    // });
+    $(document).mouseup(function (e) {
+        var div = $(".mil-book-popup , .datepickers-container");
+        if (!div.is(e.target) &&
+            div.has(e.target).length === 0) {
+            $('.mil-book-popup-frame').removeClass('mil-active');
+            $('html, body').css({
+                overflow: 'scroll',
+            });
+        }
+    });
 
-    // $('.mil-reply').on('click', function () {
-    //     $('.mil-comment-popup-frame').addClass('mil-active');
-    //     $('html, body').css({
-    //         overflow: 'hidden',
-    //     });
-    // });
+    $('.mil-reply').on('click', function () {
+        $('.mil-comment-popup-frame').addClass('mil-active');
+        $('html, body').css({
+            overflow: 'hidden',
+        });
+    });
 
-    // $('.mil-close-button').on('click', function () {
-    //     $('.mil-comment-popup-frame').removeClass('mil-active');
-    //     $('html, body').css({
-    //         overflow: 'scroll',
-    //     });
-    // });
+    $('.mil-close-button').on('click', function () {
+        $('.mil-comment-popup-frame').removeClass('mil-active');
+        $('html, body').css({
+            overflow: 'scroll',
+        });
+    });
 
     /* -------------------------------------------
 
