@@ -10,7 +10,7 @@ html{
 }
 
 html body{
-    overflow: auto !important;
+    touch-action: auto !important;
 }
 
 h1 {
