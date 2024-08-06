@@ -915,3 +915,7 @@ body {
         text-align: center !important;
     }
 }
+
+.mil-top-panel  {
+    z-index: 200 !important;
+}
