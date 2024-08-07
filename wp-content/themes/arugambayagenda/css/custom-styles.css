@@ -919,3 +919,7 @@ body {
 .mil-top-panel  {
     z-index: 200 !important;
 }
+
+.wpcf7-spinner {
+    display: none !important;
+}
