@@ -384,17 +384,17 @@ footer .mil-footer-content .mil-logo img {
     background-color: rgb(244 107 51 / 73%);
     font-size: 15px !important;
     color: white;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .wpcf7 form.sent .wpcf7-response-output {
     border-radius: 15px !important;
-    border: 2px solid #00a0d2;
-    border-color: #00a0d2 !important;
-    background-color: #00a0d28c;
+    border: 2px solid #01779c;
+    border-color: #007fa7 !important;
+    background-color: #00a0d2bf;
     font-size: 15px !important;
     color: white;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .wpcf7 form .wpcf7-response-output {
