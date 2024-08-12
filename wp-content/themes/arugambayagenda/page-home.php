@@ -563,8 +563,8 @@ $counter_five = get_field('counter_five');
         </div> -->
         <!-- about 2 end -->
 
-                <!-- about 2 -->
-                <div class="mil-about mil-p-100-0" style="overflow: hidden;">
+        <!-- about 2 -->
+        <div class="mil-about mil-p-100-0" style="overflow: hidden;">
             <div class="container">
                 <div class="row justify-content-between align-items-center flex-sm-row-reverse">
                     <div class="col-xl-5 mil-mb-100">
