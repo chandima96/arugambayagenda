@@ -121,10 +121,6 @@ get_header();
         </div>
         <!-- about 2 end -->
 
-
-
-        <!-- about 1 -->
-        <div class="mil-about mil-p-100-0">
             <!-- Team -->
             <div class="mil-content-pad mil-p-100-100">
                 <div class="container">
@@ -190,6 +186,10 @@ get_header();
                 </div>
             </div>
             <!-- Team End -->
+
+        <!-- about 1 -->
+        <div class="mil-about mil-p-100-0">
+
         </div>
         <!-- about 1 end -->
 
