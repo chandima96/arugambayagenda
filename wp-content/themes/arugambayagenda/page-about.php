@@ -25,16 +25,14 @@ get_header();
                                 <h1 class="mil-mb-40">We are the largest <br>central hotel</h1>
                                 <div class="mil-suptitle mil-breadcrumbs">
                                     <ul>
-                                        <li><a href="home-1.html">Home</a></li>
-                                        <li><a href="about.html">About us</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/about-us">About us</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
         <!-- banner end -->
@@ -65,7 +63,7 @@ get_header();
                             Your extraordinary voyage awaits; come and experience a world of wonder with us.
                         </p>
 
-                        <div class="mil-signature-frame mil-fade-up mil-mb-40-adapt">
+                        <!-- <div class="mil-signature-frame mil-fade-up mil-mb-40-adapt">
                             <div class="mil-author-frame">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/faces/4.jpg" alt="Author">
                                 <div class="mil-author-text">
@@ -74,7 +72,7 @@ get_header();
                                 </div>
                             </div>
                             <img src="<?php echo get_template_directory_uri(); ?>/img/signature.png" alt="Signature" class="mil-signature">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
