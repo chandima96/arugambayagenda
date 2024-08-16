@@ -635,7 +635,7 @@ $counter_five = get_field('counter_five');
                                     <img src="<?php echo $attachment_image; ?>">
                                 <?php } ?>  
 
-                                <h3><?php the_title(); ?></h3>
+                                <h3 alt="<?php the_title(); ?>"><?php the_title(); ?></h3>
                                 <p class="margin-bottom-5"><?php echo get_field('designation'); ?></p>
                                 <p>
                                     <?php
