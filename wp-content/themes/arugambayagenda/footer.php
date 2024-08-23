@@ -236,7 +236,28 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-    
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.carousel-item');
+
+    function showSlide(index) {
+    const totalSlides = slides.length;
+    if (index >= totalSlides) slideIndex = 0;
+    if (index < 0) slideIndex = totalSlides - 1;
+    const offset = -slideIndex * 100;
+    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+    }
+
+    function moveSlide(n) {
+        showSlide(slideIndex += n);
+    }
+
+    // Initial display
+    showSlide(slideIndex);
+
+</script>
+
+
     <?php wp_footer(); ?>
 </body>
 
