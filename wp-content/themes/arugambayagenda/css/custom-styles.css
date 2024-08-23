@@ -973,32 +973,72 @@ body {
     right: 10px;
 }
 
-.team-section {
-  display: flex;
-  overflow: hidden;
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
-.mil-flexbox-custom {
-  display: flex;
-  transition: transform 0.5s ease;
+/* Carousel Inner */
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
-.mil-iconbox-custom-team {
-  flex: 0 0 100%;
-  max-width: 100%;
+/* Carousel Item */
+.carousel-item {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 10px; /* Optional: spacing between items */
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-  .mil-iconbox-custom-team {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
+/* Medium Screens (768px to 1199px) - Show 2 items */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .carousel-item {
+        flex: 0 0 50%;
+    }
 }
 
+/* Large Screens (1200px and above) - Adjust as needed (e.g., 3 items) */
 @media (min-width: 1200px) {
-  .mil-iconbox-custom-team {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-  }
+    .carousel-item {
+        flex: 0 0 33.3333%;
+    }
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Optional: Responsive Images */
+.team-member img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Optional: Styling for Social Links */
+.social-links a {
+    margin-right: 5px; /* Adjust spacing as needed */
+    text-decoration: none;
+    color: inherit; /* Adjust color as needed */
 }
 
