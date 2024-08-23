@@ -232,6 +232,42 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/datepicker.js"></script>
     <!-- aquarelle js -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+
+    <Script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const carousel = document.querySelector('.mil-flexbox-custom');
+        const slides = document.querySelectorAll('.mil-iconbox-custom-team');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        nextBtn.addEventListener('click', function() {
+            if (currentIndex < totalSlides - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', function() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalSlides - 1;
+            }
+            updateCarousel();
+        });
+
+        updateCarousel(); // Initialize carousel position
+    });
+
+    </Script>
     
     <?php wp_footer(); ?>
 </body>
