@@ -120,7 +120,7 @@ get_header();
         <!-- about 2 end -->
 
             <!-- Team -->
-            <!-- <div class="mil-content-pad mil-p-100-100">
+            <div class="mil-content-pad mil-p-100-100">
                 <div class="container">
                     <div class="mil-text-center">
                         <div class="mil-suptitle mil-mb-20 mil-fade-up">Team</div>
@@ -182,156 +182,8 @@ get_header();
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- Team End -->
-             <!-- Include Tiny Slider CSS and JS -->
-
-
-<!-- Team Section -->
-<div class="mil-content-pad mil-p-100-100">
-    <div class="container">
-        <div class="mil-text-center">
-            <div class="mil-suptitle mil-mb-20 mil-fade-up">Team</div>
-            <h2 class="mil-mb-100 mil-fade-up">Our Experts</h2>
-        </div>
-        <div class="team-section">
-            <!-- Mobile Slider (Visible on screens <= 1200px) -->
-            <div class="block lg:hidden">
-                <div class="team-slider-container mx-auto relative">
-                    <div class="team-slider flex gap-2 pb-12">
-                        <?php 
-                        $the_query = new WP_Query(array(
-                            'post_type' => 'team',
-                            'posts_per_page' => 100,
-                            'post__not_in' => array($id),
-                        ));
-                        ?>
-                        <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-
-                        <div class="slider-item">
-                            <div class="mil-iconbox-custom-team">
-                                <div class="team-member">
-                                    <?php if (has_post_thumbnail()) : ?>
-                                        <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="<?php the_title(); ?>">
-                                    <?php endif; ?>
-
-                                    <h3><?php the_title(); ?></h3>
-                                    <p class="margin-bottom-5"><?php echo get_field('designation'); ?></p>
-                                    <p>
-                                        <?php
-                                        $contact_number = get_field('contact_number');
-                                        if ($contact_number) {
-                                            $formatted_number = format_contact_number($contact_number);
-                                            echo '<a href="tel:' . $contact_number . '" class="contact-number">' . $formatted_number . '</a>';
-                                        } else {
-                                            echo 'Contact number not available';
-                                        }
-                                        ?>
-                                    </p>
-                                    <div class="social-links">
-                                        <a href="<?php echo get_field('favebook_link'); ?>" target="_blank"><!-- Facebook Icon --></a>
-                                        <a href="<?php echo get_field('twiter_link'); ?>" target="_blank"><!-- Twitter Icon --></a>
-                                        <a href="<?php echo get_field('instagram_link'); ?>" target="_blank"><!-- Instagram Icon --></a>
-                                        <a href="<?php echo get_field('linkedin_link'); ?>" target="_blank"><!-- LinkedIn Icon --></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <?php endwhile; endif; ?>
-                        <?php wp_reset_postdata(); ?>
-                    </div>
-
-                    <!-- Slider Controls -->
-                    <div id="team-slider-controls" class="absolute z-40 right-0 top-36">
-                        <button type="button" data-controls="prev" aria-label="Previous" class="hidden no-zoom"></button>
-                        <button type="button" data-controls="next" aria-label="Next" class="text-black bg-gray-100 rounded-full p-4 w-12 h-12 no-zoom">
-                            <!-- Add your SVG or Icon for next -->
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Static View for Larger Screens -->
-            <div class="hidden lg:block">
-                <div class="mil-flexbox-custom">
-                    <?php 
-                    if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                    <div class="mil-iconbox-custom-team">
-                        <div class="team-member">
-                            <?php if (has_post_thumbnail()) : ?>
-                                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="<?php the_title(); ?>">
-                            <?php endif; ?>
-                            <h3><?php the_title(); ?></h3>
-                            <p class="margin-bottom-5"><?php echo get_field('designation'); ?></p>
-                            <p>
-                                <?php
-                                $contact_number = get_field('contact_number');
-                                if ($contact_number) {
-                                    $formatted_number = format_contact_number($contact_number);
-                                    echo '<a href="tel:' . $contact_number . '" class="contact-number">' . $formatted_number . '</a>';
-                                } else {
-                                    echo 'Contact number not available';
-                                }
-                                ?>
-                            </p>
-                            <div class="social-links">
-                                <a href="<?php echo get_field('favebook_link'); ?>" target="_blank"><!-- Facebook Icon --></a>
-                                <a href="<?php echo get_field('twiter_link'); ?>" target="_blank"><!-- Twitter Icon --></a>
-                                <a href="<?php echo get_field('instagram_link'); ?>" target="_blank"><!-- Instagram Icon --></a>
-                                <a href="<?php echo get_field('linkedin_link'); ?>" target="_blank"><!-- LinkedIn Icon --></a>
-                            </div>
-                        </div>
-                    </div>
-                    <?php endwhile; endif; ?>
-                    <?php wp_reset_postdata(); ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Team End -->
-
-<!-- Tiny Slider Initialization with Debugging -->
-<script>
-    window.onload = function() {
-        console.log("Window Loaded, Initializing Slider...");
-        var sliderContainer = document.querySelector('.team-slider');
-        console.log("Slider Container:", sliderContainer);
-
-        if (sliderContainer && sliderContainer.children.length > 0) {
-            var slider = tns({
-                container: sliderContainer,
-                items: 1,
-                slideBy: 1,
-                autoplay: false,
-                controls: true,
-                mouseDrag: true,
-                controlsContainer: '#team-slider-controls',
-                nav: false,
-                autoplayButtonOutput: false,
-                responsive: {
-                    576: {
-                        items: 1
-                    },
-                    768: {
-                        items: 2
-                    },
-                    1024: {
-                        items: 3
-                    },
-                    1200: {
-                        items: 4
-                    }
-                }
-            });
-            console.log("Slider Initialized:", slider);
-        } else {
-            console.error('Slider container is empty or not found.');
-        }
-    };
-</script>
-
 
         <!-- about 1 -->
         <div class="mil-about mil-p-100-0">
