@@ -185,16 +185,15 @@ get_header();
             </div> -->
             <!-- Team End -->
 
-<div class="mil-content-pad mil-p-100-100">
+            <div class="mil-content-pad mil-p-100-100">
     <div class="container">
         <div class="mil-text-center">
             <div class="mil-suptitle mil-mb-20 mil-fade-up">Team</div>
             <h2 class="mil-mb-100 mil-fade-up">Our Experts</h2>
         </div>
         <div class="team-section">
-            <div class="carousel">
-                <div class="mil-flexbox-custom">
-                    <!-- Loop through your team members here -->
+            <div class="carousel-wrapper">
+                <div class="carousel">
                     <?php 
                         $the_query = new WP_Query(array(
                             'post_type' => 'team',
@@ -206,7 +205,6 @@ get_header();
                     ?>
                     <div class="mil-iconbox-custom-team">
                         <div class="team-member">
-                            <!-- Team member content -->
                             <?php if (has_post_thumbnail()) : ?>
                                 <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>">
                             <?php endif; ?>
@@ -224,7 +222,6 @@ get_header();
                                 ?>
                             </p>
                             <div class="social-links">
-                                <!-- Social media links -->
                                 <a href="<?php echo get_field('favebook_link'); ?>" target="_blank"><svg class="icon" ...></svg></a>
                                 <a href="<?php echo get_field('twiter_link'); ?>" target="_blank"><svg class="icon" ...></svg></a>
                                 <a href="<?php echo get_field('instagram_link'); ?>" target="_blank"><svg class="icon" ...></svg></a>
@@ -241,6 +238,7 @@ get_header();
     </div>
 </div>
 
+            
 
         <!-- about 1 -->
         <div class="mil-about mil-p-100-0">
