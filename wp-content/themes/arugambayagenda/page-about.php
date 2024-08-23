@@ -299,42 +299,7 @@ get_header();
 </div>
 <!-- Team End -->
 
-<!-- Tiny Slider Initialization -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var sliderContainer = document.querySelector('.team-slider');
-        if (sliderContainer && sliderContainer.children.length > 0) {
-            var slider = tns({
-                container: sliderContainer,
-                items: 1,
-                slideBy: 1,
-                autoplay: false,
-                controls: true,
-                mouseDrag: true,
-                controlsContainer: '#team-slider-controls',
-                navAsDots: false,
-                nav: false,
-                autoplayButtonOutput: false,
-                responsive: {
-                    576: {
-                        items: 1
-                    },
-                    768: {
-                        items: 2
-                    },
-                    1024: {
-                        items: 3
-                    },
-                    1200: {
-                        items: 4
-                    }
-                }
-            });
-        } else {
-            console.error('Slider container is empty or not found.');
-        }
-    });
-</script>
+
 
 
         <!-- about 1 -->
