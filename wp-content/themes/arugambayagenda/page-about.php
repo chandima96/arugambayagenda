@@ -184,8 +184,8 @@ get_header();
                 </div>
             </div> -->
             <!-- Team End -->
+             <!-- Include Tiny Slider CSS and JS -->
 
-            <!-- Include Tiny Slider CSS and JS -->
 
 <!-- Team Section -->
 <div class="mil-content-pad mil-p-100-100">
@@ -229,10 +229,10 @@ get_header();
                                         ?>
                                     </p>
                                     <div class="social-links">
-                                        <a href="<?php echo get_field('favebook_link'); ?>" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
-                                        <a href="<?php echo get_field('twiter_link'); ?>" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
-                                        <a href="<?php echo get_field('instagram_link'); ?>" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
-                                        <a href="<?php echo get_field('linkedin_link'); ?>" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
+                                        <a href="<?php echo get_field('favebook_link'); ?>" target="_blank"><!-- Facebook Icon --></a>
+                                        <a href="<?php echo get_field('twiter_link'); ?>" target="_blank"><!-- Twitter Icon --></a>
+                                        <a href="<?php echo get_field('instagram_link'); ?>" target="_blank"><!-- Instagram Icon --></a>
+                                        <a href="<?php echo get_field('linkedin_link'); ?>" target="_blank"><!-- LinkedIn Icon --></a>
                                     </div>
                                 </div>
                             </div>
@@ -276,10 +276,10 @@ get_header();
                                 ?>
                             </p>
                             <div class="social-links">
-                                <a href="<?php echo get_field('favebook_link'); ?>" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
-                                <a href="<?php echo get_field('twiter_link'); ?>" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
-                                <a href="<?php echo get_field('instagram_link'); ?>" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
-                                <a href="<?php echo get_field('linkedin_link'); ?>" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
+                                <a href="<?php echo get_field('favebook_link'); ?>" target="_blank"><!-- Facebook Icon --></a>
+                                <a href="<?php echo get_field('twiter_link'); ?>" target="_blank"><!-- Twitter Icon --></a>
+                                <a href="<?php echo get_field('instagram_link'); ?>" target="_blank"><!-- Instagram Icon --></a>
+                                <a href="<?php echo get_field('linkedin_link'); ?>" target="_blank"><!-- LinkedIn Icon --></a>
                             </div>
                         </div>
                     </div>
@@ -292,10 +292,13 @@ get_header();
 </div>
 <!-- Team End -->
 
-<!-- Tiny Slider Initialization -->
+<!-- Tiny Slider Initialization with Debugging -->
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    window.onload = function() {
+        console.log("Window Loaded, Initializing Slider...");
         var sliderContainer = document.querySelector('.team-slider');
+        console.log("Slider Container:", sliderContainer);
+
         if (sliderContainer && sliderContainer.children.length > 0) {
             var slider = tns({
                 container: sliderContainer,
@@ -322,10 +325,11 @@ get_header();
                     }
                 }
             });
+            console.log("Slider Initialized:", slider);
         } else {
             console.error('Slider container is empty or not found.');
         }
-    });
+    };
 </script>
 
 
