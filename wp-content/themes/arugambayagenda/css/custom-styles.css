@@ -973,3 +973,32 @@ body {
     right: 10px;
 }
 
+.team-section {
+  display: flex;
+  overflow: hidden;
+}
+
+.mil-flexbox-custom {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.mil-iconbox-custom-team {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .mil-iconbox-custom-team {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mil-iconbox-custom-team {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
