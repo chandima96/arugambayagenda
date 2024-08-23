@@ -185,9 +185,6 @@ get_header();
             </div>
             <!-- Team End -->
 
-            
-            
-
         <!-- about 1 -->
         <div class="mil-about mil-p-100-0">
 
