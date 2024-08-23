@@ -186,10 +186,8 @@ get_header();
             <!-- Team End -->
 
             <!-- Include Tiny Slider CSS and JS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 
-<!-- Team -->
+<!-- Team Section -->
 <div class="mil-content-pad mil-p-100-100">
     <div class="container">
         <div class="mil-text-center">
@@ -197,7 +195,7 @@ get_header();
             <h2 class="mil-mb-100 mil-fade-up">Our Experts</h2>
         </div>
         <div class="team-section">
-            <!-- Slider for Mobile View -->
+            <!-- Mobile Slider (Visible on screens <= 1200px) -->
             <div class="block lg:hidden">
                 <div class="team-slider-container mx-auto relative">
                     <div class="team-slider flex gap-2 pb-12">
@@ -210,16 +208,11 @@ get_header();
                         ?>
                         <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
-                        <?php
-                        $thumbnail_id = get_post_thumbnail_id();
-                        $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full', true);
-                        $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-                        ?>
                         <div class="slider-item">
                             <div class="mil-iconbox-custom-team">
                                 <div class="team-member">
                                     <?php if (has_post_thumbnail()) : ?>
-                                        <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>">
+                                        <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="<?php the_title(); ?>">
                                     <?php endif; ?>
 
                                     <h3><?php the_title(); ?></h3>
@@ -244,6 +237,7 @@ get_header();
                                 </div>
                             </div>
                         </div>
+
                         <?php endwhile; endif; ?>
                         <?php wp_reset_postdata(); ?>
                     </div>
@@ -261,13 +255,12 @@ get_header();
             <!-- Static View for Larger Screens -->
             <div class="hidden lg:block">
                 <div class="mil-flexbox-custom">
-                    <!-- Existing loop code without slider -->
                     <?php 
                     if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
                     <div class="mil-iconbox-custom-team">
                         <div class="team-member">
                             <?php if (has_post_thumbnail()) : ?>
-                                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>">
+                                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="<?php the_title(); ?>">
                             <?php endif; ?>
                             <h3><?php the_title(); ?></h3>
                             <p class="margin-bottom-5"><?php echo get_field('designation'); ?></p>
@@ -299,7 +292,41 @@ get_header();
 </div>
 <!-- Team End -->
 
-
+<!-- Tiny Slider Initialization -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var sliderContainer = document.querySelector('.team-slider');
+        if (sliderContainer && sliderContainer.children.length > 0) {
+            var slider = tns({
+                container: sliderContainer,
+                items: 1,
+                slideBy: 1,
+                autoplay: false,
+                controls: true,
+                mouseDrag: true,
+                controlsContainer: '#team-slider-controls',
+                nav: false,
+                autoplayButtonOutput: false,
+                responsive: {
+                    576: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1024: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    }
+                }
+            });
+        } else {
+            console.error('Slider container is empty or not found.');
+        }
+    });
+</script>
 
 
         <!-- about 1 -->
