@@ -185,63 +185,7 @@ get_header();
             </div> -->
             <!-- Team End -->
 
-            <div class="mil-content-pad mil-p-100-100">
-    <div class="container">
-        <div class="mil-text-center">
-            <div class="mil-suptitle mil-mb-20 mil-fade-up">Team</div>
-            <h2 class="mil-mb-100 mil-fade-up">Our Experts</h2>
-        </div>
-        <div class="team-section">
-            <div class="carousel-container">
-                <div class="carousel-inner">
-                    <?php 
-                    $the_query = new WP_Query(array(
-                        'post_type' => 'team',
-                        'posts_per_page' => 100,
-                        'post__not_in' => array($id),
-                    ));
-                    ?>
-                    <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                        <div class="carousel-item">
-                            <div class="mil-iconbox-custom-team">
-                                <div class="team-member">
-                                    <?php if (has_post_thumbnail()) : ?>
-                                        <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="<?php the_title(); ?>">
-                                    <?php endif; ?>
-                                    <h3><?php the_title(); ?></h3>
-                                    <p class="margin-bottom-5"><?php echo get_field('designation'); ?></p>
-                                    <p>
-                                        <?php
-                                        $contact_number = get_field('contact_number'); 
-                                        if ($contact_number) {
-                                            $formatted_number = format_contact_number($contact_number);
-                                            echo '<a href="tel:' . $contact_number . '" class="contact-number">' . $formatted_number . '</a>';
-                                        } else {
-                                            echo 'Contact number not available';
-                                        }
-                                        ?>
-                                    </p>
-                                    <div class="social-links">
-                                        <a href="<?php echo get_field('favebook_link'); ?>" target="_blank">FB</a>
-                                        <a href="<?php echo get_field('twiter_link'); ?>" target="_blank">TW</a>
-                                        <a href="<?php echo get_field('instagram_link'); ?>" target="_blank">IG</a>
-                                        <a href="<?php echo get_field('linkedin_link'); ?>" target="_blank">LN</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endwhile; endif; ?>
-                    <?php wp_reset_postdata(); ?>
-                </div>
-                <!-- Carousel Controls -->
-                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1)">&#10095;</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
+            
             
 
         <!-- about 1 -->
