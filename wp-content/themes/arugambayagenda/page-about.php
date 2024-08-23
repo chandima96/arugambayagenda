@@ -120,7 +120,7 @@ get_header();
         <!-- about 2 end -->
 
             <!-- Team -->
-            <!-- <div class="mil-content-pad mil-p-100-100">
+            <div class="mil-content-pad mil-p-100-100">
                 <div class="container">
                     <div class="mil-text-center">
                         <div class="mil-suptitle mil-mb-20 mil-fade-up">Team</div>
@@ -182,68 +182,8 @@ get_header();
                         </div>
                     </div>
                 </div>
-            </div> -->
-            <!-- Team End -->
-
-            <div class="mil-content-pad mil-p-100-100">
-    <div class="container">
-        <div class="mil-text-center">
-            <div class="mil-suptitle mil-mb-20 mil-fade-up">Team</div>
-            <h2 class="mil-mb-100 mil-fade-up">Our Experts</h2>
-        </div>
-        <div class="team-section">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <?php 
-                        $the_query = new WP_Query(array(
-                            'post_type' => 'team',
-                            'posts_per_page' => 100,
-                            'post__not_in' => array($id),
-                        ));
-                    ?>
-                    <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                        <div class="swiper-slide">
-                            <div class="mil-iconbox-custom-team">
-                                <div class="team-member">
-                                    <?php if (has_post_thumbnail()) { ?>
-                                        <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>">
-                                    <?php } ?>
-                                    <h3><?php the_title(); ?></h3>
-                                    <p class="margin-bottom-5"><?php echo get_field('designation'); ?></p>
-                                    <p>
-                                        <?php
-                                            $contact_number = get_field('contact_number'); 
-                                            if ($contact_number) {
-                                                echo '<a href="tel:' . $contact_number . '" class="contact-number">' . format_contact_number($contact_number) . '</a>';
-                                            } else {
-                                                echo 'Contact number not available';
-                                            }
-                                        ?>
-                                    </p>
-                                    <div class="social-links">
-                                        <a href="<?php echo get_field('favebook_link'); ?>" target="_blank"><svg class="icon" ... ></svg></a>
-                                        <a href="<?php echo get_field('twiter_link'); ?>" target="_blank"><svg class="icon" ... ></svg></a>
-                                        <a href="<?php echo get_field('instagram_link'); ?>" target="_blank"><svg class="icon" ... ></svg></a>
-                                        <a href="<?php echo get_field('linkedin_link'); ?>" target="_blank"><svg class="icon" ... ></svg></a>        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endwhile; endif; ?>
-                    <?php wp_reset_postdata(); ?>
-                </div>
-
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
-        </div>
-    </div>
-</div>
-
+            <!-- Team End -->
 
         <!-- about 1 -->
         <div class="mil-about mil-p-100-0">
