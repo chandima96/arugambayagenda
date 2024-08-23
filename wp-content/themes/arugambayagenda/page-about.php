@@ -120,7 +120,7 @@ get_header();
         <!-- about 2 end -->
 
             <!-- Team -->
-            <div class="mil-content-pad mil-p-100-100">
+            <!-- <div class="mil-content-pad mil-p-100-100">
                 <div class="container">
                     <div class="mil-text-center">
                         <div class="mil-suptitle mil-mb-20 mil-fade-up">Team</div>
@@ -182,13 +182,118 @@ get_header();
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Team End -->
+
+    <div class="mil-content-pad mil-p-100-100">
+        <div class="container">
+            <div class="mil-text-center">
+                <div class="mil-suptitle mil-mb-20 mil-fade-up">Team</div>
+                <h2 class="mil-mb-100 mil-fade-up">Our Experts</h2>
+            </div>
+            <div class="team-section block md:hidden">
+                <div class="mx-auto relative">
+                    <div class="home-team-slider flex gap-2 pb-12">
+                        <?php 
+                            $the_query = new WP_Query(array(
+                                'post_type' => 'team',
+                                'posts_per_page' => 100,
+                                'post__not_in' => array($id),
+                            ));
+                        ?>
+                        <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
+                        <div class="slider-item">
+                            <div class="mil-iconbox-custom-team h-full w-full max-w-full">
+                                <div class="card-wrapper max-w-full">
+                                    <?php
+                                    if (has_post_thumbnail()) {
+                                        $attachment_image = wp_get_attachment_url(get_post_thumbnail_id());
+                                        ?>
+                                    <img src="<?php echo $attachment_image; ?>" alt="<?php the_title(); ?>" class="rounded-3xl h-full w-full">
+                                    <?php } ?>  
+                                </div>
+                                <div class="card-content-wrapper">
+                                    <h3><?php the_title(); ?></h3>
+                                    <p class="margin-bottom-5"><?php echo get_field('designation'); ?></p>
+                                    <p>
+                                        <?php
+                                            $contact_number = get_field('contact_number'); 
+                                            if ($contact_number) {
+                                                $formatted_number = format_contact_number($contact_number);
+                                                echo '<a href="tel:' . $contact_number . '" class="contact-number">' . $formatted_number . '</a>';
+                                            } else {
+                                                echo 'Contact number not available';
+                                            }
+                                        ?>
+                                    </p>
+                                    <div class="social-links">
+                                        <a href="<?php echo get_field('favebook_link'); ?>" target="_blank">Facebook</a>
+                                        <a href="<?php echo get_field('twiter_link'); ?>" target="_blank">Twitter</a>
+                                        <a href="<?php echo get_field('instagram_link'); ?>" target="_blank">Instagram</a>
+                                        <a href="<?php echo get_field('linkedin_link'); ?>" target="_blank">LinkedIn</a>        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endwhile; endif; ?>
+                        <?php wp_reset_postdata(); ?>
+                    </div>
+                    <div id="home-team-slider-controls" class="absolute z-40 text-end right-0 top-36">
+                        <button type="button" data-controls="prev" aria-controls="tns2" aria-label="Previous" class="hidden no-zoom"></button>
+                        <button type="button" data-controls="next" aria-controls="tns2" aria-label="Next" class="text-ccf_bg_06 bg-ccf_gray_100 rounded-full p-4 w-12 h-12 no-zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 26" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.552979 24.7136C1.26571 25.3506 2.4148 25.3506 3.12752 24.7136L15.2148 13.9106C15.7821 13.4036 15.7821 12.5846 15.2148 12.0776L3.12752 1.27462C2.4148 0.637625 1.26571 0.637625 0.552979 1.27462C-0.159748 1.91162 -0.159748 2.93863 0.552979 3.57562L11.0839 13.0006L0.538434 22.4256C-0.159748 23.0496 -0.159748 24.0896 0.552979 24.7136Z" fill="black" fill-opacity="0.87"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
         <!-- about 1 -->
         <div class="mil-about mil-p-100-0">
 
         </div>
         <!-- about 1 end -->
+
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var sliderContainer = document.querySelector('.home-team-slider');
+        if (sliderContainer && sliderContainer.children.length > 0) {
+            var slider = tns({
+                container: sliderContainer,
+                items: 1,
+                slideBy: 1,
+                autoplay: false,
+                controls: true,
+                mouseDrag: true,
+                controlsContainer: '#home-team-slider-controls',
+                navAsDots: false,
+                nav: false,
+                autoplayButtonOutput: false,
+                responsive: {
+                    576: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1024: {
+                        items: 4
+                    },
+                    1440: {
+                        items: 4
+                    }
+                }
+            });
+        } else {
+            console.error('Slider container is empty or not found.');
+        }
+    });
+</script>
+
 
 <?php get_footer(); ?>
