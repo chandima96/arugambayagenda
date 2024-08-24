@@ -30,12 +30,4 @@ add_shortcode('page_slug', 'display_page_slug');
 
 
 
-function enqueue_swiper_scripts() {
-    // Enqueue Swiper CSS
-    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
-
-    // Enqueue Swiper JS
-    wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js', array('jquery'), null, true);
-}
-add_action('wp_enqueue_scripts', 'enqueue_swiper_scripts');
 
