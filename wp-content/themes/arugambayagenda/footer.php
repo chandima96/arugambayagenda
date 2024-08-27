@@ -236,7 +236,33 @@
     
         <!-- slick carousel scripts -->
 
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const teamSection = document.querySelector('.team-section .mil-flexbox-custom');
+    let currentPosition = 0;
+
+    prevBtn.addEventListener('click', () => {
+        const cardWidth = document.querySelector('.mil-iconbox-custom-team').offsetWidth;
+        currentPosition += cardWidth;
+        if (currentPosition > 0) {
+            currentPosition = -teamSection.scrollWidth + teamSection.offsetWidth;
+        }
+        teamSection.style.transform = `translateX(${currentPosition}px)`;
+    });
+
+    nextBtn.addEventListener('click', () => {
+        const cardWidth = document.querySelector('.mil-iconbox-custom-team').offsetWidth;
+        currentPosition -= cardWidth;
+        if (Math.abs(currentPosition) >= teamSection.scrollWidth) {
+            currentPosition = 0;
+        }
+        teamSection.style.transform = `translateX(${currentPosition}px)`;
+    });
+});
+
+    </script>
     <?php wp_footer(); ?>
 </body>
 
