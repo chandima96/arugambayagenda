@@ -121,7 +121,135 @@ get_header();
 
 <style>
 
+        /* Team Section Styles */
+        .team-section {
+            text-align: center;
+            position: relative; /* For positioning the buttons */
+        }
 
+        .team-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: nowrap; /* Prevent wrapping */
+            overflow: hidden; /* Hide overflow */
+            justify-content: flex-start;
+            gap: 20px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .team-member {
+            background-color: rgb(250, 255, 255);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 10px;
+            min-width: 300px; /* Ensure each member takes full width in the carousel */
+            flex: 1 0 auto; /* Allow the item to grow and shrink as needed */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(75, 135, 175, 0.2);
+        }
+
+        .team-member:hover img {
+            transform: scale(1.1);
+        }
+
+        .team-member h3 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            font-size: 1em;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .social-links a {
+            margin: 0 5px;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            fill: #777;
+            transition: fill 0.3s ease;
+        }
+
+        .icon:hover {
+            fill: rgb(0, 151, 178);
+        }
+
+        .contact-number {
+            color: #1f2937;
+            font-weight: bold;
+            text-decoration: none; 
+            transition: transform 0.2s; 
+        }
+
+        .contact-number:hover {
+            color: rgb(0, 151, 178); 
+            transform: scale(1.2); 
+        }
+
+        /* Media Query for Carousel */
+        @media (max-width: 1201px) {
+            .team-container {
+                justify-content: flex-start;
+                scroll-behavior: smooth;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .team-member {
+                scroll-snap-align: center;
+                flex: 1 0 100%; /* Each member takes full width of the container */
+            }
+
+            .prev-btn, .next-btn {
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #00a0d2;
+                color: #fff;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 10;
+            }
+
+            .prev-btn {
+                left: 10px;
+            }
+
+            .next-btn {
+                right: 10px;
+            }
+        }
 </style>
             <!-- Team -->
             <div class="mil-content-pad mil-p-100-100">
