@@ -119,6 +119,107 @@ get_header();
         </div>
         <!-- about 2 end -->
 
+<style>
+    .team-section {
+        text-align: center;
+    }
+
+    .team-section h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    .team-section .highlight {
+        color: #00a0d2;
+    }
+
+    .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .team-member {
+        background-color: rgb(250, 255, 255);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 10px;
+        flex: 1 1 300px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .team-member:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 25px rgba(75, 135, 175, 0.2);
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+        transition: transform 0.3s;
+    }
+
+    .team-member:hover img {
+        transform: scale(1.1);
+    }
+
+    .team-member h3 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .team-member p {
+        font-size: 1em;
+        color: #777;
+        margin-bottom: 15px;
+    }
+
+    .social-links a {
+        margin: 0 5px;
+        display: inline-block;
+        transition: transform 0.3s;
+    }
+
+    .social-links a:hover {
+        transform: scale(1.2);
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+        fill: #777;
+        transition: fill 0.3s ease;
+    }
+
+    .icon:hover {
+        fill: rgb(0, 151, 178);
+    }
+
+    @media (max-width: 768px) {
+        .team-member {
+            flex: 1 1 100%;
+        }
+    }
+
+    .contact-number {
+        color: #1f2937;
+        font-weight: bold;
+        text-decoration: none; 
+        transition: transform 0.2s; 
+    }
+
+    .contact-number:hover {
+        color: rgb(0, 151, 178); 
+        transform: scale(1.2); 
+    }
+
+</style>
             <!-- Team -->
             <div class="mil-content-pad mil-p-100-100">
                 <div class="container">
