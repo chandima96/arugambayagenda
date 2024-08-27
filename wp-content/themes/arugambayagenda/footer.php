@@ -232,6 +232,43 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/datepicker.js"></script>
     <!-- aquarelle js -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+
+        <!-- slick carousel scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script>
+        $('.team-members').slick({
+            slidesToShow: 3,
+            speed: 300,
+            prevArrow:'#left-arrow',
+            nextArrow:'#right-arrow',
+            centerPadding: '60px',
+            responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 760,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }]
+        });
+    </script>
     
     
     <?php wp_footer(); ?>
