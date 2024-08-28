@@ -200,11 +200,14 @@ get_header();
         width: auto;
         display: flex;
         justify-content: center;
+        max-width: 1200px; /* Set a maximum width to the wrapper */
+        margin: 0 auto; /* Center the wrapper */
     }
 
     .team-carousel {
         display: flex;
         transition: transform 0.5s ease-in-out;
+        justify-content: center; /* Ensure content is centered */
     }
 
     .team-member {
