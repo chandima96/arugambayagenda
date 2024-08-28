@@ -193,10 +193,13 @@ get_header();
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 20px 0; /* Add padding to center vertically */
     }
 
     .team-carousel-wrapper {
-        width: 100%;
+        width: auto; /* Change from 100% to auto to fit the content */
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
     }
 
     .team-carousel {
@@ -235,11 +238,11 @@ get_header();
     }
 
     .team-prev-btn {
-        left: 10px;
+        left: -40px; /* Adjust positioning for centering */
     }
 
     .team-next-btn {
-        right: 10px;
+        right: -40px; /* Adjust positioning for centering */
     }
 
     @media (max-width: 768px) {
