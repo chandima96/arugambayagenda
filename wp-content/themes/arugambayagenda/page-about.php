@@ -197,22 +197,21 @@ get_header();
     }
 
     .team-carousel-wrapper {
-        width: auto;
-        display: flex;
-        justify-content: center;
+        width: 100%; /* Ensure the wrapper takes full width */
         max-width: 1200px; /* Set a maximum width to the wrapper */
         margin: 0 auto; /* Center the wrapper */
+        display: flex;
+        justify-content: center;
     }
 
     .team-carousel {
         display: flex;
         transition: transform 0.5s ease-in-out;
-        justify-content: center; /* Ensure content is centered */
     }
 
     .team-member {
-        flex: 0 0 300px;
-        margin: 20px;
+        flex: 0 0 calc(25% - 40px); /* Adjust width to ensure 4 items fit within 100% width with margins */
+        margin: 0 10px; /* Even out spacing around the items */
         background: white;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -248,15 +247,22 @@ get_header();
         right: -40px;
     }
 
+    @media (max-width: 992px) {
+        .team-member {
+            flex: 0 0 calc(33.33% - 40px); /* 3 items per row on medium screens */
+        }
+    }
+
     @media (max-width: 768px) {
         .team-member {
-            flex: 0 0 250px;
+            flex: 0 0 calc(50% - 40px); /* 2 items per row on small screens */
         }
     }
 
     @media (max-width: 480px) {
         .team-member {
-            flex: 0 0 200px;
+            flex: 0 0 calc(100% - 40px); /* 1 item per row on extra small screens */
+            margin: 0 auto 20px auto; /* Center the item */
         }
 
         .team-prev-btn, .team-next-btn {
