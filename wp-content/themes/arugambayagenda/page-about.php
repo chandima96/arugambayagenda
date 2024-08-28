@@ -280,7 +280,7 @@ get_header();
 <!-- Team -->
 <div class="mil-content-pad mil-p-100-100">
     <div class="team-carousel-container">
-        <!-- <button class="team-prev-btn">←</button> -->
+        <button class="team-prev-btn">←</button>
         <div class="team-carousel-wrapper">
             <div class="team-carousel">
                 <div class="team-member">
@@ -306,7 +306,7 @@ get_header();
                 <!-- Add more team members as needed -->
             </div>
         </div>
-        <!-- <button class="team-next-btn">→</button> -->
+        <button class="team-next-btn">→</button>
     </div>
 </div>
 <!-- Team End -->
@@ -384,13 +384,13 @@ get_header();
                         <div class="mil-desctop-right mil-fade-up">
 
                             <div class="mil-slider-nav mil-recommendation-nav mil-fade-up">
-                                <div class="mil-slider-arrow mil-prev team-prev-btn">
+                                <div class="mil-slider-arrow mil-prev mil-reco-prev">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                         <line x1="5" y1="12" x2="19" y2="12"></line>
                                         <polyline points="12 5 19 12 12 19"></polyline>
                                     </svg>
                                 </div>
-                                <div class="mil-slider-arrow team-next-btn">
+                                <div class="mil-slider-arrow mil-reco-next">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                         <line x1="5" y1="12" x2="19" y2="12"></line>
                                         <polyline points="12 5 19 12 12 19"></polyline>
