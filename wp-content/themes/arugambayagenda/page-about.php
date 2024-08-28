@@ -281,7 +281,7 @@ get_header();
     @media (min-width: 1201px) {
         .team-prev-btn,
         .team-next-btn {
-            display: none;
+            display: none !important;
         }
 
         .team-carousel {
