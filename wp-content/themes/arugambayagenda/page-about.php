@@ -198,15 +198,15 @@ get_header();
 
     .team-carousel-wrapper {
         width: 100%; /* Ensure the wrapper takes full width */
-        max-width: 1200px; /* Set a maximum width to the wrapper */
-        margin: 0 auto; /* Center the wrapper */
         display: flex;
         justify-content: center;
+        overflow: hidden; /* Hide any overflow to prevent items from going out of bounds */
     }
 
     .team-carousel {
         display: flex;
         transition: transform 0.5s ease-in-out;
+        justify-content: center; /* Center the carousel content */
     }
 
     .team-member {
@@ -240,22 +240,28 @@ get_header();
     }
 
     .team-prev-btn {
-        left: -40px;
+        left: 10px; /* Position buttons inside the content area */
     }
 
     .team-next-btn {
-        right: -40px;
+        right: 10px; /* Position buttons inside the content area */
     }
 
     @media (max-width: 992px) {
         .team-member {
-            flex: 0 0 calc(33.33% - 40px); /* 3 items per row on medium screens */
+            flex: 0 0 calc(33.33% - 30px); /* 3 items per row on medium screens */
         }
     }
 
     @media (max-width: 768px) {
         .team-member {
-            flex: 0 0 calc(50% - 40px); /* 2 items per row on small screens */
+            flex: 0 0 calc(50% - 20px); /* 2 items per row on small screens */
+        }
+
+        .team-prev-btn,
+        .team-next-btn {
+            left: 5px; /* Adjust button position for smaller screens */
+            right: 5px;
         }
     }
 
@@ -277,11 +283,22 @@ get_header();
             display: none;
         }
 
+        .team-carousel-wrapper {
+            overflow: visible; /* Show the entire carousel */
+        }
+
+        .team-member {
+            flex: 0 0 23%; /* Ensure 4 members fit comfortably on larger screens */
+            margin: 0 1%; /* Ensure items are spaced evenly */
+        }
+
         .team-carousel {
+            justify-content: center; /* Center the carousel on large screens */
             transform: none !important; /* Prevent any transformation */
         }
     }
 </style>
+
 
 <!-- Team -->
 <div class="mil-content-pad mil-p-100-100">
