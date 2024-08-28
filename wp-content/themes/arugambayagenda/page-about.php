@@ -197,21 +197,22 @@ get_header();
     }
 
     .team-carousel-wrapper {
-        width: 100%; /* Ensure the wrapper takes full width */
+        width: auto;
         display: flex;
         justify-content: center;
-        overflow: hidden; /* Hide any overflow to prevent items from going out of bounds */
+        max-width: 1200px; /* Set a maximum width to the wrapper */
+        margin: 0 auto; /* Center the wrapper */
     }
 
     .team-carousel {
         display: flex;
         transition: transform 0.5s ease-in-out;
-        justify-content: center; /* Center the carousel content */
+        justify-content: center; /* Ensure content is centered */
     }
 
     .team-member {
-        flex: 0 0 calc(25% - 40px); /* Adjust width to ensure 4 items fit within 100% width with margins */
-        margin: 0 10px; /* Even out spacing around the items */
+        flex: 0 0 300px;
+        margin: 20px;
         background: white;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -240,35 +241,22 @@ get_header();
     }
 
     .team-prev-btn {
-        left: 10px; /* Position buttons inside the content area */
+        left: -40px;
     }
 
     .team-next-btn {
-        right: 10px; /* Position buttons inside the content area */
-    }
-
-    @media (max-width: 992px) {
-        .team-member {
-            flex: 0 0 calc(33.33% - 30px); /* 3 items per row on medium screens */
-        }
+        right: -40px;
     }
 
     @media (max-width: 768px) {
         .team-member {
-            flex: 0 0 calc(50% - 20px); /* 2 items per row on small screens */
-        }
-
-        .team-prev-btn,
-        .team-next-btn {
-            left: 5px; /* Adjust button position for smaller screens */
-            right: 5px;
+            flex: 0 0 250px;
         }
     }
 
     @media (max-width: 480px) {
         .team-member {
-            flex: 0 0 calc(100% - 40px); /* 1 item per row on extra small screens */
-            margin: 0 auto 20px auto; /* Center the item */
+            flex: 0 0 200px;
         }
 
         .team-prev-btn, .team-next-btn {
@@ -283,22 +271,11 @@ get_header();
             display: none;
         }
 
-        .team-carousel-wrapper {
-            overflow: visible; /* Show the entire carousel */
-        }
-
-        .team-member {
-            flex: 0 0 23%; /* Ensure 4 members fit comfortably on larger screens */
-            margin: 0 1%; /* Ensure items are spaced evenly */
-        }
-
         .team-carousel {
-            justify-content: center; /* Center the carousel on large screens */
             transform: none !important; /* Prevent any transformation */
         }
     }
 </style>
-
 
 <!-- Team -->
 <div class="mil-content-pad mil-p-100-100">
