@@ -400,7 +400,6 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="mil-content-pad mil-p-100-100">
                     <div class="team-carousel-container">
                         <button class="team-prev-btn">←</button>
                         <div class="team-carousel-wrapper">
@@ -430,7 +429,6 @@ get_header();
                         </div>
                         <button class="team-next-btn">→</button>
                     </div>
-                </div>
             </div>
         </div>   
 
