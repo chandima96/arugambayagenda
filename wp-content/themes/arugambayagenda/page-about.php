@@ -197,7 +197,6 @@ get_header();
 
 .carousel-wrapper {
     width: 100%;
-    overflow: hidden;
 }
 
 .carousel {
