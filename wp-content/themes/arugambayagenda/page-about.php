@@ -120,7 +120,7 @@ get_header();
         <!-- about 2 end -->
 
             <!-- Team -->
-            <div class="mil-content-pad mil-p-100-100">
+            <!-- <div class="mil-content-pad mil-p-100-100">
                 <div class="container">
                     <div class="mil-text-center">
                         <div class="mil-suptitle mil-mb-20 mil-fade-up">Team</div>
@@ -182,8 +182,163 @@ get_header();
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Team End -->
+<style>
+    .carousel-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.team-member {
+    flex: 0 0 300px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.prev-btn,
+.next-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex: 0 0 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        flex: 0 0 200px;
+    }
+
+    .prev-btn, .next-btn {
+        padding: 5px 10px;
+    }
+}
+</style>
+    <div class="carousel-container">
+        <button class="prev-btn">←</button>
+        <div class="carousel-wrapper">
+            <div class="carousel">
+                <div class="team-member">
+                    <img src="member1.jpg" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="member1.jpg" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="member2.jpg" alt="Team Member 2">
+                    <h3>Jane Smith</h3>
+                    <p>Project Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="member3.jpg" alt="Team Member 3">
+                    <h3>Sam Wilson</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+        </div>
+        <button class="next-btn">→</button>
+    </div>
+
+    <script>
+const carousel = document.querySelector('.carousel');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+let scrollAmount = 0;
+const scrollPerClick = 300;
+
+nextBtn.addEventListener('click', () => {
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    if (scrollAmount < maxScroll) {
+        scrollAmount += scrollPerClick;
+        carousel.style.transform = `translateX(-${scrollAmount}px)`;
+    }
+});
+
+prevBtn.addEventListener('click', () => {
+    if (scrollAmount > 0) {
+        scrollAmount -= scrollPerClick;
+        carousel.style.transform = `translateX(-${scrollAmount}px)`;
+    }
+});
+
+// Touch swipe functionality
+let startX, currentX, isDragging = false;
+
+carousel.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+});
+
+carousel.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    currentX = e.touches[0].clientX;
+    const diff = startX - currentX;
+    if (diff > 30) { // swipe left
+        nextBtn.click();
+        isDragging = false;
+    } else if (diff < -30) { // swipe right
+        prevBtn.click();
+        isDragging = false;
+    }
+});
+
+carousel.addEventListener('touchend', () => {
+    isDragging = false;
+});
+
+
+      </script>
 
         <!-- about 1 -->
         <div class="mil-about mil-p-100-0">
