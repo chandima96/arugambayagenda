@@ -259,7 +259,10 @@ get_header();
     }
 }
 </style>
-    <div class="carousel-container">
+
+            <!-- Team -->
+            <div class="mil-content-pad mil-p-100-100">
+            <div class="carousel-container">
         <button class="prev-btn">←</button>
         <div class="carousel-wrapper">
             <div class="carousel">
@@ -288,6 +291,9 @@ get_header();
         </div>
         <button class="next-btn">→</button>
     </div>
+            </div>
+            <!-- Team End -->
+
 
     <script>
 const carousel = document.querySelector('.carousel');
