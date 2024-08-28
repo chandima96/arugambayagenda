@@ -361,7 +361,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                    <div class="team-carousel-container">
+                    <div class="team-carousel-container mil-fade-up">
                         <div class="team-carousel-wrapper">
                             <div class="team-carousel">
                                     <?php 
