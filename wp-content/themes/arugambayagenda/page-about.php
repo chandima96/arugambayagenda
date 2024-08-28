@@ -373,6 +373,67 @@ get_header();
     window.addEventListener('load', handleResize);
 </script>
 
+<div class="mil-rooms mil-p-100-100">
+            <div class="container">
+                <div class="row justify-content-between align-items-end mil-mb-100">
+                    <div class="col-lg-7">
+                        <div class="mil-suptitle mil-fade-up mil-mb-20">Team</div>
+                        <h2 class="mil-fade-up">Our Experts</h2>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="mil-desctop-right mil-fade-up">
+
+                            <div class="mil-slider-nav mil-recommendation-nav mil-fade-up">
+                                <div class="mil-slider-arrow mil-prev mil-reco-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="mil-slider-arrow mil-reco-next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="mil-content-pad mil-p-100-100">
+                                <div class="team-carousel-container">
+                                    <button class="team-prev-btn">←</button>
+                                    <div class="team-carousel-wrapper">
+                                        <div class="team-carousel">
+                                            <div class="team-member">
+                                                <img src="member1.jpg" alt="Team Member 1">
+                                                <h3>John Doe</h3>
+                                                <p>Lead Developer</p>
+                                            </div>
+                                            <div class="team-member">
+                                                <img src="member1.jpg" alt="Team Member 1">
+                                                <h3>John Doe</h3>
+                                                <p>Lead Developer</p>
+                                            </div>
+                                            <div class="team-member">
+                                                <img src="member2.jpg" alt="Team Member 2">
+                                                <h3>Jane Smith</h3>
+                                                <p>Project Manager</p>
+                                            </div>
+                                            <div class="team-member">
+                                                <img src="member3.jpg" alt="Team Member 3">
+                                                <h3>Sam Wilson</h3>
+                                                <p>UI/UX Designer</p>
+                                            </div>
+                                            <!-- Add more team members as needed -->
+                                        </div>
+                                    </div>
+                                    <button class="team-next-btn">→</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
 
         <!-- about 1 -->
         <div class="mil-about mil-p-100-0">
