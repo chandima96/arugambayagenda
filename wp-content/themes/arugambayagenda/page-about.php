@@ -184,7 +184,42 @@ get_header();
                 </div>
             </div> -->
             <!-- Team End -->
-            <style>
+
+
+<!-- Team -->
+<!-- <div class="mil-content-pad mil-p-100-100">
+    <div class="team-carousel-container">
+        <button class="team-prev-btn">←</button>
+        <div class="team-carousel-wrapper">
+            <div class="team-carousel">
+                <div class="team-member">
+                    <img src="member1.jpg" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="member1.jpg" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="member2.jpg" alt="Team Member 2">
+                    <h3>Jane Smith</h3>
+                    <p>Project Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="member3.jpg" alt="Team Member 3">
+                    <h3>Sam Wilson</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+            </div>
+        </div>
+        <button class="team-next-btn">→</button>
+    </div>
+</div> -->
+<!-- Team End -->
+
+<style>
     .team-carousel-container {
         width: 100%;
         margin: 0 auto;
@@ -226,28 +261,6 @@ get_header();
         margin-bottom: 15px;
     }
 
-    .team-prev-btn,
-    .team-next-btn {
-        background-color: #333;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 5px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1;
-    }
-
-    .team-prev-btn {
-        left: -40px;
-    }
-
-    .team-next-btn {
-        right: -40px;
-    }
-
     @media (max-width: 768px) {
         .team-member {
             flex: 0 0 250px;
@@ -276,103 +289,6 @@ get_header();
         }
     }
 </style>
-
-<!-- Team -->
-<div class="mil-content-pad mil-p-100-100">
-    <div class="team-carousel-container">
-        <button class="team-prev-btn">←</button>
-        <div class="team-carousel-wrapper">
-            <div class="team-carousel">
-                <div class="team-member">
-                    <img src="member1.jpg" alt="Team Member 1">
-                    <h3>John Doe</h3>
-                    <p>Lead Developer</p>
-                </div>
-                <div class="team-member">
-                    <img src="member1.jpg" alt="Team Member 1">
-                    <h3>John Doe</h3>
-                    <p>Lead Developer</p>
-                </div>
-                <div class="team-member">
-                    <img src="member2.jpg" alt="Team Member 2">
-                    <h3>Jane Smith</h3>
-                    <p>Project Manager</p>
-                </div>
-                <div class="team-member">
-                    <img src="member3.jpg" alt="Team Member 3">
-                    <h3>Sam Wilson</h3>
-                    <p>UI/UX Designer</p>
-                </div>
-                <!-- Add more team members as needed -->
-            </div>
-        </div>
-        <button class="team-next-btn">→</button>
-    </div>
-</div>
-<!-- Team End -->
-
-<script>
-    function handleResize() {
-        const screenWidth = window.innerWidth;
-        const teamCarousel = document.querySelector('.team-carousel');
-        let scrollAmount = 0;
-        const scrollPerClick = 300;
-
-        if (screenWidth > 1200) {
-            // Disable carousel functionality
-            teamCarousel.style.transform = 'none'; // Reset any transformation
-            teamCarousel.style.transition = 'none'; // Disable transition
-        } else {
-            // Enable carousel functionality
-            const teamPrevBtn = document.querySelector('.team-prev-btn');
-            const teamNextBtn = document.querySelector('.team-next-btn');
-
-            teamNextBtn.addEventListener('click', () => {
-                const maxScroll = teamCarousel.scrollWidth - teamCarousel.clientWidth;
-                if (scrollAmount < maxScroll) {
-                    scrollAmount += scrollPerClick;
-                    teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
-                }
-            });
-
-            teamPrevBtn.addEventListener('click', () => {
-                if (scrollAmount > 0) {
-                    scrollAmount -= scrollPerClick;
-                    teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
-                }
-            });
-
-            // Touch swipe functionality
-            let startX, currentX, isDragging = false;
-
-            teamCarousel.addEventListener('touchstart', (e) => {
-                startX = e.touches[0].clientX;
-                isDragging = true;
-            });
-
-            teamCarousel.addEventListener('touchmove', (e) => {
-                if (!isDragging) return;
-                currentX = e.touches[0].clientX;
-                const diff = startX - currentX;
-                if (diff > 30) { // swipe left
-                    teamNextBtn.click();
-                    isDragging = false;
-                } else if (diff < -30) { // swipe right
-                    teamPrevBtn.click();
-                    isDragging = false;
-                }
-            });
-
-            teamCarousel.addEventListener('touchend', () => {
-                isDragging = false;
-            });
-        }
-    }
-
-    window.addEventListener('resize', handleResize);
-    window.addEventListener('load', handleResize);
-</script>
-
 <div class="mil-rooms mil-p-100-100">
             <div class="container">
                 <div class="row justify-content-between align-items-end mil-mb-100">
@@ -382,15 +298,14 @@ get_header();
                     </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
-
                             <div class="mil-slider-nav mil-recommendation-nav mil-fade-up">
-                                <div class="mil-slider-arrow mil-prev mil-reco-prev">
+                                <div class="mil-slider-arrow mil-prev mil-reco-prev team-prev-btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                         <line x1="5" y1="12" x2="19" y2="12"></line>
                                         <polyline points="12 5 19 12 12 19"></polyline>
                                     </svg>
                                 </div>
-                                <div class="mil-slider-arrow mil-reco-next">
+                                <div class="mil-slider-arrow mil-reco-next team-next-btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                         <line x1="5" y1="12" x2="19" y2="12"></line>
                                         <polyline points="12 5 19 12 12 19"></polyline>
@@ -401,7 +316,6 @@ get_header();
                     </div>
                 </div>
                     <div class="team-carousel-container">
-                        <button class="team-prev-btn">←</button>
                         <div class="team-carousel-wrapper">
                             <div class="team-carousel">
                                 <div class="team-member">
@@ -424,13 +338,77 @@ get_header();
                                     <h3>Sam Wilson</h3>
                                     <p>UI/UX Designer</p>
                                 </div>
-                                <!-- Add more team members as needed -->
                             </div>
                         </div>
-                        <button class="team-next-btn">→</button>
                     </div>
             </div>
         </div>   
+
+        <script>
+    const teamPrevBtn = document.querySelector('.team-prev-btn');
+    const teamNextBtn = document.querySelector('.team-next-btn');
+    const teamCarousel = document.querySelector('.team-carousel');
+    let scrollAmount = 0;
+    const scrollPerClick = 300;
+
+    function handleResize() {
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth > 1200) {
+            // Disable carousel functionality
+            teamCarousel.style.transform = 'none'; // Reset any transformation
+            teamCarousel.style.transition = 'none'; // Disable transition
+            scrollAmount = 0; // Reset scroll amount
+        } else {
+            // Enable carousel functionality
+            teamCarousel.style.transition = 'transform 0.5s ease-in-out'; // Re-enable transition
+        }
+    }
+
+    teamNextBtn.addEventListener('click', () => {
+        const maxScroll = teamCarousel.scrollWidth - teamCarousel.clientWidth;
+        if (scrollAmount < maxScroll) {
+            scrollAmount += scrollPerClick;
+            teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
+        }
+    });
+
+    teamPrevBtn.addEventListener('click', () => {
+        if (scrollAmount > 0) {
+            scrollAmount -= scrollPerClick;
+            teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
+        }
+    });
+
+    // Touch swipe functionality
+    let startX, currentX, isDragging = false;
+
+    teamCarousel.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+    });
+
+    teamCarousel.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        currentX = e.touches[0].clientX;
+        const diff = startX - currentX;
+        if (diff > 30) { // swipe left
+            teamNextBtn.click();
+            isDragging = false;
+        } else if (diff < -30) { // swipe right
+            teamPrevBtn.click();
+            isDragging = false;
+        }
+    });
+
+    teamCarousel.addEventListener('touchend', () => {
+        isDragging = false;
+    });
+
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('load', handleResize);
+</script>
+
 
 
         <!-- about 1 -->
