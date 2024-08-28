@@ -193,13 +193,13 @@ get_header();
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px 0; /* Add padding to center vertically */
+        padding: 20px 0;
     }
 
     .team-carousel-wrapper {
-        width: auto; /* Change from 100% to auto to fit the content */
+        width: auto;
         display: flex;
-        justify-content: center; /* Center the content horizontally */
+        justify-content: center;
     }
 
     .team-carousel {
@@ -238,11 +238,11 @@ get_header();
     }
 
     .team-prev-btn {
-        left: -40px; /* Adjust positioning for centering */
+        left: -40px;
     }
 
     .team-next-btn {
-        right: -40px; /* Adjust positioning for centering */
+        right: -40px;
     }
 
     @media (max-width: 768px) {
@@ -258,6 +258,18 @@ get_header();
 
         .team-prev-btn, .team-next-btn {
             padding: 5px 10px;
+        }
+    }
+
+    /* Hide carousel buttons and prevent scrolling for screens wider than 1200px */
+    @media (min-width: 1201px) {
+        .team-prev-btn,
+        .team-next-btn {
+            display: none;
+        }
+
+        .team-carousel {
+            transform: none !important; /* Prevent any transformation */
         }
     }
 </style>
@@ -297,52 +309,65 @@ get_header();
 <!-- Team End -->
 
 <script>
-    const teamCarousel = document.querySelector('.team-carousel');
-    const teamPrevBtn = document.querySelector('.team-prev-btn');
-    const teamNextBtn = document.querySelector('.team-next-btn');
+    function handleResize() {
+        const screenWidth = window.innerWidth;
+        const teamCarousel = document.querySelector('.team-carousel');
+        let scrollAmount = 0;
+        const scrollPerClick = 300;
 
-    let scrollAmount = 0;
-    const scrollPerClick = 300;
+        if (screenWidth > 1200) {
+            // Disable carousel functionality
+            teamCarousel.style.transform = 'none'; // Reset any transformation
+            teamCarousel.style.transition = 'none'; // Disable transition
+        } else {
+            // Enable carousel functionality
+            const teamPrevBtn = document.querySelector('.team-prev-btn');
+            const teamNextBtn = document.querySelector('.team-next-btn');
 
-    teamNextBtn.addEventListener('click', () => {
-        const maxScroll = teamCarousel.scrollWidth - teamCarousel.clientWidth;
-        if (scrollAmount < maxScroll) {
-            scrollAmount += scrollPerClick;
-            teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
+            teamNextBtn.addEventListener('click', () => {
+                const maxScroll = teamCarousel.scrollWidth - teamCarousel.clientWidth;
+                if (scrollAmount < maxScroll) {
+                    scrollAmount += scrollPerClick;
+                    teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
+                }
+            });
+
+            teamPrevBtn.addEventListener('click', () => {
+                if (scrollAmount > 0) {
+                    scrollAmount -= scrollPerClick;
+                    teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
+                }
+            });
+
+            // Touch swipe functionality
+            let startX, currentX, isDragging = false;
+
+            teamCarousel.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+                isDragging = true;
+            });
+
+            teamCarousel.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                currentX = e.touches[0].clientX;
+                const diff = startX - currentX;
+                if (diff > 30) { // swipe left
+                    teamNextBtn.click();
+                    isDragging = false;
+                } else if (diff < -30) { // swipe right
+                    teamPrevBtn.click();
+                    isDragging = false;
+                }
+            });
+
+            teamCarousel.addEventListener('touchend', () => {
+                isDragging = false;
+            });
         }
-    });
+    }
 
-    teamPrevBtn.addEventListener('click', () => {
-        if (scrollAmount > 0) {
-            scrollAmount -= scrollPerClick;
-            teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
-        }
-    });
-
-    // Touch swipe functionality
-    let startX, currentX, isDragging = false;
-
-    teamCarousel.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-        isDragging = true;
-    });
-
-    teamCarousel.addEventListener('touchmove', (e) => {
-        if (!isDragging) return;
-        currentX = e.touches[0].clientX;
-        const diff = startX - currentX;
-        if (diff > 30) { // swipe left
-            teamNextBtn.click();
-            isDragging = false;
-        } else if (diff < -30) { // swipe right
-            teamPrevBtn.click();
-            isDragging = false;
-        }
-    });
-
-    teamCarousel.addEventListener('touchend', () => {
-        isDragging = false;
-    });
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('load', handleResize);
 </script>
 
 
