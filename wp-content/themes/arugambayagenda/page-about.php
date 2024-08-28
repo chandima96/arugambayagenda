@@ -397,8 +397,38 @@ get_header();
                                     </svg>
                                 </div>
                             </div>
-
                         </div>
+                    </div>
+                </div>
+                <div class="mil-content-pad mil-p-100-100">
+                    <div class="team-carousel-container">
+                        <button class="team-prev-btn">←</button>
+                        <div class="team-carousel-wrapper">
+                            <div class="team-carousel">
+                                <div class="team-member">
+                                    <img src="member1.jpg" alt="Team Member 1">
+                                    <h3>John Doe</h3>
+                                    <p>Lead Developer</p>
+                                </div>
+                                <div class="team-member">
+                                    <img src="member1.jpg" alt="Team Member 1">
+                                    <h3>John Doe</h3>
+                                    <p>Lead Developer</p>
+                                </div>
+                                <div class="team-member">
+                                    <img src="member2.jpg" alt="Team Member 2">
+                                    <h3>Jane Smith</h3>
+                                    <p>Project Manager</p>
+                                </div>
+                                <div class="team-member">
+                                    <img src="member3.jpg" alt="Team Member 3">
+                                    <h3>Sam Wilson</h3>
+                                    <p>UI/UX Designer</p>
+                                </div>
+                                <!-- Add more team members as needed -->
+                            </div>
+                        </div>
+                        <button class="team-next-btn">→</button>
                     </div>
                 </div>
             </div>
