@@ -236,67 +236,66 @@
     
     <!-- Team Section JS-->
     <script>
-    const teamPrevBtn = document.querySelector('.team-prev-btn');
-    const teamNextBtn = document.querySelector('.team-next-btn');
-    const teamCarousel = document.querySelector('.team-carousel');
-    let scrollAmount = 0;
-    let scrollPerClick = teamCarousel.clientWidth;
+        const teamPrevBtn = document.querySelector('.team-prev-btn');
+        const teamNextBtn = document.querySelector('.team-next-btn');
+        const teamCarousel = document.querySelector('.team-carousel');
+        let scrollAmount = 0;
+        const scrollPerClick = 300;
 
-    function handleResize() {
-        const screenWidth = window.innerWidth;
+        function handleResize() {
+            const screenWidth = window.innerWidth;
 
-        if (screenWidth > 1200) {
-            teamCarousel.style.transform = 'none'; 
-            teamCarousel.style.transition = 'none';
-            scrollAmount = 0; 
-        } else if (screenWidth <= 768) {
-            scrollPerClick = teamCarousel.clientWidth; // One member on mobile
-        } else {
-            scrollPerClick = teamCarousel.clientWidth / 2; // Two members on tablets
+            if (screenWidth > 1200) {
+                teamCarousel.style.transform = 'none'; 
+                teamCarousel.style.transition = 'none';
+                scrollAmount = 0; 
+            } else {
+                teamCarousel.style.transition = 'transform 0.5s ease-in-out'; 
+            }
         }
-    }
 
-    teamNextBtn.addEventListener('click', () => {
-        const maxScroll = teamCarousel.scrollWidth - teamCarousel.clientWidth;
-        if (scrollAmount < maxScroll) {
-            scrollAmount += scrollPerClick;
-            teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
-        }
-    });
+        teamNextBtn.addEventListener('click', () => {
+            const maxScroll = teamCarousel.scrollWidth - teamCarousel.clientWidth;
+            if (scrollAmount < maxScroll) {
+                scrollAmount += scrollPerClick;
+                teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
+            }
+        });
 
-    teamPrevBtn.addEventListener('click', () => {
-        if (scrollAmount > 0) {
-            scrollAmount -= scrollPerClick;
-            teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
-        }
-    });
+        teamPrevBtn.addEventListener('click', () => {
+            if (scrollAmount > 0) {
+                scrollAmount -= scrollPerClick;
+                teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
+            }
+        });
 
-    window.addEventListener('resize', handleResize);
-    handleResize(); // Initial call to set the correct scrollPerClick
+        let startX, currentX, isDragging = false;
 
-    let startX, currentX, isDragging = false;
+        teamCarousel.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+        });
 
-    teamCarousel.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-        isDragging = true;
-    });
+        teamCarousel.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            currentX = e.touches[0].clientX;
+            const diff = startX - currentX;
+            if (diff > 30) { 
+                teamNextBtn.click();
+                isDragging = false;
+            } else if (diff < -30) { 
+                teamPrevBtn.click();
+                isDragging = false;
+            }
+        });
 
-    teamCarousel.addEventListener('touchmove', (e) => {
-        if (!isDragging) return;
-        currentX = e.touches[0].clientX;
-        const diff = startX - currentX;
-        if (diff > 30) { 
-            teamNextBtn.click();
-        } else if (diff < -30) {
-            teamPrevBtn.click();
-        }
-    });
+        teamCarousel.addEventListener('touchend', () => {
+            isDragging = false;
+        });
 
-    teamCarousel.addEventListener('touchend', () => {
-        isDragging = false;
-    });
-</script>
-
+        window.addEventListener('resize', handleResize);
+        window.addEventListener('load', handleResize);
+    </script>
     <!-- Team Section JS-->
 
     
