@@ -236,49 +236,66 @@
     
     <!-- Team Section JS-->
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const teamCarouselContainer = document.querySelector('.team-carousel');
+        const teamPrevBtn = document.querySelector('.team-prev-btn');
+        const teamNextBtn = document.querySelector('.team-next-btn');
+        const teamCarousel = document.querySelector('.team-carousel');
+        let scrollAmount = 0;
+        const scrollPerClick = 300;
 
-        if (teamCarouselContainer && teamCarouselContainer.children.length > 0) {
-            var slider = tns({
-                container: teamCarouselContainer,
-                items: 1,
-                slideBy: 1,
-                autoplay: false,
-                controls: true,
-                mouseDrag: true,
-                controlsContainer: '#home-mentors-slider-controls',
-                navAsDots: false,
-                nav: false,
-                autoplayButtonOutput: false,
-                responsive: {
-                    576: {
-                        items: 1
-                    },
-                    768: {
-                        items: 2
-                    },
-                    1024: {
-                        items: 4
-                    },
-                    1440: {
-                        items: 4
-                    }
-                }
-            });
+        function handleResize() {
+            const screenWidth = window.innerWidth;
 
-            // Handle window resize for larger screens
-            window.addEventListener('resize', function() {
-                if (window.innerWidth > 1200) {
-                    slider.goTo(0); // Reset to the first slide
-                }
-            });
-        } else {
-            console.error('Slider container is empty or not found.');
+            if (screenWidth > 1200) {
+                teamCarousel.style.transform = 'none'; 
+                teamCarousel.style.transition = 'none';
+                scrollAmount = 0; 
+            } else {
+                teamCarousel.style.transition = 'transform 0.5s ease-in-out'; 
+            }
         }
-    });
-</script>
 
+        teamNextBtn.addEventListener('click', () => {
+            const maxScroll = teamCarousel.scrollWidth - teamCarousel.clientWidth;
+            if (scrollAmount < maxScroll) {
+                scrollAmount += scrollPerClick;
+                teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
+            }
+        });
+
+        teamPrevBtn.addEventListener('click', () => {
+            if (scrollAmount > 0) {
+                scrollAmount -= scrollPerClick;
+                teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
+            }
+        });
+
+        let startX, currentX, isDragging = false;
+
+        teamCarousel.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+        });
+
+        teamCarousel.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            currentX = e.touches[0].clientX;
+            const diff = startX - currentX;
+            if (diff > 30) { 
+                teamNextBtn.click();
+                isDragging = false;
+            } else if (diff < -30) { 
+                teamPrevBtn.click();
+                isDragging = false;
+            }
+        });
+
+        teamCarousel.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+
+        window.addEventListener('resize', handleResize);
+        window.addEventListener('load', handleResize);
+    </script>
     <!-- Team Section JS-->
 
     
