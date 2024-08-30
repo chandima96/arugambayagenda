@@ -524,6 +524,7 @@ body {
     display: flex;
     transition: transform 0.5s ease-in-out;
     justify-content: center; 
+    flex-wrap: nowrap; 
 }
 
 .team-member {
@@ -612,6 +613,12 @@ fill: rgb(0, 151, 178);
 
     .team-carousel {
         transform: none !important; 
+    }
+}
+
+@media (max-width: 768px) {
+    .team-carousel {
+        flex-wrap: wrap !important; 
     }
 }
 

@@ -236,65 +236,53 @@
     
     <!-- Team Section JS-->
     <script>
-        const teamPrevBtn = document.querySelector('.team-prev-btn');
-        const teamNextBtn = document.querySelector('.team-next-btn');
-        const teamCarousel = document.querySelector('.team-carousel');
-        let scrollAmount = 0;
-        const scrollPerClick = 300;
+// Adjust for small screens: wrap or handle touch events
+function handleResize() {
+    const screenWidth = window.innerWidth;
 
-        function handleResize() {
-            const screenWidth = window.innerWidth;
+    if (screenWidth > 1200) {
+        teamCarousel.style.transform = 'none'; 
+        teamCarousel.style.transition = 'none';
+        scrollAmount = 0; 
+        teamCarousel.style.flexWrap = 'nowrap'; // Prevent wrapping
+    } else if (screenWidth > 768) {
+        teamCarousel.style.flexWrap = 'nowrap'; // Keep it nowrap but with scroll
+        teamCarousel.style.transition = 'transform 0.5s ease-in-out'; 
+    } else {
+        teamCarousel.style.flexWrap = 'wrap'; // Allow wrapping on smaller screens
+        teamCarousel.style.transform = 'none'; // Remove any transform
+        scrollAmount = 0;
+    }
+}
 
-            if (screenWidth > 1200) {
-                teamCarousel.style.transform = 'none'; 
-                teamCarousel.style.transition = 'none';
-                scrollAmount = 0; 
-            } else {
-                teamCarousel.style.transition = 'transform 0.5s ease-in-out'; 
-            }
-        }
+window.addEventListener('resize', handleResize);
+window.addEventListener('load', handleResize);
 
-        teamNextBtn.addEventListener('click', () => {
-            const maxScroll = teamCarousel.scrollWidth - teamCarousel.clientWidth;
-            if (scrollAmount < maxScroll) {
-                scrollAmount += scrollPerClick;
-                teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
-            }
-        });
+// Mobile and tablet swipe handling for scrolling
+let startX, currentX, isDragging = false;
 
-        teamPrevBtn.addEventListener('click', () => {
-            if (scrollAmount > 0) {
-                scrollAmount -= scrollPerClick;
-                teamCarousel.style.transform = `translateX(-${scrollAmount}px)`;
-            }
-        });
+teamCarousel.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+});
 
-        let startX, currentX, isDragging = false;
+teamCarousel.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    currentX = e.touches[0].clientX;
+    const diff = startX - currentX;
+    if (diff > 30) { 
+        teamNextBtn.click();
+        isDragging = false;
+    } else if (diff < -30) { 
+        teamPrevBtn.click();
+        isDragging = false;
+    }
+});
 
-        teamCarousel.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-            isDragging = true;
-        });
+teamCarousel.addEventListener('touchend', () => {
+    isDragging = false;
+});
 
-        teamCarousel.addEventListener('touchmove', (e) => {
-            if (!isDragging) return;
-            currentX = e.touches[0].clientX;
-            const diff = startX - currentX;
-            if (diff > 30) { 
-                teamNextBtn.click();
-                isDragging = false;
-            } else if (diff < -30) { 
-                teamPrevBtn.click();
-                isDragging = false;
-            }
-        });
-
-        teamCarousel.addEventListener('touchend', () => {
-            isDragging = false;
-        });
-
-        window.addEventListener('resize', handleResize);
-        window.addEventListener('load', handleResize);
     </script>
     <!-- Team Section JS-->
 
