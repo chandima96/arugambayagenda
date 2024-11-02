@@ -56,7 +56,7 @@ $counter_five = get_field('counter_five');
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; /* Position it behind the content */
+    
 }
 </style>
         <!-- banner -->
