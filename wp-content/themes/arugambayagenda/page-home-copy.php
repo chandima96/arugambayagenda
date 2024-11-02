@@ -63,7 +63,7 @@ $counter_five = get_field('counter_five');
         <div class="mil-banner" style="overflow: hidden;">
                 <!-- Background Video -->
                 <video autoplay loop muted playsinline class="bg-video">
-                    <source src="<?php echo get_template_directory_uri(); ?>/img/video/copy_72481B44-3F0D-49BC-BFA5-BF58CEECA779.mp4" type="video/mp4">
+                    <source src="https://www.arugambayagenda.com/wp-content/uploads/2024/11/home-bg.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             <div class="container">
