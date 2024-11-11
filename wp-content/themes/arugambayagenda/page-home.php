@@ -47,6 +47,17 @@ $counter_four = get_field('counter_four');
 $counter_five = get_field('counter_five');
 
 ?>
+<style>
+    .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+</style>
         <!-- banner -->
         <div class="mil-banner" style="overflow: hidden;">
                 <!-- Background Video -->
