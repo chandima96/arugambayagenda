@@ -63,7 +63,7 @@ $counter_five = get_field('counter_five');
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for darkness */
+        background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity for darkness */
         z-index: 2; /* Set the overlay on top of the video */
     }
 </style>
@@ -76,7 +76,7 @@ $counter_five = get_field('counter_five');
                 </video>
                 <!-- Overlay -->
                 <div class="overlay"></div>
-            <div class="container">
+            <div class="container" style="z-index: 10 !important;">
                 <!-- <div class="mil-banner-img-2">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/images/Edited-Banner.webp" alt="banner">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/1.png" alt="object" class="mil-figure mil-1">
