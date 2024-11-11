@@ -55,8 +55,17 @@ $counter_five = get_field('counter_five');
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
+
+.overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for darkness */
+        z-index: 2; /* Set the overlay on top of the video */
+    }
 </style>
         <!-- banner -->
         <div class="mil-banner" style="overflow: hidden;">
@@ -65,6 +74,8 @@ $counter_five = get_field('counter_five');
                     <source src="https://www.arugambayagenda.com/wp-content/uploads/2024/11/home-bg.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                <!-- Overlay -->
+                <div class="overlay"></div>
             <div class="container">
                 <!-- <div class="mil-banner-img-2">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/images/Edited-Banner.webp" alt="banner">
