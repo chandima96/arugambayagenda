@@ -957,3 +957,6 @@ fill: rgb(0, 151, 178);
     }
 }
 
+.grecaptcha-badge { 
+    visibility: hidden !important;
+}
