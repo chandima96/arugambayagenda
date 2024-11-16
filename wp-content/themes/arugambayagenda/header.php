@@ -49,7 +49,7 @@
         <!-- preloader end -->
 
         <!-- top panel -->
-        <div class="mil-top-panel" style="background-color: hwb(0deg 100% 0% / 75%) !important">
+        <div class="mil-top-panel" style="background-color: #ffffffa3 !important; backdrop-filter: blur(10px) !important;">
             <div class="container">
                 <div class="mil-top-panel-content">
                     <a href="<?php bloginfo('url'); ?>/" class="mil-logo">
