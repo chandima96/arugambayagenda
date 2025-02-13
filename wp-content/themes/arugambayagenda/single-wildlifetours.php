@@ -515,32 +515,31 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <!-- Time -->
                                         <label>Time</label>
                                         <div class="donation-time-buttons">
-                                            <?php
+                                            <!-- <?php
                                             $page_id = get_the_ID();
                                             if ($page_id === 296 || $page_id === 125): ?>
-                                                <!-- halh kumana -->
+                                                
                                                 <button type="button" onclick="settime('5.00 AM', this)">5.00 AM</button>
                                                 <button type="button" onclick="settime('1.00 PM', this)">1.00 PM</button>
                                             <?php elseif ($page_id === 297): ?>
-                                                <!-- mangrove -->
+                                                
                                                 <button type="button" onclick="settime('5.30 AM', this)">5.30 AM</button>
                                                 <button type="button" onclick="settime('3.30 PM', this)">3.30 PM</button>
                                             <?php elseif ($page_id === 293): ?>
-                                                <!-- full kumana -->
+                                                
                                                 <button type="button" onclick="settime('5.00 AM', this)">5.00 AM</button>
                                             <?php elseif ($page_id === 298): ?>
-                                                <!-- aru to yala -->
+                                               
                                                 <button type="button" onclick="settime('3.00 AM', this)">3.00 AM</button>
                                                 <button type="button" onclick="settime('9.00 AM', this)">9.00 AM</button>
                                             <?php elseif ($page_id === 282): ?>
-                                                <!-- half yala -->
+                                               
                                                 <button type="button" onclick="settime('4.30 AM', this)">4.30 AM</button>
                                                 <button type="button" onclick="settime('2.00 PM', this)">2.00 PM</button>
                                             <?php else: ?>
-                                                <!-- full yala -->
                                                 <button type="button" onclick="settime('5.00 AM', this)">5.00 AM</button>
-                                            <?php endif; ?>
-                                            <!-- <?php echo get_field('tour_times'); ?> -->
+                                            <?php endif; ?> -->
+                                            <?php echo get_field('tour_times'); ?>
                                         </div>
                                         <input type="hidden" id="time" name="time" required>
                                         <!-- Time -->
