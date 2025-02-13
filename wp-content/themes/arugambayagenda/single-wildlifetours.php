@@ -86,7 +86,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                     <ul>
                                         <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/wild-life-tours">Wildlife & Eco Tours</a></li>
-                                        <li><a href="#"><?php the_title(); ?></a></li>
+                                        
                                     </ul>
                                 </div>
                             </div>
