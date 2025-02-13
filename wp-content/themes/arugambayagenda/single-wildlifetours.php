@@ -540,7 +540,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                                 <!-- full yala -->
                                                 <button type="button" onclick="settime('5.00 AM', this)">5.00 AM</button>
                                             <?php endif; ?>
-                                            <?php echo get_field('tour_times'); ?>
+                                            <!-- <?php echo get_field('tour_times'); ?> -->
                                         </div>
                                         <input type="hidden" id="time" name="time" required>
                                         <!-- Time -->
