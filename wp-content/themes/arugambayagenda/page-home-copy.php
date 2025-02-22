@@ -62,10 +62,35 @@ $counter_five = get_field('counter_five');
         <!-- banner -->
         <div class="mil-banner" style="overflow: hidden;">
                 <!-- Background Video -->
-                <video autoplay loop muted playsinline class="bg-video">
-                    <source src="https://www.arugambayagenda.com/wp-content/uploads/2024/11/home-bg.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+<style>
+            .swiper-container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+        }
+</style>
+<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?nature,water');"></div>
+            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?beach');"></div>
+            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?forest');"></div>
+            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?mountain');"></div>
+            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?city');"></div>
+            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?sunset');"></div>
+        </div>
+        <!-- Pagination and Navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
             <div class="container">
                 <!-- <div class="mil-banner-img-2">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/images/Edited-Banner.webp" alt="banner">
@@ -1105,7 +1130,25 @@ $counter_five = get_field('counter_five');
         });
     </script>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'fade', // Optional: You can remove this if you prefer a slide effect
+        });
+    </script>
 
 
         <?php get_footer(); ?>
