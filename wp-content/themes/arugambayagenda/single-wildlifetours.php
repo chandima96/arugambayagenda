@@ -71,11 +71,18 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
 ?>
 
 <style>
-    .mil-dercription{
+    .mil-dercription h2{
         font-family: 'Poppins', sans-serif !important;
         font-size: 16px !important;
         font-weight: 400 !important;
         color: #333333 !important;
+    }
+    ..custom-list li h3{
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: #00A3B4;
     }
 </style>
         <!-- banner -->
