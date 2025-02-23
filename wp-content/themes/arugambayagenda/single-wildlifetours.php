@@ -79,10 +79,10 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
     }
     ..custom-list li h3{
         position: relative;
-        padding-left: 30px;
-        margin-bottom: 10px;
-        font-weight: 500;
-        color: #00A3B4;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #00A3B4;
     }
 </style>
         <!-- banner -->
