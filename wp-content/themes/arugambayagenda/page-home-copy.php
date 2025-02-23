@@ -90,8 +90,6 @@ $counter_five = get_field('counter_five');
         </div>
         <!-- Pagination and Navigation -->
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
     </div>
 
             <div class="container">
@@ -1144,10 +1142,6 @@ $counter_five = get_field('counter_five');
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
             },
             effect: 'fade', // Optional: You can remove this if you prefer a slide effect
         });
