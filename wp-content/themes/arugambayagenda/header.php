@@ -69,27 +69,18 @@
                                     $active_post_ids = array(12, 26, 302, 301, 299, 298, 297, 296, 293, 292, 282, 125);
                                     ?>
                                 <li class="<?php if (in_array(get_the_ID(), $active_post_ids)) { echo 'mil-current active'; } ?>"> 
-                                    <a href="<?php bloginfo('url'); ?>/all-tours">Tours</a>
+                                    <a href="<?php bloginfo('url'); ?>/all-tours">EXPERIENCES</a>
                                     <ul>
                                         <li><a href="<?php bloginfo('url'); ?>/wild-life-tours">Wildlife & Eco Tours</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="<?php if (get_the_ID() == '14' || get_the_ID() == '24') { echo 'mil-current active'; } ?>">
-                                    <a href="<?php bloginfo('url'); ?>/surfing">Surfing</a>
-                                </li>
-
-                                <?php
-                                    $active_post_ids = array(328, 331, 330, 31);
-                                    ?>
-                                <li class="<?php if (in_array(get_the_ID(), $active_post_ids)) { echo 'mil-current active'; } ?>"> 
-                                    <a href="<?php bloginfo('url'); ?>/activities">Activities</a>
-                                    <ul>
                                         <li><a href="<?php bloginfo('url'); ?>/activities">Activities</a></li>
-                                        <li><a href="<?php bloginfo('url'); ?>/blog">Blog</a></li>
+                                        <li class="<?php if (get_the_ID() == '14' || get_the_ID() == '24') { echo 'mil-current active'; } ?>">
+                                            <a href="<?php bloginfo('url'); ?>/surfing">Surfing</a>
+                                        </li>
                                     </ul>
                                 </li>
+
+
 
                                 <li class="<?php if (get_the_ID() == '13') { echo 'mil-current active'; } ?>">
                                     <a href="<?php bloginfo('url'); ?>/taxi-service">Taxi service</a>

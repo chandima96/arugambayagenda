@@ -94,7 +94,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape mil-fade-up" style="width: 85%; bottom: -20%; right: -25%; transform: rotate(-30deg) scaleX(-1);" alt="shape">
             <div class="container">
 
-                <div class="row allign-items-center mil-mb-100">
+                <!-- <div class="row allign-items-center mil-mb-100">
                     <div class="col-xl-4">
 
                         <h2 class="mil-row-title mil-fade-up" style="display:none;">Search result <span class="mil-badge">24</span></h2>
@@ -102,7 +102,7 @@ get_header();
                     </div>
                     <div class="col-xl-8">
 
-                        <div class="mil-desctop-right mil-fade-up">
+                        <div class="mil-desctop-right mil-fade-up d-none">
                             <div class="mil-filter">
                                 <a href="<?php bloginfo('url'); ?>/all-tours">All Tours</a>
                                 <a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a>
@@ -112,7 +112,7 @@ get_header();
                         </div>
 
                     </div>
-                </div>
+                </div> -->
 
                 <div class="row mil-mb-40">
                     <?php 
