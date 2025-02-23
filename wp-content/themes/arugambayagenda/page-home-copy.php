@@ -78,12 +78,9 @@ $counter_five = get_field('counter_five');
 </style>
 <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?nature,water');"></div>
-            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?beach');"></div>
-            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?forest');"></div>
-            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?mountain');"></div>
-            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?city');"></div>
-            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?sunset');"></div>
+            <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/images/sigiriya-459197.jpg');"></div>
+            <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/images/elephants-471480.jpg');"></div>
+            <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/images/16fada39-7ae6-4321-9200-d82a42c2353f.jpg');"></div>
         </div>
         <!-- Pagination and Navigation -->
         <div class="swiper-pagination"></div>
