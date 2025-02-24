@@ -73,7 +73,7 @@ get_header();
                                 <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
                             </svg>
                         </div>
-                        <h3 class="mil-mb-20"> Island-Wide Transfers in Sri Lanka: Comfortable and Convenient</h3>
+                        <h3 class="mil-mb-20">Daily Shared Rides in Sri Lanka: Affordable and Eco-Friendly</h3>
                         <p>Join our daily shared ride service for an affordable, convenient, and eco-friendly way to travel across Sri Lanka. Operating on popular routes, this is perfect for budget-conscious travelers and those looking to connect with fellow adventurers. Share your ride, meet new people, and enjoy a comfortable journey at a fraction of the cost of private transfers.</p>
                     </div>
                 </div>
