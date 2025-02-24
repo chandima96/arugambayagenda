@@ -85,7 +85,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                 <div class="mil-suptitle mil-breadcrumbs mil-light">
                                     <ul>
                                         <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
-                                        <li><a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/experiential-tours">DAY TOURS</a></li>
                                         
                                     </ul>
                                 </div>

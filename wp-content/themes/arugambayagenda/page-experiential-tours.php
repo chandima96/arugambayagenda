@@ -22,11 +22,11 @@ get_header();
 
                         <div class="mil-banner-content-frame">
                             <div class="mil-banner-content mil-text-center">
-                                <h1 class="mil-mb-40">Experiential Tours</h1>
+                                <h1 class="mil-mb-40">DAY TOURS</h1>
                                 <div class="mil-suptitle mil-breadcrumbs">
                                     <ul>
                                         <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
-                                        <li><a href="<?php bloginfo('url'); ?>/experiential-tours"><?php the_title(); ?></a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/experiential-tours">DAY TOURS</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -197,7 +197,7 @@ get_header();
                             <a href="<?php the_permalink(); ?>">
                                 <div class="mil-descr">
                                     <h3 class="mil-mb-20"><?php the_title(); ?></h3>
-                                    <p class="mil-mb-40 font-16"><?php echo get_field('description', false, false); ?></p>
+                                    <p class="mil-mb-40 font-16"><?php echo the_content(); ?></p>
                                     <div class="mil-divider"></div>
                                     <div class="mil-card-bottom">
                                         <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo get_field('price_case_two'); ?></span>/ <span>per pax /</span> <?php echo get_field('duration'); ?></div>
