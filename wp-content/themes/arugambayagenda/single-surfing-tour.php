@@ -69,7 +69,15 @@ $price_case_kids_eight = get_field('price_case_kids_eight');
 $price_case_kids_nine = get_field('price_case_kids_nine');
 $price_case_kids_ten = get_field('price_case_kids_ten');
 ?>
-
+<style>
+    .mil-dercription h2{
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        color: #333333 !important;
+        letter-spacing: 0px !important;
+    }
+</style>
         <!-- banner -->
         <div class="mil-p-100-60">
             <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/4.png" class="mil-shape" style="width: 70%; top: 0; right: -12%; transform: rotate(180deg)" alt="shape">
