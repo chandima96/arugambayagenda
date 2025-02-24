@@ -77,7 +77,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
         font-weight: 400 !important;
         color: #333333 !important;
     }
-    ..custom-list li h3{
+    ..custom-list ul li h3{
         position: relative;
     padding-left: 30px;
     margin-bottom: 10px;

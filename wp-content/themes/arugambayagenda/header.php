@@ -64,7 +64,9 @@
                                 <li class="<?php if (get_the_ID() == '6') { echo 'mil-current active'; } ?>">
                                     <a href="<?php bloginfo('url'); ?>/">Home</a>
                                 </li>
-
+                                <li class="<?php if (get_the_ID() == '325') { echo 'mil-current active'; } ?>">
+                                <a href="<?php bloginfo('url'); ?>/about" class="footer-menu-align">About</a>
+                                </li>
                                 <?php
                                     $active_post_ids = array(12, 26, 302, 301, 299, 298, 297, 296, 293, 292, 282, 125);
                                     ?>
