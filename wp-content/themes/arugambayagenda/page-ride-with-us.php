@@ -39,6 +39,48 @@ get_header();
         </div>
         <!-- banner end -->
 
+        <!-- features -->
+        <div class="mil-features mil-p-100-60">
+            <div class="container">
+                <div class="mil-flexbox mil-flexbox-custom ">
+                    <div class="mil-iconbox mil-iconbox-custom mil-fade-up">
+                        <div class="mil-bg-icon"></div>
+                        <div class="mil-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="mil-mb-20">Airport Transfers in Sri Lanka: Seamless and Reliable</h3>
+                        <p>Experience hassle-free travel with our professional airport pick-up and shuttle services. Whether you're arriving at Bandaranaike International Airport (CMB) or another major airport in Sri Lanka, we ensure a smooth and comfortable journey to your hotel or chosen destination. Our experienced drivers prioritize punctuality and safety, ensuring you reach your destination stress-free.</p>
+                    </div>
+                    <div class="mil-iconbox mil-iconbox-custom mil-fade-up">
+                        <div class="mil-bg-icon"></div>
+                        <div class="mil-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="mil-mb-20">Island-Wide Transfers in Sri Lanka: Comfortable and Convenient</h3>
+                        <p>Travel across Sri Lanka with ease through our personalized transfer services. We offer a range of comfortable vehicles suitable for singles, couples, or large groups, ensuring a smooth and enjoyable journey to any destination within the country.</p>
+                    </div>
+                    <div class="mil-iconbox mil-iconbox-custom mil-fade-up">
+                        <div class="mil-bg-icon"></div>
+                        <div class="mil-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="mil-mb-20"> Island-Wide Transfers in Sri Lanka: Comfortable and Convenient</h3>
+                        <p>Join our daily shared ride service for an affordable, convenient, and eco-friendly way to travel across Sri Lanka. Operating on popular routes, this is perfect for budget-conscious travelers and those looking to connect with fellow adventurers. Share your ride, meet new people, and enjoy a comfortable journey at a fraction of the cost of private transfers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- features end -->
+
         <!-- contact form -->
         <div class="mil-content-pad mil-p-100-100">
             <div class="container">
