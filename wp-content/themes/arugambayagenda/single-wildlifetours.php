@@ -76,6 +76,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
         font-size: 16px !important;
         font-weight: 400 !important;
         color: #333333 !important;
+        letter-spacing: 0px !important;
     }
 </style>
         <!-- banner -->
