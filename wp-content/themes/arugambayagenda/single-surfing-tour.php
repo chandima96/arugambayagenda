@@ -674,7 +674,7 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                 <a href="<?php the_permalink(); ?>">
                                     <div class="mil-descr">
                                         <h3 class="mil-mb-20"><?php the_title(); ?></h3>
-                                        <p class="mil-mb-40"><?php echo get_field('description'); ?></p>
+                                        <p class="mil-mb-40"><?php echo the_content(); ?></p>
                                         <div class="mil-divider"></div>
                                         <div class="mil-card-bottom">
                                             <div class="mil-price"><span class="mil-symbol">$</span><span class="mil-number"><?php echo get_field('price_case_two'); ?></span>/ <span>per pax /</span> <?php echo get_field('duration'); ?></div>
