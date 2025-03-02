@@ -76,9 +76,9 @@
                                         <li><a href="<?php bloginfo('url'); ?>/wild-life-tours">Wildlife & Eco Tours</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/experiential-tours">DAY TOURS</a></li>
                                         <li><a href="<?php bloginfo('url'); ?>/activities">Activities</a></li>
-                                        <li class="<?php if (get_the_ID() == '14' || get_the_ID() == '24') { echo 'mil-current active'; } ?>">
+                                        <!-- <li class="<?php if (get_the_ID() == '14' || get_the_ID() == '24') { echo 'mil-current active'; } ?>">
                                             <a href="<?php bloginfo('url'); ?>/surfing">Surfing</a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </li>
 
