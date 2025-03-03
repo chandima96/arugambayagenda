@@ -49,7 +49,7 @@ $counter_five = get_field('counter_five');
 ?>
         <div class="mil-banner">
             <div class="mil-banner-bg">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/images/16fada39-7ae6-4321-9200-d82a42c2353f.jpg" alt="background">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/images/IMG_1036.JPG" alt="background">
                 <div class="mil-image-gradient"></div>
             </div>
             <div class="container">
