@@ -547,6 +547,12 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
                                     </div>
 
+                                    <div class="mil-field-frame mil-mb-20">
+                                        <label for="appointment-time">Choose a time (between 6 AM & 4 PM)</label>
+                                        <input type="time" id="appointment-time" name="appointment-time" min="06:00" max="16:00" onchange="document.getElementById('time').value = this.value;" required>
+                                        <input type="hidden" id="time" name="time" required>
+                                    </div> 
+
                                     <div class="donation-form-group">
                                         <label>Time</label>
                                         <div class="donation-time-buttons">
