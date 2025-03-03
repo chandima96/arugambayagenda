@@ -82,40 +82,7 @@ $counter_five = get_field('counter_five');
             background-position: center;
         }
 </style>
-<div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/images/sigiriya-459197.jpg');"></div>
-            <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/images/elephants-471480.jpg');"></div>
-            <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/images/16fada39-7ae6-4321-9200-d82a42c2353f.jpg');"></div>
-        </div>
-        <!-- Pagination and Navigation -->
-        <div class="swiper-pagination"></div>
-    </div>
 
-            <div class="container">
-                <!-- <div class="mil-banner-img-2">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/images/Edited-Banner.webp" alt="banner">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/1.png" alt="object" class="mil-figure mil-1">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/2.png" alt="object" class="mil-figure mil-2">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/3.png" alt="object" class="mil-figure mil-3">
-                </div> -->
-                <div class="row align-items-center">
-                    <div class="col-xl-10">
-
-                        <div class="mil-banner-content-frame mobile-content-center ">
-                            <div class="mil-banner-content" style="padding-top: 0px !important;">
-                                <div class="mil-suptitle mil-mb-40">Test</div>
-                                <h1 class="mil-mb-40 home-title">Test</h1>
-                                <p>Test</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- banner end -->
 
         <div class="mil-banner">
             <div class="mil-banner-bg">
