@@ -56,8 +56,8 @@ $counter_five = get_field('counter_five');
                 <div class="row align-items-center">
                     <div class="col-xl-10">
 
-                        <div class="mil-banner-content-frame">
-                            <div class="mil-banner-content">
+                        <div class="mil-banner-content-frame flex-align-items-aseline">
+                            <div class="mil-banner-content text-banner-center">
                                 <div class="mil-suptitle mil-mb-40"><?php echo $home_banner_title; ?></div>
                                 <h1 class="mil-mb-40" style="text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
     color: #4fe4ff !important;

@@ -960,3 +960,15 @@ fill: rgb(0, 151, 178);
 .grecaptcha-badge { 
     visibility: hidden !important;
 }
+
+@media screen and (max-width: 1200px) {
+    .mil-banner {
+        height: calc(100vh - 45px) !important;
+    }
+    .text-banner-center{
+        text-align: center;
+    }
+    .flex-align-items-aseline{
+        align-items: baseline !important;
+    }
+}
