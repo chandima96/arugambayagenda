@@ -59,6 +59,59 @@ $counter_five = get_field('counter_five');
     
 }
 </style>
+<style>
+    .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity for darkness */
+        z-index: 2; /* Set the overlay on top of the video */
+    }
+</style>
+        <!-- banner -->
+        <div class="mil-banner" style="overflow: hidden;">
+                <!-- Background Video -->
+                <video autoplay loop muted playsinline class="bg-video">
+                    <source src="https://www.arugambayagenda.com/wp-content/uploads/2024/11/home-bg.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- Overlay -->
+                <div class="overlay"></div>
+            <div class="container" style="z-index: 10 !important;">
+                <!-- <div class="mil-banner-img-2">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/images/Edited-Banner.webp" alt="banner">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/1.png" alt="object" class="mil-figure mil-1">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/2.png" alt="object" class="mil-figure mil-2">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/shapes/3.png" alt="object" class="mil-figure mil-3">
+                </div> -->
+                <div class="row align-items-center">
+                    <div class="col-xl-10">
+
+                        <div class="mil-banner-content-frame mobile-content-center ">
+                            <div class="mil-banner-content" style="padding-top: 0px !important;">
+                                <div class="mil-suptitle mil-mb-40"><?php echo $home_banner_top_line; ?></div>
+                                <h1 class="mil-mb-40 home-title" style="color: #0097b2 !important; text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;"><?php echo $home_banner_title; ?></h1>
+                                <p style="text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;"><?php echo $home_banner_description; ?></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- banner end -->
 
 
 
@@ -73,8 +126,9 @@ $counter_five = get_field('counter_five');
 
                         <div class="mil-banner-content-frame">
                             <div class="mil-banner-content">
-                                <div class="mil-suptitle mil-mb-40">Welcome friend</div>
-                                <h1 class="mil-mb-40">Life while traveling <br>is a pure dream.</h1>
+                                <div class="mil-suptitle mil-mb-40"><?php echo $home_banner_title; ?></div>
+                                <h1 class="mil-mb-40" style="text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;">><?php echo $home_banner_top_line; ?></h1>
+                                <p style="text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;"><?php echo $home_banner_description; ?></p>
                             </div>
                         </div>
 
