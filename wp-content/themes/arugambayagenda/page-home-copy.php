@@ -59,29 +59,7 @@ $counter_five = get_field('counter_five');
     
 }
 </style>
-        <!-- banner -->
-        <div class="mil-banner" style="overflow: hidden;">
-                <!-- Background Video -->
-<style>
-            .swiper-container {
-            width: 100%;
-            height: 100vh;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
 
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-size: cover;
-            background-position: center;
-        }
-</style>
 
 
         <div class="mil-banner">
@@ -1048,93 +1026,7 @@ $counter_five = get_field('counter_five');
         </div>
         <!-- blog end -->
 
-        <script>
-            // window.onload = function() {
-            //     var elements = [
-            //         { id: "count-one", stopValue: 60 },
-            //         { id: "count-two", stopValue: 50 },
-            //         { id: "count-three", stopValue: 40 },
-            //         { id: "count-four", stopValue: 20 }
-            //     ];
 
-            //     elements.forEach(function(element) {
-            //         var currentCount = 0;
-            //         var interval = setInterval(function() {
-            //             currentCount++;
-            //             document.getElementById(element.id).innerText = currentCount;
-            //             if (currentCount >= element.stopValue) {
-            //                 clearInterval(interval);
-            //             }
-            //         }, 50);
-            //     });
-            // };
-        </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Select all counter sections and elements
-            const counters = [
-                { sectionId: 'counter-section-1', counterId: 'counter-1' },
-                { sectionId: 'counter-section-2', counterId: 'counter-2' },
-                { sectionId: 'counter-section-3', counterId: 'counter-3' },
-                { sectionId: 'counter-section-4', counterId: 'counter-4' },
-                { sectionId: 'counter-section-5', counterId: 'counter-5' }
-            ];
-
-            counters.forEach(({ sectionId, counterId }) => {
-                const counterSection = document.getElementById(sectionId);
-                const counterElement = document.getElementById(counterId);
-
-                let counterStarted = false;
-
-                function startCounter() {
-                    const countTo = parseInt(counterElement.getAttribute('data-count'), 10);
-                    let count = 0;
-
-                    const updateCounter = () => {
-                        count += Math.ceil(countTo / 100);
-                        if (count >= countTo) {
-                            count = countTo;
-                            clearInterval(interval);
-                            counterElement.innerHTML = `${count}`; // Append "+" after the count
-                        } else {
-                            counterElement.textContent = count;
-                        }
-                    };
-
-                    const interval = setInterval(updateCounter, 20);
-                }
-
-                function checkScroll() {
-                    const rect = counterSection.getBoundingClientRect();
-                    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-
-                    if (rect.top < viewportHeight && !counterStarted) {
-                        counterStarted = true;
-                        startCounter();
-                    }
-                }
-
-                window.addEventListener('scroll', checkScroll);
-                checkScroll(); // Run initially in case already scrolled
-            });
-        });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            effect: 'fade', // Optional: You can remove this if you prefer a slide effect
-        });
-    </script>
 
 
         <?php get_footer(); ?>
