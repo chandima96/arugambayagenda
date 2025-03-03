@@ -117,6 +117,28 @@ $counter_five = get_field('counter_five');
         </div>
         <!-- banner end -->
 
+        <div class="mil-banner">
+            <div class="mil-banner-bg">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/images/8.png" alt="background">
+                <div class="mil-image-gradient"></div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-10">
+
+                        <div class="mil-banner-content-frame">
+                            <div class="mil-banner-content">
+                                <div class="mil-suptitle mil-mb-40">Welcome friend</div>
+                                <h1 class="mil-mb-40">Life while traveling <br>is a pure dream.</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <!-- services -->
         <div class="mil-content-pad mil-p-100-100">
             <div class="container">
