@@ -547,30 +547,26 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                                         <input id="check-in" type="text" name="date" class="datepicker-here" data-position="bottom left" placeholder="Select date" autocomplete="off" readonly="readonly" required>
                                     </div>
 
-                                    <div class="mil-field-frame mil-mb-20">
-                                        <label for="appointment-time">Choose a time (between 6 AM & 4 PM)</label>
-                                        <input type="time" id="appointment-time" name="appointment-time" min="06:00" max="16:00" onchange="document.getElementById('time').value = this.value;" required>
-                                        <input type="hidden" id="time" name="time" required>
-                                    </div> 
+                                    <?php 
+                                    $tour_times = get_field('tour_times');
+
+                                    if (empty($tour_times)) : ?>
+                                        <div class="mil-field-frame mil-mb-20">
+                                            <label for="appointment-time">Choose a time (between 6 AM & 4 PM)</label>
+                                            <input type="time" id="appointment-time" name="appointment-time" min="06:00" max="16:00" onchange="document.getElementById('time').value = this.value;" required>
+                                            <input type="hidden" id="time" name="time" required>
+                                        </div>
+                                    <?php else : ?>
 
                                     <div class="donation-form-group">
                                         <label>Time</label>
                                         <div class="donation-time-buttons">
-                                            <?php
-                                            $page_id = get_the_ID();
-                                            if ($page_id === 356): ?>
-                                                <!-- Cooking Claas -->
-                                                <button type="button" onclick="settime('11.00 AM', this)">11.00 AM</button>
-                                            <?php elseif ($page_id === 331): ?>
-                                                <!-- TukTuk sightseeing -->
-                                                <button type="button" onclick="settime('10.00 AM', this)">10.00 AM</button>
-                                            <?php else: ?>
-                                                <!-- Cultural excursion -->
-                                                <button type="button" onclick="settime('10.00 AM', this)">10.00 AM</button>
-                                            <?php endif; ?>
+                                        <?php echo $tour_times; ?>
                                         </div>
                                         <input type="hidden" id="time" name="time">
                                     </div>
+                                    <?php endif; ?>
+
                                     <div class="booking-total-price" style="display:flex; justify-content: space-between;">
                                         <div>Total price </div>
                                         <div style="color:#0097b2;" id="totalAmount1"></div>
