@@ -26,7 +26,7 @@ get_header();
                                 <div class="mil-suptitle mil-breadcrumbs">
                                     <ul>
                                         <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
-                                        <li><a href="<?php bloginfo('url'); ?>/experiential-tours">DAY TOURS</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/experiential-tours">Day Tours</a></li>
                                     </ul>
                                 </div>
                             </div>

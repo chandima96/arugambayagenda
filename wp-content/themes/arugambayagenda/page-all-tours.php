@@ -106,8 +106,8 @@ get_header();
                         <div class="mil-desctop-right mil-fade-up">
                             <div class="mil-filter">
                                 <a href="<?php bloginfo('url'); ?>/wild-life-tours">Wildlife & Eco Tours</a>
-                                <a href="<?php bloginfo('url'); ?>/experiential-tours">Experiential Tours</a>
-                                <a href="<?php bloginfo('url'); ?>/surfing">Surfing</a>
+                                <a href="<?php bloginfo('url'); ?>/experiential-tours">Day Tours</a>
+                                <a href="<?php bloginfo('url'); ?>/activities">Activities</a>
                             </div>
                         </div>
 
@@ -117,7 +117,7 @@ get_header();
                 <div class="row mil-mb-40">
                     <?php 
                         $the_query = new WP_Query(array(
-                            'post_type' => array('wildlifetours', 'experientialtours', 'surfing-tour'),
+                            'post_type' => array('wildlifetours', 'experientialtours', 'activity'),
                             'posts_per_page' => 100,
                             'post__not_in' => array($id),
                         ));
