@@ -52,7 +52,7 @@ get_header();
                             </svg>
                         </div>
                         <h3 class="mil-mb-20">Airport Transfers in Sri Lanka: Seamless and Reliable</h3>
-                        <p>Experience hassle-free travel with our professional airport pick-up and shuttle services. Whether you're arriving at Bandaranaike International Airport (CMB) or another major airport in Sri Lanka, we ensure a smooth and comfortable journey to your hotel or chosen destination. Our experienced drivers prioritize punctuality and safety, ensuring you reach your destination stress-free.</p>
+                        <p>Experience hassle-free airport transfers in Sri Lanka with our professional airport shuttle Sri Lanka services. Whether you’re arriving at Bandaranaike International Airport (CMB) or any other major airport, our reliable Sri Lanka airport taxi ensures a smooth and comfortable ride to your hotel or preferred destination. Our experienced drivers prioritize punctuality and safety, making your journey stress-free from the moment you land.</p>
                     </div>
                     <div class="mil-iconbox mil-iconbox-custom mil-fade-up">
                         <div class="mil-bg-icon"></div>
@@ -63,7 +63,7 @@ get_header();
                             </svg>
                         </div>
                         <h3 class="mil-mb-20">Island-Wide Transfers in Sri Lanka: Comfortable and Convenient</h3>
-                        <p>Travel across Sri Lanka with ease through our personalized transfer services. We offer a range of comfortable vehicles suitable for singles, couples, or large groups, ensuring a smooth and enjoyable journey to any destination within the country.</p>
+                        <p>Travel across the island effortlessly with our island-wide transfers Sri Lanka service. We provide comfortable and well-maintained vehicles for solo travelers, couples, and large groups, ensuring a smooth and enjoyable journey to any destination in the country. Whether you’re heading to scenic beaches, cultural landmarks, or bustling cities, our service guarantees a relaxing and efficient travel experience.</p>
                     </div>
                     <div class="mil-iconbox mil-iconbox-custom mil-fade-up">
                         <div class="mil-bg-icon"></div>
@@ -74,7 +74,7 @@ get_header();
                             </svg>
                         </div>
                         <h3 class="mil-mb-20">Daily Shared Rides in Sri Lanka: Affordable and Eco-Friendly</h3>
-                        <p>Join our daily shared ride service for an affordable, convenient, and eco-friendly way to travel across Sri Lanka. Operating on popular routes, this is perfect for budget-conscious travelers and those looking to connect with fellow adventurers. Share your ride, meet new people, and enjoy a comfortable journey at a fraction of the cost of private transfers.</p>
+                        <p>Join our share taxi Arugam Bay service for an affordable, convenient, and eco-friendly way to travel across Sri Lanka. Operating on popular routes, this is ideal for budget-conscious travelers and those looking to connect with fellow adventurers. Share your ride, meet new people, and enjoy a comfortable journey at a fraction of the cost of private transfers while reducing your carbon footprint.</p>
                     </div>
                 </div>
             </div>
