@@ -54,7 +54,7 @@ get_header();
                             and ride the waves with epic surf lessons.
                         </p>
                     </div>
-                    <div class="col-xl-5">
+                    <div class="col-xl-6">
                         <p class="mil-fade-up mil-mb-20">
                             Discover our array of accommodations, from cozy retreats to
                             luxurious havens, ensuring your stay is nothing short of extraordinary.
@@ -62,17 +62,6 @@ get_header();
                             with us contributes to preserving the pristine beauty of this island paradise.
                             Your extraordinary voyage awaits; come and experience a world of wonder with us.
                         </p>
-
-                        <!-- <div class="mil-signature-frame mil-fade-up mil-mb-40-adapt">
-                            <div class="mil-author-frame">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/faces/4.jpg" alt="Author">
-                                <div class="mil-author-text">
-                                    <h4 class="mil-mb-10">Emma Miller</h4>
-                                    <p>Hotel administrator</p>
-                                </div>
-                            </div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/signature.png" alt="Signature" class="mil-signature">
-                        </div> -->
                     </div>
                 </div>
             </div>
