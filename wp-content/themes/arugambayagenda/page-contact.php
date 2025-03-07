@@ -147,7 +147,7 @@ get_header();
         <div class="mil-p-0-100">
             <div class="container">
                 <div class="mil-map-frame mil-fade-up">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126763.75638037869!2d81.7486873!3d6.8464863!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5bdd4ea90a9dd%3A0x7011ba04a540ae4e!2sArugambay%20Agenda!5e0!3m2!1sen!2slk!4v1721294027474!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.3673288351597!2d81.8285142752858!3d6.84649329315177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5bdd4ea90a9dd%3A0x7011ba04a540ae4e!2sArugambay%20Agenda!5e0!3m2!1sen!2slk!4v1741262401123!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
