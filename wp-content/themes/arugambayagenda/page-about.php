@@ -47,20 +47,13 @@ get_header();
                     </div>
                     <div class="col-xl-6">
                         <p class="mil-fade-up mil-mb-20">
-                            Welcome to Arugambay Agenda, your ultimate guide to adventure in the beautiful
-                            Sri Lanka and its captivating Arugambay region. With a decade of expertise in hospitality
-                            and tourism, our dedicated team is committed to crafting an unforgettable experience for you.
-                            Delight in carefully curated tours around Sri Lanka's wonders, embark on thrilling wildlife safaris,
-                            and ride the waves with epic surf lessons.
+                            Welcome to Arugam Bay Agenda, your trusted Sri Lanka travel agency for Arugam Bay tours and unforgettable experiences across the island. Whether you’re seeking thrilling tours in Sri Lanka, including wildlife safaris, ziplining, or cultural activities like tea plantation tours and cooking classes, we’ve got you covered.
                         </p>
                     </div>
                     <div class="col-xl-6">
                         <p class="mil-fade-up mil-mb-20">
-                            Discover our array of accommodations, from cozy retreats to
-                            luxurious havens, ensuring your stay is nothing short of extraordinary.
-                            Our dedication to sustainable tourism and responsible practices ensures that every adventure you undertake
-                            with us contributes to preserving the pristine beauty of this island paradise.
-                            Your extraordinary voyage awaits; come and experience a world of wonder with us.
+                        Our expert guides and carefully curated itineraries ensure you experience the best of Sri Lanka while supporting local communities. Whether you’re using our Arugam Bay travel guide or booking with the best tour operators in Sri Lanka, we guarantee an adventure of a lifetime.
+                        Based in Arugam Bay | Serving across Sri Lanka
                         </p>
                     </div>
                 </div>
