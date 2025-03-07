@@ -23,7 +23,7 @@ get_header();
 
                         <div class="mil-banner-content-frame">
                             <div class="mil-banner-content mil-text-center">
-                                <h1 class="mil-mb-40">Exploring the World Through Our Blog</h1>
+                                <h1 class="mil-mb-40">Discover Sri Lanka: Travel Guides & Hidden Gem</h1>
                                 <div class="mil-suptitle mil-breadcrumbs">
                                     <ul>
                                     <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
@@ -45,7 +45,7 @@ get_header();
             <div class="container">
                 <div class="mil-text-center">
                     <div class="mil-suptitle mil-mb-20 mil-fade-up">Blog</div>
-                    <h2 class="mil-mb-100 mil-fade-up">Popular publications</h2>
+                    <h2 class="mil-mb-100 mil-fade-up">Top Travel Picks & Insider Tips</h2>
                 </div>
                 <div class="row mil-mb-40">
                                 <?php 

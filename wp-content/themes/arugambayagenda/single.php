@@ -138,7 +138,7 @@ $published_date = get_field('published_date');
                 <div class="row justify-content-between align-items-end mil-mb-100">
                     <div class="col-lg-7">
                         <div class="mil-suptitle mil-fade-up mil-mb-20">FEATURES</div>
-                        <h2 class="mil-fade-up">Our best rooms</h2>
+                        <h2 class="mil-fade-up">More to explore</h2>
                     </div>
                     <div class="col-lg-5">
                         <div class="mil-desctop-right mil-fade-up">
