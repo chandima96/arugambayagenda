@@ -962,9 +962,9 @@ fill: rgb(0, 151, 178);
 }
 
 @media screen and (max-width: 1200px) {
-    .mil-banner {
+    /* .mil-banner {
         height: calc(100vh - 45px) !important;
-    }
+    } */
     .text-banner-center{
         text-align: center;
     }
