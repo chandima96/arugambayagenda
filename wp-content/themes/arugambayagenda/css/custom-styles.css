@@ -975,3 +975,10 @@ fill: rgb(0, 151, 178);
         align-items: baseline !important;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .mil-banner {
+        height: auto;
+        padding: 360px 0 60px;
+    }
+}
