@@ -965,6 +965,9 @@ fill: rgb(0, 151, 178);
     /* .mil-banner {
         height: calc(100vh - 45px) !important;
     } */
+    .mil-banner .mil-banner-bg img{
+        height: auto;
+     }
     .text-banner-center{
         text-align: center;
     }
