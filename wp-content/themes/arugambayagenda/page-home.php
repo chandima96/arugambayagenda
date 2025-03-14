@@ -85,7 +85,7 @@ $counter_five = get_field('counter_five');
                             <div class="mil-img-frame">
                                 <img src="<?php echo $service_section_wild_life_tours_image; ?>" alt="img">
                             </div>
-                            <div class="mil-description">Wildlife & Eco Tours</div>
+                            <div class="mil-description">Experiences</div>
                         </a>
                     </div>
                     <div class="col-md-6 col-xl-3">
@@ -93,7 +93,7 @@ $counter_five = get_field('counter_five');
                             <div class="mil-img-frame">
                                 <img src="<?php echo $service_section_experiential_tours_image; ?>" alt="img">
                             </div>
-                            <div class="mil-description">Experiential Tours</div>
+                            <div class="mil-description">Wildlife & Eco Tours</div>
                         </a>
                     </div>
                     <div class="col-md-6 col-xl-3">
@@ -101,7 +101,7 @@ $counter_five = get_field('counter_five');
                             <div class="mil-img-frame">
                                 <img src="<?php echo $service_section_surfing_image; ?>" alt="img">
                             </div>
-                            <div class="mil-description">Surfing</div>
+                            <div class="mil-description">Day Tours</div>
                         </a>
                     </div>
                     <div class="col-md-6 col-xl-3">
