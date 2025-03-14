@@ -81,7 +81,7 @@ $counter_five = get_field('counter_five');
                 </div>
                 <div class="row mil-mb-40">
                     <div class="col-md-6 col-xl-3">
-                        <a href="<?php bloginfo('url'); ?>/wild-life-tours" class="mil-service-card mil-mb-40-adapt mil-fade-up">
+                        <a href="<?php bloginfo('url'); ?>/all-tours/" class="mil-service-card mil-mb-40-adapt mil-fade-up">
                             <div class="mil-img-frame">
                                 <img src="<?php echo $service_section_wild_life_tours_image; ?>" alt="img">
                             </div>
@@ -89,7 +89,7 @@ $counter_five = get_field('counter_five');
                         </a>
                     </div>
                     <div class="col-md-6 col-xl-3">
-                        <a href="<?php bloginfo('url'); ?>/experiential-tours" class="mil-service-card mil-offset mil-mb-40-adapt mil-fade-up">
+                        <a href="<?php bloginfo('url'); ?>/wild-life-tours/" class="mil-service-card mil-offset mil-mb-40-adapt mil-fade-up">
                             <div class="mil-img-frame">
                                 <img src="<?php echo $service_section_experiential_tours_image; ?>" alt="img">
                             </div>
@@ -97,7 +97,7 @@ $counter_five = get_field('counter_five');
                         </a>
                     </div>
                     <div class="col-md-6 col-xl-3">
-                        <a href="<?php bloginfo('url'); ?>/surfing" class="mil-service-card mil-mb-40-adapt mil-fade-up">
+                        <a href="<?php bloginfo('url'); ?>/experiential-tours/" class="mil-service-card mil-mb-40-adapt mil-fade-up">
                             <div class="mil-img-frame">
                                 <img src="<?php echo $service_section_surfing_image; ?>" alt="img">
                             </div>
