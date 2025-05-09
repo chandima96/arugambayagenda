@@ -63,7 +63,7 @@ $published_date = get_field('published_date');
                                             <img src="<?php echo $blog_image_one; ?>" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
+                                    <!-- <div class="swiper-slide">
                                         <div class="mil-image-frame">
                                             <img src="<?php echo $blog_image_two; ?>" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
                                         </div>
@@ -97,7 +97,7 @@ $published_date = get_field('published_date');
                                         <div class="mil-image-frame">
                                             <img src="<?php echo $blog_image_eight; ?>" alt="room" data-swiper-parallax="0" data-swiper-parallax-scale="1.2">
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="mil-room-nav">
@@ -187,7 +187,7 @@ $published_date = get_field('published_date');
                                                 <img src="<?php echo get_field('blog_image_one'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
                                             </div>                                           
                                         </div>
-                                        <div class="swiper-slide">
+                                        <!-- <div class="swiper-slide">
                                             <div class="mil-card-cover">
                                                 <img src="<?php echo get_field('blog_image_two'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
                                             </div>                                           
@@ -201,7 +201,7 @@ $published_date = get_field('published_date');
                                             <div class="mil-card-cover">
                                                 <img src="<?php echo get_field('blog_image_four'); ?>" alt="cover" data-swiper-parallax="-100" data-swiper-parallax-scale="1.1">
                                             </div>                                           
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="mil-card-nav">
                                         <div class="mil-slider-btn mil-card-prev">
