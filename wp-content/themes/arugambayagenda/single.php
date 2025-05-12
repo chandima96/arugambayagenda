@@ -52,7 +52,7 @@ $published_date = get_field('published_date');
 
         <!-- publication -->
         <div class="mil-pub-frame">
-            <div class="mil-slider-frame mil-mb-100">
+            <div hidden class="mil-slider-frame mil-mb-100">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-8">
