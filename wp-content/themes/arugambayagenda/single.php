@@ -122,7 +122,7 @@ $published_date = get_field('published_date');
 
             <div class="container mil-p-100-100 padding-top-0">
                 <div class="row justify-content-center">
-                    <div class="col-xl-7">
+                    <div class="col-xl-7 mil-p-100-100">
                         <div class="blog-description">
                             <p class="mil-fade-up"><?php the_content(); ?></p>
                         </div>
