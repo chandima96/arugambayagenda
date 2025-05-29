@@ -46,7 +46,7 @@ Guides, Tips & Hidden Gems</h1>
             <div class="container">
                 <div class="mil-text-center">
                     <div class="mil-suptitle mil-mb-20 mil-fade-up">Blog</div>
-                    <h2 class="mil-mb-100 mil-fade-up">Best Things to Do in Sri Lanka & Arugam Bay - Insider Travel Tips</h2>
+                    <h2 class="mil-mb-20 mil-fade-up">Best Things to Do in Sri Lanka & Arugam Bay - Insider Travel Tips</h2>
                     <p class="mil-mb-20 mil-fade-up">Explore expert travel publications in Sri Lanka with insider tips, hidden gems, and local guides. Discover the best things to do in Arugam Bay, Ella, Kandy, and Sigiriya with our Arugam Bay travel guide and Sri Lanka travel tips. Find top attractions, experiences, and local favorites.</p>
                 </div>
                 <div class="row mil-mb-40">
