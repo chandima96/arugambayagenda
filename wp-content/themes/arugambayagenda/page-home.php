@@ -62,7 +62,7 @@ $counter_five = get_field('counter_five');
                                 <h1 class="mil-mb-40" style="text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
                                 color: #d5f9ff !important;
                                 letter-spacing: 1px;"><?php echo $home_banner_top_line; ?></h1>
-                                <p style="color: #ffffff !important;><?php echo $home_banner_description; ?></p>
+                                <p style="color: #ffffff !important;"><?php echo $home_banner_description; ?></p>
                             </div>
                         </div>
 
