@@ -59,9 +59,9 @@ $counter_five = get_field('counter_five');
                         <div class="mil-banner-content-frame flex-align-items-aseline">
                             <div class="mil-banner-content text-banner-center">
                                 <div class="mil-suptitle mil-mb-40"><?php echo $home_banner_title; ?></div>
-                                <h1 class="mil-mb-40" style="color: #ffffff !important;">
-                                    color: #d5f9ff !important;
-                                    letter-spacing: 1px;"><?php echo $home_banner_top_line; ?></h1>
+                                <h1 class="mil-mb-40" style="text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+                                color: #d5f9ff !important;
+                                letter-spacing: 1px;"><?php echo $home_banner_top_line; ?></h1>
                                 <p style="text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;"><?php echo $home_banner_description; ?></p>
                             </div>
                         </div>
