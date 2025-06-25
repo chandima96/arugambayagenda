@@ -19,11 +19,24 @@ get_header();
 
                         <div class="mil-banner-content-frame">
                             <div class="mil-banner-content mil-text-center">
-                                <h1 class="mil-mb-40">Wildlife & Eco Tours</h1>
+                                
+                                                                    <?php
+                                    $category = get_the_category();
+                                    if ( !empty($category) ) : ?>
+                                        <h1 class="mil-mb-40"><?php echo esc_html( $category[0]->name ); ?></h1>
+                                    <?php endif; ?>
                                 <div class="mil-suptitle mil-breadcrumbs">
                                     <ul>
                                     <li><a href="<?php bloginfo('url'); ?>/">Home</a></li>
-                                    <li><a href="<?php bloginfo('url'); ?>/wild-life-tours"><?php the_title(); ?></a></li>
+                                    <?php
+                                    $category = get_the_category();
+                                    if ( !empty($category) ) : ?>
+                                        <li>
+                                            <a href="<?php echo esc_url( get_category_link( $category[0]->term_id ) ); ?>">
+                                                <?php echo esc_html( $category[0]->name ); ?>
+                                            </a>
+                                        </li>
+                                    <?php endif; ?>
                                     </ul>
                                 </div>
                             </div>
@@ -180,7 +193,9 @@ get_header();
                                     <span>per pax /</span> <?php the_field('duration'); ?>
                                 </div>
                                 <a href="<?php the_permalink(); ?>" class="mil-button mil-icon-button mil-accent-1">
-                                    <!-- SVG Bookmark -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
+                                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                    </svg>
                                 </a>
                             </div>
                         </div>

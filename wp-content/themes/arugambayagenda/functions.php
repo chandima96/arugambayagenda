@@ -30,7 +30,7 @@ add_shortcode('page_slug', 'display_page_slug');
 
 function custom_include_multiple_post_types_in_category($query) {
     if ( !is_admin() && $query->is_main_query() && is_category() ) {
-        $query->set('post_type', array('post', 'surfing-tour', 'wildlifetours', 'activity'));
+        $query->set('post_type', array('post', 'surfing-tour', 'wildlifetours', 'activity', 'experientialtours'));
     }
 }
 add_action('pre_get_posts', 'custom_include_multiple_post_types_in_category');
