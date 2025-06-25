@@ -28,6 +28,11 @@ function display_page_slug() {
 
 add_shortcode('page_slug', 'display_page_slug');
 
-
+function custom_include_multiple_post_types_in_category($query) {
+    if ( !is_admin() && $query->is_main_query() && is_category() ) {
+        $query->set('post_type', array('post', 'surfing-tour', 'wildlifetours', 'activity'));
+    }
+}
+add_action('pre_get_posts', 'custom_include_multiple_post_types_in_category');
 
 
