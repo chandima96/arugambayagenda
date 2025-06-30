@@ -107,25 +107,25 @@ h3 {
 
 @media (min-width: 768px) {
     .mil-top-panel .mil-top-panel-content .mil-logo img {
-        width: 50% !important;
+        width: 40% !important;
     }
 }
 
 @media (min-width: 992px) {
     .mil-top-panel .mil-top-panel-content .mil-logo img {
-        width: 60% !important;
+        width: 40% !important;
     }
 }
 
 @media (min-width: 1200px) {
     .mil-top-panel .mil-top-panel-content .mil-logo img {
-        width: 75% !important;
+        width: 40% !important;
     }
 }
 
 
 footer .mil-footer-content .mil-logo img {
-    width: 250px !important;
+    width: 100px !important;
 }
 
 .margin-top-0 {
@@ -403,7 +403,7 @@ footer .mil-footer-content .mil-logo img {
 }
 
 .container-footer-logos {
-    width: 125px !important;
+    width: 100px !important;
     height: 125px !important;
     border: none !important;
 }
