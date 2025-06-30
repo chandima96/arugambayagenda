@@ -53,7 +53,7 @@
             <div class="container">
                 <div class="mil-top-panel-content">
                     <a href="<?php bloginfo('url'); ?>/" class="mil-logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.svg" alt="aquarelle">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/aa-new-logo.svg" alt="aquarelle">
                     </a>
                     <div class="mil-menu-btn">
                         <span></span>
