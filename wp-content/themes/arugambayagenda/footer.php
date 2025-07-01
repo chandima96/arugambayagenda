@@ -7,7 +7,7 @@
                         <div class="col-md-4 col-lg-4">
 
                             <a href="<?php bloginfo('url'); ?>/" class="mil-logo mil-mb-40">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/logo/aa-new-logo.svg" alt="aquarelle">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/logo/Arugambay-Agenda-Logo-footer.svg" alt="aquarelle">
                             </a>
 
                             <div class="other-logo" style="">
