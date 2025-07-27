@@ -68,6 +68,17 @@ $price_case_kids_seven = get_field('price_case_kids_seven');
 $price_case_kids_eight = get_field('price_case_kids_eight');
 $price_case_kids_nine = get_field('price_case_kids_nine');
 $price_case_kids_ten = get_field('price_case_kids_ten');
+$fa_question_one = get_field('fa_question_one');
+$fa_question_two = get_field('fa_question_two');
+$fa_question_three = get_field('fa_question_three');
+$fa_question_four = get_field('fa_question_four');
+$fa_question_five = get_field('fa_question_five');
+$faq_answer_one = get_field('faq_answer_one');
+$faq_answer_two = get_field('faq_answer_two');
+$faq_answer_three = get_field('faq_answer_three');
+$faq_answer_four = get_field('faq_answer_four');
+$faq_answer_five = get_field('faq_answer_five');
+
 ?>
 
 <style>
@@ -425,17 +436,6 @@ $price_case_kids_ten = get_field('price_case_kids_ten');
                             </div>
                             <?php endif; ?>
 
-                            <?php if (!empty($faq_section_question_six) && !empty($faq_section_answer_six)): ?>
-                            <div class="mil-faq-item mil-fade-up">
-                                <div class="mil-faq-question">
-                                    <span class="mil-icon">+</span>
-                                    <h3><?php echo $faq_section_question_six; ?></h3>
-                                </div>
-                                <div class="mil-faq-answer">
-                                    <div class="custom-list"><?php echo $faq_section_answer_six; ?></div>
-                                </div>
-                            </div>
-                            <?php endif; ?>
                         </div>
 
                         
