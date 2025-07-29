@@ -144,7 +144,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <p class="mil-light-soft">© <?php echo date("Y"); ?> Arugambay Agenda. Built by <a href="https://portfolio.metadilan.com/" target="_blank" rel="noopener noreferrer">Metadilan</a></p>
+                            <p class="mil-light-soft">© <?php echo date("Y"); ?> Arugambay Agenda. Built by <a href="https://w3icon.com/" target="_blank" rel="noopener noreferrer">W3 icon</a></p>
                         </div>
                     </div>
                 </div>
