@@ -60,8 +60,8 @@
                                 <div class="col-md-6 col-lg-5">
 
                                     <ul class="mil-menu-list">
-                                        <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                        <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/" class="mil-light-soft">Privacy Policy</a></li>
+                                        <li><a href="<?php bloginfo('url'); ?>/" class="mil-light-soft">Terms and conditions</a></li>
                                         <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
                                         <li><a href="https://www.arugambayagenda.com/sitemap_index.xml" target="_blank" class="mil-light-soft">Site Map</a></li>
                                     </ul>
