@@ -133,7 +133,7 @@ get_header();
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
                             </div>
-                            <div class="mil-mb-20 contact-custom-text"><a href="https://maps.app.goo.gl/iUfoQuGYqZxae2wM8" target="_blank">No.54, Tsunami Hotel Road, Arugambay, 32500 Pottuvil, Srilanka.</a></div>
+                            <div class="mil-mb-20 contact-custom-text"><a href="" target="_blank">Manal Rd, Arugam Bay 32500, Sri Lanka</a></div>
                             
                             <p>We invite you to visit us</p>
                         </div>
