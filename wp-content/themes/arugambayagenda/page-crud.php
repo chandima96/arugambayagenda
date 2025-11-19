@@ -10,7 +10,7 @@ get_header();
 global $wpdb;
 
 // Table name
-$table = $wpdb->prefix . 'ref'; // Replace with your table name
+$table = 'wp_ref'; // Replace with your table name
 
 if ( isset($_POST['submit_ref']) ) {
 
