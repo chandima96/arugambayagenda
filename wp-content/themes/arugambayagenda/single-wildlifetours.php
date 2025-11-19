@@ -78,6 +78,36 @@ $faq_answer_two = get_field('faq_answer_two');
 $faq_answer_three = get_field('faq_answer_three');
 $faq_answer_four = get_field('faq_answer_four');
 $faq_answer_five = get_field('faq_answer_five');
+
+
+
+
+// Get ref from URL
+$ref = '';
+if ( isset($_GET['ref']) ) {
+    $ref = sanitize_text_field( wp_unslash($_GET['ref']) );
+}
+
+global $wpdb;
+$table = 'wp_ref';
+
+// If ref is provided
+if ( ! empty($ref) ) {
+
+    // Query DB for the matching ref
+    $result = $wpdb->get_row(
+        $wpdb->prepare("SELECT email FROM {$table} WHERE ref = %s", $ref)
+    );
+
+    // Display email if found
+    if ( $result ) {
+        $ref_email = esc_html( $result->email ); 
+    } else {
+        $ref_email = "";
+    }
+}
+
+
 ?>
 
 <style>
@@ -573,6 +603,7 @@ $faq_answer_five = get_field('faq_answer_five');
 
                                     <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">
+                                    <input type="hidden" name="ref" value="<?php echo $ref_email; ?>">
 
                                     <button type="submit" class="mil-button mil-accent-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
