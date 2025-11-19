@@ -33,6 +33,8 @@ get_header();
     $pax = isset($_POST['pax']) ? htmlspecialchars($_POST['pax']) : '';
     $kids = isset($_POST['kids']) ? htmlspecialchars($_POST['kids']) : '';
     $total_amount = isset($_POST['total_amount']) ? htmlspecialchars($_POST['total_amount']) : '';
+    $ref = isset($_POST['ref']) ? htmlspecialchars($_POST['ref']) : '';
+    echo $ref;
 ?>      
         <!-- banner -->
         <div class="mil-p-100-60">
