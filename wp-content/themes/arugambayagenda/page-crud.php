@@ -37,6 +37,7 @@ if ( isset($_POST['submit_ref']) ) {
     }
 }
 ?>
+<div class="mil-content-pad mil-p-100-100">
 <form action="" method="post">
     <input type="text" name="name" placeholder="Enter Name" required>
     <input type="text" name="ref" placeholder="Enter Reference" required>
@@ -45,5 +46,5 @@ if ( isset($_POST['submit_ref']) ) {
     <button type="submit" name="submit_ref">Submit</button>
 </form>
 
-
+</div>
 <?php get_footer(); ?>
