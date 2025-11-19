@@ -12,6 +12,7 @@ if ( isset($_GET['ref']) ) {
     
 }
 ?>
+</div>
 <div class="mil-content-pad mil-p-100-100">
 <?php    
 echo $ref;
