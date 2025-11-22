@@ -42,7 +42,6 @@ add_action( 'wpcf7_mail_sent', 'dav_send_email_to_ref' );
 
 function dav_send_email_to_ref( $contact_form ) {
 
-    // Get posted data
     $submission = WPCF7_Submission::get_instance();
     if ( ! $submission ) {
         return;
@@ -50,23 +49,43 @@ function dav_send_email_to_ref( $contact_form ) {
 
     $data = $submission->get_posted_data();
 
-    // If 'ref' field doesn't exist, stop
+    // Must have ref field
     if ( empty( $data['ref'] ) ) {
         return;
     }
 
     $ref_email = sanitize_email( $data['ref'] );
 
-    // Check if ref is a valid email
+    // Stop if not a valid email
     if ( ! is_email( $ref_email ) ) {
         return;
     }
 
-    // Prepare email
-    $subject = 'We got a booking from your link';
-    $message = "Hello,\n\nWe just received a booking from your referral link.\n\nThank you!";
-    $headers = [ 'Content-Type: text/plain; charset=UTF-8' ];
+    // Get post title
+    $post_title = isset( $data['post_title'] )
+        ? sanitize_text_field( $data['post_title'] )
+        : '';
+
+    // Email subject
+    $subject = 'Arugambay Agenda got a booking from your link';
+
+    // Email body
+    $message  = "Hello,\n\n";
+    $message .= "We just received a booking from your referral link.\n";
+
+    if ( ! empty( $post_title ) ) {
+        $message .= "Booked: " . $post_title . "\n";
+    }
+
+    $message .= "\nThank you!";
+
+    // FIXED FROM HEADER (This is what you want)
+    $headers = array(
+        'Content-Type: text/plain; charset=UTF-8',
+        'From: Arugambay Agenda <info@arugambayagenda.com>'
+    );
 
     // Send email
     wp_mail( $ref_email, $subject, $message, $headers );
 }
+

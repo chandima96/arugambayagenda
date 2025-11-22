@@ -383,7 +383,7 @@ get_header();
             const postTitle = '<?php echo $post_title; ?>';
             const refcode = '<?php echo $ref; ?>';
 
-            setTimeout(function() {
+           
                 document.querySelector('input[name="date"]').value = date;
                 // document.querySelector('input#time').value = time;
                 document.querySelector('input[name="time"]').value = time;
@@ -392,7 +392,7 @@ get_header();
                 document.querySelector('input[name="total_amount"]').value = totalAmount;
                 document.querySelector('input[name="post_title"]').value = postTitle;
                 document.querySelector('input[name="ref"]').value = refcode;
-            }, 1000); 
+            
         });
     </script>
    
