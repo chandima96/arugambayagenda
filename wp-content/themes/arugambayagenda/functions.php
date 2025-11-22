@@ -36,8 +36,37 @@ function custom_include_multiple_post_types_in_category($query) {
 add_action('pre_get_posts', 'custom_include_multiple_post_types_in_category');
 
 
-function cf7_ref_value_shortcode() {
-    $ref = isset($_POST['ref']) ? htmlspecialchars($_POST['ref']) : '';
-    return $ref;
+//---------------------------------------------------------------------------------------------
+
+add_action( 'wpcf7_mail_sent', 'dav_send_email_to_ref' );
+
+function dav_send_email_to_ref( $contact_form ) {
+
+    // Get posted data
+    $submission = WPCF7_Submission::get_instance();
+    if ( ! $submission ) {
+        return;
+    }
+
+    $data = $submission->get_posted_data();
+
+    // If 'ref' field doesn't exist, stop
+    if ( empty( $data['ref'] ) ) {
+        return;
+    }
+
+    $ref_email = sanitize_email( $data['ref'] );
+
+    // Check if ref is a valid email
+    if ( ! is_email( $ref_email ) ) {
+        return;
+    }
+
+    // Prepare email
+    $subject = 'We got a booking from your link';
+    $message = "Hello,\n\nWe just received a booking from your referral link.\n\nThank you!";
+    $headers = [ 'Content-Type: text/plain; charset=UTF-8' ];
+
+    // Send email
+    wp_mail( $ref_email, $subject, $message, $headers );
 }
-add_shortcode('get_ref_value', 'cf7_ref_value_shortcode');
