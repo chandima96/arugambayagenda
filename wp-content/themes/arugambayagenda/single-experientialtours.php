@@ -577,6 +577,7 @@ if ( ! empty($ref) ) {
 
                                     <input type="hidden" name="page_slug" value="form-page-slug">
                                     <input type="hidden" name="page_title" value="Booking Confirmation">
+                                    <input type="hidden" name="ref" value="<?php echo $ref_email; ?>">
 
                                     <button type="submit" class="mil-button mil-accent-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark">
