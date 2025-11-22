@@ -374,26 +374,27 @@ get_header();
 <?php get_footer(); ?>
 
     <script>
-            document.addEventListener('DOMContentLoaded', function() {
-            const date = '<?php echo $date; ?>';
-            const time = '<?php echo $time; ?>';
-            const pax = '<?php echo $pax; ?>';
-            const kids = '<?php echo $kids; ?>';
-            const totalAmount = '<?php echo $total_amount; ?>';
-            const postTitle = '<?php echo $post_title; ?>';
-            const refcode = '<?php echo $ref; ?>';
+document.addEventListener('wpcf7init', function(event) {
 
-            setTimeout(function() {
-                document.querySelector('input[name="date"]').value = date;
-                // document.querySelector('input#time').value = time;
-                document.querySelector('input[name="time"]').value = time;
-                document.querySelector('input[name="pax"]').value = pax;
-                document.querySelector('input[name="kids"]').value = kids;
-                document.querySelector('input[name="total_amount"]').value = totalAmount;
-                document.querySelector('input[name="post_title"]').value = postTitle;
-                document.querySelector('input[name="ref"]').value = refcode;
-            }, 1000); 
-        });
+    const date = '<?php echo $date; ?>';
+    const time = '<?php echo $time; ?>';
+    const pax = '<?php echo $pax; ?>';
+    const kids = '<?php echo $kids; ?>';
+    const totalAmount = '<?php echo $total_amount; ?>';
+    const postTitle = '<?php echo $post_title; ?>';
+    const refcode = '<?php echo $ref; ?>';
+
+    const form = event.target; // Current CF7 form
+
+    form.querySelector('input[name="date"]').value = date;
+    form.querySelector('input[name="time"]').value = time;
+    form.querySelector('input[name="pax"]').value = pax;
+    form.querySelector('input[name="kids"]').value = kids;
+    form.querySelector('input[name="total_amount"]').value = totalAmount;
+    form.querySelector('input[name="post_title"]').value = postTitle;
+    form.querySelector('input[name="ref"]').value = refcode;
+});
+
     </script>
    
 
