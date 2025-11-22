@@ -36,3 +36,8 @@ function custom_include_multiple_post_types_in_category($query) {
 add_action('pre_get_posts', 'custom_include_multiple_post_types_in_category');
 
 
+function cf7_ref_value_shortcode() {
+    $ref = isset($_POST['ref']) ? htmlspecialchars($_POST['ref']) : '';
+    return $ref;
+}
+add_shortcode('get_ref_value', 'cf7_ref_value_shortcode');
